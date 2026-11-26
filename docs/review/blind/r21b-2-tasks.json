@@ -1,0 +1,614 @@
+[
+ {
+  "id": "r21b-2-001",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "They would have won if their best player hadn't been injured.",
+   "Would you have helped me if I had asked?",
+   "If the shop had been open, I would have bought some bread.",
+   "If she had knew about the party, she would have come."
+  ]
+ },
+ {
+  "id": "r21b-2-002",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If you hadn't reminded me, I would have forgotten her birthday.",
+   "If he had booked earlier, he wouldn't have pay so much.",
+   "She would have called you if she had had your number.",
+   "If I had seen the sign, I would have stopped."
+  ]
+ },
+ {
+  "id": "r21b-2-003",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "they",
+   "said",
+   "they",
+   "eaten",
+   "already",
+   "had"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-2-004",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "he",
+   "he",
+   "was",
+   "said",
+   "come",
+   "couldn't",
+   "ill",
+   "because",
+   "he"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-2-005",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "They said they had already eaten.",
+   "My boss told that the meeting was cancelled.",
+   "She said that she was tired.",
+   "He told me he would call later."
+  ]
+ },
+ {
+  "id": "r21b-2-006",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "They said they will come the next day.",
+   "He said he couldn't find his keys.",
+   "She said she was working from home that day.",
+   "They said they had booked a table."
+  ]
+ },
+ {
+  "id": "r21b-2-007",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "At school, years ago: 'Do you like jazz?' → He asked me ___.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-2-008",
+  "level": "B1.2",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with its report.",
+  "left": [
+   "'Please sit down.'",
+   "'Don't touch the screen.'",
+   "'Are you free on Friday?'",
+   "'What time does the train leave?'"
+  ],
+  "right": [
+   "She asked me if I was free on Friday.",
+   "She told me not to touch the screen.",
+   "She asked me to sit down.",
+   "She asked me what time the train left."
+  ]
+ },
+ {
+  "id": "r21b-2-009",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She told me to wait outside.",
+   "They wanted to know when the train left.",
+   "She asked me where did I live.",
+   "He asked if I had a car."
+  ]
+ },
+ {
+  "id": "r21b-2-010",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I wonder ___ he will come.",
+  "word_cards": [
+   "what",
+   "whether"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21b-2-011",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put all the words in order. More than one answer is possible.",
+  "word_cards": [
+   "but",
+   "loves",
+   "it",
+   "now",
+   "cooking",
+   "she",
+   "enjoy",
+   "to",
+   "she",
+   "use",
+   "didn't"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-2-012",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "child",
+   "every",
+   "sunday",
+   "a",
+   "i",
+   "used",
+   "my",
+   "to",
+   "when",
+   "was",
+   "visit",
+   "grandparents",
+   "we"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-2-013",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put all the words in order. More than one answer is possible.",
+  "word_cards": [
+   "up",
+   "getting",
+   "not",
+   "am",
+   "so",
+   "early",
+   "to",
+   "used",
+   "i"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-2-014",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "When I was a teenager, I ___ any money, so I walked everywhere. (not / have)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-2-015",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Did you used to play chess?",
+   "Are you used to the new office yet?",
+   "My dad used to work at night.",
+   "We didn't use to have a dishwasher."
+  ]
+ },
+ {
+  "id": "r21b-2-016",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "She plays ___ violin in an orchestra.",
+  "word_cards": [
+   "an",
+   "the",
+   "—"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21b-2-017",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "My parents moved to the Canada last year.",
+   "We had breakfast on the balcony.",
+   "She works in the Netherlands.",
+   "We took a boat trip on the Danube."
+  ]
+ },
+ {
+  "id": "r21b-2-018",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "The room isn't big ___ for twenty people.",
+  "word_cards": [
+   "too",
+   "much",
+   "enough"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21b-2-019",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "There aren't many shops in our village.",
+   "Would you like some more coffee?",
+   "I have many time for hobbies.",
+   "We have a little time before the train leaves."
+  ]
+ },
+ {
+  "id": "r21b-2-020",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "This is the café where we first met.",
+   "The film we watched last night was too long.",
+   "The colleague who helped me is on holiday now.",
+   "The jacket which I ordered online it was too small."
+  ]
+ },
+ {
+  "id": "r21b-2-021",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I have a friend whose father is a pilot.",
+   "Riga, which is the capital of Latvia, has a beautiful old town.",
+   "The hotel where we stayed was right next to the beach.",
+   "Our new manager, that started in May, is from Spain."
+  ]
+ },
+ {
+  "id": "r21b-2-022",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Join the two sentences with *who*: My uncle lives in Spain. He is a chef.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-2-023",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I'll wait here until you come back.",
+   "We'll start the meeting when everyone will be here.",
+   "Call me as soon as the doctor arrives.",
+   "Before you leave, please close the windows."
+  ]
+ },
+ {
+  "id": "r21b-2-024",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Please lock the door before you leave.",
+   "I'll call you after I've spoken to the manager.",
+   "Let's wait here until the rain will stop.",
+   "While I'm away, my sister will water the plants."
+  ]
+ },
+ {
+  "id": "r21b-2-025",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Let's take a break, shall we?",
+   "You can drive, can't you?",
+   "Your brother lives in Oslo, isn't he?",
+   "They weren't at the party, were they?"
+  ]
+ },
+ {
+  "id": "r21b-2-026",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Who did called you last night?",
+   "What did you buy at the market?",
+   "Who left the door open?",
+   "Who wants another coffee?"
+  ]
+ },
+ {
+  "id": "r21b-2-027",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "How many people signed up for the course?",
+   "Which team won the match on Saturday?",
+   "Which colleague did suggested the new plan?",
+   "What did your manager say about the report?"
+  ]
+ },
+ {
+  "id": "r21b-2-028",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "There's a loud bang in the kitchen. Ask your flatmate. Use *What* and *make*:",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-2-029",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He's interested in learning Japanese.",
+   "We decided to stay at home on Saturday.",
+   "Have you finished packing your suitcase?",
+   "She promised helping me with the move."
+  ]
+ },
+ {
+  "id": "r21b-2-030",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He keeps forgetting his password.",
+   "She enjoys to cook for her friends.",
+   "We hope to finish the project by Friday.",
+   "I stopped drinking coffee after lunch."
+  ]
+ },
+ {
+  "id": "r21b-2-031",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I was able to fix the printer myself.",
+   "Ask Tom. He might knows the answer.",
+   "We may not have time for lunch today.",
+   "You needn't bring anything to the party."
+  ]
+ },
+ {
+  "id": "r21b-2-032",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The bill can be paid by card.",
+   "Your passport must be shown at the gate.",
+   "This room can't be used during the exam.",
+   "This medicine should taken after meals."
+  ]
+ },
+ {
+  "id": "r21b-2-033",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The shoes ought to taken off.",
+   "The plants have to be watered every day.",
+   "The meeting might be moved to Friday.",
+   "Can this jacket be washed at home?"
+  ]
+ },
+ {
+  "id": "r21b-2-034",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *The accident*: Someone could have avoided the accident.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-2-035",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "We're getting the windows cleaned tomorrow.",
+   "I had my passport photo taken at the post office.",
+   "We had the house paint last week.",
+   "Where do you get your bike fixed?"
+  ]
+ },
+ {
+  "id": "r21b-2-036",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Did you have the heating checked before winter?",
+   "I haven't had my eyes test yet.",
+   "She had her phone screen replaced last week.",
+   "We're having a new kitchen fitted next month."
+  ]
+ },
+ {
+  "id": "r21b-2-037",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "She introduced her new colleague ___ the whole team.",
+  "word_cards": [
+   "to",
+   "for",
+   "—"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21b-2-038",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She sent her sister a long email.",
+   "He explained me the problem.",
+   "Could you lend me your charger?",
+   "I bought a birthday cake for my colleague."
+  ]
+ },
+ {
+  "id": "r21b-2-039",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "My parents gave the car to my brother.",
+   "Can you pass me the salt?",
+   "The agent showed us three flats.",
+   "He described me the house."
+  ]
+ },
+ {
+  "id": "r21b-2-040",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: He lent his car ___ his neighbour.",
+  "options": [
+   "—",
+   "for",
+   "to"
+  ]
+ },
+ {
+  "id": "r21b-2-041",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "It was an amazed experience, and we were all amazed.",
+   "It was an amazed experience, and we were all amazing.",
+   "It was an amazing experience, and we were all amazed.",
+   "It was an amazing experience, and we were all amazing."
+  ]
+ },
+ {
+  "id": "r21b-2-042",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "This new software is really confusing.",
+   "I am really tiring after work.",
+   "She gets annoyed when people are late.",
+   "Were you surprised by the news?"
+  ]
+ },
+ {
+  "id": "r21b-2-043",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He drives a small Japanese car.",
+   "I found a beautiful wooden box.",
+   "We sat at a big round table.",
+   "She wore a cotton white dress."
+  ]
+ },
+ {
+  "id": "r21b-2-044",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "They have a big white dog.",
+   "He wore a smart grey coat.",
+   "She bought a leather black jacket.",
+   "I found a beautiful old mirror at the market."
+  ]
+ },
+ {
+  "id": "r21b-2-045",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "We ate in an Italian small restaurant.",
+   "She has long dark hair.",
+   "They live in a beautiful old farmhouse.",
+   "I'd like a big cup of hot tea."
+  ]
+ },
+ {
+  "id": "r21b-2-046",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The soup wasn't hot ___ to eat.",
+  "options": [
+   "quite",
+   "too",
+   "very",
+   "enough"
+  ]
+ },
+ {
+  "id": "r21b-2-047",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "They usually go running before work.",
+   "We hardly ever eat out these days.",
+   "She drives very carefully at night.",
+   "He speaks Spanish fluent."
+  ]
+ },
+ {
+  "id": "r21b-2-048",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "We had ___ a lovely evening at your place yesterday.",
+  "word_cards": [
+   "such",
+   "so much",
+   "so"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21b-2-049",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Thank you for your help. You've been ___ kind.",
+  "word_cards": [
+   "such a",
+   "such",
+   "so"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21b-2-050",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "There was ___ much traffic that we were late for the wedding.",
+  "word_cards": [
+   "such",
+   "so",
+   "such a"
+  ],
+  "note": "the learner drags one card into each gap"
+ }
+]

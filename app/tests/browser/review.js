@@ -57,6 +57,12 @@ const BASE = 'http://127.0.0.1:8099';
   // look back at task 4 with Previous
   await p.click('.sess-top .linkbtn:has-text("Previous")'); await p.waitForSelector('.feedback');
   check('looking back at task 4: label says so', /Question 4 of 10 · looking back/.test(await label()), await label());
+  check('looking back: 👍 / 👎 are there (tester, 22 November)', (await p.locator('.feedback .rate .rate-b').count()) === 2);
+  await p.locator('.feedback .rate .rate-b[aria-label="Something is wrong"]').click(); await p.waitForSelector('.feedback .rate-p');
+  check('looking back: 👎 opens the reasons and the comment box', (await p.locator('.feedback .rate-p .rate-c').count()) === 5 && (await p.locator('.feedback .rate-p textarea').count()) === 1);
+  await p.locator('.feedback .rate-p .rate-c').nth(4).click(); await p.fill('.feedback .rate-p textarea', 'The example is from another sentence.');
+  await p.locator('.feedback .rate-p button:has-text("Send")').click(); await p.waitForSelector('.feedback .rate .rate-q:has-text("Thanks for your feedback.")');
+  check('looking back: the report is sent', (await p.locator('.feedback .rate-p').count()) === 0);
   const t4 = answered[3];
   const lockedAll = await p.evaluate(() => [...document.querySelectorAll('.task input')].every(i => i.disabled));
   check('task 4 is read-only and shows the saved answer', lockedAll && (t4.kind === 'order' || t4.kind === 'match' || (t4.kind === 'gap' && (await p.locator('.task input[type=text]').count()) === 0) ? true : t4.kind === 'mcq' ? (await p.locator('.task input[type=radio]:checked').getAttribute('value')) === t4.given : (await p.locator('.task input[type=text]').evaluateAll(a => a.map(x => x.value))).join('|') === [].concat(t4.given).join('|')), t4);

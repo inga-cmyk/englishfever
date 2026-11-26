@@ -1,0 +1,200 @@
+[
+ {
+  "id": "r21b-3-004",
+  "decision": "keep",
+  "why": "'so a' is a mistake the so_such card itself lists ('It was [[so a]] long film.'), so it is a believable wrong option; so / such are wrong before a singular noun here."
+ },
+ {
+  "id": "r21b-3-006",
+  "decision": "fix",
+  "why": "The answer is the indefinite_pronouns card's own example ('Offers and requests: *Would you like something to drink?*'), and a card example is never a task's answer (rules, 15 and 21 November). New offer with some-, same point; the instruction says it is a question, so the odd statement order is no longer needed.",
+  "fix": {
+   "q": "Put the words in order to make a question.",
+   "sentence": "would you like something to eat before we leave",
+   "answers": [
+    [
+     "would you like something to eat before we leave",
+     "before we leave would you like something to eat",
+     "would you like to eat something before we leave",
+     "before we leave would you like to eat something"
+    ]
+   ],
+   "why": "In an offer we use *some-*, not *any-*: *Would you like something to eat before we leave?*",
+   "why_lv": "Piedāvājumā lieto *some*-, nevis *any*-: *Would you like something to eat before we leave?*"
+  }
+ },
+ {
+  "id": "r21b-3-010",
+  "decision": "accept",
+  "why": "Fronting 'today' with the clauses swapped is correct and natural, as the r21 judge accepted for the other orders. Rejected: 'it was built in 1932 and the bridge is still used today' (pronoun before its noun) and 'used still today' (not natural).",
+  "accept": [
+   [
+    "today the bridge is still used and it was built in 1932"
+   ]
+  ]
+ },
+ {
+  "id": "r21b-3-011",
+  "decision": "accept",
+  "why": "'My laptop was stolen yesterday by someone.' is redundant but correct; 'by someone' is already accepted in the other positions.",
+  "accept": [
+   [
+    "My laptop was stolen yesterday by someone."
+   ]
+  ]
+ },
+ {
+  "id": "r21b-3-012",
+  "decision": "fix",
+  "why": "A rewrite says what to do (rules, 15 November: *Rewrite the sentence ... Start with*), as the r21 judge fixed in the laptop task; the explanation now uses this task's sentence. Answers stay (with and without 'by the company').",
+  "fix": {
+   "q": "Rewrite the sentence. Start with *This factory*: The company built this factory in 1990.",
+   "why": "*This factory* did not do the building, so we use *was* + 3rd form: *This factory was built (by the company) in 1990.*",
+   "why_lv": "Rūpnīca pati neko necēla, tāpēc lieto *was* + 3. forma: *This factory was built (by the company) in 1990.*"
+  }
+ },
+ {
+  "id": "r21b-3-016",
+  "decision": "keep",
+  "why": "'has been stolen' changes the given verb (take), as the r21 judge decided; the contracted forms are already accepted."
+ },
+ {
+  "id": "r21b-3-021",
+  "decision": "keep",
+  "why": "All correct orders are accepted. 'she prefers to cook at home because she rarely eats out' (and its fronted form) turns the cause round and does not make sense, as decided in r21."
+ },
+ {
+  "id": "r21b-3-022",
+  "decision": "accept",
+  "why": "The order task starts with 'does' and the instruction does not ask for a question, so the emphatic statement 'your brother does still work for the same company' is grammatical and must be accepted (gate rule: a word order starting with an auxiliary says 'to make a question' or accepts the statement). The 'still' at the end is already accepted.",
+  "accept": [
+   [
+    "your brother does still work for the same company"
+   ]
+  ]
+ },
+ {
+  "id": "r21b-3-023",
+  "decision": "keep",
+  "why": "'In your language what does this word mean' is already accepted. Rejected as in r21: 'what does this word in your language mean' (not natural) and 'what does your word mean in this language' (another meaning)."
+ },
+ {
+  "id": "r21b-3-024",
+  "decision": "keep",
+  "why": "The open tense is handled: does / did / will / would are all accepted and the task is already practice only."
+ },
+ {
+  "id": "r21b-3-025",
+  "decision": "keep",
+  "why": "Already practice only (A2 question, decided in r21) with all three correct forms accepted."
+ },
+ {
+  "id": "r21b-3-026",
+  "decision": "keep",
+  "why": "'Our manager don't' is a real learner mistake and the three right sentences are about different things. Level: present simple is revised at B1.1 on its own card; the level flag was decided before."
+ },
+ {
+  "id": "r21b-3-027",
+  "decision": "keep",
+  "why": "'He doesn't goes' is the present_simple card's own listed mistake ('He doesn't [[works]].'), a real one; the right sentences are about different things."
+ },
+ {
+  "id": "r21b-3-028",
+  "decision": "keep",
+  "why": "All four natural orders are already accepted; 'this chair, are you using it or can i take it' needs a comma and a fronted topic and is not a natural order."
+ },
+ {
+  "id": "r21b-3-029",
+  "decision": "fix",
+  "why": "Criterion 7: 'was looking' is not on the present_continuous card (form: '*am / is / are* + verb-ing'; only present forms). Replaced with 'looking', the card's own mistake ('I [[working]] now.'). 'looks' stays: the card contrasts simple and continuous ('A permanent situation: present simple; a temporary one: continuous').",
+  "fix": {
+   "bank": [
+    "is looking",
+    "looks",
+    "looking"
+   ]
+  }
+ },
+ {
+  "id": "r21b-3-030",
+  "decision": "keep",
+  "why": "'is going to paint' does not fit 'so there is a lot of noise' (the noise is now); the present perfect continuous and the contractions are already accepted."
+ },
+ {
+  "id": "r21b-3-031",
+  "decision": "keep",
+  "why": "'I'm not understanding' is the stative mistake the present_continuous card lists ('I [[am needing]] help.'), a real B1 mistake; in standard English it is wrong."
+ },
+ {
+  "id": "r21b-3-033",
+  "decision": "keep",
+  "why": "'is have' is the same mistake the card lists ('She is [[work]] at the moment.'), a real learner mistake; the three right sentences are about different things."
+ },
+ {
+  "id": "r21b-3-034",
+  "decision": "keep",
+  "why": "'answered' without an object is normal English (= replied); both natural orders are accepted. 'she opened it and read the letter twice' puts the pronoun before its noun: rejected."
+ },
+ {
+  "id": "r21b-3-035",
+  "decision": "keep",
+  "why": "Fixed in r21 (past perfect removed); one natural order, no flag against the answer."
+ },
+ {
+  "id": "r21b-3-037",
+  "decision": "keep",
+  "why": "'didn't used to' is on the used_to card as the mistake ('I didn't [[used to]] like fish.') and the teacher (11 November) names it as a common learner mistake that may be a wrong option."
+ },
+ {
+  "id": "r21b-3-040",
+  "decision": "accept",
+  "why": "The fronted time phrase and 'it' for 'English' are correct rewrites with since.",
+  "accept": [
+   [
+    "Since 2019 I've been learning English.",
+    "Since 2019 I have been learning English.",
+    "I've been learning it since 2019."
+   ]
+  ]
+ },
+ {
+  "id": "r21b-3-041",
+  "decision": "accept",
+  "why": "'We haven't visited that museum yet.' is a correct negative of the sentence (like 'never', which r21 accepted).",
+  "accept": [
+   [
+    "We haven't visited that museum yet."
+   ]
+  ]
+ },
+ {
+  "id": "r21b-3-042",
+  "decision": "fix",
+  "why": "Criterion 7: 'in' is not on the present_perfect card (its time words: 'ever, never, just, already, yet, for, since, so far, this week'), and the task was a near-copy of 043 (since + year). New sentence that needs for, with wrong options from the card ('*[[for]]* + a period, *[[since]]* + a starting point'); 'already twenty years' is a real Latvian-speaker mistake.",
+  "fix": {
+   "q": "Choose the correct option: My parents have had the same family doctor ___ twenty years.",
+   "correct": "for",
+   "wrong": [
+    "since",
+    "already"
+   ],
+   "why": "*for* + a period of time: *My parents have had the same family doctor for twenty years.* *since* needs a starting point (*since 2005*), and *already* does not go before a period of time.",
+   "why_lv": "*for* + laika posms: *My parents have had the same family doctor for twenty years.* *since* vajag sākuma brīdi (*since 2005*), bet *already* nelieto pirms laika posma."
+  }
+ },
+ {
+  "id": "r21b-3-043",
+  "decision": "keep",
+  "why": "Correct and from the card; the near-duplicate is removed by the fix of 042."
+ },
+ {
+  "id": "r21b-3-046",
+  "decision": "keep",
+  "why": "'How long has she learned Chinese?' changes the given verb form and is not natural for an activity still going on, as decided in r21; 'for' at the end is accepted."
+ },
+ {
+  "id": "r21b-3-047",
+  "decision": "keep",
+  "why": "Decided in r21 (instruction plain, learning task, options fixed to card forms); only one option gives a length of time."
+ }
+]

@@ -1,0 +1,579 @@
+[
+{
+"id": "r21b-3-001",
+"answer": [
+"such"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-002",
+"answer": "The new flat is such small.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-003",
+"answer": "so",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-004",
+"answer": "such a",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'so a' is a form learners hardly ever write; weak distractor."
+},
+{
+"id": "r21b-3-005",
+"answer": "so",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-006",
+"answer": "would you like something to drink",
+"other_correct": [
+"you would like something to drink"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No capital letter or question mark on the cards, so the statement 'you would like something to drink' is also correct English; question not forced.",
+"level_problem": "Very basic (A1-A2); too easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-007",
+"answer": "this software is used by millions of people",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-008",
+"answer": "The machines is checked every day.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-009",
+"answer": "The museum is visit by many tourists.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-010",
+"answer": "the bridge was built in 1932 and it is still used today",
+"other_correct": [
+[
+"the bridge was built in 1932 and today it is still used"
+],
+[
+"the bridge is still used today and it was built in 1932"
+],
+[
+"in 1932 the bridge was built and it is still used today"
+],
+[
+"today the bridge is still used and it was built in 1932"
+],
+[
+"the bridge was built in 1932 and it is used still today (less natural)"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No capitals/punctuation, so several orders work; ambiguous about which clause comes first.",
+"level_problem": "12 cards is long for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-011",
+"answer": "My laptop was stolen yesterday.",
+"other_correct": [
+"My laptop was stolen yesterday by someone."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-012",
+"answer": "This factory was built by the company in 1990.",
+"other_correct": [
+"This factory was built in 1990 by the company.",
+"This factory was built in 1990."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No 'Rewrite' verb (inconsistent with other text tasks); learner may not know the sentence must stay passive-equivalent; leaving out 'by the company' is also acceptable.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-013",
+"answer": "The bank was robbing last night.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-014",
+"answer": "The report is being write now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-015",
+"answer": "The windows in our flat is being replaced this week.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-016",
+"answer": "My umbrella has been taken.",
+"other_correct": [
+"My umbrella has been taken by someone.",
+"My umbrella's been taken."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-017",
+"answer": "The contract has signed.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-018",
+"answer": "Three people has been arrested.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-019",
+"answer": "The new rules will be introduce next month.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-020",
+"answer": "The new library will opened next spring.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-021",
+"answer": "she rarely eats out because she prefers to cook at home",
+"other_correct": [
+[
+"she prefers to cook at home because she rarely eats out"
+],
+[
+"because she prefers to cook at home she rarely eats out"
+],
+[
+"because she rarely eats out she prefers to cook at home"
+],
+[
+"she eats out rarely because she prefers to cook at home"
+],
+[
+"she eats out rarely because she prefers to cook at home"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No capitals or comma; many orders are possible (clauses can swap; 'rarely' can move).",
+"level_problem": "11 cards, two clauses; long for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-022",
+"answer": "does your brother still work for the same company",
+"other_correct": [
+[
+"does your brother work for the same company still (less natural)"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Present simple question, A2; easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-023",
+"answer": "what does this word mean in your language",
+"other_correct": [
+[
+"what does this word in your language mean"
+],
+[
+"in your language what does this word mean"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2-level question; easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-024",
+"answer": [
+"does",
+"cost"
+],
+"other_correct": [
+[
+"did",
+"cost"
+],
+[
+"will",
+"cost"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No time word, so past, present and future all fit.",
+"level_problem": "A1-A2; too easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-025",
+"answer": "What time does the bank open?",
+"other_correct": [
+"At what time does the bank open?",
+"What time does the bank open at?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A1-A2; too easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-026",
+"answer": "Our manager don't like long meetings.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Third-person -s is A1-A2; too easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-027",
+"answer": "He doesn't goes to the gym on Sundays.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Doesn't + base verb is A1-A2; too easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-028",
+"answer": "are you using this chair or can i take it",
+"other_correct": [
+[
+"can i take this chair or are you using it"
+],
+[
+"are you using it or can i take this chair"
+],
+[
+"can i take it or are you using this chair"
+],
+[
+"this chair, are you using it or can i take it (less natural)"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Many orders possible; lower-case 'i' card and no punctuation.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-029",
+"answer": [
+"is looking"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Present continuous with 'at the moment' is A2; easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-030",
+"answer": [
+"is painting"
+],
+"other_correct": [
+[
+"'s painting"
+],
+[
+"is going to paint"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'is going to paint' fits grammatically but not the noise now; 'this month' is ambiguous (could suit present perfect continuous 'has been painting').",
+"level_problem": "A2; easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-031",
+"answer": "I'm not understanding the instructions.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Informal English does sometimes use 'I'm not understanding'; arguably not wrong enough, and learners rarely make this particular mistake."
+},
+{
+"id": "r21b-3-032",
+"answer": "This umbrella is belonging to my colleague.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-033",
+"answer": "The manager is have a meeting with a client.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'is have' is a rare learner error."
+},
+{
+"id": "r21b-3-034",
+"answer": "she opened the letter and read it twice before she answered",
+"other_correct": [
+[
+"before she answered she opened the letter and read it twice"
+],
+[
+"she opened it and read the letter twice before she answered"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Only one 'it' card, so 'answered' has no object; sounds incomplete ('answered it' / 'answered the letter' not possible). Several orders possible; no capitals or comma.",
+"level_problem": "11 cards, long for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-035",
+"answer": "why didn't you tell me that you lost your job",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-036",
+"answer": [
+"did",
+"take"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-037",
+"answer": "I didn't used to like olives.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'didn't used to' is common in informal writing, though not standard; fine for a B1.2 exam-style point."
+},
+{
+"id": "r21b-3-038",
+"answer": "When I came in, the children was watching TV.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-039",
+"answer": [
+"have",
+"worked"
+],
+"other_correct": [
+[
+"have",
+"been working"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-040",
+"answer": "I have been learning English since 2019.",
+"other_correct": [
+"I've been learning English since 2019.",
+"I have learned English since 2019.",
+"I've learned English since 2019.",
+"I've learnt English since 2019.",
+"Since 2019 I've been learning English."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Learner may use present perfect simple or continuous; both correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-041",
+"answer": "We haven't visited that museum.",
+"other_correct": [
+"We have not visited that museum.",
+"We've not visited that museum.",
+"We have never visited that museum.",
+"We haven't visited that museum yet."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'never' also makes it negative; instruction does not say whether to use not.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-042",
+"answer": "since",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Near-duplicate of 043; A2-B1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-043",
+"answer": "since",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Near-duplicate of 042.",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-044",
+"answer": "I have visited that museum last weekend.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-045",
+"answer": "She has lived in Paris since five years.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-046",
+"answer": "How long has she been learning Chinese?",
+"other_correct": [
+"How long has she been learning Chinese for?",
+"How long has she learned Chinese?",
+"How long has she learnt Chinese?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-047",
+"answer": "I've been learning French for two years.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'says how long' is unnatural; better 'Which sentence gives a length of time?'. Options 2 and 3 might be read as 'how long' by weaker learners.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-048",
+"answer": "She's been knowing about the problem for weeks.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-049",
+"answer": "My neighbour has been build a garage all summer.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-3-050",
+"answer": "I hadn't never seen it before.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

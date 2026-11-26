@@ -1,0 +1,24 @@
+# Judge r21b-2: decisions
+
+- r21b-2-003 keep: reader 2's order already accepted; reader 1's needs a comma.
+- r21b-2-004 accept: "he said he was ill because he couldn't come" (excuse reading) is correct; other readers' orders rejected.
+- r21b-2-005 fix: right option "They said they had already eaten." was task 003's answer; replaced by "They said they had missed the last train."
+- r21b-2-006 keep: "will" with "the next day" is wrong under the taught step back.
+- r21b-2-007 keep: "if I had liked jazz" and "if I like jazz" rejected.
+- r21b-2-010 keep: already practice only; bank from card.
+- r21b-2-011 keep: forward "it" across "but" rejected, as in r21.
+- r21b-2-012 accept: "every sunday when i was a child we used to visit my grandparents".
+- r21b-2-013 keep: "so not used to" is slang.
+- r21b-2-014 keep: level remark only; all forms accepted.
+- r21b-2-015 keep: "Did you use to" per Murphy; "did ... used to" is a real learner mistake.
+- r21b-2-016 keep: "—" card is standard.
+- r21b-2-022 keep: both joinings already accepted.
+- r21b-2-027 keep: same mistake type as 026 is the topic's point.
+- r21b-2-028 accept: "What made that loud bang/noise?", "... in the kitchen?" variants; continuous rejected.
+- r21b-2-033 keep: missing "be" is a real mistake.
+- r21b-2-034 accept: "by somebody" variants; other modal / verb rejected.
+- r21b-2-037 keep; r21b-2-040 keep: different verbs, card options.
+- r21b-2-041 keep: "Which sentence is correct?" is fine.
+- r21b-2-043 keep: separate check, different sentences.
+- r21b-2-046 fix: "wasn't too hot to eat" is correct English; added "so I heated it up again" to rule out "too", new why / why_lv.
+- r21b-2-049 keep: only "so" fits without a noun.

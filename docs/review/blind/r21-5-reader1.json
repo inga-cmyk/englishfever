@@ -1,0 +1,771 @@
+[
+{
+"id": "r21-5-001",
+"answer": "She is wanting a new phone.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-002",
+"answer": "When did she move to London?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-003",
+"answer": "was walking",
+"other_correct": "",
+"wrong_options_that_fit": "walked (grammatical alone, but does not show the walk was already going on)",
+"instruction_problem": "The instruction names the idea (already going on), so it gives the tense away.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-004",
+"answer": "I started an hour ago and I'm still waiting.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-005",
+"answer": "How long have they been waiting?",
+"other_correct": [
+[
+"How long have they waited?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-006",
+"answer": "I've written five emails.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-007",
+"answer": "The project has been finished.",
+"other_correct": "",
+"wrong_options_that_fit": "The project has finished. (also correct and means the same)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-008",
+"answer": "The files will be checked on Monday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-009",
+"answer": "Will",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Very easy for B1.2 (one obvious auxiliary).",
+"sense_problem": ""
+},
+{
+"id": "r21-5-010",
+"answer": "If it snows tonight, the office will close.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-011",
+"answer": "arrive",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-012",
+"answer": "had left",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-013",
+"answer": "We didn't book early.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-014",
+"answer": "if the alarm goes off everyone leaves the building",
+"other_correct": [
+"everyone leaves the building if the alarm goes off"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No capital letter or comma on cards, so both orders are possible.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-015",
+"answer": "he said he couldn't come because he was ill",
+"other_correct": [
+"he couldn't come because he was ill he said (unnatural without comma)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Unusual sentence: three 'he' cards."
+},
+{
+"id": "r21-5-016",
+"answer": "she told us that she was leaving the next week",
+"other_correct": [],
+"wrong_options_that_fit": "",
+"instruction_problem": "The 'the' card forces 'the next week'; a learner expects 'next week' and cannot place 'the'.",
+"level_problem": "",
+"sense_problem": "'the next week' is correct only in reported speech; 'next week' is the more natural wording, so the extra card feels wrong."
+},
+{
+"id": "r21-5-017",
+"answer": "if I was",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-018",
+"answer": "when i was a child we used to visit my grandparents every sunday",
+"other_correct": [
+"we used to visit my grandparents every sunday when i was a child",
+"every sunday we used to visit my grandparents when i was a child",
+"when i was a child every sunday we used to visit my grandparents"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Many valid orders; check must accept all.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-019",
+"answer": [
+"Did",
+"use"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Did + used ('Did you used to') is common but non-standard; 'Do ... use' wrong.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-020",
+"answer": [
+"used",
+"living"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-021",
+"answer": [
+"working"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-022",
+"answer": "There didn't use to be a supermarket here.",
+"other_correct": "",
+"wrong_options_that_fit": "There didn't used to be a supermarket here. (common informal usage, non-standard)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-023",
+"answer": "we will leave as soon as everyone is ready",
+"other_correct": [
+"as soon as everyone is ready we will leave"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-024",
+"answer": [
+"Who"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B1.1 (subject question; wrong cards obviously odd).",
+"sense_problem": ""
+},
+{
+"id": "r21-5-025",
+"answer": [
+"be able"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-026",
+"answer": "The accident could have been avoided.",
+"other_correct": [
+"The accident could have been avoided by someone.",
+"The accident could have been prevented."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Passive with 'could have been avoided' is B1.2/B2 but fine."
+},
+{
+"id": "r21-5-027",
+"answer": [
+"repaired"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-028",
+"answer": "amazing",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-029",
+"answer": "they live in a beautiful old stone cottage",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-030",
+"answer": [
+[
+"so",
+"tired"
+],
+[
+"such a",
+"long film"
+],
+[
+"so many",
+"people"
+],
+[
+"so much",
+"noise"
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-031",
+"answer": "would you like something to drink",
+"other_correct": [
+"would you like to drink something"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-032",
+"answer": [
+"Are",
+"written"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-033",
+"answer": [
+"are",
+"checked"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-034",
+"answer": [
+[
+"Cheese",
+"is made from milk."
+],
+[
+"Glass",
+"is made from sand."
+],
+[
+"Paper",
+"is made from wood."
+],
+[
+"Bread",
+"is baked in an oven."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Bread is also made from flour; only elimination works. Easy.",
+"sense_problem": ""
+},
+{
+"id": "r21-5-035",
+"answer": "the match was cancelled because of the heavy rain",
+"other_correct": [
+"because of the heavy rain the match was cancelled"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-036",
+"answer": [
+"was",
+"built"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-037",
+"answer": [
+"Has",
+"been"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-038",
+"answer": "My umbrella has been taken.",
+"other_correct": [
+"My umbrella has been taken by someone.",
+"My umbrella has been stolen."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-039",
+"answer": [
+[
+"They will build a new school.",
+"A new school will be built."
+],
+[
+"Someone will repair the road.",
+"The road will be repaired."
+],
+[
+"They will announce the winner.",
+"The winner will be announced."
+],
+[
+"We will send the tickets.",
+"The tickets will be sent."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-040",
+"answer": "what does this word mean in your language",
+"other_correct": [
+"in your language what does this word mean",
+"what does this word in your language mean"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-041",
+"answer": [
+"employs",
+"has"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-042",
+"answer": [
+"rises",
+"sets"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Very easy; is rising/has set clearly wrong.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-043",
+"answer": [
+"checks",
+"makes"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-044",
+"answer": "How often does he visit his parents?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-045",
+"answer": [
+[
+"My brother always forgets",
+"his keys."
+],
+[
+"The shops never open",
+"on Sundays."
+],
+[
+"Our teacher usually gives",
+"us homework."
+],
+[
+"They sometimes eat",
+"out on Fridays."
+]
+],
+"other_correct": "Only by elimination: 'on Sundays' also fits 'They sometimes eat'.",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B1.",
+"sense_problem": ""
+},
+{
+"id": "r21-5-046",
+"answer": [
+[
+"What does she do?",
+"She's a nurse."
+],
+[
+"How often do you swim?",
+"Twice a week."
+],
+[
+"Where does he live?",
+"In a small town."
+],
+[
+"Do they speak German?",
+"Yes, they do."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Too easy: A1/A2 content.",
+"sense_problem": ""
+},
+{
+"id": "r21-5-047",
+"answer": "can i take this chair or are you using it",
+"other_correct": [
+"are you using this chair or can i take it",
+"can i take it or are you using this chair",
+"are you using it or can i take this chair"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Many valid orders.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-048",
+"answer": [
+"is opening",
+"is"
+],
+"other_correct": [
+[
+"was opening",
+"is"
+]
+],
+"wrong_options_that_fit": "opens (marginal, scheduled-event reading); was opening (tense mismatch, less natural)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-049",
+"answer": [
+"hasn't finished"
+],
+"other_correct": [
+[
+"has not finished"
+],
+[
+"didn't finish"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Gap answers should accept both contracted and full forms; American: didn't finish yet.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-050",
+"answer": [
+[
+"I have never tried",
+"scuba diving."
+],
+[
+"She has twice won",
+"a national prize."
+],
+[
+"They have often stayed",
+"in that hotel."
+],
+[
+"We have never felt",
+"so tired."
+]
+],
+"other_correct": "I have never felt so tired + We have never tried scuba diving (swap) also correct.",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Two correct pairings: I/We interchangeable.",
+"sense_problem": ""
+},
+{
+"id": "r21-5-051",
+"answer": "I haven't been sleeping well.",
+"other_correct": [
+"I have not been sleeping well."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-052",
+"answer": "When Karen arrived, we were having dinner.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'we had dinner' could also mean dinner began on her arrival; instruction gives 'already started' hint.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-053",
+"answer": [
+"was walking",
+"saw"
+],
+"other_correct": [
+[
+"walked",
+"saw"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'walked' is less natural but correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-054",
+"answer": "When Sarah arrived, Paul had left.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-055",
+"answer": [
+"hadn't cleaned"
+],
+"other_correct": [
+[
+"had not cleaned"
+],
+[
+"hadn't been cleaning"
+],
+[
+"had not been cleaning"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-056",
+"answer": "when i arrived she had already left",
+"other_correct": [
+"she had already left when i arrived",
+"when she arrived i had already left",
+"i had already left when she arrived"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Meaning of who left is not fixed; all four valid.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-057",
+"answer": "we left the house when it was raining",
+"other_correct": [
+"when it was raining we left the house",
+"it was raining when we left the house",
+"when we left the house it was raining"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-058",
+"answer": "had to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B1.",
+"sense_problem": ""
+},
+{
+"id": "r21-5-059",
+"answer": [
+"couldn't"
+],
+"other_correct": [
+[
+"could not"
+],
+[
+"wasn't able to"
+],
+[
+"was not able to"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "With (can) hint, 'wasn't able to' is equally correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-5-060",
+"answer": [
+"was"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Trivial for B1.2.",
+"sense_problem": ""
+}
+]

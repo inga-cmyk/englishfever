@@ -1498,6 +1498,7 @@
       var nextBtn = h('button', { class: 'btn block nextbtn', onclick: function () { next(r); } }, nextText);
       if (reviewing) {   // looking back at an earlier task: move between answered tasks or go back to where we were
         var older = olderOf(at), newer = H.filter(function (e) { return e.n > at; }).sort(function (a, b) { return a.n - b.n; })[0];
+        if (ses.mode !== 'placement') fb.appendChild(h('div', { class: 'rate-wrap' }, rateRow()));   // 👍 / 👎 also on a task looked at again (tester, 22 November: after Continue the 👎 was gone)
         fb.appendChild(h('div', { class: 'nextrow' },
           h('span', { class: 'row', style: 'gap:8px' },
             older ? h('button', { class: 'btn ghost small', onclick: function () { viewSession(older.n); } }, '‹ Previous') : null,
@@ -1584,7 +1585,8 @@
       });
       down.addEventListener('click', function () {
         var reason = '';
-        var continueButton = box.closest('.fb-foot').querySelector('.nextbtn');
+        var foot = box.closest('.fb-foot') || box.parentNode;   // the panel under a fresh answer, or the row of a task looked at again
+        var continueButton = foot.querySelector('.nextbtn');
         if (continueButton) continueButton.disabled = true;
         function unlockContinue() { if (continueButton) continueButton.disabled = false; }
         var chips = RATE_REASONS.map(function (x) {
@@ -1604,8 +1606,8 @@
             .catch(function (e) { send.disabled = false; UI.toast(e.message); });
         });
         box.hidden = true;
-        var foot = box.closest('.fb-foot'); foot.insertBefore(panel, foot.firstChild);
-        var sp = foot.parentNode.parentNode.querySelector('.fb-spacer'); if (sp) sp.style.height = (foot.parentNode.offsetHeight + 12) + 'px';
+        foot.insertBefore(panel, foot.firstChild);
+        var sp = foot.parentNode && foot.parentNode.parentNode && foot.parentNode.parentNode.querySelector('.fb-spacer'); if (sp) sp.style.height = (foot.parentNode.offsetHeight + 12) + 'px';
         ta.focus();
       });
       box.append(h('span', { class: 'rate-q' }, 'Was this question OK?'), up, down);

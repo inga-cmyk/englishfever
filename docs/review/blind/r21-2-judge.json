@@ -1,0 +1,717 @@
+[
+ {
+  "id": "r21-2-001",
+  "decision": "practice_only",
+  "why": "Correct and unambiguous, but a five-word A2-style frame (the card's own watch line is *I [[know]] the answer*) with A2 distractors (*not know, doesn't know*); too easy for B1.1, keep for practice."
+ },
+ {
+  "id": "r21-2-002",
+  "decision": "remove",
+  "why": "It repeats the card's example (present_simple card: \"Water [[boils]] at 100 degrees.\"), is an A2 fact at B1.1, and *is boil* is a form nobody writes; nothing B1 to keep without a new task."
+ },
+ {
+  "id": "r21-2-003",
+  "decision": "keep",
+  "why": "One clear mistake (*is owning*, a real learner error; card: \"State verbs ... stay simple\"); the three right sentences are about different things."
+ },
+ {
+  "id": "r21-2-004",
+  "decision": "fix",
+  "why": "No instruction stem and quoted options; *I wanted a coffee now* is an odd, half-correct sentence (polite past *I wanted a coffee* is English). Ask *Which sentence is correct?* and drop it.",
+  "fix": {
+   "q": "Which sentence is correct?",
+   "correct": "I want a coffee.",
+   "wrong": [
+    "I'm wanting a coffee.",
+    "I am want a coffee."
+   ],
+   "why": "*want* is a state verb, so it stays simple: *I want a coffee.*",
+   "why_lv": "*want* ir stāvokļa darbības vārds, tāpēc paliek Present Simple: *I want a coffee.*"
+  }
+ },
+ {
+  "id": "r21-2-005",
+  "decision": "fix",
+  "why": "Reader is right: without a past time, *She opens the door and walks in* (and the perfect) also describe the order. A time word decides it.",
+  "fix": {
+   "q": "Choose the correct option: Yesterday she ___ the door and walked in.",
+   "correct": "opened",
+   "wrong": [
+    "was opening",
+    "has opened",
+    "opens"
+   ],
+   "why": "A series of finished actions in the past (*yesterday*): past simple: *Yesterday she opened the door and walked in.*",
+   "why_lv": "Pabeigtu darbību virkne pagātnē (*yesterday*): Past Simple: *Yesterday she opened the door and walked in.*"
+  }
+ },
+ {
+  "id": "r21-2-007",
+  "decision": "fix",
+  "why": "Gate card_words: *from* (and *ago*) are not on the present_perfect card, which teaches \"*[[for]]* + a period, *[[since]]* + a starting point\" and signals \"ever, never, just, already, yet, for, since\". Use *already* (the Latvian *jau piecus gadus* mistake) instead.",
+  "fix": {
+   "wrong": [
+    "since",
+    "already"
+   ],
+   "why": "*for* + a period of time: *I've worked here for five years.* *since* + a starting point (*since 2020*). *already* does not go before a period of time.",
+   "why_lv": "*for* + laika posms: *I've worked here for five years.* *since* + sākuma brīdis (*since 2020*). *already* nelieto pirms laika posma."
+  }
+ },
+ {
+  "id": "r21-2-008",
+  "decision": "keep",
+  "why": "Reader agrees with the key; *We booked a table yesterday* rules out *I'll meet*; one answer."
+ },
+ {
+  "id": "r21-2-009",
+  "decision": "fix",
+  "why": "The first sentence spells out the logic (superfluous, gives the answer away); *although* is not on the cond_first card (signals \"if, unless, as soon as, when, in case\").",
+  "fix": {
+   "q": "Choose the correct option: We won't finish on time ___ we start now.",
+   "correct": "unless",
+   "wrong": [
+    "if",
+    "when"
+   ],
+   "why": "*Unless* = *if ... not*: *We won't finish on time unless we start now* (= if we don't start now).",
+   "why_lv": "*Unless* = *if ... not*: *We won't finish on time unless we start now* (= ja nesāksim tūlīt)."
+  }
+ },
+ {
+  "id": "r21-2-010",
+  "decision": "fix",
+  "why": "Gate mistake: the right sentences are near-copies of the wrong one. Three right sentences about different things.",
+  "fix": {
+   "wrong": [
+    "She would travel more if she didn't have a dog.",
+    "What would you say if your boss offered you a promotion?",
+    "If we had a garden, we could grow vegetables."
+   ]
+  }
+ },
+ {
+  "id": "r21-2-011",
+  "decision": "fix",
+  "why": "Gate mistake (near-copies), the odd *If I hadn't known...*, and the wrong sentence is the cond_third card's own mistake (\"If I [[would have known]], I would have called.\"). New mistake sentence, three different right ones.",
+  "fix": {
+   "correct": "If I would have seen the message, I would have replied.",
+   "wrong": [
+    "If it hadn't rained, we would have eaten outside.",
+    "She wouldn't have got lost if she had taken a map.",
+    "What would you have done if the bank had said no?"
+   ],
+   "why": "Do not use *would* in the if-part: *If I had seen the message, I would have replied.*",
+   "why_lv": "*If* daļā nelieto *would*: *If I had seen the message, I would have replied.*"
+  }
+ },
+ {
+  "id": "r21-2-012",
+  "decision": "fix",
+  "why": "Gate mistake (near-copies); the wrong sentence is also almost the rep_statements card mistake (\"He [[said me]] that he was tired.\"). New sentence, three different right ones.",
+  "fix": {
+   "correct": "She said me that the meeting was cancelled.",
+   "wrong": [
+    "He told us he had found a new job.",
+    "They said they would call back later.",
+    "Anna told me she was moving abroad."
+   ],
+   "why": "After *said* we do not put a person directly: *She told me that the meeting was cancelled* or *She said to me that ...*",
+   "why_lv": "Pēc *said* personu tieši nelieto: *She told me that the meeting was cancelled* vai *She said to me that ...*"
+  }
+ },
+ {
+  "id": "r21-2-013",
+  "decision": "fix",
+  "why": "Gate mistake: *We visited the Old Town last summer* is a near-copy; only three options. Three right sentences about different things (articles_b1 card: meals, languages, mountain ranges).",
+  "fix": {
+   "wrong": [
+    "My sister is learning Italian.",
+    "We had lunch near the river.",
+    "They went skiing in the Alps."
+   ],
+   "why": "Cities take no article: *We visited Riga last summer.*",
+   "why_lv": "Pilsētām artikulu nelieto: *We visited Riga last summer.*"
+  }
+ },
+ {
+  "id": "r21-2-014",
+  "decision": "fix",
+  "why": "Gate card_words: *Unless, Because, Until* are not on the cond_zero card (signals \"if, when, whenever, every time\"), and *When* also fits; the sentence copies the card use \"If you [[mix]] red and blue, you [[get]] purple.\" Test the card's point, the verb form.",
+  "fix": {
+   "q": "Choose the correct option: If you leave milk out of the fridge all day, it ___ sour.",
+   "correct": "goes",
+   "wrong": [
+    "went",
+    "would go"
+   ],
+   "why": "A general truth: present simple in both parts: *If you leave milk out of the fridge all day, it goes sour.*",
+   "why_lv": "Vispārīga patiesība: abās daļās Present Simple: *If you leave milk out of the fridge all day, it goes sour.*"
+  }
+ },
+ {
+  "id": "r21-2-015",
+  "decision": "fix",
+  "why": "Gate card_words: *unless, so, although* are not on the cond_zero card (signals \"if, when, whenever, every time\"); readers note *when / whenever* also fit. Test the verb form in the if-part instead (card mistake \"If you [[will heat]] ice\").",
+  "fix": {
+   "q": "Choose the correct option: I get a headache if I ___ too much coffee.",
+   "correct": "drink",
+   "wrong": [
+    "will drink",
+    "drank"
+   ],
+   "why": "A general truth: present simple in both parts, no *will*: *I get a headache if I drink too much coffee.*",
+   "why_lv": "Vispārīga patiesība: abās daļās Present Simple, bez *will*: *I get a headache if I drink too much coffee.*"
+  }
+ },
+ {
+  "id": "r21-2-016",
+  "decision": "fix",
+  "why": "Gate mistake: all four sentences are the same click/page sentence; reader notes polite *If you will click here* exists. Use a subject where *will* can only be the mistake, and three different right sentences.",
+  "fix": {
+   "correct": "If the battery will get low, the screen goes dark.",
+   "wrong": [
+    "My cat hides when it hears thunder.",
+    "If people don't drink enough water, they get headaches.",
+    "We eat outside when the weather is warm."
+   ],
+   "why": "In a general truth the *if*-part uses the present simple, not *will*: *If the battery gets low, the screen goes dark.*",
+   "why_lv": "Vispārīgā patiesībā *if* daļā lieto Present Simple, nevis *will*: *If the battery gets low, the screen goes dark.*"
+  }
+ },
+ {
+  "id": "r21-2-017",
+  "decision": "fix",
+  "why": "Gate card_words: *so, than* are not on the cond_first card (signals \"if, unless, as soon as, when, in case\"); the sentence is also the card's own example (\"[[Unless]] you hurry, you'll miss the bus.\"). New sentence, card words only; *until* avoided because it would fit.",
+  "fix": {
+   "q": "Choose the correct option: They won't let you in ___ you show your ticket.",
+   "correct": "unless",
+   "wrong": [
+    "if",
+    "when",
+    "as soon as"
+   ],
+   "why": "*Unless* = *if ... not*: *They won't let you in unless you show your ticket* (= if you don't show it).",
+   "why_lv": "*Unless* = *if ... not*: *They won't let you in unless you show your ticket* (= ja neparādīsi biļeti)."
+  }
+ },
+ {
+  "id": "r21-2-018",
+  "decision": "fix",
+  "why": "Gate mistake: the three right sentences are copies of the wrong one. Three right sentences about different things.",
+  "fix": {
+   "wrong": [
+    "If I were you, I would take the job.",
+    "They would visit us more often if we lived closer.",
+    "Would you move abroad if you had the chance?"
+   ]
+  }
+ },
+ {
+  "id": "r21-2-019",
+  "decision": "fix",
+  "why": "Gate mistake (near-copies); it repeated 011's mistake and the card use (\"If I [[had studied]], I [[would have passed]].\"). New mistake (a real one: *had* + past form), three different right sentences.",
+  "fix": {
+   "correct": "If she had knew about the party, she would have come.",
+   "wrong": [
+    "They would have won if their best player hadn't been injured.",
+    "Would you have helped me if I had asked?",
+    "If the shop had been open, I would have bought some bread."
+   ],
+   "why": "After *had* we need the 3. form: *If she had known about the party, she would have come.*",
+   "why_lv": "Pēc *had* vajag 3. formu: *If she had known about the party, she would have come.*"
+  }
+ },
+ {
+  "id": "r21-2-020",
+  "decision": "fix",
+  "why": "Gate mistake (near-copies), the odd *we'd have caught it*, and the sentence is the cond_third card's example (\"If we had left earlier, we wouldn't have missed the train.\"). New sentence, three different right ones.",
+  "fix": {
+   "correct": "If he had booked earlier, he wouldn't have pay so much.",
+   "wrong": [
+    "If I had seen the sign, I would have stopped.",
+    "She would have called you if she had had your number.",
+    "If you hadn't reminded me, I would have forgotten her birthday."
+   ],
+   "why": "After *wouldn't have* we need the 3. form: *If he had booked earlier, he wouldn't have paid so much.*",
+   "why_lv": "Pēc *wouldn't have* vajag 3. formu: *If he had booked earlier, he wouldn't have paid so much.*"
+  }
+ },
+ {
+  "id": "r21-2-021",
+  "decision": "fix",
+  "why": "Gate card_words: *many* is not on the articles_b1 card (\"No article ... *the*: a particular one\"; watch \"She plays [[the]] piano\") and is another kind of word. Replace it with *—* (no article), as the topic's other tasks do (\"— | A\").",
+  "fix": {
+   "bank": [
+    "the",
+    "an",
+    "—"
+   ]
+  }
+ },
+ {
+  "id": "r21-2-022",
+  "decision": "fix",
+  "why": "Gate mistake (*He lives in the Netherlands* is a near-copy) and the wrong sentence is the card's own mistake (\"He lives in [[the Latvia]].\"). New sentence, three different right ones.",
+  "fix": {
+   "correct": "My parents moved to the Canada last year.",
+   "wrong": [
+    "She works in the Netherlands.",
+    "We had breakfast on the balcony.",
+    "We took a boat trip on the Danube."
+   ],
+   "why": "No article with most countries: *My parents moved to Canada last year.* But: *the Netherlands, the UK*.",
+   "why_lv": "Ar lielāko daļu valstu nosaukumu artikula nav: *My parents moved to Canada last year.* Bet: *the Netherlands, the UK*."
+  }
+ },
+ {
+  "id": "r21-2-023",
+  "decision": "fix",
+  "why": "Gate mistake: the right sentences are copies (*... time for hobbies*). Three right sentences about different things, quantity-card words only.",
+  "fix": {
+   "wrong": [
+    "There aren't many shops in our village.",
+    "Would you like some more coffee?",
+    "We have a little time before the train leaves."
+   ]
+  }
+ },
+ {
+  "id": "r21-2-024",
+  "decision": "fix",
+  "why": "Gate mistake (near-copies); *My sister who lives in Paris* is correct but confusing; the wrong sentence is almost the card's mistake (\"My brother, [[that]] lives in Berlin, is a nurse.\"). New sentence, three different right ones.",
+  "fix": {
+   "correct": "Our new manager, that started in May, is from Spain.",
+   "wrong": [
+    "The hotel where we stayed was right next to the beach.",
+    "I have a friend whose father is a pilot.",
+    "Riga, which is the capital of Latvia, has a beautiful old town."
+   ],
+   "why": "Extra information about a person we already know goes between commas, with *who*, never *that*: *Our new manager, who started in May, is from Spain.*",
+   "why_lv": "Papildu informācija par jau zināmu cilvēku ir starp komatiem, ar *who*, nekad ar *that*: *Our new manager, who started in May, is from Spain.*"
+  }
+ },
+ {
+  "id": "r21-2-025",
+  "decision": "fix",
+  "why": "Gate mistake (near-copies); *after I will have spoken* is a form learners rarely write. Use the card's real mistake type (\"when I [[will arrive]]\") in a new sentence, three different right ones.",
+  "fix": {
+   "correct": "Let's wait here until the rain will stop.",
+   "wrong": [
+    "I'll call you after I've spoken to the manager.",
+    "Please lock the door before you leave.",
+    "While I'm away, my sister will water the plants."
+   ],
+   "why": "After *until* (and *when, as soon as, before, after*) we use the present simple for the future, not *will*: *Let's wait here until the rain stops.*",
+   "why_lv": "Pēc *until* (un *when, as soon as, before, after*) nākotnei lieto Present Simple, nevis *will*: *Let's wait here until the rain stops.*"
+  }
+ },
+ {
+  "id": "r21-2-026",
+  "decision": "fix",
+  "why": "Gate mistake (near-copy) and the reader's level flag: tags after *ought to* and *had better* are not on the question_tags card (\"*is / are / was / were, have / has, can, will, should* ... *do / does / did*\"). Use the card's own mistake type (\"You like tea, [[isn't it]]?\").",
+  "fix": {
+   "correct": "Your brother lives in Oslo, isn't he?",
+   "wrong": [
+    "You can drive, can't you?",
+    "They weren't at the party, were they?",
+    "Let's take a break, shall we?"
+   ],
+   "why": "Present simple: the tag uses *doesn't*: *Your brother lives in Oslo, doesn't he?*",
+   "why_lv": "Present Simple: tag ar *doesn't*: *Your brother lives in Oslo, doesn't he?*"
+  }
+ },
+ {
+  "id": "r21-2-027",
+  "decision": "fix",
+  "why": "Gate example: the explanation uses *Remember to take it* / *seeing it*. *to see* is no answer here (*for the first time* makes it a memory). New explanation with the task's sentence.",
+  "fix": {
+   "why": "*forget* + *-ing* = a memory of something you did: *I'll never forget seeing the Eiffel Tower for the first time.* *forget* + *to* = something you must do.",
+   "why_lv": "*forget* + *-ing* = atmiņa par to, ko izdarīji: *I'll never forget seeing the Eiffel Tower for the first time.* *forget* + *to* = kaut kas, kas jāizdara."
+  }
+ },
+ {
+  "id": "r21-2-028",
+  "decision": "fix",
+  "why": "The reader's flag is rejected: *Rewrite with forgot* is a rewrite task, the change is the task (copy rule exemption), and the learner still has to choose *to lock*. Gate example: the explanation's *I'll never forget seeing it* is from another task; new explanation.",
+  "fix": {
+   "why": "*forget* + *to* = something you had to do and did not do: *I forgot to lock the door.* *forget* + *-ing* is a memory of something you did.",
+   "why_lv": "*forget* + *to* = kaut kas, kas bija jāizdara, bet netika izdarīts: *I forgot to lock the door.* *forget* + *-ing* ir atmiņa par to, ko izdarīji."
+  }
+ },
+ {
+  "id": "r21-2-029",
+  "decision": "fix",
+  "why": "Gate mistake (near-copies) and the sentence is the passive_modals card's example (\"Tickets can be bought online.\"). New sentence with the card's mistake type (\"The report [[must finished]] today\"), three different right ones.",
+  "fix": {
+   "correct": "This medicine should taken after meals.",
+   "wrong": [
+    "The bill can be paid by card.",
+    "Your passport must be shown at the gate.",
+    "This room can't be used during the exam."
+   ],
+   "why": "modal + *be* + 3. form: *This medicine should be taken after meals.*",
+   "why_lv": "modālais darbības vārds + *be* + 3. forma: *This medicine should be taken after meals.*"
+  }
+ },
+ {
+  "id": "r21-2-030",
+  "decision": "fix",
+  "why": "Gate mistake: the three right sentences are copies about the shoes. Three different right ones; explanation with the task's own sentence.",
+  "fix": {
+   "wrong": [
+    "The meeting might be moved to Friday.",
+    "Can this jacket be washed at home?",
+    "The plants have to be watered every day."
+   ],
+   "why": "modal + *be* + 3. form, also after *ought to*: *The shoes ought to be taken off.*",
+   "why_lv": "modālais darbības vārds + *be* + 3. forma, arī pēc *ought to*: *The shoes ought to be taken off.*"
+  }
+ },
+ {
+  "id": "r21-2-031",
+  "decision": "fix",
+  "why": "Gate card_words: *in* (and *at*) are not taught on the two_objects card (\"*to*: give, send ... *for*: buy, make ...\"); the sentence is also the card's own example (\"*She explained the problem to me.*\"). New sentence with *introduce* (on the card), bank *to / for / —*.",
+  "fix": {
+   "q": "She introduced her new colleague ___ the whole team.",
+   "answers": [
+    [
+     "to"
+    ]
+   ],
+   "bank": [
+    "to",
+    "for",
+    "—"
+   ],
+   "why": "*explain, suggest, describe, introduce*: first the thing or the person you introduce, then *to* + person: *She introduced her new colleague to the whole team.*",
+   "why_lv": "*explain, suggest, describe, introduce*: vispirms lieta vai cilvēks, ko iepazīstina, tad *to* + persona: *She introduced her new colleague to the whole team.*"
+  }
+ },
+ {
+  "id": "r21-2-032",
+  "decision": "fix",
+  "why": "Gate card_words: *in* (and *at, of*) are not on the two_objects card, which teaches *to* vs *for* (\"I bought a present [[to]] my sister\" is its mistake). Use *for* and *—*.",
+  "fix": {
+   "wrong": [
+    "for",
+    "—"
+   ],
+   "why": "*lend* + thing + *to* + person: *He lent his car to his neighbour* (= *He lent his neighbour his car*). *for* goes with *buy, make, cook*.",
+   "why_lv": "*lend* + lieta + *to* + persona: *He lent his car to his neighbour* (= *He lent his neighbour his car*). *for* lieto ar *buy, make, cook*."
+  }
+ },
+ {
+  "id": "r21-2-033",
+  "decision": "fix",
+  "why": "Gate mistake (near-copies) and the sentence is the adj_order card's example (\"a beautiful small black leather bag\"). New sentence, three different right ones.",
+  "fix": {
+   "correct": "She wore a cotton white dress.",
+   "wrong": [
+    "We sat at a big round table.",
+    "He drives a small Japanese car.",
+    "I found a beautiful wooden box."
+   ],
+   "why": "Colour before material: *She wore a white cotton dress.* Order: opinion, size, age, shape, colour, origin, material.",
+   "why_lv": "Krāsa pirms materiāla: *She wore a white cotton dress.* Secība: viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls."
+  }
+ },
+ {
+  "id": "r21-2-034",
+  "decision": "fix",
+  "why": "Gate example: the explanation's table phrase is not this task. The instruction is acceptable (the labels name what is matched); new explanation with the task's own words.",
+  "fix": {
+   "why": "*huge* = size, *round* = shape, *Spanish* = origin, *silk* = material. Before a noun the order is: opinion, size, age, shape, colour, origin, material.",
+   "why_lv": "*huge* = izmērs, *round* = forma, *Spanish* = izcelsme, *silk* = materiāls. Pirms lietvārda secība ir: viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls."
+  }
+ },
+ {
+  "id": "r21-2-035",
+  "decision": "fix",
+  "why": "Gate card_words: *very* is not on the card (so_such card: \"*so* + adjective or adverb\", \"*such* + (*a / an*) + (adjective) + noun\", \"*so much / so many* + noun\", mistakes \"It was [[so a]] long film\", \"There were [[so much]] people\"; *very* and *too* are not on it.); the sentence is the card's example (\"It was such a long film\"). New sentence, bank from the card.",
+  "fix": {
+   "q": "We had ___ a lovely evening at your place yesterday.",
+   "answers": [
+    [
+     "such"
+    ]
+   ],
+   "bank": [
+    "such",
+    "so",
+    "so much"
+   ],
+   "why": "*such* + *a* + adjective + noun: *We had such a lovely evening.* *so* goes before an adjective with no noun.",
+   "why_lv": "*such* + *a* + īpašības vārds + lietvārds: *We had such a lovely evening.* *so* lieto pirms īpašības vārda bez lietvārda."
+  }
+ },
+ {
+  "id": "r21-2-036",
+  "decision": "fix",
+  "why": "Gate card_words: *too* is not on the card (so_such card: \"*so* + adjective or adverb\", \"*such* + (*a / an*) + (adjective) + noun\", \"*so much / so many* + noun\", mistakes \"It was [[so a]] long film\", \"There were [[so much]] people\"; *very* and *too* are not on it.); the sentence nearly copies the card use \"I was [[so tired that]] I fell asleep at once\", and *so ... that* is a B1.2 point in the map. New B1.1 sentence.",
+  "fix": {
+   "q": "Thank you for your help. You've been ___ kind.",
+   "answers": [
+    [
+     "so"
+    ]
+   ],
+   "bank": [
+    "so",
+    "such",
+    "such a"
+   ],
+   "why": "*so* + adjective with no noun: *You've been so kind.* *such (a)* needs a noun.",
+   "why_lv": "*so* + īpašības vārds bez lietvārda: *You've been so kind.* *such (a)* vajag lietvārdu."
+  }
+ },
+ {
+  "id": "r21-2-037",
+  "decision": "fix",
+  "why": "Gate card_words: *very* is not on the card (so_such card: \"*so* + adjective or adverb\", \"*such* + (*a / an*) + (adjective) + noun\", \"*so much / so many* + noun\", mistakes \"It was [[so a]] long film\", \"There were [[so much]] people\"; *very* and *too* are not on it.); *so much noise* is the card's example. New sentence, bank from the card.",
+  "fix": {
+   "q": "There was ___ much traffic that we were late for the wedding.",
+   "answers": [
+    [
+     "so"
+    ]
+   ],
+   "bank": [
+    "so",
+    "such",
+    "such a"
+   ],
+   "why": "*so much* + uncountable noun: *There was so much traffic that we were late for the wedding.*",
+   "why_lv": "*so much* + neskaitāms lietvārds: *There was so much traffic that we were late for the wedding.*"
+  }
+ },
+ {
+  "id": "r21-2-038",
+  "decision": "fix",
+  "why": "Gate card_words: *very* is not on the card (so_such card: \"*so* + adjective or adverb\", \"*such* + (*a / an*) + (adjective) + noun\", \"*so much / so many* + noun\", mistakes \"It was [[so a]] long film\", \"There were [[so much]] people\"; *very* and *too* are not on it.). Replace it with *so much*; the sentence and the explanation stay.",
+  "fix": {
+   "bank": [
+    "such",
+    "so",
+    "so much"
+   ]
+  }
+ },
+ {
+  "id": "r21-2-039",
+  "decision": "fix",
+  "why": "Gate card_words: *too* is not on the card (so_such card: \"*so* + adjective or adverb\", \"*such* + (*a / an*) + (adjective) + noun\", \"*so much / so many* + noun\", mistakes \"It was [[so a]] long film\", \"There were [[so much]] people\"; *very* and *too* are not on it.); reader: duplicate of 036 and near the card use. New B1.1 sentence without the B1.2 *that* result.",
+  "fix": {
+   "q": "Choose the correct option: The hotel staff were ___ friendly to us.",
+   "correct": "so",
+   "wrong": [
+    "such",
+    "such a",
+    "so many"
+   ],
+   "why": "*so* + adjective with no noun: *The hotel staff were so friendly to us.*",
+   "why_lv": "*so* + īpašības vārds bez lietvārda: *The hotel staff were so friendly to us.*"
+  }
+ },
+ {
+  "id": "r21-2-040",
+  "decision": "fix",
+  "why": "Gate card_words: *very* is not on the card (so_such card: \"*so* + adjective or adverb\", \"*such* + (*a / an*) + (adjective) + noun\", \"*so much / so many* + noun\", mistakes \"It was [[so a]] long film\", \"There were [[so much]] people\"; *very* and *too* are not on it.); reader: duplicate of 035. Let the learner place *a* (card: \"*such* + (*a / an*) + (adjective) + noun\").",
+  "fix": {
+   "q": "Choose the correct option: It was ___ surprise to see him at the party.",
+   "correct": "such a",
+   "wrong": [
+    "so",
+    "such",
+    "so a"
+   ],
+   "why": "*such a* + singular noun: *It was such a surprise to see him at the party.*",
+   "why_lv": "*such a* + vienskaitļa lietvārds: *It was such a surprise to see him at the party.*"
+  }
+ },
+ {
+  "id": "r21-2-041",
+  "decision": "fix",
+  "why": "Gate card_words: *very* is not on the card (so_such card: \"*so* + adjective or adverb\", \"*such* + (*a / an*) + (adjective) + noun\", \"*so much / so many* + noun\", mistakes \"It was [[so a]] long film\", \"There were [[so much]] people\"; *very* and *too* are not on it.). Replace it with *so much*.",
+  "fix": {
+   "wrong": [
+    "such",
+    "such a",
+    "so much"
+   ]
+  }
+ },
+ {
+  "id": "r21-2-042",
+  "decision": "fix",
+  "why": "Gate mistake: *Three people have been arrested* is a near-copy. Three right sentences about different things.",
+  "fix": {
+   "wrong": [
+    "The road has been closed since Monday.",
+    "Has your bike been repaired yet?",
+    "My wallet has been stolen!"
+   ]
+  }
+ },
+ {
+  "id": "r21-2-043",
+  "decision": "fix",
+  "why": "Gate mistake: the right sentences copy the wrong one. Three different right sentences.",
+  "fix": {
+   "wrong": [
+    "Your new card will be sent to you by post.",
+    "Will the museum be closed on Monday?",
+    "The match won't be shown on TV."
+   ]
+  }
+ },
+ {
+  "id": "r21-2-044",
+  "decision": "fix",
+  "why": "Gate mistake (near-copies) and the sentence is the future_passive card's mistake (\"The results [[will announced]] on Friday\"). New sentence, three different right ones.",
+  "fix": {
+   "correct": "The new library will opened next spring.",
+   "wrong": [
+    "The road will be repaired in August.",
+    "Will lunch be served on the plane?",
+    "The old bridge won't be used any more."
+   ],
+   "why": "We need *be*: *The new library will be opened next spring.*",
+   "why_lv": "Vajag *be*: *The new library will be opened next spring.*"
+  }
+ },
+ {
+  "id": "r21-2-045",
+  "decision": "fix",
+  "why": "Gate mistake: three copies of the *When I came in* sentence. Three different right sentences (not the card's *I was cooking when the phone rang*).",
+  "fix": {
+   "wrong": [
+    "She was driving to work when the accident happened.",
+    "What were you doing at eight last night?",
+    "It wasn't raining when we left the house."
+   ]
+  }
+ },
+ {
+  "id": "r21-2-047",
+  "decision": "fix",
+  "why": "Gate card_words: *from* (and *ago*) are not on the present_perfect card; reader: near-duplicate of 007. Test *since* instead; *in 2019* is the card's mistake type (a finished time: \"I [[have seen]] him yesterday\").",
+  "fix": {
+   "q": "Choose the correct option: She has worked here ___ 2019.",
+   "correct": "since",
+   "wrong": [
+    "for",
+    "in"
+   ],
+   "why": "*since* + a starting point: *She has worked here since 2019.* *for* goes with a period of time. *in 2019* is a finished time and needs the past simple.",
+   "why_lv": "*since* + sākuma brīdis: *She has worked here since 2019.* *for* lieto ar laika posmu. *in 2019* ir pabeigts laiks, tam vajag Past Simple."
+  }
+ },
+ {
+  "id": "r21-2-048",
+  "decision": "fix",
+  "why": "Gate mistake (near-copy) and the wrong sentence is the card's own mistake (\"I [[have been knowing]] him for years.\"). New sentence, three different right ones.",
+  "fix": {
+   "correct": "She's been knowing about the problem for weeks.",
+   "wrong": [
+    "They've been learning Spanish since January.",
+    "How long have you been waiting?",
+    "We've owned this flat since 2015."
+   ],
+   "why": "*Know* is a state verb: *She's known about the problem for weeks.*",
+   "why_lv": "*Know* ir stāvokļa darbības vārds: *She's known about the problem for weeks.*"
+  }
+ },
+ {
+  "id": "r21-2-049",
+  "decision": "fix",
+  "why": "Gate mistake (near-copies) and the sentence nearly copies the card's mistake (\"She has been [[work]] all day.\"). New sentence, three different right ones.",
+  "fix": {
+   "correct": "My neighbour has been build a garage all summer.",
+   "wrong": [
+    "It has been snowing for two days.",
+    "How long have you been learning to drive?",
+    "They've been living in Riga for two years."
+   ],
+   "why": "After *been* the verb needs *-ing*: *My neighbour has been building a garage all summer.*",
+   "why_lv": "Pēc *been* darbības vārdam vajag *-ing*: *My neighbour has been building a garage all summer.*"
+  }
+ },
+ {
+  "id": "r21-2-051",
+  "decision": "fix",
+  "why": "*left* is right (past simple with clock times; *had left* is not offered and not needed). But *was leaving* can be read as a past plan; replace it with a clearly wrong form.",
+  "fix": {
+   "wrong": [
+    "leaving",
+    "has left",
+    "is leaving"
+   ]
+  }
+ },
+ {
+  "id": "r21-2-053",
+  "decision": "fix",
+  "why": "Gate card_words: *very, too* are not on the comparison card; but the card's *a lot / a bit / slightly* would all fit the gap. Put *more* into the options so only one fits: *much* alone and *the most* (card: \"the most\") are wrong before *than*.",
+  "fix": {
+   "q": "Choose the correct option: The new hotel is ___ comfortable than the old one, so we will stay there again.",
+   "correct": "much more",
+   "wrong": [
+    "much",
+    "the most"
+   ],
+   "why": "*much* + comparative shows a big difference: *much more comfortable than the old one*. *the most* compares one with all the others.",
+   "why_lv": "*much* + pārākā pakāpe parāda lielu atšķirību: *much more comfortable than the old one*. *the most* salīdzina vienu ar visiem pārējiem."
+  }
+ },
+ {
+  "id": "r21-2-057",
+  "decision": "fix",
+  "why": "Gate mistake: three copies of *... work late*. Three different right sentences (not the card's *You mustn't park here*).",
+  "fix": {
+   "wrong": [
+    "You mustn't use your phone during the exam.",
+    "Did you have to wear a uniform at school?",
+    "We don't have to pay for parking on Sundays."
+   ]
+  }
+ },
+ {
+  "id": "r21-2-058",
+  "decision": "fix",
+  "why": "Gate card_words: *enough of* is not on the quantity card (\"*enough* + noun: *enough chairs*\"). Use *much* (card: \"*many* + plural ... *much* + uncountable\"). After the fix it is still an A2.2 point (map: \"Too, too much, too many, enough\"); it may be practice only.",
+  "fix": {
+   "wrong": [
+    "too much",
+    "much"
+   ]
+  }
+ },
+ {
+  "id": "r21-2-059",
+  "decision": "fix",
+  "why": "Gate card_words: *enough of* is not on the quantity card (\"*enough* + noun\"). Use *many*.",
+  "fix": {
+   "wrong": [
+    "too many",
+    "many"
+   ],
+   "why": "*enough* + uncountable noun: *There isn't enough flour.* *many* goes with plurals.",
+   "why_lv": "*enough* + neskaitāms lietvārds: *There isn't enough flour.* *many* lieto ar daudzskaitli."
+  }
+ },
+ {
+  "id": "r21-2-060",
+  "decision": "fix",
+  "why": "Gate card_words: *very few* (and *very little*) are not on the quantity card, which teaches \"*few / little* (without *a*) = almost none\" and the mistake \"I have [[a few]] money\".",
+  "fix": {
+   "correct": "little",
+   "wrong": [
+    "few",
+    "a few"
+   ],
+   "why": "*little* (without *a*) + uncountable noun = almost none: *I've got little money.* *few* goes with plurals.",
+   "why_lv": "*little* (bez *a*) + neskaitāms lietvārds = gandrīz nemaz: *I've got little money.* *few* lieto ar daudzskaitli."
+  }
+ }
+]

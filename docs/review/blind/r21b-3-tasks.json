@@ -1,0 +1,603 @@
+[
+ {
+  "id": "r21b-3-001",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "He is ___ a good teacher.",
+  "word_cards": [
+   "so",
+   "so much",
+   "such"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21b-3-002",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "It was such a long meeting that I missed lunch.",
+   "We had so much work last week.",
+   "He drives so fast!",
+   "The new flat is such small."
+  ]
+ },
+ {
+  "id": "r21b-3-003",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The hotel staff were ___ friendly to us.",
+  "options": [
+   "so",
+   "such",
+   "such a",
+   "so many"
+  ]
+ },
+ {
+  "id": "r21b-3-004",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: It was ___ surprise to see him at the party.",
+  "options": [
+   "so",
+   "such a",
+   "so a",
+   "such"
+  ]
+ },
+ {
+  "id": "r21b-3-005",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: He drove ___ fast that we were afraid.",
+  "options": [
+   "so much",
+   "such",
+   "so",
+   "such a"
+  ]
+ },
+ {
+  "id": "r21b-3-006",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "like",
+   "would",
+   "something",
+   "you",
+   "drink",
+   "to"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-3-007",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "millions",
+   "software",
+   "of",
+   "people",
+   "used",
+   "this",
+   "is",
+   "by"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-3-008",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Most of our furniture is made in Latvia.",
+   "Is breakfast included in the price?",
+   "The machines is checked every day.",
+   "Visitors aren't allowed to take photos inside."
+  ]
+ },
+ {
+  "id": "r21b-3-009",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Our office isn't heated at the weekend.",
+   "This dish is usually served with rice.",
+   "The museum is visit by many tourists.",
+   "How often are the trains cleaned?"
+  ]
+ },
+ {
+  "id": "r21b-3-010",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "and",
+   "still",
+   "used",
+   "it",
+   "1932",
+   "the",
+   "in",
+   "built",
+   "is",
+   "was",
+   "today",
+   "bridge"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-3-011",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Rewrite the sentence. Start with *My laptop*: Someone stole my laptop yesterday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-3-012",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Start with *This factory*: The company built this factory in 1990.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-3-013",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The shop windows were broken in the storm.",
+   "The bank was robbing last night.",
+   "The money was found.",
+   "Two men were arrested."
+  ]
+ },
+ {
+  "id": "r21b-3-014",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Our street is being cleaned right now.",
+   "Is the meeting room being used at the moment?",
+   "The lifts are being repaired this week.",
+   "The report is being write now."
+  ]
+ },
+ {
+  "id": "r21b-3-015",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "My laptop is being repaired, so I'm using my phone.",
+   "The windows in our flat is being replaced this week.",
+   "The patient is being examined by a doctor.",
+   "Are the tickets being sold online?"
+  ]
+ },
+ {
+  "id": "r21b-3-016",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Start with *My umbrella*: Someone has taken my umbrella.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-3-017",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "All the tickets have already been sold.",
+   "The contract has signed.",
+   "Has your bag been found yet?",
+   "The meeting has been moved to Friday."
+  ]
+ },
+ {
+  "id": "r21b-3-018",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The road has been closed since Monday.",
+   "My wallet has been stolen!",
+   "Has your bike been repaired yet?",
+   "Three people has been arrested."
+  ]
+ },
+ {
+  "id": "r21b-3-019",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The match won't be shown on TV.",
+   "Your new card will be sent to you by post.",
+   "Will the museum be closed on Monday?",
+   "The new rules will be introduce next month."
+  ]
+ },
+ {
+  "id": "r21b-3-020",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The old bridge won't be used any more.",
+   "The new library will opened next spring.",
+   "Will lunch be served on the plane?",
+   "The road will be repaired in August."
+  ]
+ },
+ {
+  "id": "r21b-3-021",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "to",
+   "eats",
+   "rarely",
+   "prefers",
+   "she",
+   "at",
+   "out",
+   "she",
+   "because",
+   "home",
+   "cook"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-3-022",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "work",
+   "the",
+   "same",
+   "does",
+   "for",
+   "company",
+   "still",
+   "brother",
+   "your"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-3-023",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "in",
+   "what",
+   "word",
+   "your",
+   "language",
+   "mean",
+   "this",
+   "does"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-3-024",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "How much ___ a ticket to the capital ___ ? (cost)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-3-025",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make a question with What time: The bank opens at nine.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-3-026",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Does your company pay for training?",
+   "My colleagues often work from home on Fridays.",
+   "Our manager don't like long meetings.",
+   "The office opens at eight."
+  ]
+ },
+ {
+  "id": "r21b-3-027",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The shop closes at six on Saturdays.",
+   "Does your sister still live in Berlin?",
+   "He doesn't goes to the gym on Sundays.",
+   "I usually cycle to work in summer."
+  ]
+ },
+ {
+  "id": "r21b-3-028",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "this",
+   "you",
+   "it",
+   "take",
+   "can",
+   "are",
+   "using",
+   "chair",
+   "or",
+   "i"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-3-029",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Anna ___ for a new flat at the moment because her rent is too high.",
+  "word_cards": [
+   "is looking",
+   "looks",
+   "was looking"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21b-3-030",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "My neighbour ___ his house this month, so there is a lot of noise. (paint)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-3-031",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I'm not understanding the instructions.",
+   "I'm reading a great book at the moment.",
+   "Is your brother still looking for a job?",
+   "I need a new charger for my phone."
+  ]
+ },
+ {
+  "id": "r21b-3-032",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "They're thinking about moving to Spain.",
+   "We're working from home this week.",
+   "She's learning to drive this summer.",
+   "This umbrella is belonging to my colleague."
+  ]
+ },
+ {
+  "id": "r21b-3-033",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I'm not using the car today.",
+   "Our team is growing fast this year.",
+   "Are you still looking for a flat?",
+   "The manager is have a meeting with a client."
+  ]
+ },
+ {
+  "id": "r21b-3-034",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "she",
+   "read",
+   "answered",
+   "it",
+   "and",
+   "letter",
+   "opened",
+   "she",
+   "the",
+   "twice",
+   "before"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-3-035",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "why",
+   "me",
+   "job",
+   "that",
+   "lost",
+   "your",
+   "you",
+   "didn't",
+   "tell",
+   "you"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-3-036",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "How long ___ the drive to the airport ___ yesterday? (take)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-3-037",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He used to work as a taxi driver.",
+   "I didn't used to like olives.",
+   "I'm slowly getting used to the early starts.",
+   "Are you used to driving on the left yet?"
+  ]
+ },
+ {
+  "id": "r21b-3-038",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She was driving to work when the accident happened.",
+   "When I came in, the children was watching TV.",
+   "What were you doing at eight last night?",
+   "It wasn't raining when we left the house."
+  ]
+ },
+ {
+  "id": "r21b-3-039",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "How long ___ you ___ for this company now? (work)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-3-040",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with *since*: I started learning English in 2019, and I'm still learning it.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-3-041",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make it negative: We have visited that museum.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-3-042",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: She has worked here ___ 2019.",
+  "options": [
+   "in",
+   "for",
+   "since"
+  ]
+ },
+ {
+  "id": "r21b-3-043",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I've worked here ___ 2015.",
+  "options": [
+   "for",
+   "since",
+   "already"
+  ]
+ },
+ {
+  "id": "r21b-3-044",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Have you ever tried Georgian food?",
+   "I saw her at the station two days ago.",
+   "I have visited that museum last weekend.",
+   "We've just booked our holiday."
+  ]
+ },
+ {
+  "id": "r21b-3-045",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She has lived in Paris since five years.",
+   "How long have you worked here?",
+   "We haven't seen each other for ages.",
+   "He moved to Spain in 2018."
+  ]
+ },
+ {
+  "id": "r21b-3-046",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make a question with How long: She has been learning Chinese.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-3-047",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence says how long?",
+  "options": [
+   "I'm learning French with a teacher.",
+   "I've learned some French at school.",
+   "I've been learning French at evening classes.",
+   "I've been learning French for two years."
+  ]
+ },
+ {
+  "id": "r21b-3-048",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "We've owned this flat since 2015.",
+   "How long have you been waiting?",
+   "They've been learning Spanish since January.",
+   "She's been knowing about the problem for weeks."
+  ]
+ },
+ {
+  "id": "r21b-3-049",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "They've been living in Riga for two years.",
+   "My neighbour has been build a garage all summer.",
+   "It has been snowing for two days.",
+   "How long have you been learning to drive?"
+  ]
+ },
+ {
+  "id": "r21b-3-050",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "We had already eaten when they arrived.",
+   "I hadn't never seen it before.",
+   "Had you met him before the party?",
+   "She was hungry because she hadn't eaten all day."
+  ]
+ }
+]

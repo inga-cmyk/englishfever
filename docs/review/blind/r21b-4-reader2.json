@@ -1,0 +1,623 @@
+[
+{
+"id": "r21b-4-001",
+"answer": "When I will arrive, I'll text you.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-002",
+"answer": [
+"works",
+"helps"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-003",
+"answer": "She is always check her messages before she gets out of bed.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-004",
+"answer": [
+"are you drinking"
+],
+"other_correct": [
+[
+"do you drink"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'do you drink' is correct but less natural with 'these days'; the (you / drink) hint order fits both.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-005",
+"answer": "I am knowing the answer, but I don't want to say it yet.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-006",
+"answer": "left",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-007",
+"answer": "We didn't used to have a car when I was young.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'didn't used to' is common in informal British speech; some teachers accept it, so the mistake is debatable."
+},
+{
+"id": "r21b-4-008",
+"answer": "I have finished school in 2019.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-009",
+"answer": [
+"come"
+],
+"other_correct": [
+[
+"have come"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-010",
+"answer": "When I will see him, I'll tell him about the problem.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near-duplicate of task 001 (same mistake 'When I will ...'); also close to a repeat of the same pattern."
+},
+{
+"id": "r21b-4-011",
+"answer": "is checked",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-012",
+"answer": [
+"is made",
+"is sent"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-013",
+"answer": "The road is being repaired.",
+"other_correct": [
+"The road is being repaired by them."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-014",
+"answer": "has been opened",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-015",
+"answer": "The winner will be announced on Friday.",
+"other_correct": [
+"The winner will be announced by them on Friday.",
+"The winner is going to be announced on Friday."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction does not say to use the passive or what to do besides starting; a learner may write 'The winner will announce...' nonsense. No instruction to rewrite; unclear task.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-016",
+"answer": "as soon as",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-017",
+"answer": [
+"enjoyed",
+"wanted"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-018",
+"answer": [
+"watched"
+],
+"other_correct": [
+[
+"used to watch"
+],
+[
+"was watching"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'was watching ... a lot' is odd; 'used to watch' fits 'last year' but is a form beyond the given verb."
+},
+{
+"id": "r21b-4-019",
+"answer": [
+"hasn't rained"
+],
+"other_correct": [
+[
+"has not rained"
+],
+[
+"hasn't been raining"
+],
+[
+"has not been raining"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-020",
+"answer": "had changed",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-021",
+"answer": [
+"had already seen"
+],
+"other_correct": [
+[
+"had seen already"
+],
+[
+"'d already seen"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-022",
+"answer": [
+"had already left"
+],
+"other_correct": [
+[
+"had left already"
+],
+[
+"'d already left"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-023",
+"answer": "we left the house when it was raining",
+"other_correct": [
+"when it was raining we left the house",
+"it was raining when we left the house",
+"when we left the house it was raining"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-024",
+"answer": "much more",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-025",
+"answer": "The weather today is much more warmer than yesterday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-026",
+"answer": "this job is much more stressful than my last one",
+"other_correct": [
+"my last job is much more stressful than this one",
+"this one is much more stressful than my last job",
+"my last one is much more stressful than this job"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Four valid orders, but the task says only 'Put the words in order' and does not say more than one answer is possible.",
+"level_problem": "10 cards is long for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-027",
+"answer": "She is the more experienced player in the team.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'the more experienced' is correct for two people; 'in the team' implies many, so it is a subtle mistake. Learners may think it is right and see 'the more' as a plausible correct form."
+},
+{
+"id": "r21b-4-028",
+"answer": "this flat is not as bright as the one we saw yesterday",
+"other_correct": [
+"the flat we saw yesterday is not as bright as this one",
+"this one is not as bright as the flat we saw yesterday",
+"the one we saw yesterday is not as bright as this flat"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several valid orders but the task does not say more than one answer is possible.",
+"level_problem": "12 cards, two identical 'as' cards: long for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-029",
+"answer": "the more you practise the better you get",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-030",
+"answer": "Despite it was late, they kept working.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-031",
+"answer": "Could you tell me what time breakfast starts?",
+"other_correct": [
+[
+"Do you know what time breakfast starts?"
+],
+[
+"Could you tell me what time breakfast starts, please?"
+],
+[
+"Do you know what time breakfast starts, please?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The hotel situation is superfluous: the opener and the quoted question are enough.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-032",
+"answer": "Could you tell me how I can reset my password?",
+"other_correct": [
+[
+"Do you know how I can reset my password?"
+],
+[
+"Could you tell me how to reset my password?"
+],
+[
+"Do you know how to reset my password?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The IT help desk story is superfluous.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-033",
+"answer": "Could you tell me if this jacket comes in a larger size?",
+"other_correct": [
+[
+"Could you tell me whether this jacket comes in a larger size?"
+],
+[
+"Do you know if this jacket comes in a larger size?"
+],
+[
+"Do you know whether this jacket comes in a larger size?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The 'too small' story is superfluous. The task does not say if/whether is needed (not stated for yes/no questions).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-034",
+"answer": "Could you tell me if insurance is included in the price?",
+"other_correct": [
+[
+"Could you tell me whether insurance is included in the price?"
+],
+[
+"Do you know if insurance is included in the price?"
+],
+[
+"Do you know whether insurance is included in the price?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Car rental situation is superfluous.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-035",
+"answer": "Could you tell me if my test result has come back yet?",
+"other_correct": [
+[
+"Could you tell me whether my test result has come back yet?"
+],
+[
+"Do you know if my test result has come back yet?"
+],
+[
+"Do you know whether my test result has come back yet?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Blood test story is superfluous.",
+"level_problem": "Same pattern as task 033/034 (if/whether); not harder than B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-036",
+"answer": "Could you tell me what the client said about our offer?",
+"other_correct": [
+[
+"Do you know what the client said about our offer?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Meeting story is largely superfluous.",
+"level_problem": "Same grammar as B1.1 task 031, no step up in level except past tense.",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-037",
+"answer": "Could you tell me when my new glasses will be ready?",
+"other_correct": [
+[
+"Do you know when my new glasses will be ready?"
+],
+[
+"Could you tell me when my new glasses are going to be ready?"
+],
+[
+"Do you know when my new glasses are going to be ready?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Optician story is superfluous.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-038",
+"answer": "Could you tell me if the teacher gave us any homework?",
+"other_correct": [
+[
+"Could you tell me whether the teacher gave us any homework?"
+],
+[
+"Do you know if the teacher gave us any homework?"
+],
+[
+"Do you know whether the teacher gave us any homework?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Missed-class story is superfluous.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-039",
+"answer": [
+"After that"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-040",
+"answer": [
+"Although"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-041",
+"answer": "Do you have to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-042",
+"answer": "You shouldn't tell Maria about the party.",
+"other_correct": [
+"You should not tell Maria about the party."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-043",
+"answer": "Tomorrow I will must work late.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-044",
+"answer": "I will have to pay.",
+"other_correct": [
+"I'll have to pay."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Rewrite with will' is unclear: 'must' cannot be used with 'will', so the learner must know to use 'have to'; the instruction does not say so.",
+"level_problem": "",
+"sense_problem": "'I will pay.' is also a natural rewrite a learner may write."
+},
+{
+"id": "r21b-4-045",
+"answer": "too much",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-046",
+"answer": "enough",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-047",
+"answer": [
+"couldn't"
+],
+"other_correct": [
+[
+"could not"
+],
+[
+"wasn't able to"
+],
+[
+"was not able to"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-048",
+"answer": "too many",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-049",
+"answer": "enough",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21b-4-050",
+"answer": "little",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

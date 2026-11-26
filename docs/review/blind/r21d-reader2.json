@@ -1,0 +1,144 @@
+[
+{
+"id": "r21d-001",
+"answer": "Could you tell me when the course starts?",
+"other_correct": [
+"Can you tell me when the evening Italian course starts?",
+"Could you tell me when the next course begins?",
+"Do you know when the course starts?",
+"When does the course start, please?",
+"Could you tell me what the start date is?",
+"Could you please tell me the start date of the evening course?",
+"Would you mind telling me when the course starts?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open writing; nothing says which form is expected, so any polite question passes or the checker is unclear. Direct 'When does the course start, please?' is also polite.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-002",
+"answer": "Could you tell me when my printer will arrive?",
+"other_correct": [
+"Can you tell me why my order has not arrived yet?",
+"Could you tell me where my order is?",
+"Could you tell me what is happening with my order?",
+"Do you know when my printer will be delivered?",
+"Why hasn't my printer arrived yet, please?",
+"Could you check the status of my order?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open writing; the target form is not clear, so many different polite questions are correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-003",
+"answer": "If metal gets hot, it expand.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Missing -s is a plausible B1 mistake, but 'it expand' is very obvious. Also 'If you don't save your work, you lose it' is correct but the other three are near copies in pattern (zero conditional), so the wrong one stands out."
+},
+{
+"id": "r21d-004",
+"answer": "What made that loud bang?",
+"other_correct": [
+"What made that noise?",
+"What made the bang in the kitchen?",
+"What made that loud noise in the kitchen?",
+"What made the loud bang?",
+"What was it that made that bang?",
+"What made that bang in the kitchen?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The instruction names the words *What* and *make*, so it gives the structure away; 'noise' vs 'bang' is also open.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-005",
+"answer": "The problem could have been solved much earlier.",
+"other_correct": [
+"The problem could have been solved much earlier by someone.",
+"The problem could have been solved earlier."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Start with The problem' practically gives the passive away; the instruction does not say 'passive' or 'rewrite' (it is not clear that the sentence must be changed).",
+"level_problem": "Passive with modal perfect is B1.2/B2-ish, borderline.",
+"sense_problem": ""
+},
+{
+"id": "r21d-006",
+"answer": "would you like to eat something before we leave",
+"other_correct": [
+"would you like something to eat before we leave",
+"before we leave would you like to eat something",
+"before we leave would you like something to eat"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Make a question' is fine, but the cards are shown lower case with no capital or question-mark hint; two cards (to, eat) allow both 'to eat something' and 'something to eat'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-007",
+"answer": "the bridge was built in 1932 and it is still used today",
+"other_correct": [
+"the bridge is still used today and it was built in 1932",
+"in 1932 the bridge was built and it is still used today",
+"the bridge was built in 1932 and today it is still used",
+"today the bridge is still used and it was built in 1932",
+"it was built in 1932 and the bridge is still used today"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several orders are correct; instruction gives no clue which one is intended. All 12 cards in a long sentence with several valid orders.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-008",
+"answer": "The winner will be announced on Friday.",
+"other_correct": [
+"The winner will be announced on Friday by them."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'They' is not in the original need; fine. 'Start with The winner' gives the passive away (but needed to fix the start).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-009",
+"answer": [
+"read"
+],
+"other_correct": [
+[
+"was reading"
+],
+[
+"used to read"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Past simple vs past continuous: 'was reading a lot of books' is possible but less natural; 'used to read' is possible but less fitting for one winter. 'read' looks the same as the verb in brackets, so the learner may think nothing changes.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21d-010",
+"answer": [
+"had already finished"
+],
+"other_correct": [
+[
+"had finished already"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The answer is only one tense (past perfect); clear. 'finished eating' fits the gap grammar, but a learner could write 'were already finishing' (not correct here: 'finishing eating' is awkward).",
+"level_problem": "",
+"sense_problem": ""
+}
+]

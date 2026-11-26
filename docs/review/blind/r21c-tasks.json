@@ -1,0 +1,302 @@
+[
+ {
+  "id": "r21c-001",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I ___ what you mean, but I don't agree with you.",
+  "options": [
+   "am knowing",
+   "knows",
+   "know"
+  ]
+ },
+ {
+  "id": "r21c-002",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The children are washing their hands now. Look at the floor! They ___ with paint.",
+  "options": [
+   "are playing",
+   "have been playing",
+   "have been play"
+  ]
+ },
+ {
+  "id": "r21c-003",
+  "level": "B1.2",
+  "kind": "write",
+  "instruction_and_task": "The sky is full of dark clouds, and your friend has no umbrella. Write two sentences to your friend: what you expect to happen, and an offer of your umbrella.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r21c-004",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Every time my neighbour ___ the piano, my dog starts to howl.",
+  "options": [
+   "will play",
+   "play",
+   "plays"
+  ]
+ },
+ {
+  "id": "r21c-005",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We won't finish on time ___ someone helps us.",
+  "options": [
+   "unless",
+   "when",
+   "if"
+  ]
+ },
+ {
+  "id": "r21c-006",
+  "level": "B1.1",
+  "kind": "write",
+  "instruction_and_task": "You want to join an evening Italian course at a language school, but the website shows no start date. Write one polite question to the school.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r21c-007",
+  "level": "B1.2",
+  "kind": "write",
+  "instruction_and_task": "You ordered a printer online ten days ago, and you are still waiting. Write one polite question to the shop's customer service.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r21c-008",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "When I travel by bus, I always feel sick.",
+   "If metal gets hot, it expand.",
+   "Whenever my neighbour plays music, my dog barks.",
+   "If you don't save your work, you lose it."
+  ]
+ },
+ {
+  "id": "r21c-009",
+  "level": "B1.2",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with its meaning.",
+  "left": [
+   "If I had gone, I would have met her.",
+   "If I hadn't gone, I wouldn't have met her.",
+   "If I went, I would meet her."
+  ],
+  "right": [
+   "I probably won't go.",
+   "I didn't go.",
+   "I went."
+  ]
+ },
+ {
+  "id": "r21c-010",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "ill",
+   "said",
+   "because",
+   "come",
+   "he",
+   "he",
+   "he",
+   "couldn't",
+   "was"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21c-011",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "My boss told that the meeting was cancelled.",
+   "She said that she was tired.",
+   "He told me he would call later.",
+   "They said they had missed the last train."
+  ]
+ },
+ {
+  "id": "r21c-012",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "a",
+   "sunday",
+   "visit",
+   "used",
+   "we",
+   "grandparents",
+   "every",
+   "i",
+   "was",
+   "child",
+   "when",
+   "to",
+   "my"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21c-013",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "There's a loud bang in the kitchen. Ask your flatmate. Use *What* and *make*:",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21c-014",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *The accident*: Someone could have avoided the accident.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21c-015",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The soup wasn't hot ___ to eat, so I heated it up again.",
+  "options": [
+   "very",
+   "too",
+   "quite",
+   "enough"
+  ]
+ },
+ {
+  "id": "r21c-016",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "something",
+   "would",
+   "before",
+   "you",
+   "to",
+   "leave",
+   "like",
+   "eat",
+   "we"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21c-017",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "is",
+   "was",
+   "the",
+   "bridge",
+   "today",
+   "still",
+   "used",
+   "and",
+   "built",
+   "1932",
+   "in",
+   "it"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21c-018",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Rewrite the sentence. Start with *My laptop*: Someone stole my laptop yesterday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21c-019",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Rewrite the sentence. Start with *This factory*: The company built this factory in 1990.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21c-020",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "work",
+   "does",
+   "brother",
+   "same",
+   "still",
+   "the",
+   "for",
+   "your",
+   "company"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21c-021",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Anna ___ for a new flat at the moment because her rent is too high.",
+  "word_cards": [
+   "is looking",
+   "looks",
+   "looking"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21c-022",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with *since*: I started learning English in 2019, and I'm still learning it.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21c-023",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make it negative: We have visited that museum.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21c-024",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: My parents have had the same family doctor ___ twenty years.",
+  "options": [
+   "for",
+   "already",
+   "since"
+  ]
+ },
+ {
+  "id": "r21c-025",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Every week, the cheese ___ in small villages and then ___ to shops around the country. (make / send)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21c-026",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Rewrite the sentence. Start with *The winner*: They will announce the winner on Friday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21c-027",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Ana: 'Did you have lunch with your colleagues yesterday?'\nTom: 'No, when I got to the café, they ___ eating.' (already / finish)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ }
+]

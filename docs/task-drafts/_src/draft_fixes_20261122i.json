@@ -1,0 +1,154 @@
+{
+ "b1-cond-rep-1.csv": [
+  {
+   "id": "r21c-008",
+   "match": [
+    "mcq",
+    "Which sentence is NOT correct?",
+    "If metal gets hot, it expand."
+   ],
+   "set": {
+    "5": "When I travel by bus, I always feel sick. | If you don't save your work, you lose it. | Whenever I read without my glasses, I get a headache."
+   }
+  },
+  {
+   "id": "r21c-010",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "he said he couldn't come because he was ill"
+   ],
+   "set": {
+    "6": "*Said* is in the past, so the tense goes one step back: *can't → couldn't*, *am → was*: *He said he couldn't come because he was ill.*",
+    "7": "*Said* ir pagātnē, tāpēc laiks iet vienu soli atpakaļ: *can't → couldn't*, *am → was*: *He said he couldn't come because he was ill.*"
+   }
+  }
+ ],
+ "b1-new-1.csv": [
+  {
+   "id": "r21c-012",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "when i was a child we used to visit my grandparents every sunday"
+   ],
+   "set": {
+    "6": "*used to* + base verb for a past habit that has stopped: *When I was a child, we used to visit my grandparents every Sunday.*",
+    "7": "*used to* + pamatforma par pagātnes paradumu, kura vairs nav: *When I was a child, we used to visit my grandparents every Sunday.*"
+   }
+  }
+ ],
+ "b1-new-3.csv": [
+  {
+   "id": "r21c-013",
+   "match": [
+    "text",
+    "There's a loud bang in the kitchen. Ask your flatmate. Use *What* and *make*:",
+    "What made that noise? | What made the noise? | What made that bang? | What made the bang? | What made that sound? | What made the sound? | What made that? | What made it? | What made that loud bang? | What made the loud bang? | What made that loud noise? | What made the loud noise? | What made that noise in the kitchen? | What made the noise in the kitchen? | What made that bang in the kitchen? | What made the bang in the kitchen?"
+   ],
+   "set": {
+    "4": "What made that noise? | What made the noise? | What made that bang? | What made the bang? | What made that sound? | What made the sound? | What made that? | What made it? | What made that loud bang? | What made the loud bang? | What made that loud noise? | What made the loud noise? | What made that noise in the kitchen? | What made the noise in the kitchen? | What made that bang in the kitchen? | What made the bang in the kitchen? | What made that loud noise in the kitchen? | What made the loud bang in the kitchen?"
+   }
+  }
+ ],
+ "b1-new-4.csv": [
+  {
+   "id": "r21c-014",
+   "match": [
+    "text",
+    "Start with *The accident*: Someone could have avoided the accident.",
+    "The accident could have been avoided. | The accident could have been avoided by someone. | The accident could've been avoided. | The accident could've been avoided by someone. | The accident could have been avoided by somebody. | The accident could've been avoided by somebody."
+   ],
+   "set": {
+    "3": "Start with *The problem*: Someone could have solved the problem much earlier.",
+    "4": "The problem could have been solved much earlier. | The problem could've been solved much earlier. | The problem could have been solved much earlier by someone. | The problem could've been solved much earlier by someone. | The problem could have been solved by someone much earlier. | The problem could've been solved by someone much earlier. | The problem could have been solved much earlier by somebody. | The problem could've been solved much earlier by somebody. | The problem could have been solved by somebody much earlier. | The problem could've been solved by somebody much earlier.",
+    "6": "Modal + *have been* + 3rd form: *The problem could have been solved much earlier.* *By someone* is not needed.",
+    "7": "Modālais darbības vārds + *have been* + 3. forma: *The problem could have been solved much earlier.* *By someone* nav vajadzīgs."
+   }
+  }
+ ],
+ "b1-new-5.csv": [
+  {
+   "id": "r21c-016",
+   "match": [
+    "order",
+    "Put the words in order to make a question.",
+    "would you like something to eat before we leave"
+   ],
+   "set": {
+    "4": "would you like something to eat before we leave",
+    "5": "also accepted: before we leave would you like something to eat | would you like to eat something before we leave | before we leave would you like to eat something | would you like to leave before we eat something"
+   }
+  }
+ ],
+ "b1-passives-1.csv": [
+  {
+   "id": "r21c-017",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "the bridge was built in 1932 and it is still used today"
+   ],
+   "set": {
+    "4": "the bridge was built in 1932 and it is still used today",
+    "5": "also accepted: the bridge was built in 1932 and today it is still used | in 1932 the bridge was built and it is still used today | the bridge is still used today and it was built in 1932 | today the bridge is still used and it was built in 1932 | in 1932 the bridge was built and today it is still used",
+    "6": "The bridge did not build itself: *was* + 3rd form for the past, *is* + 3rd form for now: *The bridge was built in 1932, and it is still used today.*",
+    "7": "Tilts pats sevi necēla: pagātnē *was* + 3. forma, tagad *is* + 3. forma: *The bridge was built in 1932, and it is still used today.*"
+   }
+  }
+ ],
+ "b1-tenses-1.csv": [
+  {
+   "id": "r21c-020",
+   "match": [
+    "order",
+    "Put the words in order.",
+    "does your brother still work for the same company"
+   ],
+   "set": {
+    "6": "A question: *does* + subject + base verb, with *still* before the main verb: *Does your brother still work for the same company?*",
+    "7": "Jautājums: *does* + teikuma priekšmets + pamatforma, *still* pirms darbības vārda: *Does your brother still work for the same company?*"
+   }
+  }
+ ],
+ "b1-tenses-2.csv": [
+  {
+   "id": "r21c-023",
+   "match": [
+    "text",
+    "Make it negative: We have visited that museum.",
+    "We haven't visited that museum. | We have not visited that museum. | We have never visited that museum. | We haven't visited that museum yet."
+   ],
+   "set": {
+    "6": "Negative: *haven't* + 3rd form: *We haven't visited that museum.*",
+    "7": "Noliegums: *haven't* + 3. forma: *We haven't visited that museum.*"
+   }
+  }
+ ],
+ "b1-upgrades-1.csv": [
+  {
+   "id": "r21c-026",
+   "match": [
+    "text",
+    "Rewrite the sentence. Start with *The winner*: They will announce the winner on Friday.",
+    "The winner will be announced on Friday. | On Friday the winner will be announced. | The winner will be announced by them on Friday."
+   ],
+   "set": {
+    "4": "The winner will be announced on Friday. | On Friday the winner will be announced. | The winner will be announced by them on Friday. | The winner will be announced on Friday by them."
+   }
+  }
+ ],
+ "compare-past-1.csv": [
+  {
+   "id": "r21c-027",
+   "match": [
+    "gap",
+    "Ana: 'Did you have lunch with your colleagues yesterday?'\nTom: 'No, when I got to the café, they ___ eating.' (already / finish)",
+    "had already finished | 'd already finished"
+   ],
+   "set": {
+    "4": "had already finished | 'd already finished | already had finished"
+   }
+  }
+ ]
+}

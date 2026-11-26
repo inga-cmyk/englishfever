@@ -17938,5 +17938,445 @@
 "adv_part | C1 | gap | ___ with the other candidates, she was clearly the strongest. (compare) | ": [
 "x_part_ed",
 "read"
+],
+"present_perfect_continuous | B1.2 | mcq | Choose the correct option: The children are washing their hands now. Look at the floor! They ___ with paint. | have been playing": [
+"ppc_result",
+"read"
+],
+"cond_zero | B1.1 | mcq | Choose the correct option: Every time my neighbour ___ the piano, my dog starts to howl. | plays": [
+"c0",
+"read"
+],
+"present_perfect_passive | B1.1 | mcq | Which sentence is NOT correct? | The contract has signed.": [
+"pas_perf",
+"rule"
+],
+"cond_third | B1.2 | match | Match each sentence with its meaning. | If I had gone, I would have met her. = I didn't go. ; If I hadn't gone, I wouldn't have met her. = I went. ; If I went, I would meet her. = I probably won't go.": [
+"c3",
+"read"
+],
+"so_such | B1.1 | gap | Thank you for your help. You've been ___ kind. | ": [
+"so_that",
+"read"
+],
+"relative_clauses | B1.2 | mcq | Which sentence is NOT correct? | Our new manager, that started in May, is from Spain.": [
+"rel_nondef",
+"read"
+],
+"modal_verbs | B1.1 | text | Rewrite with *will*: I must pay. | ": [
+"had_to",
+"read"
+],
+"indefinite_pronouns | B1.1 | order | Put the words in order to make a question. | would you like something to eat before we leave": [
+"some_offers",
+"read"
+],
+"present_perfect | B1.2 | mcq | Choose the correct option: I ___ the email yesterday, but the client hasn't answered yet. | sent": [
+"pp_ps",
+"read"
+],
+"past_simple | B1.1 | gap | How long ___ the drive to the airport ___ yesterday? (take) | ": [
+"pst_negq",
+"read"
+],
+"ind_polite | B1.1 | write | You want to join an evening Italian course at a language school, but the website doesn't say when it begins. Write one polite question to the school. | ": [
+"iq_wh",
+"read"
+],
+"past_simple | B1.1 | mcq | Choose the correct option: Yesterday she ___ the door and walked in. | opened": [
+"pst_reg",
+"read"
+],
+"cond_first | B1.1 | mcq | Which sentence is NOT correct? | If the train will be late, I'll take a taxi.": [
+"c1",
+"read"
+],
+"past_continuous | B1.1 | mcq | Choose the correct option: I ___ along the street when I saw an old friend. | was walking": [
+"pastc_when",
+"read"
+],
+"so_such | B1.1 | gap | We had ___ a lovely evening at your place yesterday. | ": [
+"so_such_basic",
+"read"
+],
+"rep_statements | B1.1 | mcq | Which sentence is NOT correct? | My boss told that the meeting was cancelled.": [
+"rep_say_tell",
+"read"
+],
+"comparison | B1.1 | mcq | Choose the correct option: The new hotel is ___ comfortable than the old one, so we will stay there again. | much more": [
+"cmp_modify",
+"read"
+],
+"rep_questions | B1.2 | mcq | Which sentence is NOT correct? | The receptionist asked me how long would I stay.": [
+"rep_q_wh",
+"read"
+],
+"cond_third | B1.2 | mcq | Which sentence is NOT correct? | If he had booked earlier, he wouldn't have pay so much.": [
+"c3",
+"read"
+],
+"present_simple | B1.1 | mcq | Which sentence is correct? | I want a coffee.": [
+"stative",
+"read"
+],
+"cond_zero | B1.1 | mcq | Choose the correct option: If you leave milk out of the fridge all day, it ___ sour. | goes": [
+"c0",
+"read"
+],
+"cond_zero | B1.1 | mcq | Which sentence is NOT correct? | If the battery will get low, the screen goes dark.": [
+"c0",
+"read"
+],
+"future_passive | B1.1 | mcq | Which sentence is correct? | The files will be checked on Monday.": [
+"pas_will",
+"rule"
+],
+"present_continuous | B1.1 | gap | Why ___ so much coffee these days? You usually only drink tea. (you / drink) | ": [
+"ps_pc",
+"read"
+],
+"cond_third | B1.2 | mcq | Which sentence is NOT correct? | If she had knew about the party, she would have come.": [
+"c3",
+"read"
+],
+"rep_questions | B1.2 | match | Match each sentence with its report. | 'Please sit down.' = She asked me to sit down. ; 'Don't touch the screen.' = She told me not to touch the screen. ; 'Are you free on Friday?' = She asked me if I was free on Friday. ; 'What time does the train leave?' = She asked me what time the train left.": [
+"rep_orders",
+"read"
+],
+"ind_polite | B1.1 | text | In a clothes shop, the jacket you like is too small. Ask politely, starting with *Could you tell me* or *Do you know*: 'Does this jacket come in a larger size?' | ": [
+"iq_yn",
+"read"
+],
+"past_simple | B1.1 | order | Put the words in order. | why didn't you tell me that you lost your job": [
+"pst_negq",
+"read"
+],
+"present_continuous_passive | B1.2 | mcq | Choose the correct option: The new bridge ___ at the moment. | is being built": [
+"pas_cont",
+"rule"
+],
+"relative_clauses | B1.2 | text | Join the two sentences with *who*: My uncle lives in Spain. He is a chef. | ": [
+"rel_nondef",
+"read"
+],
+"subject_object_q | B1.2 | mcq | Which sentence is NOT correct? | Which colleague did suggested the new plan?": [
+"q_subject",
+"read"
+],
+"ind_polite | B1.2 | write | You ordered a printer online ten days ago, but it still hasn't arrived. Write one polite question to the shop's customer service. | ": [
+"iq_yn",
+"read"
+],
+"present_perfect_continuous | B1.2 | mcq | Which sentence is NOT correct? | She's been knowing about the problem for weeks.": [
+"pp_ppc",
+"read"
+],
+"ind_polite | B1.2 | text | You had a blood test last week, and now you phone the doctor's surgery. Ask politely, starting with *Could you tell me* or *Do you know*: 'Has my test result come back yet?' | ": [
+"iq_yn",
+"read"
+],
+"cmp_ps_pc | B1.1 | gap | Last Saturday I ___ the party, but Chris ___ to go home early. (enjoy / want) | ": [
+"stative",
+"read"
+],
+"present_perfect | B1.2 | mcq | Choose the correct option: Have you seen the new Italian film? Yes, I ___ it at the cinema last night. | saw": [
+"pp_ps",
+"read"
+],
+"future_passive | B1.2 | text | Rewrite the sentence. Start with *The winner*: They will announce the winner on Friday. | ": [
+"pas_will",
+"rule"
+],
+"relative_clauses | B1.1 | mcq | Which sentence is NOT correct? | The jacket which I ordered online it was too small.": [
+"rel_obj",
+"read"
+],
+"quantity | B1.1 | mcq | Choose the correct option: I've got ___ money, so I can't come to the cinema. | little": [
+"few_little",
+"read"
+],
+"present_simple_passive | B1.1 | gap | Every week, the cheese ___ in small villages and then ___ to shops around the country. (make / send) | ": [
+"pas_pres",
+"read"
+],
+"present_perfect | B1.1 | text | Rewrite with *since*: I started learning English in 2019, and I'm still learning it. | ": [
+"ppc_form",
+"read"
+],
+"present_simple | B1.1 | mcq | Choose the correct option: I ___ what you mean, but I don't agree with you. | know": [
+"ps_form",
+"read"
+],
+"modal_verbs | B1.1 | text | Make it negative: You should tell Maria about the party. | ": [
+"should",
+"read"
+],
+"present_continuous_passive | B1.2 | text | Rewrite the sentence. Start with *The road*: They are repairing the road. | ": [
+"pas_cont",
+"rule"
+],
+"cond_first | B1.1 | mcq | Choose the correct option: They won't let you in ___ you show your ticket. | unless": [
+"c1_unless",
+"read"
+],
+"ind_polite | B1.2 | text | You ordered new glasses two weeks ago and now you're at the optician's. Ask politely, starting with *Could you tell me* or *Do you know*: 'When will my new glasses be ready?' | ": [
+"iq_wh",
+"read"
+],
+"present_continuous_passive | B1.2 | mcq | Which sentence is NOT correct? | The windows in our flat is being replaced this week.": [
+"pas_cont",
+"rule"
+],
+"ind_polite | B1.2 | write | You ordered a printer online ten days ago, and you are still waiting. Write one polite question to the shop's customer service. | ": [
+"iq_yn",
+"read"
+],
+"question_tags | B1.2 | mcq | Which sentence is NOT correct? | Your brother lives in Oslo, isn't he?": [
+"tag_special",
+"read"
+],
+"present_perfect_continuous | B1.1 | mcq | Choose the correct option: I'm tired and I'm still at my desk. I ___ all day. | have been working": [
+"ppc_form",
+"read"
+],
+"present_continuous | B1.1 | mcq | Which sentence is NOT correct? | This umbrella is belonging to my colleague.": [
+"stative",
+"read"
+],
+"rep_statements | B1.1 | mcq | Which sentence is NOT correct? | She said me that the meeting was cancelled.": [
+"rep_say_tell",
+"read"
+],
+"two_objects | B1.1 | gap | She introduced her new colleague ___ the whole team. | ": [
+"two_obj_explain",
+"read"
+],
+"past_continuous | B1.2 | mcq | Which sentence is NOT correct? | We are going to stay longer last summer, but the hotel was full.": [
+"fut_past",
+"read"
+],
+"ind_polite | B1.1 | text | You're renting a car on holiday and talking to the agent. Ask politely, starting with *Could you tell me* or *Do you know*: 'Is insurance included in the price?' | ": [
+"iq_yn",
+"read"
+],
+"adj_ed_ing | B1.1 | mcq | Which sentence is correct? | It was an amazing experience, and we were all amazed.": [
+"eding",
+"read"
+],
+"future | B1.2 | mcq | Which sentence is NOT correct? | My sister going to start a new job next month.": [
+"going_to",
+"read"
+],
+"present_perfect_passive | B1.1 | mcq | Choose the correct option: The new library ___ by the mayor, so you can borrow books there now. | has been opened": [
+"pas_perf",
+"rule"
+],
+"cmp_ps_pc | B1.1 | gap | My brother ___ a lot of books when he was off work with a broken leg last winter. (read) | ": [
+"past_seq",
+"read"
+],
+"rep_questions | B1.2 | match | Match each sentence with its report. | 'Please sit down.' = She asked me to sit down. ; 'Don't touch it!' = She warned me not to touch it. ; 'You should see a doctor.' = She advised me to see a doctor. ; 'I'll help you.' = She offered to help me.": [
+"rep_orders",
+"read"
+],
+"narrative | B1.1 | mcq | Choose the correct option: When we met at the station, I didn't recognise Lucy because she ___ so much. | had changed": [
+"pastp_form",
+"read"
+],
+"subject_object_q | B1.1 | text | There's a loud bang in the kitchen. Ask your flatmate. Use *What* and *make*: | ": [
+"q_subject",
+"read"
+],
+"past_simple_passive | B1.1 | text | Rewrite the sentence. Start with *My laptop*: Someone stole my laptop yesterday. | ": [
+"pas_act",
+"read"
+],
+"cond_first | B1.1 | mcq | Choose the correct option: We won't finish on time ___ we start now. | unless": [
+"c1_unless",
+"read"
+],
+"past_perfect | B1.2 | mcq | Choose the correct option: The bus left at 8.00. We got to the stop at 8.05. When we got there, the bus ___ already ___. | had ... left": [
+"pastp_by",
+"read"
+],
+"ind_polite | B1.2 | text | You missed yesterday's meeting with a client. Your colleague was there. Ask politely, starting with *Could you tell me* or *Do you know*: 'What did the client say about our offer?' | ": [
+"iq_wh",
+"read"
+],
+"so_such | B1.1 | mcq | Which sentence is NOT correct? | The new flat is such small.": [
+"so_such_basic",
+"read"
+],
+"present_continuous | B1.1 | gap | Anna ___ for a new flat at the moment because her rent is too high. | ": [
+"pc_temp",
+"read"
+],
+"present_perfect | B1.1 | gap | How long ___ you ___ for this company now? (work) | ": [
+"pp_for_since",
+"read"
+],
+"cond_first | B1.1 | mcq | Choose the correct option: If Tom ___ his password again, he'll be locked out of his account. | forgets": [
+"c1",
+"read"
+],
+"so_such | B1.1 | mcq | Choose the correct option: It was ___ surprise to see him at the party. | such a": [
+"so_such_basic",
+"read"
+],
+"future | B1.1 | match | Match each situation with what you would say. | You decide now to help a colleague with a heavy bag. = I'll carry that for you. ; You describe a confirmed appointment for tomorrow. = I'm seeing the dentist at ten. ; You predict rain because you can see dark clouds. = It's going to rain.": [
+"will_going",
+"read"
+],
+"adj_order | B1.2 | mcq | Which sentence is NOT correct? | She bought a leather black jacket.": [
+"adj_order",
+"read"
+],
+"passive_modals | B1.1 | mcq | Which sentence is NOT correct? | This medicine should taken after meals.": [
+"pas_modal",
+"read"
+],
+"cond_third | B1.2 | mcq | Which sentence is NOT correct? | If I would have seen the message, I would have replied.": [
+"c3",
+"read"
+],
+"present_perfect | B1.1 | mcq | Choose the correct option: She has worked here ___ 2019. | since": [
+"pp_for_since",
+"read"
+],
+"more_modals | B1.1 | mcq | Which sentence is NOT correct? | Ask Tom. He might knows the answer.": [
+"might",
+"read"
+],
+"cond_third | B1.2 | match | Match each sentence with its meaning. | If I had gone, I would have met her. = I didn't go. ; If I hadn't gone, I wouldn't have met her. = I went. ; If I went, I would meet her. = I'm not going.": [
+"c3",
+"read"
+],
+"future | B1.2 | write | The sky is full of dark clouds, and your friend has no umbrella. Write two sentences to your friend: what you expect to happen, and an offer of your umbrella. | ": [
+"will_going",
+"read"
+],
+"narrative | B1.1 | gap | Ana: 'Did you have lunch with your colleagues yesterday?'\nTom: 'No, when I got to the café, they ___ eating.' (already / finish) | ": [
+"pastp_by",
+"read"
+],
+"future_passive | B1.2 | mcq | Which sentence is NOT correct? | The new library will opened next spring.": [
+"pas_will",
+"rule"
+],
+"adj_order | B1.1 | mcq | Which sentence is NOT correct? | She wore a cotton white dress.": [
+"adj_order",
+"read"
+],
+"cond_first | B1.1 | mcq | Choose the correct option: We won't finish on time ___ someone helps us. | unless": [
+"c1_unless",
+"read"
+],
+"passive_modals | B1.2 | text | Start with *The problem*: Someone could have solved the problem much earlier. | ": [
+"pas_modal_past",
+"read"
+],
+"present_perfect | B1.1 | mcq | Choose the correct option: My parents have had the same family doctor ___ twenty years. | for": [
+"pp_for_since",
+"read"
+],
+"so_such | B1.2 | gap | There was ___ much traffic that we were late for the wedding. | ": [
+"so_much_many",
+"read"
+],
+"ind_polite | B1.1 | text | You've forgotten your work password and call the IT help desk. Ask politely, starting with *Could you tell me* or *Do you know*: 'How can I reset my password?' | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | write | You want to join an evening Italian course at a language school, but the website shows no start date. Write one polite question to the school. | ": [
+"iq_wh",
+"read"
+],
+"rep_questions | B1.2 | mcq | Which sentence reports this question: 'Do you like jazz?' | He asked me if I liked jazz.": [
+"rep_q_yn",
+"read"
+],
+"past_simple_passive | B1.1 | text | Rewrite the sentence. Start with *This factory*: The company built this factory in 1990. | ": [
+"pas_act",
+"read"
+],
+"present_perfect_continuous | B1.2 | gap | The children are washing their hands now. Look at the floor! They ___ with paint. (play) | ": [
+"ppc_result",
+"read"
+],
+"future | B1.2 | mcq | Choose the correct option: Hurry up! The film ___ start. | is about to": [
+"about_to",
+"read"
+],
+"present_continuous | B1.1 | mcq | Which sentence sounds more temporary? | I'm living with my parents.": [
+"pc_temp",
+"read"
+],
+"ind_polite | B1.1 | write | Last night you had dinner at a restaurant, and this morning you can't find your scarf. You phone the restaurant. Write one polite question. | ": [
+"iq_yn",
+"read"
+],
+"ind_polite | B1.1 | text | You're at a hotel reception. Ask politely, starting with *Could you tell me* or *Do you know*: 'What time does breakfast start?' | ": [
+"iq_wh",
+"read"
+],
+"ind_polite | B1.1 | mcq | Choose the correct sentence. | Could you tell me when the next train leaves?": [
+"iq_wh",
+"read"
+],
+"time_clauses | B1.2 | mcq | Which sentence is NOT correct? | Let's wait here until the rain will stop.": [
+"when_done",
+"read"
+],
+"present_simple_passive | B1.1 | mcq | Choose the correct option: The invoices ___ every Friday, so please send me yours by Thursday. | are sent": [
+"pas_pres",
+"read"
+],
+"ind_polite | B1.2 | text | You missed your evening Spanish class, so you message a classmate. Ask politely, starting with *Could you tell me* or *Do you know*: 'Did the teacher give us any homework?' | ": [
+"iq_yn",
+"read"
+],
+"present_perfect | B1.1 | mcq | Which sentence is NOT correct? | We have visited Rome in 2019.": [
+"pp_ps",
+"read"
+],
+"so_such | B1.1 | mcq | Choose the correct option: The hotel staff were ___ friendly to us. | so": [
+"so_that",
+"read"
+],
+"time_clauses | B1.1 | mcq | Which sentence is NOT correct? | We'll start the meeting when everyone will be here.": [
+"fut_time_clause",
+"read"
+],
+"narrative | B1.1 | gap | By the time we asked Karen to come to the cinema, she ___ the film. (already / see) | ": [
+"pastp_by",
+"read"
+],
+"adverbs | B1.2 | mcq | Choose the correct option: The soup wasn't hot ___ to eat, so I heated it up again. | enough": [
+"too_to",
+"read"
+],
+"cond_first | B1.1 | match | Match each sentence with its meaning. | If you help me, I'll buy you lunch. = A promise depending on your help. ; We won't start unless everyone is here. = Everyone being present is necessary for us to start. ; I'll take water in case the shop is closed. = A precaution against a possible problem.": [
+"c1",
+"read"
+],
+"comparison | B1.2 | mcq | Which sentence is NOT correct? | She is the more experienced player in the team.": [
+"sup",
+"read"
+],
+"cond_zero | B1.1 | mcq | Which sentence is NOT correct? | If metal gets hot, it expand.": [
+"c0",
+"read"
+],
+"present_perfect_continuous | B1.2 | mcq | Which sentence is NOT correct? | My neighbour has been build a garage all summer.": [
+"ppc_form",
+"read"
+],
+"cond_zero | B1.1 | mcq | Choose the correct option: I get a headache if I ___ too much coffee. | drink": [
+"c0",
+"read"
+],
+"articles_b1 | B1.2 | mcq | Which sentence is NOT correct? | My parents moved to the Canada last year.": [
+"art_names",
+"read"
 ]
 }

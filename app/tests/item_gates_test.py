@@ -204,8 +204,27 @@ def g_card_words(i):
     return out
 
 
+_EX_FUNC = set("""a an the i you he she it we they me him her us them my your his its our their this that these those is are was were be been being am do does did have has had will would can could shall should may might must not no and or but if so to of in on at for with by from about as than then there here what where when who whom whose which why how whether yes also too very just only even still already yet ever never more most less some any all each every one two three first last next same other another own such don't doesn't didn't isn't aren't wasn't weren't won't can't couldn't shouldn't wouldn't haven't hasn't hadn't i'm you're he's she's it's we're they're i've you've we've they've i'd you'd he'd she'd we'd they'd i'll you'll he'll she'll we'll they'll let's someone something""".split())
+
+
+def g_example(i):   # 22 November (tester): the example in an explanation is the task's own sentence, not another task's (*where Anna lives* in a task about the library)
+    words = lambda t: re.findall(r"[a-z]+(?:'[a-z]+)?", t.lower())
+    stem = lambda w: re.sub(r"(ies|es|s|ed|ing|'s)$", "", w)
+    parts = [i.get("q", ""), i.get("correct") or "", i.get("sentence") or "", i.get("model") or ""] + list(i.get("wrong") or []) + list(i.get("bank") or [])
+    for g in i.get("answers") or []: parts += g if isinstance(g, list) else [str(g)]
+    for p in i.get("pairs") or []: parts += list(p)
+    task = {stem(w) for w in words(" ".join(map(str, parts)))}
+    out = []
+    for f in re.findall(r"\*([^*]+)\*", i.get("why") or ""):
+        ws = [w for w in words(f) if w not in _EX_FUNC and len(w) > 2]
+        foreign = [w for w in ws if stem(w) not in task]
+        if len(words(f)) >= 3 and len(foreign) >= 2 and len(foreign) * 2 >= len(ws) and not re.search(r"[+/,→…]|\.\.\.|\bverb\b|participle|-ing", f):
+            out.append("the explanation's example is from another sentence: *" + f + "* (use this task's own answer)")
+    return out
+
+
 GATES = {"term": g_term, "bank": g_bank, "order": g_order, "which_question": g_which_question, "speaker": g_speaker,
-         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv, "cond_situation": g_cond_situation, "long_frame": g_long_frame, "point": g_point, "blind": g_blind, "copy": g_copy, "mistake": g_mistake, "card_words": g_card_words}
+         "contraction": g_contraction, "match_labels": g_match_labels, "lv": g_lv, "cond_situation": g_cond_situation, "long_frame": g_long_frame, "point": g_point, "blind": g_blind, "copy": g_copy, "mistake": g_mistake, "card_words": g_card_words, "example": g_example}
 
 
 def key(i):

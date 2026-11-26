@@ -1,0 +1,509 @@
+[
+ {
+  "id": "r21b-4-001",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I'm meeting my sister for lunch tomorrow.",
+   "It's cold. I'll close the window.",
+   "Shall we order a taxi?",
+   "When I will arrive, I'll text you."
+  ]
+ },
+ {
+  "id": "r21b-4-002",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "My cousin ___ in a bank, but at the weekend he ___ as a volunteer at the zoo. (work / help)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-4-003",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She doesn't usually check her messages at work.",
+   "She is always check her messages before she gets out of bed.",
+   "We often eat out on Fridays.",
+   "Does she check her messages every hour?"
+  ]
+ },
+ {
+  "id": "r21b-4-004",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Why ___ so much coffee these days? You usually only drink tea. (you / drink)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-4-005",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I am knowing the answer, but I don't want to say it yet.",
+   "She is waiting for the right moment to speak.",
+   "He's talking to a customer right now.",
+   "Do you know where the nearest pharmacy is?"
+  ]
+ },
+ {
+  "id": "r21b-4-006",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We arrived at the station at ten past nine, but the train ___ at nine, so we had to wait for the next one.",
+  "options": [
+   "leaving",
+   "left",
+   "is leaving",
+   "has left"
+  ]
+ },
+ {
+  "id": "r21b-4-007",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She's used to working long hours.",
+   "Did you use to live near the sea?",
+   "We didn't used to have a car when I was young.",
+   "We used to walk to school every day."
+  ]
+ },
+ {
+  "id": "r21b-4-008",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "We have lived here since 2019.",
+   "I have finished school in 2019.",
+   "She has just started a new job.",
+   "My parents got married in 1990."
+  ]
+ },
+ {
+  "id": "r21b-4-009",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I'll wait here until you ___ back. (come)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-4-010",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Are you going to apply for the job?",
+   "When I will see him, I'll tell him about the problem.",
+   "We're flying to Rome next Friday.",
+   "I think the shops will be busy tomorrow."
+  ]
+ },
+ {
+  "id": "r21b-4-011",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: In our factory, every phone ___ by two different people before it leaves the building.",
+  "options": [
+   "is checked",
+   "is checking",
+   "checks",
+   "is check"
+  ]
+ },
+ {
+  "id": "r21b-4-012",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Every week, the cheese ___ in small villages and then ___ to shops around the country. (make / send)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-4-013",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Rewrite the sentence. Start with *The road*: They are repairing the road.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-4-014",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The new library ___ by the mayor, so you can borrow books there now.",
+  "options": [
+   "have been opened",
+   "has opened",
+   "has been opened",
+   "has being opened"
+  ]
+ },
+ {
+  "id": "r21b-4-015",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *The winner*: They will announce the winner on Friday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-4-016",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We'll go for a walk ___ it stops raining.",
+  "options": [
+   "in case",
+   "unless",
+   "as soon as"
+  ]
+ },
+ {
+  "id": "r21b-4-017",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Last Saturday I ___ the party, but Chris ___ to go home early. (enjoy / want)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-4-018",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Kate ___ TV a lot when she was ill last year. (watch)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-4-019",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "It ___ this week. Everything is very dry. (not / rain)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-4-020",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: When we met at the station, I didn't recognise Lucy because she ___ so much.",
+  "options": [
+   "has changed",
+   "had change",
+   "had changed"
+  ]
+ },
+ {
+  "id": "r21b-4-021",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "By the time we asked Karen to come to the cinema, she ___ the film. (already / see)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-4-022",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "A: Was Tom there when you arrived? B: No, he ___. (already / leave)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-4-023",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put all the words in order. More than one answer is possible.",
+  "word_cards": [
+   "when",
+   "it",
+   "raining",
+   "the",
+   "left",
+   "we",
+   "house",
+   "was"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-4-024",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The new hotel is ___ comfortable than the old one, so we will stay there again.",
+  "options": [
+   "the most",
+   "much",
+   "much more"
+  ]
+ },
+ {
+  "id": "r21b-4-025",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The weather today is much more warmer than yesterday.",
+   "My new phone is a bit lighter than the old one.",
+   "It is not as cold as it was last week.",
+   "This is the most expensive hotel in town."
+  ]
+ },
+ {
+  "id": "r21b-4-026",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "more",
+   "my",
+   "job",
+   "much",
+   "this",
+   "one",
+   "than",
+   "is",
+   "last",
+   "stressful"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-4-027",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She is the more experienced player in the team.",
+   "Train tickets are less expensive than plane tickets.",
+   "Their house is not as big as ours.",
+   "This route is a lot quicker than the motorway."
+  ]
+ },
+ {
+  "id": "r21b-4-028",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "yesterday",
+   "as",
+   "is",
+   "the",
+   "as",
+   "flat",
+   "bright",
+   "this",
+   "not",
+   "one",
+   "saw",
+   "we"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-4-029",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "the",
+   "practise",
+   "better",
+   "get",
+   "you",
+   "more",
+   "the",
+   "you"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21b-4-030",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She saved money so that she could travel.",
+   "In spite of the noise, I slept well.",
+   "Although the flat is small, it's very comfortable.",
+   "Despite it was late, they kept working."
+  ]
+ },
+ {
+  "id": "r21b-4-031",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "You're at a hotel reception. Ask politely, starting with *Could you tell me* or *Do you know*: 'What time does breakfast start?'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-4-032",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "You've forgotten your work password and call the IT help desk. Ask politely, starting with *Could you tell me* or *Do you know*: 'How can I reset my password?'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-4-033",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "In a clothes shop, the jacket you like is too small. Ask politely, starting with *Could you tell me* or *Do you know*: 'Does this jacket come in a larger size?'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-4-034",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "You're renting a car on holiday and talking to the agent. Ask politely, starting with *Could you tell me* or *Do you know*: 'Is insurance included in the price?'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-4-035",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "You had a blood test last week, and now you phone the doctor's surgery. Ask politely, starting with *Could you tell me* or *Do you know*: 'Has my test result come back yet?'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-4-036",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "You missed yesterday's meeting with a client. Your colleague was there. Ask politely, starting with *Could you tell me* or *Do you know*: 'What did the client say about our offer?'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-4-037",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "You ordered new glasses two weeks ago and now you're at the optician's. Ask politely, starting with *Could you tell me* or *Do you know*: 'When will my new glasses be ready?'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-4-038",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "You missed your evening Spanish class, so you message a classmate. Ask politely, starting with *Could you tell me* or *Do you know*: 'Did the teacher give us any homework?'",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-4-039",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I finished work. ___, I went to the gym.",
+  "word_cards": [
+   "While",
+   "After that",
+   "After"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21b-4-040",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "___ it rained all day, we enjoyed our trip.",
+  "word_cards": [
+   "Because of",
+   "However",
+   "Although"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21b-4-041",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct question: ___ speak English at work?",
+  "options": [
+   "Must you to",
+   "Are you have to",
+   "Do you have to"
+  ]
+ },
+ {
+  "id": "r21b-4-042",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make it negative: You should tell Maria about the party.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-4-043",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "You mustn't use your phone during the exam.",
+   "We don't have to pay for parking on Sundays.",
+   "Did you have to wear a uniform at school?",
+   "Tomorrow I will must work late."
+  ]
+ },
+ {
+  "id": "r21b-4-044",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Rewrite with *will*: I must pay.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21b-4-045",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I can't sleep. There's ___ noise outside.",
+  "options": [
+   "a few",
+   "too many",
+   "too much"
+  ]
+ },
+ {
+  "id": "r21b-4-046",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We need two more chairs. There aren't ___.",
+  "options": [
+   "too much",
+   "enough",
+   "much"
+  ]
+ },
+ {
+  "id": "r21b-4-047",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I'm sorry, I ___ come to your party last Saturday. I was ill. (can)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-4-048",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I can't concentrate. There are ___ people here.",
+  "options": [
+   "too many",
+   "too much",
+   "much"
+  ]
+ },
+ {
+  "id": "r21b-4-049",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We can't make a cake. There isn't ___ flour.",
+  "options": [
+   "too many",
+   "enough",
+   "many"
+  ]
+ },
+ {
+  "id": "r21b-4-050",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I've got ___ money, so I can't come to the cinema.",
+  "options": [
+   "little",
+   "few",
+   "a few"
+  ]
+ }
+]

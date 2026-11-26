@@ -24,7 +24,7 @@ for t,its in by.items():
     for n,i in enumerate(its): idx[i['id']]=(t,n)
 def key(i):   # the same key as app/tests/item_gates_test.py
     body = i.get("correct") or i.get("sentence") or (" ; ".join(a + " = " + b for a, b in i["pairs"]) if i.get("pairs") else "") or ""
-    return " | ".join([i["skill"], i["level"], i["kind"], i["q"], body])
+    return " | ".join([i.get("moved_from") or i["skill"], i["level"], i["kind"], i["q"], body])   # moved points keep the old topic in the key (22 November)
 ASSIGN=json.load(open(os.path.join(C.HERE,'assign_keys.json'),encoding='utf-8'))
 def point(i):
     a=ASSIGN.get(key(i))

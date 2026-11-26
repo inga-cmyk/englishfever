@@ -1,0 +1,583 @@
+[
+{
+"id": "r21-2-001",
+"answer": "don't know",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2 content (present simple of stative verb) at B1.1; options 'am not knowing' is believable, others fine",
+"sense_problem": ""
+},
+{
+"id": "r21-2-002",
+"answer": "boils",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2 content (present simple fact) at B1.1; 'is boil' is a weak distractor",
+"sense_problem": "Cannot see 'boiling' as plausible; fine"
+},
+{
+"id": "r21-2-003",
+"answer": "My uncle is owning a shop.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Level A2/B1 stative verbs, ok",
+"sense_problem": ""
+},
+{
+"id": "r21-2-004",
+"answer": "'I want a coffee.'",
+"other_correct": "",
+"wrong_options_that_fit": "'I'm wanting a coffee.' is used informally (e.g. British/US ads, 'I'm wanting') but is wrong in textbook grammar",
+"instruction_problem": "Instruction has no stem; task content is only in the options. Also quotes inside options are noise",
+"level_problem": "A2 content",
+"sense_problem": ""
+},
+{
+"id": "r21-2-005",
+"answer": "She opened the door and walked in.",
+"other_correct": "",
+"wrong_options_that_fit": "All options show a sequence: 'She has opened the door and has walked in' (present perfect, order opened then walked) and 'She opens the door and walks in' (historic present / narrative) also say first opened then walked in; only 'was opening ... walking in' is wrong",
+"instruction_problem": "The instruction does not say past, so the question has no unique answer",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-006",
+"answer": "Why did you went home early?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-007",
+"answer": "for",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Near duplicate of 047 (for/since/ago/from)",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-008",
+"answer": "I'm meeting",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'I'll meet' is wrong given 'We booked a table yesterday' (already arranged); fine"
+},
+{
+"id": "r21-2-009",
+"answer": "unless",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction gives away the logic ('Starting now is necessary'), the first sentence is superfluous translation-like hint; 'if' is wrong, ok",
+"level_problem": "Reads as a rule-explanation rather than a task",
+"sense_problem": ""
+},
+{
+"id": "r21-2-010",
+"answer": "If I would have more free time, I would join a choir.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-011",
+"answer": "If I would have known, I would have called you.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Option 3 'If I hadn't known, I wouldn't have called you' is correct but odd in sense",
+"level_problem": "",
+"sense_problem": "Near duplicate of 019/020 pattern; option 3 is a strange meaning"
+},
+{
+"id": "r21-2-012",
+"answer": "He said me he was tired.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-013",
+"answer": "We visited the Riga last summer.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Only three options (others have four)",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-014",
+"answer": "If",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'When' would fit but is not offered; fine"
+},
+{
+"id": "r21-2-015",
+"answer": "if",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'whenever/when' would also fit but are not offered"
+},
+{
+"id": "r21-2-016",
+"answer": "If you will click here, the page opens.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'If you will click here' can be correct as a polite request ('If you will come this way'), but not here",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-017",
+"answer": "unless",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-018",
+"answer": "If she had more money, she will buy it.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near duplicate of 010 in pattern"
+},
+{
+"id": "r21-2-019",
+"answer": "If I would have studied, I would have passed.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Duplicate of 011 pattern"
+},
+{
+"id": "r21-2-020",
+"answer": "If we had left earlier, we wouldn't have miss the train.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Option 1 'If we hadn't left late, we'd have caught it' is correct English, but 'it' has no referent and the sentence is odd",
+"level_problem": "",
+"sense_problem": "Option 1 has no referent for 'it' and is logically odd; the wrong option is a typo-like form"
+},
+{
+"id": "r21-2-021",
+"answer": [
+"the"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Cards 'an' and 'many' are not believable; 'many' is a different kind of word. Task is too easy",
+"level_problem": "Article choice with violin: 'the' with instruments is B1 fine",
+"sense_problem": ""
+},
+{
+"id": "r21-2-022",
+"answer": "He lives in the Latvia.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-023",
+"answer": "I have many time for hobbies.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-024",
+"answer": "My sister, that lives in Paris, is a teacher.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'My sister who lives in Paris is a teacher' is correct (defining, implies other sisters); a learner may think it is wrong since a comma is missing",
+"level_problem": "Defining vs non-defining relative clauses ok at B1.2",
+"sense_problem": "Risky: two or three options look acceptable; learner cannot tell without the rule"
+},
+{
+"id": "r21-2-025",
+"answer": "I'll call you after I will have spoken to her.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-026",
+"answer": "He ought to apologise, doesn't he?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'You'd better hurry, hadn't you?' is correct but many learners (and some speakers) think it is wrong",
+"level_problem": "Question tags with ought to and had better are rare, maybe B2",
+"sense_problem": ""
+},
+{
+"id": "r21-2-027",
+"answer": "seeing",
+"other_correct": "",
+"wrong_options_that_fit": "'to see' is grammatical but means something different (not the memory)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-028",
+"answer": [
+"I forgot to lock the door."
+],
+"other_correct": [
+[
+"I forgot to lock the door"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The instruction names the key word, so answer is nearly given; also the 'because' clause drops, and 'I forgot to lock the door.' is the only answer",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-029",
+"answer": "Tickets can bought online.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-030",
+"answer": "The shoes ought to taken off.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-031",
+"answer": [
+"to"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-032",
+"answer": "to",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-033",
+"answer": "He bought a leather black bag.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-034",
+"answer": [
+[
+"round",
+"shape"
+],
+[
+"Spanish",
+"origin"
+],
+[
+"silk",
+"material"
+],
+[
+"huge",
+"size"
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'kind' is vague; terms size/shape/origin/material are fine",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-035",
+"answer": [
+"such"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'so' and 'very' do not fit with 'a long film'; fine",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-036",
+"answer": [
+"so"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'too' would give a different meaning (too tired that...) wrong; fine"
+},
+{
+"id": "r21-2-037",
+"answer": [
+"so"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Near duplicate of 041; 'much noise' is uncountable noun so 'such a' impossible"
+},
+{
+"id": "r21-2-038",
+"answer": [
+"such"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-039",
+"answer": "so",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Duplicate of 036"
+},
+{
+"id": "r21-2-040",
+"answer": "such",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Duplicate of 035"
+},
+{
+"id": "r21-2-041",
+"answer": "so",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-042",
+"answer": "Three people has been arrested.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-043",
+"answer": "The new rules will be introduce next month.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-044",
+"answer": "The winner will announced on Friday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-045",
+"answer": "When I came in, the children was watching TV.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Option 'When I came in, we were watching TV.' is correct",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-046",
+"answer": [
+"How long has she lived in Spain?"
+],
+"other_correct": [
+[
+"How long has she been living in Spain?"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-047",
+"answer": "for",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Duplicate of 007"
+},
+{
+"id": "r21-2-048",
+"answer": "I've been knowing him for years.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-049",
+"answer": "She has been work here since June.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-050",
+"answer": "Look! That tree is going to fall!",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-051",
+"answer": "left",
+"other_correct": "",
+"wrong_options_that_fit": "'was leaving' is possible but odd (timetable/past plan reading)",
+"instruction_problem": "The context needs 'had left' (past perfect), which is not offered; 'left' is only acceptable",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-052",
+"answer": "have never ridden",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-053",
+"answer": "much",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-054",
+"answer": "You don't have to wear a tie.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-055",
+"answer": "You mustn't smoke here.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-056",
+"answer": "You should wear a coat today.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-057",
+"answer": "Tomorrow I will must work late.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-058",
+"answer": "too many",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-059",
+"answer": "enough",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-2-060",
+"answer": "very little",
+"other_correct": "",
+"wrong_options_that_fit": "'a few' is wrong for uncountable money; 'very few' wrong",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'a little' would also fit but is not offered"
+}
+]

@@ -160,7 +160,7 @@ final class CustomItems
         $skills = Content::meta()['skills'];
         $existing = [];
         $rel = Content::relabelled(); // a task given a lower level as a copy may be imported again at that level
-        foreach (Content::items() as $it) if (!isset($rel[$it['id']])) $existing[self::dupKey($it)] = true;
+        foreach (Content::items() as $it) if (!Content::isRelabelled($it['id'])) $existing[self::dupKey($it)] = true;
         $mine = []; $byContent = []; $byOld = []; $byOldQ = [];   // tasks already added from a file: the same task again is left alone; the same content with new wording updates the wording
         foreach (Db::all("SELECT item_id, skill, level, kind, data FROM custom_items WHERE status <> 'retired'") as $r) {
             $d = json_decode($r['data'], true);

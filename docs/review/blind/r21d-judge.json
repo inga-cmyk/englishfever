@@ -1,0 +1,57 @@
+[
+ {
+  "id": "r21d-001",
+  "decision": "keep",
+  "why": "Readers: the form is not named and a direct question is polite too. That is the rule (3 and 21 November: give the situation, the check looks for the form), as r21b-1-038 and r21c-006 decided. Checks tested: natural answers pass (Could you tell me / Can you / Would you mind telling me / Do you know / I'd like to know / I was wondering + when / what date / if + statement order, also 'will start', 'is going to start'); 'when does the course start', 'when starts the course', 'when will the course start', 'when is the start date' and a bare direct question fail."
+ },
+ {
+  "id": "r21d-002",
+  "decision": "keep",
+  "why": "Same reader flag as 001, decided by the rule (situation, not the form named; r21c-007). Checks tested: 'if you have sent / if you sent / whether my printer has been sent / when my printer will arrive / where my order is / why it hasn't arrived / what happened to my order' pass; 'if did you send', 'when will my printer arrive', 'where is my order', 'if have you sent', 'when arrives my printer', 'why hasn't my printer arrived' fail."
+ },
+ {
+  "id": "r21d-003",
+  "decision": "keep",
+  "why": "Both readers confirm 'it expand' is a believable B1 mistake (the zero-conditional card's own mistake type, r21c-008). The three right sentences share the pattern because that is the topic, but they are about three different things (bus travel, saving work, reading glasses) and none is a near-copy of the wrong one."
+ },
+ {
+  "id": "r21d-004",
+  "decision": "accept",
+  "why": "Reader 2's 'What was it that made that bang?' is correct, natural English and still a subject question with What and make (no did); added. Reader 1's 'What has made that loud bang?' stays rejected: one bang that is over takes the past simple (r21b-2-028, r21c-013). 'Use What and make' gives the words, not the form; the point (no did) is still the learner's.",
+  "accept": [
+   [
+    "What was it that made that bang?"
+   ]
+  ]
+ },
+ {
+  "id": "r21d-005",
+  "decision": "keep",
+  "why": "Reader 2's 'The problem could have been solved earlier.' drops 'much' from the sentence; a rewrite keeps the content, so it is not accepted. The level flag was decided in r21c-014: past modal passive is on the B1.2 passive_modals card ('Past: modal + have been + 3. form'). Start with The problem makes the form necessary without a term (6 November); the explanation uses this sentence."
+ },
+ {
+  "id": "r21d-006",
+  "decision": "keep",
+  "why": "Readers list no new order: 'something to eat' / 'to eat something', the fronted before-clause and 'would you like to leave before we eat something' are all accepted (r21b-3-006, r21c-016). Lower-case cards are how every order task is shown."
+ },
+ {
+  "id": "r21d-007",
+  "decision": "keep",
+  "why": "Both readers' 'it was built in 1932 and the bridge is still used today' puts the pronoun before its noun and stays rejected (r21-4-028, r21c-017); reader 1's other two orders leave out the card 'it'. All natural orders, with both fronted phrases, are accepted."
+ },
+ {
+  "id": "r21d-008",
+  "decision": "keep",
+  "why": "Readers only note that Start with The winner leads to the form; that is the rule's way to make it necessary without a term (6 November). 'by them' in both positions and the fronted On Friday are accepted (r21c-026)."
+ },
+ {
+  "id": "r21d-009",
+  "decision": "keep",
+  "why": "Reader 1's 'had read' needs an earlier past time to look back from, and the sentence has none (the reading happens during the time off work); rejected. 'read', 'was reading', 'would read' and 'used to read' are already accepted with answer notes (r21b-4-018); the explanation uses this sentence."
+ },
+ {
+  "id": "r21d-010",
+  "decision": "keep",
+  "why": "As r21c-027 decided: 'had finished already' gives 'had finished already eating', not English, and 'already finished' leaves out had, which the B1.1 narrative card needs for what happened before ('Past perfect: what happened before'). 'had already finished', ''d already finished' and 'already had finished' are accepted."
+ }
+]

@@ -1,0 +1,102 @@
+[
+ {
+  "id": "r21d-001",
+  "level": "B1.1",
+  "kind": "write",
+  "instruction_and_task": "You want to join an evening Italian course at a language school, but the website shows no start date. Write one polite question to the school.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r21d-002",
+  "level": "B1.2",
+  "kind": "write",
+  "instruction_and_task": "You ordered a printer online ten days ago, and you are still waiting. Write one polite question to the shop's customer service.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r21d-003",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "When I travel by bus, I always feel sick.",
+   "If you don't save your work, you lose it.",
+   "Whenever I read without my glasses, I get a headache.",
+   "If metal gets hot, it expand."
+  ]
+ },
+ {
+  "id": "r21d-004",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "There's a loud bang in the kitchen. Ask your flatmate. Use *What* and *make*:",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21d-005",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *The problem*: Someone could have solved the problem much earlier.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21d-006",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order to make a question.",
+  "word_cards": [
+   "we",
+   "would",
+   "eat",
+   "like",
+   "before",
+   "to",
+   "leave",
+   "you",
+   "something"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21d-007",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "still",
+   "bridge",
+   "today",
+   "in",
+   "and",
+   "used",
+   "was",
+   "built",
+   "is",
+   "it",
+   "the",
+   "1932"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21d-008",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Rewrite the sentence. Start with *The winner*: They will announce the winner on Friday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21d-009",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "My brother ___ a lot of books when he was off work with a broken leg last winter. (read)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21d-010",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Ana: 'Did you have lunch with your colleagues yesterday?'\nTom: 'No, when I got to the café, they ___ eating.' (already / finish)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ }
+]

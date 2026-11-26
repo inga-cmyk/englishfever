@@ -1,0 +1,232 @@
+[
+ {
+  "id": "r21c-001",
+  "decision": "keep",
+  "why": "Level flag only. A state verb about this moment (not *am knowing*) is a B1.1 point of the present_simple card; the new built-in replacement is fine, one answer, wrong options are real mistakes (3S, continuous of a state verb)."
+ },
+ {
+  "id": "r21c-003",
+  "decision": "keep",
+  "why": "Readers: the forms are not named. That is the rule (3 November: give the situation, the check looks for the form). r21b-1-019 already aligned the checks: going to / about to for the evidence ('what we can see now: Look at the clouds! It's going to rain' on the future card), I'll / Shall I for the offer; 'might' is not on the card and is rejected."
+ },
+ {
+  "id": "r21c-006",
+  "decision": "fix",
+  "why": "Tested the checks: natural answers pass (Could you tell me / Do you know / I'd like to know / I wonder / Would you mind telling me + question word or if + statement order); 'when is the', 'when does the', 'if did you', 'when starts the' fail. But 'Could you possibly tell me', 'Would you be able to tell me', 'Can I ask …' and 'Do you have any idea …' (correct polite starts a learner writes) failed checks 1 and 2; both now take them. Readers' 'form not named' / 'a direct question is polite too' is the rule (3 and 21 November: give the situation, the check looks for the form), as r21b-1-038 decided.",
+  "fix": {
+   "must": [
+    [
+     "\\b(could|can|would) you (please |possibly |kindly |just )?(tell me|let me know|check|find out|confirm)\\b|\\bwould you be able to (tell me|let me know|check|find out|confirm)\\b|\\bwould you mind (telling me|checking)\\b|\\bdo you (happen to )?know\\b|\\b(do you have|have you got|have you) any idea\\b|\\b(can|could|may) i ask\\b|\\bi[\\'’]?d like to (know|ask)\\b|\\bi would like to (know|ask)\\b|\\bi (was )?wonder(ing)?\\b",
+     "Start politely: *Could you tell me …?*, *Do you know …?* or *I'd like to know …*",
+     "Sāc pieklājīgi: *Could you tell me …?*, *Do you know …?* vai *I'd like to know …*"
+    ],
+    [
+     "\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering|ask|idea),?\\s+(please,?\\s+)?((on|at|in|from) )?(if|whether|when|what|where|why|how|who|which)\\b",
+     "Then a question word or *if*: *… when the next course starts*.",
+     "Tad jautājamais vārds vai *if*: *… when the next course starts*."
+    ],
+    [
+     "^(?!.*\\b(if|whether|when|where|why|who|how(?:\\s+(?:long|soon|much|many|often|far)(?:\\s+\\w+)?)?|what(?:\\s+\\w+)?|which(?:\\s+\\w+)?)\\s+(?:(?:do|does|did|is|are|was|were|has|have|had|could|would|should)(?:n[\\'’]t)?|will|won[\\'’]t|can|can[\\'’]t|cannot)\\s+(you|he|she|it|they|we|i|the|my|your|our|his|her|their|this|that|these|those|someone|somebody|anyone|anybody|there|mine)\\b)",
+     "After the question word the subject comes first, with no *do / does*: *when the course starts*, not *when does the course start*.",
+     "Pēc jautājamā vārda sākumā ir teikuma priekšmets, bez *do / does*: *when the course starts*, nevis *when does the course start*."
+    ],
+    [
+     "^(?!.*\\b(?:when|where|why|what time|what day|what date|how much|how long|how soon|how often)\\s+(?!(?:is|was|has|does)\\b)\\w+s\\s+(?:the|my|your|our|his|her|their|this|that)\\b)",
+     "Put the subject before the verb: *when the course starts*, not *when starts the course*.",
+     "Teikuma priekšmets ir pirms darbības vārda: *when the course starts*, nevis *when starts the course*."
+    ]
+   ]
+  }
+ },
+ {
+  "id": "r21c-007",
+  "decision": "fix",
+  "why": "Tested the checks: natural answers pass (Could you tell me / Do you know / I'd like to know / I wonder / Would you mind telling me + question word or if + statement order); 'when is the', 'when does the', 'if did you', 'when starts the' fail. But 'Could you possibly tell me', 'Would you be able to tell me', 'Can I ask …' and 'Do you have any idea …' (correct polite starts a learner writes) failed checks 1 and 2; both now take them. Readers' 'form not named' / 'a direct question is polite too' is the rule (3 and 21 November: give the situation, the check looks for the form), as r21b-1-038 decided. Level flag: the B1.2 version may need a past or present perfect inside the question (*if you have sent / if you sent*), one step beyond 006.",
+  "fix": {
+   "must": [
+    [
+     "\\b(could|can|would) you (please |possibly |kindly |just )?(tell me|let me know|check|find out|confirm)\\b|\\bwould you be able to (tell me|let me know|check|find out|confirm)\\b|\\bwould you mind (telling me|checking)\\b|\\bdo you (happen to )?know\\b|\\b(do you have|have you got|have you) any idea\\b|\\b(can|could|may) i ask\\b|\\bi[\\'’]?d like to (know|ask)\\b|\\bi would like to (know|ask)\\b|\\bi (was )?wonder(ing)?\\b",
+     "Start politely: *Could you tell me …?*, *Do you know …?* or *I'd like to know …*",
+     "Sāc pieklājīgi: *Could you tell me …?*, *Do you know …?* vai *I'd like to know …*"
+    ],
+    [
+     "\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering|ask|idea),?\\s+(please,?\\s+)?((on|at|in|from) )?(if|whether|when|what|where|why|how|who|which)\\b",
+     "Then *if* (or *whether*) or a question word: *… if you have sent my order*, *… when my printer will arrive*.",
+     "Tad *if* (vai *whether*) vai jautājamais vārds: *… if you have sent my order*, *… when my printer will arrive*."
+    ],
+    [
+     "^(?!.*\\b(if|whether|when|where|why|who|how(?:\\s+(?:long|soon|much|many|often|far)(?:\\s+\\w+)?)?|what(?:\\s+\\w+)?|which(?:\\s+\\w+)?)\\s+(?:(?:do|does|did|is|are|was|were|has|have|had|could|would|should)(?:n[\\'’]t)?|will|won[\\'’]t|can|can[\\'’]t|cannot)\\s+(you|he|she|it|they|we|i|the|my|your|our|his|her|their|this|that|these|those|someone|somebody|anyone|anybody|there|mine)\\b)",
+     "After *if* or the question word the subject comes first, with no *did*: *if you sent my order*, *when my printer will arrive*.",
+     "Pēc *if* vai jautājamā vārda sākumā ir teikuma priekšmets, bez *did*: *if you sent my order*, *when my printer will arrive*."
+    ],
+    [
+     "^(?!.*\\b(?:when|where|why|what time|what day|what date|how much|how long|how soon|how often)\\s+(?!(?:is|was|has|does)\\b)\\w+s\\s+(?:the|my|your|our|his|her|their|this|that)\\b)",
+     "Put the subject before the verb: *when my printer arrives*, not *when arrives my printer*.",
+     "Teikuma priekšmets ir pirms darbības vārda: *when my printer arrives*, nevis *when arrives my printer*."
+    ]
+   ]
+  }
+ },
+ {
+  "id": "r21c-008",
+  "decision": "fix",
+  "why": "Readers confirm the mistake (*it expand*) is believable; the card lists it ('If you heat ice, it [[melt]]' type). But the right sentence 'Whenever my neighbour plays music, my dog barks' now repeats the scene of the new built-in task of the same topic and level ('Every time my neighbour plays the piano, my dog starts to howl'), against the rule 'not the same setting' (1 and 4 November). One right sentence replaced; *whenever* is on the card ('You can use *when* or *whenever* instead of *if*').",
+  "fix": {
+   "wrong": [
+    "When I travel by bus, I always feel sick.",
+    "If you don't save your work, you lose it.",
+    "Whenever I read without my glasses, I get a headache."
+   ]
+  }
+ },
+ {
+  "id": "r21c-009",
+  "decision": "keep",
+  "why": "Reader 1's 'loose fit' is what r21b-1-050 already fixed: 'I probably won't go' is what the unlikely future means, and it cannot be swapped with 'I didn't go' / 'I went'. One pairing only."
+ },
+ {
+  "id": "r21c-010",
+  "decision": "fix",
+  "why": "Both readers' orders are rejected, as in r21-5-015 and r21b-2-004: 'he couldn't come because he said he was ill' makes the saying the cause of the absence (not sensible), and its fronted version is the same. The explanation gave no example from this sentence and said the step back is not always needed, against the taught rule (11 November); new explanation with this sentence. Answers unchanged.",
+  "fix": {
+   "why": "*Said* is in the past, so the tense goes one step back: *can't → couldn't*, *am → was*: *He said he couldn't come because he was ill.*",
+   "why_lv": "*Said* ir pagātnē, tāpēc laiks iet vienu soli atpakaļ: *can't → couldn't*, *am → was*: *He said he couldn't come because he was ill.*"
+  }
+ },
+ {
+  "id": "r21c-011",
+  "decision": "keep",
+  "why": "Reader confirms 'told' without a person is a believable B1 mistake; the card has it ('*tell* needs a person: *He told me.*'). Three right sentences about different things (r21b-2-005)."
+ },
+ {
+  "id": "r21c-012",
+  "decision": "fix",
+  "why": "Readers list no new order; all natural orders are accepted (r21b-2-012). Lower-case cards are how every order task shows them. The explanation had no example from this sentence (22 November); new one with it. Answers unchanged.",
+  "fix": {
+   "why": "*used to* + base verb for a past habit that has stopped: *When I was a child, we used to visit my grandparents every Sunday.*",
+   "why_lv": "*used to* + pamatforma par pagātnes paradumu, kura vairs nav: *When I was a child, we used to visit my grandparents every Sunday.*"
+  }
+ },
+ {
+  "id": "r21c-013",
+  "decision": "accept",
+  "why": "Reader 2's 'What made that loud noise in the kitchen?' and 'What made the loud bang in the kitchen?' are correct subject questions and complete the variants r21b-2-028 added. Rejected: 'What has made that noise?' and 'What's making that noise?' (one bang that is over: past simple, as r21b-2-028 decided for the continuous).",
+  "accept": [
+   [
+    "What made that loud noise in the kitchen?",
+    "What made the loud bang in the kitchen?"
+   ]
+  ]
+ },
+ {
+  "id": "r21c-014",
+  "decision": "fix",
+  "why": "The answer 'The accident could have been avoided' is the passive_modals card's own example ('Past: modal + *have been* + 3. form: ... *The accident could have been avoided.*'), and a card example is never a task's answer (21 November; r21b-3-006 fixed the same case). New sentence, same point and level. Readers' 'might have been avoided' (another modal) and 'prevented' (another verb) stay rejected; level: past modal passive is on this B1.2 card.",
+  "fix": {
+   "q": "Start with *The problem*: Someone could have solved the problem much earlier.",
+   "answers": [
+    [
+     "The problem could have been solved much earlier.",
+     "The problem could've been solved much earlier.",
+     "The problem could have been solved much earlier by someone.",
+     "The problem could've been solved much earlier by someone.",
+     "The problem could have been solved by someone much earlier.",
+     "The problem could've been solved by someone much earlier.",
+     "The problem could have been solved much earlier by somebody.",
+     "The problem could've been solved much earlier by somebody.",
+     "The problem could have been solved by somebody much earlier.",
+     "The problem could've been solved by somebody much earlier."
+    ]
+   ],
+   "why": "Modal + *have been* + 3rd form: *The problem could have been solved much earlier.* *By someone* is not needed.",
+   "why_lv": "Modālais darbības vārds + *have been* + 3. forma: *The problem could have been solved much earlier.* *By someone* nav vajadzīgs."
+  }
+ },
+ {
+  "id": "r21c-016",
+  "decision": "accept",
+  "why": "Reader 1's 'would you like to leave before we eat something' uses all the cards and is a correct, sensible question (criterion 1: every correct answer accepted). Its fronted version 'before we eat something would you like to leave' reads oddly and is not listed by the readers; not added. The other orders are already accepted (r21b-3-006).",
+  "accept": [
+   [
+    "would you like to leave before we eat something"
+   ]
+  ]
+ },
+ {
+  "id": "r21c-017",
+  "decision": "fix",
+  "why": "Reader 2's 'in 1932 the bridge was built and today it is still used' combines two fronted phrases already accepted one by one; correct and natural, added. Reader 1's pronoun-first orders stay rejected (r21-4-028). The explanation had no example from this sentence (22 November); new one with it.",
+  "fix": {
+   "answers": [
+    [
+     "the bridge was built in 1932 and it is still used today",
+     "the bridge was built in 1932 and today it is still used",
+     "in 1932 the bridge was built and it is still used today",
+     "the bridge is still used today and it was built in 1932",
+     "today the bridge is still used and it was built in 1932",
+     "in 1932 the bridge was built and today it is still used"
+    ]
+   ],
+   "why": "The bridge did not build itself: *was* + 3rd form for the past, *is* + 3rd form for now: *The bridge was built in 1932, and it is still used today.*",
+   "why_lv": "Tilts pats sevi necēla: pagātnē *was* + 3. forma, tagad *is* + 3. forma: *The bridge was built in 1932, and it is still used today.*"
+  }
+ },
+ {
+  "id": "r21c-018",
+  "decision": "keep",
+  "why": "Reader 2 only notes the form is not named; *Start with My laptop* makes the form necessary without a term (6 November), and the get-passive and *by someone* variants are accepted (r21-4-029, r21b-3-011)."
+ },
+ {
+  "id": "r21c-020",
+  "decision": "fix",
+  "why": "Readers flag ease only; level flags were decided earlier and the statement and end-'still' orders are accepted (r21-4-032, r21b-3-022). The explanation was a general rule with no example from this sentence (22 November); new one with it. Answers unchanged.",
+  "fix": {
+   "why": "A question: *does* + subject + base verb, with *still* before the main verb: *Does your brother still work for the same company?*",
+   "why_lv": "Jautājums: *does* + teikuma priekšmets + pamatforma, *still* pirms darbības vārda: *Does your brother still work for the same company?*"
+  }
+ },
+ {
+  "id": "r21c-021",
+  "decision": "keep",
+  "why": "Reader 1 confirms 'looking' alone does not fit; the bank is from the card (r21b-3-029). The level flag was decided earlier: a temporary situation against the simple form is a point of the B1.1 present_continuous card."
+ },
+ {
+  "id": "r21c-022",
+  "decision": "keep",
+  "why": "Reader 2's worry is unfounded: both the continuous and the simple (*have learned / learnt*) are accepted, with the fronted *since* and *it* (r21-3-033, r21b-3-040)."
+ },
+ {
+  "id": "r21c-023",
+  "decision": "fix",
+  "why": "Already practice only (A2 form). *never* and *yet* are accepted (r21-3-034, r21b-3-041); 'We haven't been to that museum' changes the verb and is rejected. The explanation spoke about questions and *How long*, not this sentence (22 November); new one with it. Answers unchanged.",
+  "fix": {
+   "why": "Negative: *haven't* + 3rd form: *We haven't visited that museum.*",
+   "why_lv": "Noliegums: *haven't* + 3. forma: *We haven't visited that museum.*"
+  }
+ },
+ {
+  "id": "r21c-025",
+  "decision": "keep",
+  "why": "Readers' points are already in the key: 'sent' alone after *and then* is accepted, and *cheese* as the subject rules out the active. The verbs in brackets are the rule's way to give the verb without the form (4 November)."
+ },
+ {
+  "id": "r21c-026",
+  "decision": "accept",
+  "why": "'The winner will be announced on Friday by them.' is redundant but correct; 'by them' is already accepted in the other position (as r21b-3-011 for the laptop).",
+  "accept": [
+   [
+    "The winner will be announced on Friday by them."
+   ]
+  ]
+ },
+ {
+  "id": "r21c-027",
+  "decision": "accept",
+  "why": "'already had finished' is a less usual but correct position of *already* (before the auxiliary) and keeps the past perfect: added. Rejected: 'had finished' (leaves out *already*, which the brackets give), 'already finished' (the narrative card wants *had* for what happened before: 'Past perfect: what happened before'), 'had finished already' (gives 'had finished already eating', not English). Level: the B1.1 narrative card teaches the past perfect.",
+  "accept": [
+   [
+    "already had finished"
+   ]
+  ]
+ }
+]

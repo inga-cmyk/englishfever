@@ -1,0 +1,114 @@
+[
+ {
+  "id": "c1-20-001",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "decision",
+   "move",
+   "the",
+   "my",
+   "to",
+   "to",
+   "countryside",
+   "i'm",
+   "regretting",
+   "already"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-20-002",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "expected",
+   "be",
+   "much",
+   "had",
+   "was",
+   "the",
+   "harder",
+   "to",
+   "i",
+   "than",
+   "interview",
+   "it"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-20-003",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "you",
+   "afraid",
+   "on",
+   "i'd",
+   "that",
+   "with",
+   "have",
+   "i'm",
+   "disagree",
+   "to"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-20-004",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "My name was missing from the passenger list, but after an hour of phone calls, I ___ ___ onto the plane.",
+  "word_cards": [
+   "could",
+   "go",
+   "allowed",
+   "was"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-20-005",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "all",
+   "the",
+   "insisted",
+   "be",
+   "decision",
+   "the",
+   "announced",
+   "to",
+   "staff",
+   "that",
+   "committee"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-20-006",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "kind",
+   "from",
+   "you",
+   "not",
+   "of",
+   "walk",
+   "the",
+   "job",
+   "away",
+   "can",
+   "it's"
+  ],
+  "note": "the learner puts all the cards in order"
+ }
+]

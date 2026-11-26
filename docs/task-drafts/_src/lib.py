@@ -356,7 +356,7 @@ Divdabja teicienam pats galvenajam teikumam Gaismas iemeslam divdabja iemeslu te
 desmit Abas tu te noticis pareizi skaits perfekts nenoteiksmes tikai ierasta nepatiku svara galvenie nodotu apgalvojuma gaida ieteikt objektu
 izsaka ticamai seno notiktu reizi atteikumam lietai esat mieru nelielai padara viedokli otrs papildinātāju forma formas pagātne""".split())
 for _n in ("c1-agree-1.csv", "c1-can-1.csv", "c1-order-1.csv", "c1-part-1.csv", "c1-past-1.csv", "c1-perf-1.csv",
-           "c1-prep-1.csv", "c1-pres-1.csv", "c1-pres-2.csv", "c1-subj-1.csv", "c1-will-1.csv"):
+           "c1-prep-1.csv", "c1-pres-1.csv", "c1-pres-2.csv", "c1-subj-1.csv", "c1-will-1.csv", "c1-drag-1.csv"):
     LV_BY_FILE[_n] = _C1_LV
 
 

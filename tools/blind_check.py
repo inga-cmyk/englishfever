@@ -146,7 +146,8 @@ def compare(name):
             oc = x.get("other_correct")
             for a in [x.get("answer")] + (oc if isinstance(oc, list) else ([oc] if oc else [])):
                 if a not in (None, "", "none") and k["item"]["kind"] in ("gap", "text", "order"): todo.append((tid, a))
-    card = lambda t, a: re.sub(r"\s*,\s*", " ", a) if keyd[t]["item"]["kind"] == "order" and isinstance(a, str) else a   # word cards carry no commas
+    one = lambda t, a: a[0] if keyd[t]["item"]["kind"] == "order" and isinstance(a, list) and len(a) == 1 and isinstance(a[0], str) else a   # an order answer written as ["sentence"] (26 November)
+    card = lambda t, a: (lambda a: re.sub(r"\s*,\s*", " ", a) if keyd[t]["item"]["kind"] == "order" and isinstance(a, str) else a)(one(t, a))   # word cards carry no commas
     res = grade_all([(keyd[t]["item"], card(t, a)) for t, a in todo])
     graded = {(t, json.dumps(a, ensure_ascii=False)): ok for (t, a), ok in zip(todo, res)}
 

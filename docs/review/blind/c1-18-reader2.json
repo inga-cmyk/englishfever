@@ -1,0 +1,1018 @@
+[
+ {
+  "id": "c1-18-001",
+  "answer": [
+   "had",
+   "planned"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Past perfect for an unfulfilled plan is B1-B2; 'have'/'was' are rejected at once by a B1 learner. Acceptable only as review.",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-002",
+  "answer": [
+   "we were hoping you might help us with the move"
+  ],
+  "other_correct": [
+   [
+    "were we hoping you might help us with the move"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Question order 'were we hoping you might help us with the move?' is grammatical (odd sense, but punctuation is hidden). 'you might help us with the move, we were hoping' is a spoken afterthought order, marginal."
+ },
+ {
+  "id": "c1-18-003",
+  "answer": [
+   "was",
+   "always"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "'always' + past continuous for an annoying habit is B2; 'is/has' clash with 'When we were teenagers' and are spotted at once.",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-004",
+  "answer": [
+   "we were walking to work every day during the strike"
+  ],
+  "other_correct": [
+   [
+    "during the strike we were walking to work every day"
+   ],
+   [
+    "during the strike, every day we were walking to work"
+   ],
+   [
+    "every day during the strike we were walking to work"
+   ],
+   [
+    "we were walking to work during the strike every day"
+   ],
+   [
+    "every day we were walking to work during the strike"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Several fronted/end positions of 'every day' and 'during the strike' are correct; 'during the strike we were walking...' is fully natural and must be accepted. Past continuous for a temporary repeated situation is fine, though 'we walked' is the more usual choice."
+ },
+ {
+  "id": "c1-18-005",
+  "answer": [
+   "had",
+   "been",
+   "crying"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Too easy for C1: a B1 learner solves it at once (basic tense form, distractors are obvious form errors).",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-006",
+  "answer": [
+   "was",
+   "writing"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Too easy for C1: a B1 learner solves it at once (basic tense form, distractors are obvious form errors). Interrupted past continuous is A2-B1.",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-007",
+  "answer": [
+   "I was going to call you but I fell asleep"
+  ],
+  "other_correct": [
+   [
+    "I fell asleep but I was going to call you"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "'was going to' for an unfulfilled intention is B1-B2.",
+  "sense_problem": "Swapped clauses 'I fell asleep, but I was going to call you' are grammatical and plausible as an apology (less natural)."
+ },
+ {
+  "id": "c1-18-008",
+  "answer": [
+   "to",
+   "have",
+   "spent"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-009",
+  "answer": [
+   "this is the third time the lift has broken down this month"
+  ],
+  "other_correct": [
+   [
+    "this is the third time this month the lift has broken down"
+   ],
+   [
+    "this month is the third time the lift has broken down"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "'this is the third time this month the lift has broken down' is fully natural and must be accepted. 'this month is the third time...' is marginal/wrong. Two 'this' and two 'the' cards make many permutations; check them in the grader."
+ },
+ {
+  "id": "c1-18-010",
+  "answer": [
+   "will",
+   "have",
+   "been",
+   "living"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Fine: 'will have lived' would need only three gaps, so four gaps force the continuous."
+ },
+ {
+  "id": "c1-18-011",
+  "answer": [
+   "have",
+   "submitted"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Present perfect after 'once' for a completed future condition: B2; acceptable.",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-012",
+  "answer": [
+   "I've been trying to reach you all afternoon"
+  ],
+  "other_correct": [
+   [
+    "all afternoon I've been trying to reach you"
+   ],
+   [
+    "I've been trying all afternoon to reach you"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Too easy for C1: a B1 learner solves it at once (basic tense form, distractors are obvious form errors). Present perfect continuous with 'all afternoon' is B1.",
+  "sense_problem": "'I've been trying all afternoon to reach you' is natural and must be accepted, as must the fronted 'all afternoon'."
+ },
+ {
+  "id": "c1-18-013",
+  "answer": [
+   "have",
+   "received"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Too easy for C1: a B1 learner solves it at once (basic tense form, distractors are obvious form errors). 'It's only Tuesday ... this week' + present perfect is A2-B1.",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-014",
+  "answer": [
+   "the house is thought to have been built in the 1890s"
+  ],
+  "other_correct": [
+   [
+    "in the 1890s the house is thought to have been built"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Fronted 'in the 1890s' is grammatical but unnatural (rule: fronted phrases of this kind are not accepted); the main order is unique."
+ },
+ {
+  "id": "c1-18-015",
+  "answer": [
+   "should",
+   "have"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Good: 'If you have' needs one gap only, so two gaps force 'should have'."
+ },
+ {
+  "id": "c1-18-016",
+  "answer": [
+   "when she was a child she would spend hours in the garden"
+  ],
+  "other_correct": [
+   [
+    "she would spend hours in the garden when she was a child"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Both clause orders are correct and must be accepted. 'she would spend hours when she was a child in the garden' is awkward, not acceptable."
+ },
+ {
+  "id": "c1-18-017",
+  "answer": [
+   "will",
+   "go"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Good C1 point (insistent 'will' in an if-clause, Swan). Note: a learner may want plain 'go', but two gaps force 'will go'. 'would go' is wrong for a present habit."
+ },
+ {
+  "id": "c1-18-018",
+  "answer": [
+   "would",
+   "have",
+   "thought"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-019",
+  "answer": [
+   "the car wouldn't start this morning so I took the bus"
+  ],
+  "other_correct": [
+   [
+    "this morning the car wouldn't start so I took the bus"
+   ],
+   [
+    "the car wouldn't start so I took the bus this morning"
+   ],
+   [
+    "the car wouldn't start so this morning I took the bus"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "'wouldn't start' (refusal) is B1-B2.",
+  "sense_problem": "Several positions of 'this morning' are correct; at least the fronted one and the end-of-sentence one must be accepted."
+ },
+ {
+  "id": "c1-18-020",
+  "answer": [
+   "should",
+   "be"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "'will be' after 'in case' is a typical learner error but is heard in speech; not standard, so OK as distractor.",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "'in case ... should be' is correct but formal; the natural form ('are') is not on the cards, so the model sentence sounds a little stilted after an informal imperative."
+ },
+ {
+  "id": "c1-18-021",
+  "answer": [
+   "you should have told me you were going to be late"
+  ],
+  "other_correct": [
+   [
+    "should you have told me you were going to be late"
+   ],
+   [
+    "you were going to be late, you should have told me"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Question order is grammatical but odd in sense; 'you were going to be late, you should have told me' is a spoken (comma-spliced) order, marginal."
+ },
+ {
+  "id": "c1-18-022",
+  "answer": [
+   "might",
+   "as"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-023",
+  "answer": [
+   "he can't have been at home last night"
+  ],
+  "other_correct": [
+   [
+    "last night he can't have been at home"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Fronted 'last night' is grammatical (less natural); accept it."
+ },
+ {
+  "id": "c1-18-024",
+  "answer": [
+   "can",
+   "be"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "'can' for typical possibility is B1; 'are being dangerous' is not a believable C1 mistake.",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-025",
+  "answer": [
+   "were",
+   "allowed"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Too easy for C1: a B1 learner solves it at once (basic tense form, distractors are obvious form errors).",
+  "sense_problem": "Distractors 'could'/'are' are not believable here: 'could allowed' is not a form; 'are allowed' clashes with 'was closed'."
+ },
+ {
+  "id": "c1-18-026",
+  "answer": [
+   "she may be clever but she has no common sense"
+  ],
+  "other_correct": [
+   [
+    "she has no common sense but she may be clever"
+   ],
+   [
+    "clever she may be but she has no common sense"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "'Clever she may be, but she has no common sense' (fronted adjective, concessive) is correct literary C1 English. Swapped clauses are grammatical but lose the concessive sense (less natural)."
+ },
+ {
+  "id": "c1-18-027",
+  "answer": [
+   "could",
+   "see"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Too easy for C1: a B1 learner solves it at once (basic tense form, distractors are obvious form errors). 'could see' is A2-B1.",
+  "sense_problem": "'managed' is not a believable distractor ('managed see' is not a form; 'managed to see' would need 'to')."
+ },
+ {
+  "id": "c1-18-028",
+  "answer": [
+   "they might have been delayed by the snow"
+  ],
+  "other_correct": [
+   [
+    "might they have been delayed by the snow"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Question order 'might they have been delayed by the snow?' is grammatical (hidden punctuation)."
+ },
+ {
+  "id": "c1-18-029",
+  "answer": [
+   "not",
+   "drink"
+  ],
+  "other_correct": [
+   [
+    "drink",
+    "no"
+   ],
+   [
+    "drinks",
+    "no"
+   ]
+  ],
+  "wrong_options_that_fit": "'drink no coffee' (subjunctive + 'no') is correct, if less natural. 'drinks no coffee' after 'recommended that' is accepted in informal British English by Swan (ordinary present after verbs of recommending), though tense backshift would suggest 'drank'.",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Serious: two-card answers 'drink no' and arguably 'drinks no' are correct. The 'no' card breaks the uniqueness; replace it with a clear non-form."
+ },
+ {
+  "id": "c1-18-030",
+  "answer": [
+   "I'd rather you had asked me before taking my car"
+  ],
+  "other_correct": [
+   [
+    "before taking my car I'd rather you had asked me"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Fronted 'before taking my car' is grammatical but awkward; main order unique."
+ },
+ {
+  "id": "c1-18-031",
+  "answer": [
+   "not",
+   "be"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Mandative subjunctive is correct; British English would more often say 'should not be', but the model is fine. 'be not' is archaic, so correctly rejected."
+ },
+ {
+  "id": "c1-18-032",
+  "answer": [
+   "were",
+   "to"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-033",
+  "answer": [
+   "the committee insisted that the decision be made public"
+  ],
+  "other_correct": [
+   [
+    "the public committee insisted that the decision be made"
+   ],
+   [
+    "the committee insisted that the public decision be made"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Odd but grammatical alternatives exist because 'public' can be an attributive adjective and 'make a decision' needs no complement ('insisted that the decision be made'). Less natural; consider whether the grader needs them."
+ },
+ {
+  "id": "c1-18-034",
+  "answer": [
+   "be",
+   "it"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Fixed idiom: a learner either knows it or not; fine for C1 but not a grammar decision.",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-035",
+  "answer": [
+   "the landlord requested that all tenants should leave their keys at reception"
+  ],
+  "other_correct": [
+   [
+    "the landlord requested that tenants should leave all their keys at reception"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "'requested that tenants should leave all their keys at reception' is correct (different but sensible meaning) and must be accepted. Also 'at reception' with no article is right; good."
+ },
+ {
+  "id": "c1-18-036",
+  "answer": [
+   "is",
+   "getting"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "'The news is getting better than we expected' is slightly odd ('is better than we expected' is the usual phrase), but grammatical."
+ },
+ {
+  "id": "c1-18-037",
+  "answer": [
+   "the majority of the residents are against the new car park"
+  ],
+  "other_correct": [
+   [
+    "the majority of the new residents are against the car park"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Serious: 'the majority of the new residents are against the car park' is fully correct and sensible; three 'the' cards and 'new' can go in two places."
+ },
+ {
+  "id": "c1-18-038",
+  "answer": [
+   "still",
+   "make"
+  ],
+  "other_correct": [
+   [
+    "still",
+    "makes"
+   ]
+  ],
+  "wrong_options_that_fit": "'still makes' (singular after 'one of the ... who') is very common in speech and accepted informally by Swan, though plural is the standard.",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Good C1 point; but the grader should decide whether informal 'makes' is accepted."
+ },
+ {
+  "id": "c1-18-039",
+  "answer": [
+   "have",
+   "been"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "'has been' ('There's been three cars...') is common in informal speech but non-standard in writing.",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-040",
+  "answer": [
+   "two thirds of the money has already been spent"
+  ],
+  "other_correct": [
+   [
+    "two thirds of the money has been spent already"
+   ],
+   [
+    "two thirds of the money has been already spent"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "'has been spent already' is natural and must be accepted; 'has been already spent' is less natural but occurs."
+ },
+ {
+  "id": "c1-18-041",
+  "answer": [
+   "was",
+   "much"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-042",
+  "answer": [
+   "neither the teacher nor the students were happy with the results"
+  ],
+  "other_correct": [
+   [
+    "neither the students nor the teacher were happy with the results"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Swapped order with 'were' is common and accepted in informal style (Swan: plural verb with neither...nor is usual informally), though proximity would require 'was'. Decide whether to accept."
+ },
+ {
+  "id": "c1-18-043",
+  "answer": [
+   "in",
+   "which"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "'in which' is B2; 'where' cannot fill two gaps, so the task is forced; acceptable.",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-044",
+  "answer": [
+   "this is the problem we need to deal with"
+  ],
+  "other_correct": [
+   [
+    "the problem we need to deal with is this"
+   ],
+   [
+    "is this the problem we need to deal with"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Serious: 'the problem we need to deal with is this' (statement) and 'is this the problem we need to deal with?' (question) are both correct."
+ },
+ {
+  "id": "c1-18-045",
+  "answer": [
+   "of",
+   "whom"
+  ],
+  "other_correct": [
+   [
+    "of",
+    "them"
+   ]
+  ],
+  "wrong_options_that_fit": "'both of them live abroad' is a comma splice in writing but very common in speech.",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-046",
+  "answer": [
+   "regardless",
+   "of"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-047",
+  "answer": [
+   "the matter is being looked into by the police"
+  ],
+  "other_correct": [
+   [
+    "is the matter being looked into by the police"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Question order 'is the matter being looked into by the police?' is grammatical (hidden punctuation)."
+ },
+ {
+  "id": "c1-18-048",
+  "answer": [
+   "on",
+   "paying"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "'insist on + -ing' is B1-B2.",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-049",
+  "answer": [
+   "she's not an easy person to work with"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Fine."
+ },
+ {
+  "id": "c1-18-050",
+  "answer": [
+   "Having",
+   "read"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Fine: 'Reading' alone fills one gap only."
+ },
+ {
+  "id": "c1-18-051",
+  "answer": [
+   "not wanting to wake the children we spoke in whispers"
+  ],
+  "other_correct": [
+   [
+    "we spoke in whispers not wanting to wake the children"
+   ],
+   [
+    "wanting not to wake the children we spoke in whispers"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Both clause orders are correct and must be accepted; 'wanting not to wake' is correct but less natural."
+ },
+ {
+  "id": "c1-18-052",
+  "answer": [
+   "being",
+   "bad"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Absolute construction is correct but stilted with a plain adjective; 'The weather being so bad' would be more natural. 'was bad' gives a comma splice (correctly wrong)."
+ },
+ {
+  "id": "c1-18-053",
+  "answer": [
+   "If",
+   "in"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Capital letters on cards reveal which cards can start the sentence (only 'On'/'If'), narrowing choice."
+ },
+ {
+  "id": "c1-18-054",
+  "answer": [
+   "the woman sitting next to me on the plane was a famous actress"
+  ],
+  "other_correct": [
+   [
+    "the woman sitting on the plane next to me was a famous actress"
+   ],
+   [
+    "on the plane the woman sitting next to me was a famous actress"
+   ],
+   [
+    "the famous actress sitting next to me on the plane was a woman"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "'sitting on the plane next to me' is correct (less natural); fronted 'on the plane' is fine; 'the famous actress ... was a woman' is grammatical but absurd."
+ },
+ {
+  "id": "c1-18-055",
+  "answer": [
+   "leaving",
+   "without"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-056",
+  "answer": [
+   "generally speaking people here are very friendly"
+  ],
+  "other_correct": [
+   [
+    "people here are generally speaking very friendly"
+   ],
+   [
+    "people here generally speaking are very friendly"
+   ],
+   [
+    "people here are very friendly generally speaking"
+   ],
+   [
+    "speaking generally people here are very friendly"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Serious: the disjunct 'generally speaking' can go first, mid or last; all must be accepted or the sentence changed."
+ },
+ {
+  "id": "c1-18-057",
+  "answer": [
+   "was",
+   "he"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-058",
+  "answer": [
+   "no sooner had the film started than the power went off"
+  ],
+  "other_correct": [
+   [
+    "the film had no sooner started than the power went off"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Serious: the non-inverted 'the film had no sooner started than the power went off' is standard correct English (Swan, Hewings) and uses all cards."
+ },
+ {
+  "id": "c1-18-059",
+  "answer": [
+   "Were",
+   "she"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-060",
+  "answer": [
+   "Much",
+   "as"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-061",
+  "answer": [
+   "at the top of the hill stands an old church"
+  ],
+  "other_correct": [
+   [
+    "an old church stands at the top of the hill"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Serious: the uninverted 'an old church stands at the top of the hill' is correct and more usual; the task cannot force the inversion."
+ },
+ {
+  "id": "c1-18-062",
+  "answer": [
+   "did",
+   "she"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-063",
+  "answer": [
+   "all we need now is a bit of luck"
+  ],
+  "other_correct": [
+   [
+    "now all we need is a bit of luck"
+   ],
+   [
+    "all we need is a bit of luck now"
+   ],
+   [
+    "a bit of luck is all we need now"
+   ],
+   [
+    "now a bit of luck is all we need"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Serious: 'now all we need is a bit of luck' and 'a bit of luck is all we need now' are fully natural."
+ },
+ {
+  "id": "c1-18-064",
+  "answer": [
+   "are",
+   "being"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "'be being' + adjective for behaviour is B2; fine as review.",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-065",
+  "answer": [
+   "we're hoping you can join us for dinner on Saturday"
+  ],
+  "other_correct": [
+   [
+    "we're hoping you can join us on Saturday for dinner"
+   ],
+   [
+    "on Saturday we're hoping you can join us for dinner"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Too easy for C1: a B1 learner orders it without difficulty.",
+  "sense_problem": "'join us on Saturday for dinner' is fully natural and must be accepted."
+ },
+ {
+  "id": "c1-18-066",
+  "answer": [
+   "am",
+   "finding"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-067",
+  "answer": [
+   "tells",
+   "me"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Present simple 'tells me' for news is a nice C1 point; fine."
+ },
+ {
+  "id": "c1-18-068",
+  "answer": [
+   "we're loving every minute of our holiday"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "Too easy for C1: only one possible order, short and everyday (B1).",
+  "sense_problem": ""
+ },
+ {
+  "id": "c1-18-069",
+  "answer": [
+   "so I'm standing at the bus stop and this man comes up to me"
+  ],
+  "other_correct": [],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "",
+  "level_problem": "",
+  "sense_problem": "Narrative present, informal; fine. Swapped clauses are illogical."
+ },
+ {
+  "id": "c1-18-070",
+  "answer": [
+   "chops",
+   "throws"
+  ],
+  "other_correct": [
+   [
+    "throws",
+    "chops"
+   ]
+  ],
+  "wrong_options_that_fit": "",
+  "instruction_problem": "'And now' plus present-tense context gives the tense away.",
+  "level_problem": "Too easy for C1: a B1 learner solves it at once (basic tense form, distractors are obvious form errors). Distractors are simply past forms.",
+  "sense_problem": "'throws the onions and chops them into the hot pan' is grammatical but illogical; model unique in practice."
+ }
+]

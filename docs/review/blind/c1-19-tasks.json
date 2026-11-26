@@ -1,0 +1,712 @@
+[
+ {
+  "id": "c1-19-001",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "You ___ ___ very difficult today. That's not like you.",
+  "word_cards": [
+   "being",
+   "be",
+   "been",
+   "are"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-002",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "with",
+   "i'm",
+   "swapping",
+   "whether",
+   "seats",
+   "mind",
+   "me",
+   "wondering",
+   "you'd"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-003",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "I ___ ___ more and more how much I miss the sea.",
+  "word_cards": [
+   "was",
+   "realising",
+   "am",
+   "realise"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-004",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Your brother ___ ___ you've decided to sell the flat. Is that right?",
+  "word_cards": [
+   "is",
+   "tells",
+   "telling",
+   "me",
+   "says"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-005",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "to",
+   "already",
+   "the",
+   "regretting",
+   "countryside",
+   "move",
+   "my",
+   "i'm",
+   "to",
+   "decision"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-006",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "OK, OK, I ___ ___: I forgot to book the restaurant.",
+  "word_cards": [
+   "am",
+   "admitting",
+   "it",
+   "admit"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-007",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "I ___ ___ to retire at sixty, but with prices the way they are, I'll have to keep working.",
+  "word_cards": [
+   "planned",
+   "have",
+   "plan",
+   "had"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-008",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "be",
+   "with",
+   "us",
+   "you",
+   "help",
+   "might",
+   "able",
+   "we",
+   "if",
+   "to",
+   "wondering",
+   "were",
+   "the",
+   "move"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-009",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "When we were teenagers, my sister ___ ___ ___ my clothes without asking.",
+  "word_cards": [
+   "had",
+   "was",
+   "borrow",
+   "always",
+   "borrowing"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-010",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "During last summer's heatwave, we ___ ___ in the garden every night.",
+  "word_cards": [
+   "were",
+   "have",
+   "sleeping",
+   "slept"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-011",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "When we got back from holiday, the heating was on and there were dirty cups in the sink. Someone ___ ___ ___ in the flat.",
+  "word_cards": [
+   "stayed",
+   "had",
+   "staying",
+   "has",
+   "been"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-012",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "By the time I found my phone, she ___ ___ ___ me four times.",
+  "word_cards": [
+   "been",
+   "texting",
+   "texted",
+   "already",
+   "had"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-013",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "the",
+   "i",
+   "had",
+   "to",
+   "than",
+   "be",
+   "interview",
+   "harder",
+   "expected",
+   "much",
+   "it",
+   "was"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-014",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "It was the first time she ___ ___ on the left, so she was very nervous.",
+  "word_cards": [
+   "had",
+   "has",
+   "driven",
+   "drove"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-015",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "By the end of this month, I ___ ___ ___ this car for exactly ten years.",
+  "word_cards": [
+   "had",
+   "having",
+   "be",
+   "have",
+   "will"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-016",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Once the paint ___ ___, you can put the furniture back.",
+  "word_cards": [
+   "dry",
+   "will",
+   "has",
+   "dried"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-017",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "I don't remember ___ ___ this film before, but I know how it ends.",
+  "word_cards": [
+   "to",
+   "see",
+   "seen",
+   "having"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-018",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "She told the boss he was wrong in front of everyone? I'd love ___ ___ ___ his face!",
+  "word_cards": [
+   "have",
+   "to",
+   "saw",
+   "seen",
+   "having"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-019",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "thought",
+   "built",
+   "have",
+   "the",
+   "the",
+   "to",
+   "is",
+   "house",
+   "been",
+   "1890s",
+   "in"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-020",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "have",
+   "afraid",
+   "that",
+   "on",
+   "with",
+   "i'm",
+   "i'd",
+   "to",
+   "disagree",
+   "you"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-021",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Please allow extra time for your journey in case the roads ___ ___ busy.",
+  "word_cards": [
+   "be",
+   "should",
+   "would",
+   "will"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-022",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "I've rung the bell twice and nobody's answering. They ___ ___ out in the garden.",
+  "word_cards": [
+   "can",
+   "might",
+   "be",
+   "being"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-023",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "The house itself was closed to visitors, but we ___ ___ into the garden.",
+  "word_cards": [
+   "allowed",
+   "could",
+   "go",
+   "were"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-024",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "be",
+   "but",
+   "clever",
+   "sense",
+   "she",
+   "may",
+   "common",
+   "no",
+   "has",
+   "she"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-025",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "With this much snow, the match ___ ___ be cancelled, so check the website before you set off.",
+  "word_cards": [
+   "good",
+   "may",
+   "well",
+   "can"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-026",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "they",
+   "delayed",
+   "the",
+   "by",
+   "snow",
+   "been",
+   "have",
+   "might"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-027",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "The coach advised that the captain ___ ___ to journalists before the final.",
+  "word_cards": [
+   "to",
+   "not",
+   "speaks",
+   "speak"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-028",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "booked",
+   "somewhere",
+   "with",
+   "pool",
+   "rather",
+   "had",
+   "i'd",
+   "we",
+   "a"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-029",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "that",
+   "to",
+   "committee",
+   "staff",
+   "insisted",
+   "be",
+   "decision",
+   "the",
+   "the",
+   "announced",
+   "all"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-030",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "My colleagues may think I'm rude for leaving at five, but so ___ ___.",
+  "word_cards": [
+   "was",
+   "be",
+   "it",
+   "is"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-031",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "remain",
+   "the",
+   "seats",
+   "in",
+   "captain",
+   "that",
+   "should",
+   "their",
+   "requested",
+   "passengers"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-032",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "This pair of glasses ___ ___ me over two hundred euros.",
+  "word_cards": [
+   "have",
+   "has",
+   "costed",
+   "cost"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-033",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Our biggest expense ___ ___ ___ the rent and the heating bills.",
+  "word_cards": [
+   "being",
+   "always",
+   "has",
+   "have",
+   "been"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-034",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Two thirds of the money ___ ___ spent on salaries.",
+  "word_cards": [
+   "have",
+   "being",
+   "has",
+   "been"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-035",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "The manager ___ ___ I worked in my first job taught me everything I know.",
+  "word_cards": [
+   "that",
+   "who",
+   "whom",
+   "which",
+   "for"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-036",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "the",
+   "away",
+   "walk",
+   "kind",
+   "you",
+   "it's",
+   "job",
+   "can",
+   "of",
+   "from",
+   "not"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-037",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "looked",
+   "police",
+   "into",
+   "the",
+   "by",
+   "matter",
+   "the",
+   "is",
+   "being"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-038",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Two goals down with five minutes left, there's little hope ___ ___ the match now.",
+  "word_cards": [
+   "winning",
+   "win",
+   "of",
+   "to"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-039",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Unpacking my suitcase at the hotel, ___ ___ that my passport was missing.",
+  "word_cards": [
+   "I",
+   "noticed",
+   "seemed",
+   "it"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-040",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "All flights ___ ___ ___, passengers were offered rooms at a nearby hotel.",
+  "word_cards": [
+   "cancelled",
+   "been",
+   "having",
+   "being",
+   "were"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-041",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "___ ___, he refused to go to bed until the match was over.",
+  "word_cards": [
+   "exhausted",
+   "Though",
+   "exhausting",
+   "If"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-042",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "The flats ___ ___ near the station will be ready next spring.",
+  "word_cards": [
+   "built",
+   "have",
+   "are",
+   "building",
+   "being"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-043",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "___ ___, the job isn't mine until I've signed the contract.",
+  "word_cards": [
+   "Strictly",
+   "Strict",
+   "spoken",
+   "speaking"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-044",
+  "level": "C1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "the",
+   "went",
+   "off",
+   "the",
+   "film",
+   "had",
+   "no",
+   "than",
+   "sooner",
+   "started",
+   "power"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "c1-19-045",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Opposite our office ___ two new cafés, so lunch is never a problem.",
+  "word_cards": [
+   "are",
+   "there",
+   "is",
+   "stands"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-046",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "Not once ___ ___ thank us for looking after his dog.",
+  "word_cards": [
+   "was",
+   "he",
+   "has",
+   "did"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "c1-19-047",
+  "level": "C1",
+  "kind": "gap",
+  "instruction_and_task": "What she did ___ ___ out of the meeting without a word.",
+  "word_cards": [
+   "was",
+   "walk",
+   "walked",
+   "is"
+  ],
+  "note": "the learner drags one card into each gap"
+ }
+]

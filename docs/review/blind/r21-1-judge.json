@@ -1,0 +1,791 @@
+[
+ {
+  "id": "r21-1-001",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "By the time the taxi came, we had finished dinner.",
+    "I had never tried sushi before that trip.",
+    "He told me that he had lost his keys."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-002",
+  "decision": "remove",
+  "why": "Gate card_words: unless, although, because are not on the cond_zero card; the card's own linkers ('*if, when, whenever, every time*') all replace 'if' here, so no choice of card words leaves one answer. A learn task; the point is practised elsewhere."
+ },
+ {
+  "id": "r21-1-003",
+  "decision": "fix",
+  "why": "Reader claim rejected: 'If people don't sleep enough, they would be grumpy' mixes a real if-part with 'would' (Murphy 25, card 'present simple, present simple'); it is the learner mistake. Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "Whenever I forget my umbrella, it rains.",
+    "If the printer jams, everybody panics.",
+    "If you press this button, the machine stops."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-004",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "If she had more time, she would learn Italian.",
+    "What would you do if you saw a ghost?",
+    "If I were you, I wouldn't do that."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-005",
+  "decision": "fix",
+  "why": "The instruction asked about grammar ('report a yes/no question', a term) and the explanation used another sentence (jazz). Now a usage task with the card's 'asked + if / whether + subject + verb' and its mistake 'She asked do I like coffee'; the explanation uses this task's sentence.",
+  "fix": {
+   "q": "Which sentence reports this question: 'Do you like jazz?'",
+   "correct": "He asked me if I liked jazz.",
+   "wrong": [
+    "He asked me do I like jazz.",
+    "He asked me if did I like jazz."
+   ],
+   "why": "A question without a question word is reported with *if* (or *whether*) and statement word order, no *do / did*: *He asked me if I liked jazz.*",
+   "why_lv": "Jautājumu bez jautājamā vārda netiešajā runā ievada ar *if* (vai *whether*), vārdu secība ir kā apgalvojumā, bez *do / did*: *He asked me if I liked jazz.*"
+  }
+ },
+ {
+  "id": "r21-1-006",
+  "decision": "fix",
+  "why": "Near-duplicate of r21-1-012 (same wrong sentence 'asked me where did I live') and a near-copy right sentence. New wrong sentence (same point, card 'statement word order') and three different right sentences; explanation uses this sentence.",
+  "fix": {
+   "correct": "The receptionist asked me how long would I stay.",
+   "wrong": [
+    "He asked if I wanted a coffee.",
+    "She asked whether it was true.",
+    "She wanted to know what time the shop closed."
+   ],
+   "why": "A reported question has statement word order: *how long I would stay*, not *how long would I stay*.",
+   "why_lv": "Netiešajam jautājumam ir apgalvojuma vārdu secība: *how long I would stay*, nevis *how long would I stay*."
+  }
+ },
+ {
+  "id": "r21-1-007",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change. The explanation now shows this task's own correction.",
+  "fix": {
+   "wrong": [
+    "When I travel by bus, I always feel sick.",
+    "If the battery is low, the phone switches off.",
+    "Whenever my neighbour plays music, my dog barks."
+   ],
+   "why": "In a general truth the *if*-part uses the present simple, not *will*: *If metal gets hot, it expands.*",
+   "why_lv": "Vispārīgā patiesībā *if* daļā lieto Present Simple, nevis *will*: *If metal gets hot, it expands.*"
+  }
+ },
+ {
+  "id": "r21-1-008",
+  "decision": "fix",
+  "why": "All three right sentences were copies of the wrong one, and its correction was the card's own example ('If I see her, I'll tell her'). New wrong sentence with the same mistake (card: 'No will after if'), three different right sentences.",
+  "fix": {
+   "correct": "If the train will be late, I'll take a taxi.",
+   "wrong": [
+    "If it's sunny tomorrow, we'll have lunch outside.",
+    "I'll call you if the meeting finishes early.",
+    "If you need help, ask Marta."
+   ],
+   "why": "After *if* we use the present simple, not *will*: *If the train is late, I'll take a taxi.*",
+   "why_lv": "Pēc *if* lieto Present Simple, nevis *will*: *If the train is late, I'll take a taxi.*"
+  }
+ },
+ {
+  "id": "r21-1-009",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "If I had a car, I'd drive to work.",
+    "What would you do if you lost your job?",
+    "If she were here, she would know what to do."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-010",
+  "decision": "fix",
+  "why": "The wrong sentence copied the card's mistake ('She told that she was busy') and the right ones were copies of it. New scene, same mistake (card: 'tell needs a person'), three different right sentences.",
+  "fix": {
+   "correct": "My boss told that the meeting was cancelled.",
+   "wrong": [
+    "She said that she was tired.",
+    "He told me he would call later.",
+    "They said they had already eaten."
+   ],
+   "why": "*Told* needs a person after it: *My boss told us that the meeting was cancelled*; *said* does not.",
+   "why_lv": "Aiz *told* vajag personu: *My boss told us that the meeting was cancelled*; aiz *said* tā nav."
+  }
+ },
+ {
+  "id": "r21-1-011",
+  "decision": "fix",
+  "why": "Reader claim rejected: 'will' next to 'the next day' is wrong, because 'the next day' already looks back from a later time; the teacher's rule (11 November) accepts only the step back. Three right sentences were copies; now different things from the card ('will -> would, can -> could').",
+  "fix": {
+   "wrong": [
+    "She said she was working from home that day.",
+    "He said he couldn't find his keys.",
+    "They said they had booked a table."
+   ],
+   "why": "After *said*, *will* goes back to *would*: *They said they would come the next day.* *The next day* shows we look back from later, so *will* does not fit.",
+   "why_lv": "Pēc *said* *will* kļūst par *would*: *They said they would come the next day.* *The next day* rāda, ka stāstām vēlāk, tāpēc *will* neder."
+  }
+ },
+ {
+  "id": "r21-1-012",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change. (All three right sentences were copies.)",
+  "fix": {
+   "wrong": [
+    "He asked if I had a car.",
+    "They wanted to know when the train left.",
+    "She told me to wait outside."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-013",
+  "decision": "fix",
+  "why": "Reader claim rejected: Murphy (unit 18) and the card give 'Did you use to ...?' ('Question: Did + subject + use to + base verb'), and the teacher (11 November) lists 'didn't used to' as a learner mistake that may be a wrong option. Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "My dad used to work at night.",
+    "We didn't use to have a dishwasher.",
+    "Are you used to the new office yet?"
+   ],
+   "why": "Questions and negatives: *did / didn't* + *use to* (no *-d*): *Did you use to play chess?*",
+   "why_lv": "Jautājumos un noliegumos: *did / didn't* + *use to* (bez *-d*): *Did you use to play chess?*"
+  }
+ },
+ {
+  "id": "r21-1-014",
+  "decision": "fix",
+  "why": "Gate card_words: 'very' is not on the quantity card (it teaches '*enough* + noun ... Adjective + *enough*: *big enough*. *too much / too many*'); replaced with 'much'. Easy, but the card's top level is B1.1. Explanation now uses this sentence.",
+  "fix": {
+   "bank": [
+    "enough",
+    "too",
+    "much"
+   ],
+   "why": "*enough* comes after the adjective: *big enough for twenty people*.",
+   "why_lv": "*enough* ir aiz īpašības vārda: *big enough for twenty people*."
+  }
+ },
+ {
+  "id": "r21-1-015",
+  "decision": "fix",
+  "why": "The wrong sentence copied the card's mistake ('The book that I bought it is great') and the right ones were copies of it. New scene, same mistake, three different right sentences.",
+  "fix": {
+   "correct": "The jacket which I ordered online it was too small.",
+   "wrong": [
+    "This is the café where we first met.",
+    "The colleague who helped me is on holiday now.",
+    "The film we watched last night was too long."
+   ],
+   "why": "*Which* already stands for the object of *ordered*. Do not repeat it with *it*: *The jacket which I ordered online was too small.*",
+   "why_lv": "*Which* jau aizstāj darbības vārda *ordered* papildinātāju. To neatkārto ar *it*: *The jacket which I ordered online was too small.*"
+  }
+ },
+ {
+  "id": "r21-1-016",
+  "decision": "fix",
+  "why": "The wrong sentence was nearly the card's mistake ('I'll call you when I will arrive') and the same scene as r21-1-048; the right ones were copies. New scene, same mistake (card: 'when ... + Present Simple (not will)'), three different right sentences.",
+  "fix": {
+   "correct": "We'll start the meeting when everyone will be here.",
+   "wrong": [
+    "I'll wait here until you come back.",
+    "Before you leave, please close the windows.",
+    "Call me as soon as the doctor arrives."
+   ],
+   "why": "After *when* we use the present simple for the future, not *will*: *We'll start the meeting when everyone is here.*",
+   "why_lv": "Pēc *when* nākotnei lieto Present Simple, nevis *will*: *We'll start the meeting when everyone is here.*"
+  }
+ },
+ {
+  "id": "r21-1-017",
+  "decision": "fix",
+  "why": "Right sentences were copies of the wrong one ('Who called / Who did you call last night'). Kept at B1.1 (the card runs A2.2-B1.2); the explanation now uses this sentence.",
+  "fix": {
+   "wrong": [
+    "Who left the door open?",
+    "What did you buy at the market?",
+    "Who wants another coffee?"
+   ],
+   "why": "When *who* is the subject, there is no *did*: *Who called you last night?*",
+   "why_lv": "Ja *who* ir teikuma priekšmets, *did* nelieto: *Who called you last night?*"
+  }
+ },
+ {
+  "id": "r21-1-018",
+  "decision": "fix",
+  "why": "Near-copy right sentence, and 'What did happened' is the card's own mistake at A2 length. New B1.2 sentence with a 'Which + noun' subject (card: 'Neutral subject question ... no do / does / did'), three different right sentences.",
+  "fix": {
+   "correct": "Which colleague did suggested the new plan?",
+   "wrong": [
+    "Which team won the match on Saturday?",
+    "What did your manager say about the report?",
+    "How many people signed up for the course?"
+   ],
+   "why": "When the question word is the subject (*Which colleague*), there is no *did*: *Which colleague suggested the new plan?*",
+   "why_lv": "Ja jautājamais vārds ir teikuma priekšmets (*Which colleague*), *did* nelieto: *Which colleague suggested the new plan?*"
+  }
+ },
+ {
+  "id": "r21-1-019",
+  "decision": "fix",
+  "why": "Gate copy: 'made that noise' could be copied from the instruction, and '*Something*' confused both readers. Now a situation with the verb given; every natural subject question with 'make' is accepted (readers' 'What made the noise?' included; their cleft 'What was it that...' no longer fits the instruction).",
+  "fix": {
+   "q": "There's a loud bang in the kitchen. Ask your flatmate. Use *What* and *make*:",
+   "answers": [
+    [
+     "What made that noise?",
+     "What made the noise?",
+     "What made that bang?",
+     "What made the bang?",
+     "What made that sound?",
+     "What made the sound?",
+     "What made that?",
+     "What made it?"
+    ]
+   ],
+   "why": "*What* is the subject here, so there is no *did*: *What made that noise?*",
+   "why_lv": "Šeit *What* ir teikuma priekšmets, tāpēc *did* nelieto: *What made that noise?*"
+  }
+ },
+ {
+  "id": "r21-1-020",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change. Explanation now uses this sentence.",
+  "fix": {
+   "wrong": [
+    "We decided to stay at home on Saturday.",
+    "Have you finished packing your suitcase?",
+    "He's interested in learning Japanese."
+   ],
+   "why": "*promise* + *to* + verb: *She promised to help me with the move.*",
+   "why_lv": "*promise* + *to* + darbības vārds: *She promised to help me with the move.*"
+  }
+ },
+ {
+  "id": "r21-1-021",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change. Explanation now uses this sentence.",
+  "fix": {
+   "wrong": [
+    "He keeps forgetting his password.",
+    "We hope to finish the project by Friday.",
+    "I stopped drinking coffee after lunch."
+   ],
+   "why": "*enjoy* + *-ing*: *She enjoys cooking for her friends.*",
+   "why_lv": "*enjoy* + *-ing*: *She enjoys cooking for her friends.*"
+  }
+ },
+ {
+  "id": "r21-1-022",
+  "decision": "fix",
+  "why": "Gate mistake: 'might to be' is a form the gate counts as too obvious, and the right sentences were copies. New wrong sentence with the card's mistake pattern ('It might rains later'), three different right sentences from the card (may not, be able to, needn't).",
+  "fix": {
+   "correct": "Ask Tom. He might knows the answer.",
+   "wrong": [
+    "We may not have time for lunch today.",
+    "I was able to fix the printer myself.",
+    "You needn't bring anything to the party."
+   ],
+   "why": "*might / may* + base verb, no *-s*: *He might know the answer.*",
+   "why_lv": "*might / may* + pamatforma, bez *-s*: *He might know the answer.*"
+  }
+ },
+ {
+  "id": "r21-1-023",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "Where do you get your bike fixed?",
+    "I had my passport photo taken at the post office.",
+    "We're getting the windows cleaned tomorrow."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-024",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "Did you have the heating checked before winter?",
+    "She had her phone screen replaced last week.",
+    "We're having a new kitchen fitted next month."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-025",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "She sent her sister a long email.",
+    "Could you lend me your charger?",
+    "I bought a birthday cake for my colleague."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-026",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "The agent showed us three flats.",
+    "Can you pass me the salt?",
+    "My parents gave the car to my brother."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-027",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change. Explanation now uses this sentence only.",
+  "fix": {
+   "wrong": [
+    "Were you surprised by the news?",
+    "This new software is really confusing.",
+    "She gets annoyed when people are late."
+   ],
+   "why": "*-ed* says how a person feels: *I am really tired after work.* *-ing* is for what causes the feeling (*a tiring job*).",
+   "why_lv": "*-ed* saka, kā cilvēks jūtas: *I am really tired after work.* *-ing* lieto tam, kas sajūtu izraisa (*a tiring job*)."
+  }
+ },
+ {
+  "id": "r21-1-028",
+  "decision": "fix",
+  "why": "Reader point accepted in part: 'a wooden round table' does occur and is a weak mistake; the right sentences were copies. New wrong sentence breaks the card order clearly ('colour, origin, material'): 'leather black jacket'.",
+  "fix": {
+   "correct": "She bought a leather black jacket.",
+   "wrong": [
+    "They have a big white dog.",
+    "I found a beautiful old mirror at the market.",
+    "He wore a smart grey coat."
+   ],
+   "why": "Colour comes before material: *a black leather jacket*.",
+   "why_lv": "Krāsa ir pirms materiāla: *a black leather jacket*."
+  }
+ },
+ {
+  "id": "r21-1-029",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "She has long dark hair.",
+    "They live in a beautiful old farmhouse.",
+    "I'd like a big cup of hot tea."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-030",
+  "decision": "fix",
+  "why": "Gate card_words: 'so' is not on the adverbs card; its degree words are '*very, really, quite, extremely, too* + adjective ... *enough* comes after the adjective'. 'quite' replaces 'so'; explanation now about this sentence.",
+  "fix": {
+   "wrong": [
+    "too",
+    "very",
+    "quite"
+   ],
+   "why": "*enough* comes after the adjective: *hot enough to eat*. *too, very, quite* go before it.",
+   "why_lv": "*enough* ir aiz īpašības vārda: *hot enough to eat*. *too, very, quite* ir pirms tā."
+  }
+ },
+ {
+  "id": "r21-1-031",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change. Explanation now uses this sentence.",
+  "fix": {
+   "wrong": [
+    "She drives very carefully at night.",
+    "We hardly ever eat out these days.",
+    "They usually go running before work."
+   ],
+   "why": "*Speak* is an action, so it needs an adverb: *He speaks Spanish fluently.*",
+   "why_lv": "*Speak* ir darbība, tāpēc vajag apstākļa vārdu: *He speaks Spanish fluently.*"
+  }
+ },
+ {
+  "id": "r21-1-032",
+  "decision": "fix",
+  "why": "Three right sentences were copies, and 'a tired child' is not an adult setting. New adult wrong sentence with the same mistake (card: 'so + adjective'; 'such + (a / an) + (adjective) + noun'), three different right sentences.",
+  "fix": {
+   "correct": "The new flat is such small.",
+   "wrong": [
+    "It was such a long meeting that I missed lunch.",
+    "We had so much work last week.",
+    "He drives so fast!"
+   ],
+   "why": "*so* + adjective: *The new flat is so small.* *such* needs a noun: *such a small flat*.",
+   "why_lv": "*so* + īpašības vārds: *The new flat is so small.* *such* lieto ar lietvārdu: *such a small flat*."
+  }
+ },
+ {
+  "id": "r21-1-033",
+  "decision": "fix",
+  "why": "Reader 'slip' rejected: plural agreement in the passive is a card mistake of this area ('The rooms is being cleaned', 'The windows was broken'). Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "Is breakfast included in the price?",
+    "Most of our furniture is made in Latvia.",
+    "Visitors aren't allowed to take photos inside."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-034",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "How often are the trains cleaned?",
+    "This dish is usually served with rice.",
+    "Our office isn't heated at the weekend."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-035",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "The shop windows were broken in the storm.",
+    "Two men were arrested.",
+    "The money was found."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-036",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "The lifts are being repaired this week.",
+    "Is the meeting room being used at the moment?",
+    "Our street is being cleaned right now."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-037",
+  "decision": "fix",
+  "why": "The wrong sentence was the card's own mistake word for word ('The rooms is being cleaned') and the right ones copies of it. New sentence with the same agreement mistake, three different right sentences.",
+  "fix": {
+   "correct": "The windows in our flat is being replaced this week.",
+   "wrong": [
+    "My laptop is being repaired, so I'm using my phone.",
+    "Are the tickets being sold online?",
+    "The patient is being examined by a doctor."
+   ],
+   "why": "*Windows* is plural: *are being replaced*.",
+   "why_lv": "*Windows* ir daudzskaitlī: *are being replaced*."
+  }
+ },
+ {
+  "id": "r21-1-038",
+  "decision": "fix",
+  "why": "Readers: 'has been sign' looks like a typo. Replaced with the card's mistake pattern ('The email has sent': no *been*); the right sentences were copies, now three different ones.",
+  "fix": {
+   "correct": "The contract has signed.",
+   "wrong": [
+    "All the tickets have already been sold.",
+    "Has your bag been found yet?",
+    "The meeting has been moved to Friday."
+   ],
+   "why": "The contract does not sign itself: *has been* + 3rd form: *The contract has been signed.*",
+   "why_lv": "Līgums pats neparakstās: *has been* + 3. forma: *The contract has been signed.*"
+  }
+ },
+ {
+  "id": "r21-1-039",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "My colleagues often work from home on Fridays.",
+    "Does your company pay for training?",
+    "The office opens at eight."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-040",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "Does your sister still live in Berlin?",
+    "I usually cycle to work in summer.",
+    "The shop closes at six on Saturdays."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-041",
+  "decision": "fix",
+  "why": "Same scene as r21-1-050 ('know the answer') and near-copy right sentences. New state verb (card: state verbs not in -ing, 'I am needing help'), three different right sentences.",
+  "fix": {
+   "correct": "This umbrella is belonging to my colleague.",
+   "wrong": [
+    "They're thinking about moving to Spain.",
+    "We're working from home this week.",
+    "She's learning to drive this summer."
+   ],
+   "why": "*Belong* is a state verb: *This umbrella belongs to my colleague.*",
+   "why_lv": "*Belong* ir stāvokļa darbības vārds: *This umbrella belongs to my colleague.*"
+  }
+ },
+ {
+  "id": "r21-1-042",
+  "decision": "fix",
+  "why": "Reader 'nobody writes is have' rejected: the card lists 'She is work at the moment'. Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "Are you still looking for a flat?",
+    "Our team is growing fast this year.",
+    "I'm not using the car today."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-043",
+  "decision": "fix",
+  "why": "Reader claim rejected: the card ('didn't use to + base verb (no -d)', mistake 'I didn't used to like fish') and Murphy 18; the teacher (11 November) keeps 'didn't used to' as a wrong option. Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "Are you used to driving on the left yet?",
+    "He used to work as a taxi driver.",
+    "I'm slowly getting used to the early starts."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-044",
+  "decision": "fix",
+  "why": "Gate card_words: 'during' is not on the present perfect card, and neither is 'ago'; the card teaches '*for* + a period, *since* + a starting point' and the signals 'ever, never, just, already, yet, for, since'. Wrong options now 'for' and 'already'. Easy for B1.1 but within the card's levels.",
+  "fix": {
+   "wrong": [
+    "for",
+    "already"
+   ],
+   "why": "*since* + a starting point: *I've worked here since 2015.* *for* goes with a length of time (*for ten years*).",
+   "why_lv": "*since* + sākuma punkts: *I've worked here since 2015.* *for* lieto ar laika ilgumu (*for ten years*)."
+  }
+ },
+ {
+  "id": "r21-1-045",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "Have you ever tried Georgian food?",
+    "We've just booked our holiday.",
+    "I saw her at the station two days ago."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-046",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "How long have you worked here?",
+    "We haven't seen each other for ages.",
+    "He moved to Spain in 2018."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-047",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "We had already eaten when they arrived.",
+    "She was hungry because she hadn't eaten all day.",
+    "Had you met him before the party?"
+   ]
+  }
+ },
+ {
+  "id": "r21-1-048",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change. Explanation now shows this sentence.",
+  "fix": {
+   "wrong": [
+    "I'm meeting my sister for lunch tomorrow.",
+    "It's cold. I'll close the window.",
+    "Shall we order a taxi?"
+   ],
+   "why": "After *when* we use the present simple for the future: *When I arrive, I'll text you.*",
+   "why_lv": "Pēc *when* nākotnei lieto Present Simple: *When I arrive, I'll text you.*"
+  }
+ },
+ {
+  "id": "r21-1-049",
+  "decision": "fix",
+  "why": "Reader 'unlikely' rejected: base verb after *is* is the card pattern of this area ('She is work at the moment') and here mixes a habit with *always*. Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "Does she check her messages every hour?",
+    "We often eat out on Fridays.",
+    "She doesn't usually check her messages at work."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-050",
+  "decision": "fix",
+  "why": "Same scene as r21-1-041 (now changed there). Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "She is waiting for the right moment to speak.",
+    "He's talking to a customer right now.",
+    "Do you know where the nearest pharmacy is?"
+   ]
+  }
+ },
+ {
+  "id": "r21-1-051",
+  "decision": "fix",
+  "why": "Reader claim rejected (as r21-1-043: card and Murphy 18, teacher 11 November). Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "Did you use to live near the sea?",
+    "We used to walk to school every day.",
+    "She's used to working long hours."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-052",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "My parents got married in 1990.",
+    "We have lived here since 2019.",
+    "She has just started a new job."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-053",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change. Explanation now shows this sentence.",
+  "fix": {
+   "wrong": [
+    "We're flying to Rome next Friday.",
+    "I think the shops will be busy tomorrow.",
+    "Are you going to apply for the job?"
+   ],
+   "why": "After *when* we use the present simple, not *will*: *When I see him, I'll tell him about the problem.*",
+   "why_lv": "Pēc *when* lieto Present Simple, nevis *will*: *When I see him, I'll tell him about the problem.*"
+  }
+ },
+ {
+  "id": "r21-1-054",
+  "decision": "fix",
+  "why": "Gate card_words: 'because' and 'while' are not on the cond_first card (signals: '*if, unless, as soon as, when, in case*'). 'if' and 'when' would be correct here, so the wrong options are 'in case' and 'unless'.",
+  "fix": {
+   "wrong": [
+    "in case",
+    "unless"
+   ],
+   "why": "*As soon as* = immediately after something happens: *We'll go for a walk as soon as it stops raining.*",
+   "why_lv": "*As soon as* = uzreiz pēc tam, kad kaut kas notiek: *We'll go for a walk as soon as it stops raining.*"
+  }
+ },
+ {
+  "id": "r21-1-055",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "My new phone is a bit lighter than the old one.",
+    "It is not as cold as it was last week.",
+    "This is the most expensive hotel in town."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-056",
+  "decision": "fix",
+  "why": "'by far' and 'twice as ... as' are not on the comparison card; reader 'nobody writes it' rejected (comparative after 'the' for a group is a real mistake; card: 'Superlative: one thing compared with all the others in a group'). Near-copy removed.",
+  "fix": {
+   "correct": "She is the more experienced player in the team.",
+   "wrong": [
+    "This route is a lot quicker than the motorway.",
+    "Their house is not as big as ours.",
+    "Train tickets are less expensive than plane tickets."
+   ],
+   "why": "One person compared with the whole team needs the superlative: *the most experienced player in the team*.",
+   "why_lv": "Vienu cilvēku salīdzinot ar visu komandu, vajag vispārāko pakāpi: *the most experienced player in the team*."
+  }
+ },
+ {
+  "id": "r21-1-057",
+  "decision": "fix",
+  "why": "Gate mistake: a right sentence was a near-copy of the wrong one; the right sentences are now three different things from the same card. 'NOT correct' is shown as 'Which sentence has a mistake?' (Content::shownQ), so the readers' misreading flag needs no change.",
+  "fix": {
+   "wrong": [
+    "Although the flat is small, it's very comfortable.",
+    "In spite of the noise, I slept well.",
+    "She saved money so that she could travel."
+   ]
+  }
+ },
+ {
+  "id": "r21-1-058",
+  "decision": "fix",
+  "why": "Gate card_words: 'Despite' is not on the conj_linkers card (it teaches 'however, although, because, because of, before / after, then, while, when / as soon as'). 'However' replaces it: a contrast word on the card ('*However,* starts a new sentence') and a real mistake here. Already practice only, so easy is fine.",
+  "fix": {
+   "bank": [
+    "Although",
+    "However",
+    "Because of"
+   ]
+  }
+ },
+ {
+  "id": "r21-1-059",
+  "decision": "fix",
+  "why": "Gate card_words: 'enough of' is not on the quantity card. Replaced with 'a few', the card's mistake with an uncountable noun ('I have a few money').",
+  "fix": {
+   "wrong": [
+    "too many",
+    "a few"
+   ]
+  }
+ },
+ {
+  "id": "r21-1-060",
+  "decision": "fix",
+  "why": "Gate card_words: 'enough of' is not on the quantity card. Replaced with 'much' (card: '*much* + uncountable'), wrong with plural chairs. Easy, but within the card's B1.1.",
+  "fix": {
+   "wrong": [
+    "too much",
+    "much"
+   ]
+  }
+ }
+]

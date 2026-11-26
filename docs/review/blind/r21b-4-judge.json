@@ -1,0 +1,238 @@
+[
+ {
+  "id": "r21b-4-001",
+  "decision": "keep",
+  "why": "A different task with the same card mistake ('No *will* after *when, as soon as, before, until*') is not a near-copy; inside this task the three right sentences are different things (r21-1-048)."
+ },
+ {
+  "id": "r21b-4-002",
+  "decision": "keep",
+  "why": "Readers only say it is easy; the task is already practice only and all present and past forms are accepted (r21-4-050)."
+ },
+ {
+  "id": "r21b-4-003",
+  "decision": "keep",
+  "why": "'is always check' (be + base verb) is a real learner mistake, already decided in r21-1-049; the right sentences are three different things."
+ },
+ {
+  "id": "r21b-4-004",
+  "decision": "keep",
+  "why": "'are you having' does not use the given verb (drink); 'do you drink' does not fit a temporary change ('these days', against 'You usually only drink tea'). Both accepted forms stay."
+ },
+ {
+  "id": "r21b-4-006",
+  "decision": "keep",
+  "why": "Level remark only: 'at nine' with a finished past event needs *left*; the wrong options are clearly wrong (r21-2-051)."
+ },
+ {
+  "id": "r21b-4-007",
+  "decision": "keep",
+  "why": "The card teaches 'didn't use to + base verb (no -d)' with the mistake 'I didn't used to like fish', and the teacher (11 November) keeps 'didn't used to' as a wrong option (Murphy 18)."
+ },
+ {
+  "id": "r21b-4-009",
+  "decision": "keep",
+  "why": "'get' is not the given verb (come); 'have come' is already accepted (r21-3-041)."
+ },
+ {
+  "id": "r21b-4-010",
+  "decision": "keep",
+  "why": "Same card mistake as task 001 but a different task and sentence; the three right sentences here are different things (r21-1-053)."
+ },
+ {
+  "id": "r21b-4-012",
+  "decision": "accept",
+  "why": "'gets made' and 'gets sent' are correct informal passives with the given verbs, and each gap is checked alone; get-passive was accepted the same way in r21-4-029 ('My laptop got stolen').",
+  "accept": [
+   [
+    "gets made"
+   ],
+   [
+    "gets sent"
+   ]
+  ]
+ },
+ {
+  "id": "r21b-4-013",
+  "decision": "keep",
+  "why": "Level flag rejected: present_continuous_passive is a B1.2 skill ('*am / is / are being* + past participle: *The road is being repaired.*'), and the task was fixed in r21-4-051."
+ },
+ {
+  "id": "r21b-4-014",
+  "decision": "keep",
+  "why": "The reader agrees *by the mayor* rules out 'has opened'; options from the card (r21-6-045)."
+ },
+ {
+  "id": "r21b-4-015",
+  "decision": "fix",
+  "why": "Both readers found 'Start with' alone unclear; as in r21-4-051 the rewrite now says what to do. 'is going to be announced' still changes the given *will* (r21-3-044) and is not accepted; 'On friday' capitalised.",
+  "fix": {
+   "q": "Rewrite the sentence. Start with *The winner*: They will announce the winner on Friday.",
+   "answers": [
+    [
+     "The winner will be announced on Friday.",
+     "On Friday the winner will be announced.",
+     "The winner will be announced by them on Friday."
+    ]
+   ],
+   "why": "Who announces it is not important, so *will be* + 3rd form: *The winner will be announced on Friday.*",
+   "why_lv": "Nav svarīgi, kas to paziņos, tāpēc *will be* + 3. forma: *The winner will be announced on Friday.*"
+  }
+ },
+ {
+  "id": "r21b-4-016",
+  "decision": "keep",
+  "why": "'unless it stops raining' is grammatical but means the opposite (walk only while it rains), so it is wrong here; *in case* and *unless* are on the card ('signals: *if, unless, as soon as, when, in case*')."
+ },
+ {
+  "id": "r21b-4-018",
+  "decision": "fix",
+  "why": "The sentence is the card's own example (cmp_ps_pc card, watch: '*Kate [[watched]] TV a lot when she [[was]] ill.*'), which a task must not repeat. New sentence with the same point; 'used to' (both readers) is correct for a repeated past action and is accepted with 'would'.",
+  "fix": {
+   "q": "My brother ___ a lot of books when he was off work with a broken leg last winter. (read)",
+   "answers": [
+    [
+     "read",
+     "was reading",
+     "would read",
+     "used to read"
+    ]
+   ],
+   "answer_notes": [
+    [
+     "was reading",
+     "This describes a repeated activity during the time he was off work.",
+     "Tas apraksta atkārtotu darbību laikā, kad viņš nestrādāja."
+    ],
+    [
+     "would read",
+     "This says it was his habit during that time.",
+     "Tas nozīmē, ka tas tobrīd bija viņa ieradums."
+    ],
+    [
+     "used to read",
+     "This says it was his habit during that time.",
+     "Tas nozīmē, ka tas tobrīd bija viņa ieradums."
+    ]
+   ],
+   "why": "*Read* (past simple) sums up the whole time off work: *My brother read a lot of books when he was off work with a broken leg last winter.* *Was reading* describes a repeated activity during that time; both fit.",
+   "why_lv": "*Read* (Past Simple) apkopo visu laiku, kad viņš nestrādāja: *My brother read a lot of books when he was off work with a broken leg last winter.* *Was reading* apraksta atkārtotu darbību šajā laikā; der abi varianti."
+  }
+ },
+ {
+  "id": "r21b-4-020",
+  "decision": "keep",
+  "why": "The reader only confirms the level; *because* in one past sentence makes *had changed* the only answer (r21-4-055)."
+ },
+ {
+  "id": "r21b-4-021",
+  "decision": "keep",
+  "why": "'had seen already' in the gap gives 'she had seen already the film', which is wrong English (already cannot stand between the verb and its object)."
+ },
+ {
+  "id": "r21b-4-022",
+  "decision": "fix",
+  "why": "The reply is the narrative card's own example ('A: [[Was]] Tom there when you [[arrived]]? B: No, he'[[d]] already [[left]].'), and the dialogue was on one line against the 14 November rule (one speaker per line). New dialogue with the same point.",
+  "fix": {
+   "q": "Ana: 'Did you have lunch with your colleagues yesterday?'\nTom: 'No, when I got to the café, they ___ eating.' (already / finish)",
+   "answers": [
+    [
+     "had already finished",
+     "'d already finished"
+    ]
+   ],
+   "why": "Tom got to the café (past simple), and the eating was over before that: *had* + 3rd form: *they had already finished eating*.",
+   "why_lv": "Toms ieradās kafejnīcā (Past Simple), un ēšana bija beigusies pirms tam: *had* + 3. forma: *they had already finished eating*."
+  }
+ },
+ {
+  "id": "r21b-4-023",
+  "decision": "keep",
+  "why": "All four orders are accepted and the instruction says more than one answer is possible."
+ },
+ {
+  "id": "r21b-4-024",
+  "decision": "keep",
+  "why": "The reader's note confirms *much* alone is wrong before 'comfortable than'; options from the card ('*much / a lot / a bit / slightly* + comparative', 'the most') (r21-2-053)."
+ },
+ {
+  "id": "r21b-4-026",
+  "decision": "keep",
+  "why": "'my last one … than this job' puts *one* before its noun and is not natural (r21-3-050); both natural orders with the jobs swapped are already accepted."
+ },
+ {
+  "id": "r21b-4-027",
+  "decision": "keep",
+  "why": "Comparative instead of superlative for one person in a group is a real B1 mistake (card: 'Superlative: one thing compared with all the others in a group'); both readers found the mistake, and a team is a group (r21-1-056)."
+ },
+ {
+  "id": "r21b-4-028",
+  "decision": "keep",
+  "why": "'the one we saw yesterday … than this flat' uses *one* before its noun and is not natural (r21-3-052); the natural swapped order is already accepted."
+ },
+ {
+  "id": "r21b-4-029",
+  "decision": "keep",
+  "why": "Both orders are already accepted (r21-6-054); the cards showing the frame is part of a B1.2 order task."
+ },
+ {
+  "id": "r21b-4-031",
+  "decision": "keep",
+  "why": "The situation is the adult setting the teacher asks for in indirect-question writing tasks (21 November: 'situations … varied frames and adult settings'); it tells who is asked, which makes the polite form natural, and gives nothing away. The answer list accepts both openers, *what time / when*, *starts / begins / is*, with *please* and *Excuse me*; the direct order is not accepted."
+ },
+ {
+  "id": "r21b-4-032",
+  "decision": "keep",
+  "why": "The situation is the adult setting the teacher asks for in indirect-question writing tasks (21 November: 'situations … varied frames and adult settings'); it tells who is asked, which makes the polite form natural, and gives nothing away. 'how to reset my password' (reader 1) is already accepted."
+ },
+ {
+  "id": "r21b-4-033",
+  "decision": "keep",
+  "why": "The situation is the adult setting the teacher asks for in indirect-question writing tasks (21 November: 'situations … varied frames and adult settings'); it tells who is asked, which makes the polite form natural, and gives nothing away. The task needs *if / whether* (card: 'Yes/no questions: use *if* or *whether*'): that is the change the learner must make, so it is not named; both are accepted."
+ },
+ {
+  "id": "r21b-4-034",
+  "decision": "keep",
+  "why": "The situation is the adult setting the teacher asks for in indirect-question writing tasks (21 November: 'situations … varied frames and adult settings'); it tells who is asked, which makes the polite form natural, and gives nothing away. Both *if* and *whether* and 'the price includes insurance' are accepted."
+ },
+ {
+  "id": "r21b-4-035",
+  "decision": "keep",
+  "why": "The situation is the adult setting the teacher asks for in indirect-question writing tasks (21 November: 'situations … varied frames and adult settings'); it tells who is asked, which makes the polite form natural, and gives nothing away. Level remark rejected: the card teaches the point at B1.1 and B1.2, and readers' level flags were decided in r21."
+ },
+ {
+  "id": "r21b-4-036",
+  "decision": "keep",
+  "why": "The situation is the adult setting the teacher asks for in indirect-question writing tasks (21 November: 'situations … varied frames and adult settings'); it tells who is asked, which makes the polite form natural, and gives nothing away. Level remark rejected: B1.2 adds dropping *did* and putting the past on the verb (*said*), the change the teacher asks for (21 November)."
+ },
+ {
+  "id": "r21b-4-037",
+  "decision": "keep",
+  "why": "The situation is the adult setting the teacher asks for in indirect-question writing tasks (21 November: 'situations … varied frames and adult settings'); it tells who is asked, which makes the polite form natural, and gives nothing away. All natural answers (*will be / are going to be ready*, *they*) are accepted."
+ },
+ {
+  "id": "r21b-4-038",
+  "decision": "keep",
+  "why": "The situation is the adult setting the teacher asks for in indirect-question writing tasks (21 November: 'situations … varied frames and adult settings'); it tells who is asked, which makes the polite form natural, and gives nothing away. Answers with *if / whether*, *gave / has given*, *he / she* are accepted, with notes."
+ },
+ {
+  "id": "r21b-4-039",
+  "decision": "keep",
+  "why": "Reader agrees the bank works; already practice only, bank words on the card ('then / after that', 'before / after', 'while') (r21-3-054)."
+ },
+ {
+  "id": "r21b-4-044",
+  "decision": "keep",
+  "why": "Knowing that *must* has no future (*will have to*) is the point of the task (card: 'In the future: *will have to* … (never *will must*)'); naming *have to* would give it away (r21-3-057). 'I will pay' drops the obligation and is not a rewrite of 'I must pay'."
+ },
+ {
+  "id": "r21b-4-047",
+  "decision": "keep",
+  "why": "'wasn't able to' is already accepted (r21-5-059); (can) is a word that changes (could), so the cue is allowed (16 November)."
+ },
+ {
+  "id": "r21b-4-050",
+  "decision": "keep",
+  "why": "Reader agrees: *little* is correct and the wrong options are on the card ('*few / little* (without *a*) = almost none', mistake 'I have [[a few]] money')."
+ }
+]

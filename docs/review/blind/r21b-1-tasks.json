@@ -1,0 +1,574 @@
+[
+ {
+  "id": "r21b-1-001",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "I'm wanting a coffee.",
+   "I am want a coffee.",
+   "I want a coffee."
+  ]
+ },
+ {
+  "id": "r21b-1-002",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence sounds more temporary?",
+  "options": [
+   "I live with my parents.",
+   "Both sound the same.",
+   "Both sound permanent.",
+   "I'm living with my parents."
+  ]
+ },
+ {
+  "id": "r21b-1-003",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Yesterday she ___ the door and walked in.",
+  "options": [
+   "opened",
+   "was opening",
+   "has opened",
+   "opens"
+  ]
+ },
+ {
+  "id": "r21b-1-004",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I ___ Tom at the party, so I called him later. (not / see)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-1-005",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I ___ along the street when I saw an old friend.",
+  "options": [
+   "was walk",
+   "was walking",
+   "were walking",
+   "am walking"
+  ]
+ },
+ {
+  "id": "r21b-1-006",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "They were going to meet us, but their train was late.",
+   "I was going to call you, but I lost your number.",
+   "We are going to stay longer last summer, but the hotel was full.",
+   "She was going to leave when he arrived."
+  ]
+ },
+ {
+  "id": "r21b-1-007",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "I've worked here ___ five years.",
+  "options": [
+   "since",
+   "for",
+   "already"
+  ]
+ },
+ {
+  "id": "r21b-1-008",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Have you finished yet?",
+   "She has lived here since 2015.",
+   "We have visited Rome in 2019.",
+   "He has just left the office."
+  ]
+ },
+ {
+  "id": "r21b-1-009",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Have you seen the new Italian film? Yes, I ___ it at the cinema last night.",
+  "options": [
+   "had seen",
+   "have seen",
+   "saw",
+   "have saw"
+  ]
+ },
+ {
+  "id": "r21b-1-010",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I ___ the email yesterday, but the client hasn't answered yet.",
+  "options": [
+   "sent",
+   "have just sent",
+   "have sent"
+  ]
+ },
+ {
+  "id": "r21b-1-011",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I'm tired and I'm still at my desk. I ___ all day.",
+  "options": [
+   "have working",
+   "have been work",
+   "have been working",
+   "had been working"
+  ]
+ },
+ {
+  "id": "r21b-1-012",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "What does 'I've been waiting for an hour' tell us?",
+  "options": [
+   "I waited an hour, but that was years ago.",
+   "I wait for an hour every day.",
+   "I started an hour ago and I'm still waiting.",
+   "I waited for an hour last week, then left."
+  ]
+ },
+ {
+  "id": "r21b-1-013",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Your friend is out of breath, but she isn't running now. Why is she out of breath?",
+  "options": [
+   "She is running.",
+   "She runs.",
+   "She has been running."
+  ]
+ },
+ {
+  "id": "r21b-1-014",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "The children are washing their hands now. Look at the floor! They ___ with paint. (play)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21b-1-015",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The bus left at 8.00. We got to the stop at 8.05. When we got there, the bus ___ already ___.",
+  "options": [
+   "did ... leave",
+   "had ... left",
+   "was ... leaving",
+   "has ... left"
+  ]
+ },
+ {
+  "id": "r21b-1-016",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I had never tried sushi before that trip.",
+   "By the time the taxi came, we had finished dinner.",
+   "He told me that he had lost his keys.",
+   "When I arrived, she already has left."
+  ]
+ },
+ {
+  "id": "r21b-1-017",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Hurry up! The film ___ start.",
+  "options": [
+   "is about to",
+   "will to",
+   "about to",
+   "is about"
+  ]
+ },
+ {
+  "id": "r21b-1-018",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "She is about to leave the office.",
+   "My sister going to start a new job next month.",
+   "It's going to rain, look at the sky.",
+   "Will you help me with this box?"
+  ]
+ },
+ {
+  "id": "r21b-1-019",
+  "level": "B1.2",
+  "kind": "write",
+  "instruction_and_task": "The sky is full of dark clouds, and your friend has no umbrella. Write two sentences to your friend: what you expect to happen, and an offer of your umbrella.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r21b-1-020",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The invoices ___ every Friday, so please send me yours by Thursday.",
+  "options": [
+   "are send",
+   "are sent",
+   "send"
+  ]
+ },
+ {
+  "id": "r21b-1-021",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The new bridge ___ at the moment.",
+  "options": [
+   "is being built",
+   "is built",
+   "is building",
+   "was being built"
+  ]
+ },
+ {
+  "id": "r21b-1-022",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence says the same as 'They have finished the project'?",
+  "options": [
+   "The project has been finished.",
+   "The project is being finished.",
+   "The project has being finished.",
+   "The project have been finished."
+  ]
+ },
+ {
+  "id": "r21b-1-023",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "The files check on Monday.",
+   "The files will be check on Monday.",
+   "The files will be checked on Monday.",
+   "The files will checked on Monday."
+  ]
+ },
+ {
+  "id": "r21b-1-024",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If you press this button, the machine stops.",
+   "Whenever I forget my umbrella, it rains.",
+   "If the printer jams, everybody panics.",
+   "If people don't sleep enough, they would be grumpy."
+  ]
+ },
+ {
+  "id": "r21b-1-025",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: We won't finish on time ___ we start now.",
+  "options": [
+   "if",
+   "when",
+   "unless"
+  ]
+ },
+ {
+  "id": "r21b-1-026",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: If Tom ___ his password again, he'll be locked out of his account.",
+  "options": [
+   "forgets",
+   "will forget",
+   "forget"
+  ]
+ },
+ {
+  "id": "r21b-1-027",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If I were you, I wouldn't do that.",
+   "If I will win the lottery, I would buy an island.",
+   "If she had more time, she would learn Italian.",
+   "What would you do if you saw a ghost?"
+  ]
+ },
+ {
+  "id": "r21b-1-028",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If I would have more free time, I would join a choir.",
+   "What would you say if your boss offered you a promotion?",
+   "She would travel more if she didn't have a dog.",
+   "If we had a garden, we could grow vegetables."
+  ]
+ },
+ {
+  "id": "r21b-1-029",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "'If we had booked earlier, we would have got a cheaper flight.' What really happened?",
+  "options": [
+   "We will book early.",
+   "We booked early.",
+   "We got a cheaper flight.",
+   "We didn't book early."
+  ]
+ },
+ {
+  "id": "r21b-1-030",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "What would you have done if the bank had said no?",
+   "She wouldn't have got lost if she had taken a map.",
+   "If I would have seen the message, I would have replied.",
+   "If it hadn't rained, we would have eaten outside."
+  ]
+ },
+ {
+  "id": "r21b-1-031",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "They said they would call back later.",
+   "He told us he had found a new job.",
+   "Anna told me she was moving abroad.",
+   "She said me that the meeting was cancelled."
+  ]
+ },
+ {
+  "id": "r21b-1-032",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence reports this question: 'Do you like jazz?'",
+  "options": [
+   "He asked me do I like jazz.",
+   "He asked me if I liked jazz.",
+   "He asked me if did I like jazz."
+  ]
+ },
+ {
+  "id": "r21b-1-033",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "He asked if I wanted a coffee.",
+   "The receptionist asked me how long would I stay.",
+   "She wanted to know what time the shop closed.",
+   "She asked whether it was true."
+  ]
+ },
+ {
+  "id": "r21b-1-034",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence reports the guard's request: 'Please wait here.'",
+  "options": [
+   "The guard told me waiting there.",
+   "The guard told me wait there.",
+   "The guard told me to wait there.",
+   "The guard asked if I wait there."
+  ]
+ },
+ {
+  "id": "r21b-1-035",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct sentence.",
+  "options": [
+   "Could you tell me when the next train leave?",
+   "Could you tell me when does the next train leave?",
+   "Could you tell me when the next train leaves?",
+   "Could you tell me when leaves the next train?"
+  ]
+ },
+ {
+  "id": "r21b-1-036",
+  "level": "B1.1",
+  "kind": "match",
+  "instruction_and_task": "Match each situation with what you would say.",
+  "left": [
+   "You decide now to help a colleague with a heavy bag.",
+   "You describe a confirmed appointment for tomorrow.",
+   "You predict rain because you can see dark clouds."
+  ],
+  "right": [
+   "I'll carry that for you.",
+   "It's going to rain.",
+   "I'm seeing the dentist at ten."
+  ]
+ },
+ {
+  "id": "r21b-1-037",
+  "level": "B1.1",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with its meaning.",
+  "left": [
+   "If you help me, I'll buy you lunch.",
+   "We won't start unless everyone is here.",
+   "I'll take water in case the shop is closed."
+  ],
+  "right": [
+   "A promise depending on your help.",
+   "A precaution against a possible problem.",
+   "Everyone being present is necessary for us to start."
+  ]
+ },
+ {
+  "id": "r21b-1-038",
+  "level": "B1.1",
+  "kind": "write",
+  "instruction_and_task": "Last night you had dinner at a restaurant, and this morning you can't find your scarf. You phone the restaurant. Write one polite question.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r21b-1-039",
+  "level": "B1.1",
+  "kind": "write",
+  "instruction_and_task": "You want to join an evening Italian course at a language school, but the website doesn't say when it begins. Write one polite question to the school.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r21b-1-040",
+  "level": "B1.2",
+  "kind": "write",
+  "instruction_and_task": "You ordered a printer online ten days ago, but it still hasn't arrived. Write one polite question to the shop's customer service.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r21b-1-041",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "We had lunch near the river.",
+   "They went skiing in the Alps.",
+   "My sister is learning Italian.",
+   "We visited the Riga last summer."
+  ]
+ },
+ {
+  "id": "r21b-1-042",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: If you leave milk out of the fridge all day, it ___ sour.",
+  "options": [
+   "goes",
+   "went",
+   "would go"
+  ]
+ },
+ {
+  "id": "r21b-1-043",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I get a headache if I ___ too much coffee.",
+  "options": [
+   "drink",
+   "will drink",
+   "drank"
+  ]
+ },
+ {
+  "id": "r21b-1-044",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If the battery will get low, the screen goes dark.",
+   "If people don't drink enough water, they get headaches.",
+   "We eat outside when the weather is warm.",
+   "My cat hides when it hears thunder."
+  ]
+ },
+ {
+  "id": "r21b-1-045",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "When I travel by bus, I always feel sick.",
+   "If the battery is low, the phone switches off.",
+   "Whenever my neighbour plays music, my dog barks.",
+   "If metal will get hot, it expands."
+  ]
+ },
+ {
+  "id": "r21b-1-046",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: They won't let you in ___ you show your ticket.",
+  "options": [
+   "as soon as",
+   "when",
+   "if",
+   "unless"
+  ]
+ },
+ {
+  "id": "r21b-1-047",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "If it's sunny tomorrow, we'll have lunch outside.",
+   "I'll call you if the meeting finishes early.",
+   "If the train will be late, I'll take a taxi.",
+   "If you need help, ask Marta."
+  ]
+ },
+ {
+  "id": "r21b-1-048",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "What would you do if you lost your job?",
+   "If I would know, I would tell you.",
+   "If she were here, she would know what to do.",
+   "If I had a car, I'd drive to work."
+  ]
+ },
+ {
+  "id": "r21b-1-049",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Would you move abroad if you had the chance?",
+   "If she had more money, she will buy it.",
+   "If I were you, I would take the job.",
+   "They would visit us more often if we lived closer."
+  ]
+ },
+ {
+  "id": "r21b-1-050",
+  "level": "B1.2",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with its meaning.",
+  "left": [
+   "If I had gone, I would have met her.",
+   "If I hadn't gone, I wouldn't have met her.",
+   "If I went, I would meet her."
+  ],
+  "right": [
+   "I'm not going.",
+   "I went.",
+   "I didn't go."
+  ]
+ }
+]

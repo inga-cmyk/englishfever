@@ -40,7 +40,7 @@ expect_report(!Grader::grade($defining, 'The book which I bought is here.')['not
 $alternatives = $which;
 $alternatives['answers'][0][] = 'Everyone was surprised that she passed her driving test.';
 expect_report(!Grader::grade($alternatives, 'Everyone was surprised that she passed her driving test.')['notes'], 'Alternative without which must not get a comma warning');
-expect_report(strpos(draft_report('correct', 'The book which I bought it was boring.')['why'], 'repeat') !== false, 'Feedback must explain the repeated object');
+expect_report(strpos(draft_report('correct', 'The jacket which I ordered online it was too small.')['why'], 'repeat') !== false, 'Feedback must explain the repeated object');
 $condition = Content::item('ct-B22-3a-r2');
 foreach (["hadn't driven", 'had not driven', "hadn't been driving", 'had not been driving'] as $first) {
     expect_report(Grader::grade($condition, [$first, "wouldn't have lost"])['correct'], 'Valid third-conditional variant rejected');

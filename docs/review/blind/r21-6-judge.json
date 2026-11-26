@@ -1,0 +1,394 @@
+[
+ {
+  "id": "r21-6-001",
+  "decision": "keep",
+  "why": "'What is changing ... these days?' calls for a change in progress (card use: 'Changes in progress', signal 'these days'); the open situation does not name the form, and the generic explanation uses no other example."
+ },
+ {
+  "id": "r21-6-002",
+  "decision": "accept",
+  "why": "'I hadn't seen Tom at the party, so I called him later' is correct English (less natural than the past simple for events told in order), so it must be accepted.",
+  "accept": [
+   [
+    "hadn't seen",
+    "had not seen"
+   ]
+  ]
+ },
+ {
+  "id": "r21-6-003",
+  "decision": "keep",
+  "why": "Reader 1 only confirms the level; nothing to change (already a learning task)."
+ },
+ {
+  "id": "r21-6-004",
+  "decision": "fix",
+  "why": "'They was' is an agreement slip that does not test the point of the task (past plans with was/were going to; card form: 'Past intention: was / were going to + base verb'). The new wrong sentence uses the present 'are going to' for a past plan, a real B1 mistake, and the three right sentences stay about different things.",
+  "fix": {
+   "correct": "We are going to stay longer last summer, but the hotel was full.",
+   "wrong": [
+    "I was going to call you, but I lost your number.",
+    "She was going to leave when he arrived.",
+    "They were going to meet us, but their train was late."
+   ],
+   "why": "A plan in the past needs *was / were going to*; *are going to* is for plans now: *We were going to stay longer last summer, but the hotel was full.*",
+   "why_lv": "Plānam pagātnē vajag *was / were going to*; *are going to* lieto tagadnes plāniem: *We were going to stay longer last summer, but the hotel was full.*"
+  }
+ },
+ {
+  "id": "r21-6-005",
+  "decision": "keep",
+  "why": "The situation ('how long you have lived ... worked') makes the present perfect the natural form; naming for and since is fine because the learner still has to put the right time phrase after each. The checker requires have/has + participle, which is the point."
+ },
+ {
+  "id": "r21-6-007",
+  "decision": "fix",
+  "why": "Both readers read 'She has run.' as a possible reason; the card separates them ('A recent activity: you can see the result now: You're out of breath. Have you been running?' vs simple for how much), but the bare option is too close to call. Dropped it; two wrong options remain.",
+  "fix": {
+   "wrong": [
+    "She is running.",
+    "She runs."
+   ],
+   "why": "She stopped running a moment ago and we can see the result now: *She has been running.* *She is running* would mean she is still running.",
+   "why_lv": "Viņa nupat beidza skriet, un rezultāts ir redzams tagad: *She has been running.* *She is running* nozīmētu, ka viņa joprojām skrien."
+  }
+ },
+ {
+  "id": "r21-6-009",
+  "decision": "fix",
+  "why": "Without context 'are playing' (still at it) also fits, and the task is about a finished recent activity with a visible result (card: 'A recent activity: you can see the result now'). A sentence that shows they have stopped rules it out.",
+  "fix": {
+   "q": "The children are washing their hands now. Look at the floor! They ___ with paint. (play)",
+   "answers": [
+    [
+     "have been playing",
+     "'ve been playing"
+    ]
+   ],
+   "why": "They have stopped, but the floor shows what they were doing: *They have been playing with paint.*",
+   "why_lv": "Viņi ir beiguši, bet grīda rāda, ko viņi darīja: *They have been playing with paint.*"
+  }
+ },
+ {
+  "id": "r21-6-011",
+  "decision": "fix",
+  "why": "'going to be arrive' is a form learners do not write (rule of 21 November). Replaced with the missing am/is/are, a mistake listed on the future card ('She [[going to]] call you' -> 'She [[is going to]] call you'); the three right sentences stay as they are.",
+  "fix": {
+   "correct": "My sister going to start a new job next month.",
+   "why": "*Going to* needs *am / is / are* before it: *My sister is going to start a new job next month.*",
+   "why_lv": "Pirms *going to* vajag *am / is / are*: *My sister is going to start a new job next month.*"
+  }
+ },
+ {
+  "id": "r21-6-012",
+  "decision": "fix",
+  "why": "The instruction says 'about to happen', which is a card form of its own ('be about to: the very near future'), so a learner who writes 'It's about to rain' fails a check that wants going to; the second check also accepts 'Shall I' but its message names only I'll / I will. New situation without the form; checks and messages aligned.",
+  "fix": {
+   "q": "The sky is full of dark clouds, and your friend has no umbrella. Write two sentences to your friend: what you expect to happen, and an offer of your umbrella.",
+   "must": [
+    [
+     "\\b(going\\s+to|about\\s+to)\\s+\\w+",
+     "Use *going to* + base verb in the prediction.",
+     "Prognozē lieto *going to* + pamatforma."
+    ],
+    [
+     "\\b(i'll|i will|shall i)\\b",
+     "Use *I'll*, *I will* or *Shall I* for the offer.",
+     "Piedāvājumam lieto *I'll*, *I will* vai *Shall I*."
+    ]
+   ]
+  }
+ },
+ {
+  "id": "r21-6-014",
+  "decision": "keep",
+  "why": "'was gave' (past form for the participle) is a real B1 mistake, the same kind the card lists ('The bridge [[was build]]'); the three right sentences are about different things."
+ },
+ {
+  "id": "r21-6-015",
+  "decision": "keep",
+  "why": "The card is B1.2 only (levels ['B1.2']), so the level fits; the subject 'rooms' and 'right now' make 'are being cleaned' the only correct answer ('are cleaning' / 'are cleaned' are wrong here)."
+ },
+ {
+  "id": "r21-6-018",
+  "decision": "keep",
+  "why": "The present perfect passive is taught at B1.1-B1.2 and the ind_polite card teaches 'if / whether' + statement order; one correct option. Not too easy for B1.2: the learner has to keep the three-part verb together after whether."
+ },
+ {
+  "id": "r21-6-019",
+  "decision": "fix",
+  "why": "'the response that best fits its purpose' is vague (rule: name what is matched). The task is already a learning task, which is right since keywords (clouds, rain) solve it; only the instruction changes.",
+  "fix": {
+   "q": "Match each situation with what you would say."
+  }
+ },
+ {
+  "id": "r21-6-020",
+  "decision": "fix",
+  "why": "Four conditional types on the cond_third card (it teaches the third and only contrasts it with the second: 'Now: second conditional; the past: third'); 'I may go' also fits the zero conditional, so the pairs can be swapped; capitals inconsistent. Rewritten to third vs second only, each meaning decided by the form.",
+  "fix": {
+   "pairs": [
+    [
+     "If I had gone, I would have met her.",
+     "I didn't go."
+    ],
+    [
+     "If I hadn't gone, I wouldn't have met her.",
+     "I went."
+    ],
+    [
+     "If I went, I would meet her.",
+     "I'm not going."
+    ]
+   ],
+   "why": "*If I had gone*: I didn't go. *If I hadn't gone*: I went. *If I went, I would meet her*: an imagined now, so I'm not going.",
+   "why_lv": "*If I had gone*: es negāju. *If I hadn't gone*: es gāju. *If I went, I would meet her*: iedomāta tagadne, tātad es neeju."
+  }
+ },
+ {
+  "id": "r21-6-022",
+  "decision": "keep",
+  "why": "Teacher's rule of 11 November: after a past reporting verb only the step-back form is accepted ('He asked me if I liked jazz, not like'); 'have finished' and 'finished' are rejected. Already practice only."
+ },
+ {
+  "id": "r21-6-023",
+  "decision": "accept",
+  "why": "'if/whether I liked jazz or not' and 'whether or not I liked jazz' are correct and keep the step back. 'if I like jazz' breaks the taught rule (and 'years ago'); 'if I did like jazz' is wrong English.",
+  "accept": [
+   [
+    "if I liked jazz or not",
+    "whether I liked jazz or not",
+    "whether or not I liked jazz"
+   ]
+  ]
+ },
+ {
+  "id": "r21-6-024",
+  "decision": "keep",
+  "why": "Taught rule (11 November): only the step-back form is accepted, so 'what I did the night before' is rejected; 'that night' and 'last night' give the wrong time for a question asked a week ago."
+ },
+ {
+  "id": "r21-6-025",
+  "decision": "fix",
+  "why": "'that' is not on the ind_polite card (the card teaches 'Yes/no questions: use if or whether'; the bank may only hold card words, rule of 21/22 November) and gives an archaic other meaning. Removed from the bank; still practice only.",
+  "fix": {
+   "bank": [
+    "whether",
+    "what"
+   ]
+  }
+ },
+ {
+  "id": "r21-6-026",
+  "decision": "accept",
+  "why": "'she loves cooking now but she didn't use to enjoy it' and 'now she loves cooking but she didn't use to enjoy it' are natural; orders with 'it' before 'cooking' and 'she loves cooking but she didn't use to enjoy it now' are not. didn't use to is on the B1.1 used_to card (levels A2.2-B1.2).",
+  "accept": [
+   [
+    "she loves cooking now but she didn't use to enjoy it",
+    "now she loves cooking but she didn't use to enjoy it"
+   ]
+  ]
+ },
+ {
+  "id": "r21-6-029",
+  "decision": "fix",
+  "why": "Murphy (unit 4) and the card ('I [[am needing]] help' -> 'I [[need]] help') keep understand simple, so the mistake stays; but 'I don't understand the instructions' is a near-copy of the wrong sentence and all four are about instructions (rule 5). New right sentences about three different things, none a copy of the card example.",
+  "fix": {
+   "wrong": [
+    "I need a new charger for my phone.",
+    "I'm reading a great book at the moment.",
+    "Is your brother still looking for a job?"
+   ],
+   "why": "*Understand* is a state verb, so it stays simple: *I don't understand the instructions.*",
+   "why_lv": "*Understand* ir stāvokļa darbības vārds, tāpēc paliek vienkāršajā formā: *I don't understand the instructions.*"
+  }
+ },
+ {
+  "id": "r21-6-030",
+  "decision": "fix",
+  "why": "The past perfect *had lost* is not on the past_simple card and makes a B1.1 past-simple question task longer than it needs to be; 'Why didn't you tell me that you lost your job?' is natural and keeps the point (didn't + base verb).",
+  "fix": {
+   "sentence": "why didn't you tell me that you lost your job",
+   "answers": [
+    [
+     "why didn't you tell me that you lost your job"
+    ]
+   ],
+   "why": "Question with *didn't* + base verb: *Why didn't you tell me that you lost your job?*",
+   "why_lv": "Jautājums ar *didn't* + pamatforma: *Why didn't you tell me that you lost your job?*"
+  }
+ },
+ {
+  "id": "r21-6-031",
+  "decision": "keep",
+  "why": "'so boring was the film that...' is literary inversion, not a natural order (rule: only natural orders); so...that with 12 cards fits B1."
+ },
+ {
+  "id": "r21-6-033",
+  "decision": "fix",
+  "why": "'How long were you waiting' is also correct English, and accepting it per gap would let 'did ... waiting' through (each gap is checked alone). A verb that does not take the continuous here makes did + base the only answer.",
+  "fix": {
+   "q": "How long ___ the drive to the airport ___ yesterday? (take)",
+   "answers": [
+    [
+     "did"
+    ],
+    [
+     "take"
+    ]
+   ],
+   "why": "A finished event: *did* + base form: *How long did the drive to the airport take yesterday?*",
+   "why_lv": "Pabeigts notikums: *did* + pamatforma: *How long did the drive to the airport take yesterday?*"
+  }
+ },
+ {
+  "id": "r21-6-034",
+  "decision": "keep",
+  "why": "The reader's order 'since i was a child i have lived in this city' is already accepted."
+ },
+ {
+  "id": "r21-6-037",
+  "decision": "fix",
+  "why": "'How long did you work for this company?' (someone who has left) is correct, and accepting did/work per gap would let 'did ... worked' through. Adding *now* keeps the person in the job and rules out did.",
+  "fix": {
+   "q": "How long ___ you ___ for this company now? (work)",
+   "why": "Up to now: *have* + 3rd form or *have been* + *-ing*: *How long have you worked for this company now?*",
+   "why_lv": "Līdz šim brīdim: *have* + 3. forma vai *have been* + *-ing*: *How long have you worked for this company now?*"
+  }
+ },
+ {
+  "id": "r21-6-039",
+  "decision": "accept",
+  "why": "'How long has she been learning Chinese for?' is correct and must be accepted. 'How long has she learned Chinese?' changes the given verb form and is not natural for an ongoing activity, so it is rejected. The task is easy (one inversion), but it still asks for a change, so it stays.",
+  "accept": [
+   [
+    "How long has she been learning Chinese for?"
+   ]
+  ]
+ },
+ {
+  "id": "r21-6-040",
+  "decision": "fix",
+  "why": "The instruction is plain and the task is already a learning task (keep). But the past simple 'I learned French at school in Riga' is not on the present_perfect_continuous card (wrong options only from the card); replaced with a card form that does not say how long.",
+  "fix": {
+   "wrong": [
+    "I've learned some French at school.",
+    "I've been learning French at evening classes.",
+    "I'm learning French with a teacher."
+   ]
+  }
+ },
+ {
+  "id": "r21-6-042",
+  "decision": "keep",
+  "why": "Both clause orders are already accepted; commas are ignored by the checker."
+ },
+ {
+  "id": "r21-6-044",
+  "decision": "fix",
+  "why": "'is made ... and then sent' (second is left out) is correct and was rejected; with no time word the past also fits (rule: a context that leaves the tense open gets a time word). Added *Every week* and accepted 'sent'.",
+  "fix": {
+   "q": "Every week, the cheese ___ in small villages and then ___ to shops around the country. (make / send)",
+   "answers": [
+    [
+     "is made"
+    ],
+    [
+     "is sent",
+     "sent"
+    ]
+   ],
+   "why": "A regular process; who does it is not important: *is made* and *(is) sent*. After *and then* the second *is* can be left out.",
+   "why_lv": "Regulārs process, kurā darītājs nav svarīgs: *is made* un *(is) sent*. Pēc *and then* otro *is* var izlaist."
+  }
+ },
+ {
+  "id": "r21-6-045",
+  "decision": "fix",
+  "why": "'has been opened, so you can borrow books from tomorrow' is illogical, and 'is opened' / 'has open' are not card mistakes. New sentence where *by the mayor* forces the passive, wrong options from the card ('The email [[has sent]]', 'The problem [[have been]] solved', '*been*, not *being*').",
+  "fix": {
+   "q": "Choose the correct option: The new library ___ by the mayor, so you can borrow books there now.",
+   "correct": "has been opened",
+   "wrong": [
+    "has opened",
+    "have been opened",
+    "has being opened"
+   ],
+   "why": "News with a result now, and the mayor did it: *The new library has been opened by the mayor.* *Been*, not *being*; *has* for one library.",
+   "why_lv": "Jaunums ar rezultātu tagad, un to izdarīja mērs: *The new library has been opened by the mayor.* *Been*, nevis *being*; vienai bibliotēkai *has*."
+  }
+ },
+ {
+  "id": "r21-6-046",
+  "decision": "keep",
+  "why": "'Unless you are studying harder' is not natural English for a condition; the present simple is the answer (card)."
+ },
+ {
+  "id": "r21-6-047",
+  "decision": "keep",
+  "why": "'i was having a shower while the phone rang' puts while before the short action, which is wrong (while + the longer action); both natural orders are accepted. The point is on the B1.1 card of the topic."
+ },
+ {
+  "id": "r21-6-048",
+  "decision": "accept",
+  "why": "'It hasn't been raining this week' is correct English (less usual than hasn't rained) and keeps the point (present perfect, not past simple), so it is accepted.",
+  "accept": [
+   [
+    "hasn't been raining",
+    "has not been raining"
+   ]
+  ]
+ },
+ {
+  "id": "r21-6-050",
+  "decision": "keep",
+  "why": "Both 'was shining' and 'shone' are already accepted, with an answer note."
+ },
+ {
+  "id": "r21-6-051",
+  "decision": "accept",
+  "why": "'had left already' and 'd already left' are correct; 'had not left' contradicts 'No'.",
+  "accept": [
+   [
+    "had left already",
+    "'d already left",
+    "'d left already"
+   ]
+  ]
+ },
+ {
+  "id": "r21-6-052",
+  "decision": "practice_only",
+  "why": "'a bit' is given; the learner only picks the plain comparative 'slower', an A2 form. Correct, but too easy for B1.1."
+ },
+ {
+  "id": "r21-6-053",
+  "decision": "practice_only",
+  "why": "'far' is given and the learner only forms 'higher', an A2 form; the card teaches 'much / a lot / a bit / slightly + comparative', not far. Correct, so it stays for practice."
+ },
+ {
+  "id": "r21-6-054",
+  "decision": "accept",
+  "why": "'the better you get the more you practise' is grammatical and makes sense (better players practise more), so it must be accepted.",
+  "accept": [
+   [
+    "the better you get the more you practise"
+   ]
+  ]
+ },
+ {
+  "id": "r21-6-056",
+  "decision": "keep",
+  "why": "Already practice only; 'did Anna see you yesterday' is accepted; fronted 'yesterday did you see Anna' is not a natural order."
+ },
+ {
+  "id": "r21-6-058",
+  "decision": "keep",
+  "why": "The asterisks are rendered as italics by the app (UI.markForms); a choice cue in the instruction is allowed, and only 'told' fits before 'us'."
+ },
+ {
+  "id": "r21-6-059",
+  "decision": "keep",
+  "why": "'It was just starting when I joined' contradicts 'I missed the first minute': the lesson had already started, so only 'had ... started' fits."
+ }
+]

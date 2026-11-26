@@ -1,0 +1,677 @@
+[
+ {
+  "id": "r21-6-001",
+  "level": "B1.1",
+  "kind": "write",
+  "instruction_and_task": "What is changing in your life or your city these days? Write one sentence.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r21-6-002",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I ___ Tom at the party, so I called him later. (not / see)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-003",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "In 'When Mia called, I was cooking', which action started first?",
+  "options": [
+   "The calling.",
+   "Both together.",
+   "We can't know.",
+   "The cooking."
+  ]
+ },
+ {
+  "id": "r21-6-004",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "We were going to stay longer.",
+   "They was going to meet us, but they were late.",
+   "She was going to leave when he arrived.",
+   "I was going to call you, but I lost your number."
+  ]
+ },
+ {
+  "id": "r21-6-005",
+  "level": "B1.1",
+  "kind": "write",
+  "instruction_and_task": "Write two sentences about how long you have lived in your city or worked in your job. Use for in one and since in the other.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r21-6-006",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "I have been knowing him for years.",
+   "She has been working here since March.",
+   "It has been raining all day.",
+   "How long have you been learning English?"
+  ]
+ },
+ {
+  "id": "r21-6-007",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Your friend is out of breath, but she isn't running now. Why is she out of breath?",
+  "options": [
+   "She is running.",
+   "She has been running.",
+   "She has run.",
+   "She runs."
+  ]
+ },
+ {
+  "id": "r21-6-008",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "I ___ this book for two weeks, and I'm still reading it.",
+  "options": [
+   "have been read",
+   "has been reading",
+   "have been reading",
+   "am been reading"
+  ]
+ },
+ {
+  "id": "r21-6-009",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "Look at the floor! The children ___ with paint. (play)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-010",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence means something will happen very soon?",
+  "options": [
+   "The plane took off.",
+   "The plane is about to take off.",
+   "The plane has been taking off.",
+   "The plane takes off every day."
+  ]
+ },
+ {
+  "id": "r21-6-011",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "It's going to rain, look at the sky.",
+   "He is going to be arrive soon.",
+   "She is about to leave the office.",
+   "Will you help me with this box?"
+  ]
+ },
+ {
+  "id": "r21-6-012",
+  "level": "B1.2",
+  "kind": "write",
+  "instruction_and_task": "Look at those dark clouds. Your friend has no umbrella. Write two sentences: say what is about to happen, then offer to lend your umbrella.",
+  "note": "open writing; the app checks that some forms are used"
+ },
+ {
+  "id": "r21-6-013",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence says the same as 'People often call him Mo'?",
+  "options": [
+   "He is often called Mo.",
+   "He is often calling Mo.",
+   "He often calls Mo.",
+   "Mo is often called him."
+  ]
+ },
+ {
+  "id": "r21-6-014",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The bridge was built in 1998.",
+   "The thieves were arrested.",
+   "She was gave a prize at school.",
+   "I was told the news by Tom."
+  ]
+ },
+ {
+  "id": "r21-6-015",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "The rooms ___ right now. (clean)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-016",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Your parcel ___ tomorrow.",
+  "options": [
+   "will be deliver",
+   "is deliver",
+   "will be delivered",
+   "will deliver"
+  ]
+ },
+ {
+  "id": "r21-6-017",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "The guest asked was breakfast included.",
+   "The guest asked that breakfast was included.",
+   "The guest asked is breakfast included.",
+   "The guest asked whether breakfast was included."
+  ]
+ },
+ {
+  "id": "r21-6-018",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "Could you let me know whether has been the contract signed?",
+   "Could you let me know whether the contract has been signed?",
+   "Could you let me know if has the contract been signed?",
+   "Could you let me know has the contract been signed?"
+  ]
+ },
+ {
+  "id": "r21-6-019",
+  "level": "B1.1",
+  "kind": "match",
+  "instruction_and_task": "Match each situation with the response that best fits its purpose.",
+  "left": [
+   "You decide now to help a colleague with a heavy bag.",
+   "You describe a confirmed appointment for tomorrow.",
+   "You predict rain because you can see dark clouds."
+  ],
+  "right": [
+   "It's going to rain.",
+   "I'm seeing the dentist at ten.",
+   "I'll carry that for you."
+  ]
+ },
+ {
+  "id": "r21-6-020",
+  "level": "B1.2",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with its meaning.",
+  "left": [
+   "If I had gone, I would have met her.",
+   "If I go, I will meet her.",
+   "If I went, I would meet her.",
+   "If I go, I meet her."
+  ],
+  "right": [
+   "I didn't go.",
+   "I may go.",
+   "I'm imagining it now.",
+   "this always happens"
+  ]
+ },
+ {
+  "id": "r21-6-021",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "'We will help you.' They said they ___ help me.",
+  "word_cards": [
+   "had",
+   "would",
+   "did"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-6-022",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "'Have you finished?' He asked if I ___ . (finish)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-023",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "At school, years ago: 'Do you like jazz?' → He asked me ___.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-024",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "A week ago: 'What did you do last night?' → She asked me ___.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-025",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I wonder ___ he will come.",
+  "word_cards": [
+   "that",
+   "whether",
+   "what"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-6-026",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put all the words in order. More than one answer is possible.",
+  "word_cards": [
+   "she",
+   "use",
+   "she",
+   "didn't",
+   "but",
+   "it",
+   "loves",
+   "to",
+   "cooking",
+   "enjoy",
+   "now"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-6-027",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I'm not used to ___ so early. (get up)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-028",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence means the same as 'It is normal for me to live alone'?",
+  "options": [
+   "I get used to live alone.",
+   "I used to live alone.",
+   "I'm used to live alone.",
+   "I'm used to living alone."
+  ]
+ },
+ {
+  "id": "r21-6-029",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Are you following the instructions?",
+   "I'm not understanding the instructions.",
+   "I'm reading the instructions now.",
+   "I don't understand the instructions."
+  ]
+ },
+ {
+  "id": "r21-6-030",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "had",
+   "you",
+   "didn't",
+   "you",
+   "why",
+   "your",
+   "tell",
+   "that",
+   "me",
+   "job",
+   "lost"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-6-031",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "audience",
+   "so",
+   "early",
+   "boring",
+   "half",
+   "that",
+   "the",
+   "the",
+   "left",
+   "of",
+   "was",
+   "film"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-6-032",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "She ___ in London for two years before she ___ to Paris.",
+  "word_cards": [
+   "moved",
+   "lived",
+   "has moved",
+   "has lived"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-6-033",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "How long ___ you ___ for the bus yesterday? (wait)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-034",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "in",
+   "i",
+   "city",
+   "i",
+   "a",
+   "this",
+   "lived",
+   "have",
+   "since",
+   "child",
+   "was"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-6-035",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "How many countries ___ you ___ ?",
+  "word_cards": [
+   "have",
+   "did",
+   "visited",
+   "were"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-6-036",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "He ___ never ___ a horse.",
+  "word_cards": [
+   "rode",
+   "ridden",
+   "has",
+   "did"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-6-037",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "How long ___ you ___ for this company? (work)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-038",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "He ___ been ___ the guitar since he was ten.",
+  "word_cards": [
+   "played",
+   "playing",
+   "is",
+   "has"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-6-039",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make a question with How long: She has been learning Chinese.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-6-040",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence says how long?",
+  "options": [
+   "I've learned some French at school.",
+   "I've been learning French for two years.",
+   "I learned French at school in Riga.",
+   "I'm learning French with a teacher."
+  ]
+ },
+ {
+  "id": "r21-6-041",
+  "level": "B1.2",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with the event that came first.",
+  "left": [
+   "When I arrived, she had left.",
+   "When I arrived, she left.",
+   "When I got up, it had stopped raining.",
+   "When I got up, it stopped raining."
+  ],
+  "right": [
+   "the rain stopped first",
+   "she left first",
+   "I arrived first",
+   "I got up first"
+  ]
+ },
+ {
+  "id": "r21-6-042",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "it",
+   "if",
+   "we",
+   "come",
+   "to",
+   "snows",
+   "be",
+   "heavily",
+   "able",
+   "won't"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-6-043",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "As soon as she ___ the news, she will call you.",
+  "word_cards": [
+   "hearing",
+   "will hear",
+   "hears"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-6-044",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "The cheese ___ in small villages and then ___ to shops around the country. (make / send)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-045",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The new library ___ , so you can borrow books from tomorrow.",
+  "options": [
+   "has been opened",
+   "have been opened",
+   "is opened",
+   "has open"
+  ]
+ },
+ {
+  "id": "r21-6-046",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "Unless you ___ harder, you won't pass the final exam. (study)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-047",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put all the words in order. More than one answer is possible.",
+  "word_cards": [
+   "i",
+   "phone",
+   "was",
+   "a",
+   "rang",
+   "the",
+   "shower",
+   "while",
+   "having"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-6-048",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "It ___ this week. Everything is very dry. (not / rain)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-049",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "When we got home, we found that somebody ___ into the flat. (break)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-050",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I got up and ___ out of the window. The sun ___. (look / shine)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-051",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "A: Was Tom there when you arrived? B: No, he ___. (already / leave)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-052",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Travelling by train is a bit ___ than driving, but it is more relaxing.",
+  "options": [
+   "the slower",
+   "more slow",
+   "slower",
+   "slowest"
+  ]
+ },
+ {
+  "id": "r21-6-053",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Prices in the city centre are far ___ than in the suburbs. (high)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-054",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "get",
+   "better",
+   "the",
+   "the",
+   "more",
+   "practise",
+   "you",
+   "you"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-6-055",
+  "level": "B1.1",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with its meaning.",
+  "left": [
+   "I have lived here for ten years.",
+   "I lived here for ten years.",
+   "I have never lived in a big city."
+  ],
+  "right": [
+   "Not at any time in my life.",
+   "I still live here.",
+   "I don't live here now."
+  ]
+ },
+ {
+  "id": "r21-6-056",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put all the words in order. More than one answer is possible.",
+  "word_cards": [
+   "yesterday",
+   "you",
+   "see",
+   "Anna",
+   "did"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-6-057",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence means it was not allowed?",
+  "options": [
+   "We could use our phones in the exam.",
+   "We didn't have to use our phones in the exam.",
+   "We had to use our phones in the exam.",
+   "We couldn't use our phones in the exam."
+  ]
+ },
+ {
+  "id": "r21-6-058",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "Complete with *said* or *told*: Our manager ___ us the office would close at four.",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-6-059",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "Write one word in each gap: I missed the first minute of the lesson. It ___ just ___ when I joined. (start)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ }
+]

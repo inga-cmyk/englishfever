@@ -1,0 +1,29 @@
+# Judge r21b-3
+
+- r21b-3-004: **keep**. 'so a' is a mistake the so_such card itself lists ('It was [[so a]] long film.'), so it is a believable wrong option; so / such are wrong before a singular noun here.
+- r21b-3-006: **fix**. The answer is the indefinite_pronouns card's own example ('Offers and requests: *Would you like something to drink?*'), and a card example is never a task's answer (rules, 15 and 21 November). New offer with some-, same point; the instruction says it is a question, so the odd statement order is no longer needed.
+- r21b-3-010: **accept**. Fronting 'today' with the clauses swapped is correct and natural, as the r21 judge accepted for the other orders. Rejected: 'it was built in 1932 and the bridge is still used today' (pronoun before its noun) and 'used still today' (not natural).
+- r21b-3-011: **accept**. 'My laptop was stolen yesterday by someone.' is redundant but correct; 'by someone' is already accepted in the other positions.
+- r21b-3-012: **fix**. A rewrite says what to do (rules, 15 November: *Rewrite the sentence ... Start with*), as the r21 judge fixed in the laptop task; the explanation now uses this task's sentence. Answers stay (with and without 'by the company').
+- r21b-3-016: **keep**. 'has been stolen' changes the given verb (take), as the r21 judge decided; the contracted forms are already accepted.
+- r21b-3-021: **keep**. All correct orders are accepted. 'she prefers to cook at home because she rarely eats out' (and its fronted form) turns the cause round and does not make sense, as decided in r21.
+- r21b-3-022: **accept**. The order task starts with 'does' and the instruction does not ask for a question, so the emphatic statement 'your brother does still work for the same company' is grammatical and must be accepted (gate rule: a word order starting with an auxiliary says 'to make a question' or accepts the statement). The 'still' at the end is already accepted.
+- r21b-3-023: **keep**. 'In your language what does this word mean' is already accepted. Rejected as in r21: 'what does this word in your language mean' (not natural) and 'what does your word mean in this language' (another meaning).
+- r21b-3-024: **keep**. The open tense is handled: does / did / will / would are all accepted and the task is already practice only.
+- r21b-3-025: **keep**. Already practice only (A2 question, decided in r21) with all three correct forms accepted.
+- r21b-3-026: **keep**. 'Our manager don't' is a real learner mistake and the three right sentences are about different things. Level: present simple is revised at B1.1 on its own card; the level flag was decided before.
+- r21b-3-027: **keep**. 'He doesn't goes' is the present_simple card's own listed mistake ('He doesn't [[works]].'), a real one; the right sentences are about different things.
+- r21b-3-028: **keep**. All four natural orders are already accepted; 'this chair, are you using it or can i take it' needs a comma and a fronted topic and is not a natural order.
+- r21b-3-029: **fix**. Criterion 7: 'was looking' is not on the present_continuous card (form: '*am / is / are* + verb-ing'; only present forms). Replaced with 'looking', the card's own mistake ('I [[working]] now.'). 'looks' stays: the card contrasts simple and continuous ('A permanent situation: present simple; a temporary one: continuous').
+- r21b-3-030: **keep**. 'is going to paint' does not fit 'so there is a lot of noise' (the noise is now); the present perfect continuous and the contractions are already accepted.
+- r21b-3-031: **keep**. 'I'm not understanding' is the stative mistake the present_continuous card lists ('I [[am needing]] help.'), a real B1 mistake; in standard English it is wrong.
+- r21b-3-033: **keep**. 'is have' is the same mistake the card lists ('She is [[work]] at the moment.'), a real learner mistake; the three right sentences are about different things.
+- r21b-3-034: **keep**. 'answered' without an object is normal English (= replied); both natural orders are accepted. 'she opened it and read the letter twice' puts the pronoun before its noun: rejected.
+- r21b-3-035: **keep**. Fixed in r21 (past perfect removed); one natural order, no flag against the answer.
+- r21b-3-037: **keep**. 'didn't used to' is on the used_to card as the mistake ('I didn't [[used to]] like fish.') and the teacher (11 November) names it as a common learner mistake that may be a wrong option.
+- r21b-3-040: **accept**. The fronted time phrase and 'it' for 'English' are correct rewrites with since.
+- r21b-3-041: **accept**. 'We haven't visited that museum yet.' is a correct negative of the sentence (like 'never', which r21 accepted).
+- r21b-3-042: **fix**. Criterion 7: 'in' is not on the present_perfect card (its time words: 'ever, never, just, already, yet, for, since, so far, this week'), and the task was a near-copy of 043 (since + year). New sentence that needs for, with wrong options from the card ('*[[for]]* + a period, *[[since]]* + a starting point'); 'already twenty years' is a real Latvian-speaker mistake.
+- r21b-3-043: **keep**. Correct and from the card; the near-duplicate is removed by the fix of 042.
+- r21b-3-046: **keep**. 'How long has she learned Chinese?' changes the given verb form and is not natural for an activity still going on, as decided in r21; 'for' at the end is accepted.
+- r21b-3-047: **keep**. Decided in r21 (instruction plain, learning task, options fixed to card forms); only one option gives a length of time.

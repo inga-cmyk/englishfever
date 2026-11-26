@@ -43,10 +43,10 @@ gp(T, L, 3, "___ by the queue outside, the new café is very popular. (judge)", 
    "Nemainīgs komentāra izteiciens: *Judging by…* (tam nav vajadzīgs galvenā teikuma priekšmets).")
 # teacher's tester, 24 November: the passive participle where someone really is compared
 gp(T, L, 4, "___ with the other candidates, she was clearly the strongest. (compare)", "Compared | When compared",
-   "The candidate is the one being compared, so the participle is passive: *Compared with the other candidates, she was…* "
-   "Compare *Judging by the queue*: there the speaker judges.",
-   "Kandidāte tiek salīdzināta ar citiem, tāpēc divdabis ir ciešamajā kārtā: *Compared with the other candidates, she was…* "
-   "Salīdzini ar *Judging by the queue*: tur spriež runātājs.")
+   "The candidate is the one being compared, so the participle is passive: *Compared with the other candidates, she was clearly the strongest.* "
+   "Not *Comparing*: she did not compare anyone.",
+   "Kandidāte tiek salīdzināta ar citiem, tāpēc divdabis ir ciešamajā kārtā: *Compared with the other candidates, she was clearly the strongest.* "
+   "Ne *Comparing*: viņa nevienu nesalīdzina.")
 
 # teacher's tester, 23 November: build the *having* clause yourself
 tx(T, L, 4, "Start with *Having* and join the two sentences: We checked the train times. We left for the station.",

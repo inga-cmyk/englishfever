@@ -1,0 +1,58 @@
+# r21-3 judge summary
+
+- r21-3-001: keep - is leaving and will leave are already accepted with answer notes; the explanation uses this task's own sentence.
+- r21-3-002: practice_only - A present simple negative with any is an A2 point in a B1.1 frame; correct, so practice only.
+- r21-3-004: practice_only - Past simple with last March is A2 in a B1.1 frame; the options are fine, so practice only.
+- r21-3-005: practice_only - Two past simple sentences with Then / After that is an A2 writing task; naming Then is fine (choosing it is not the point), but at B1.1 it is practice only.
+- r21-3-006: keep - Learn task. I know Tom ten years is a common learner mistake (present for duration; card present_perfect_continuous: 'I am waiting for an hour' as the mistake), so the distractor is believable.
+- r21-3-007: fix - The answer I have seen him yesterday is the card's own mistake example (present_perfect card: 'I [[have seen]] him yesterday.' -> 'I [[saw]] him yesterday.'), and two right sentences are both for/since duration. New wrong sentence and a third right one about a different thing.
+- r21-3-008: keep - Present perfect for a present result is on the B1.1 present_perfect card; one answer only, distractors are real forms.
+- r21-3-009: fix - 've seen and have seen are the same option twice and was see is a form nobody writes; the bare 'last night' sentence is also A2. A present perfect question before the gap makes have seen the real B1.2 trap.
+- r21-3-010: fix - No instruction line, and am been working / have be working are strings nobody writes. Distractors now follow the card (present_perfect_continuous card mistake: 'She has been [[work]] all day.').
+- r21-3-011: fix - Was already starting is ruled out by the times, so the flag on the options is wrong; but the answer is the past_perfect card's own example ('When I arrived, the film [[had]] already [[started]].'), and the instruction line is missing. New scene, same point.
+- r21-3-012: keep - Learn task about which action came first; one answer only, the weak distractors do not make it wrong.
+- r21-3-013: fix - is for and goes are not on the future card (it teaches will, going to, present continuous and '*be about to*: the very near future.'), and the instruction line is missing. The gap now holds the whole form so only the form decides; will to is the card's mistake ('I [[will to]] help you.').
+- r21-3-014: keep - Learn task on what the passive puts first; 'focus' is not a grammar term and only one option fits.
+- r21-3-016: fix - Level is right (present_continuous_passive is a B1.2 card); only the instruction line is missing.
+- r21-3-017: fix - said me to is not on the rep_questions card (it teaches 'told / asked + person + (not) to + base verb'), and told me that I wait here is a mistake nobody makes. Distractors now from the card's own patterns.
+- r21-3-018: fix - The answer is the ind_polite card's own example ('Could you tell me where [[the station is]]?') and two options are strings nobody writes; B1 needs the learner to change something (drop does, put -s back). New sentence.
+- r21-3-019: practice_only - Correct (whether is not a card, so the bank has one answer), but only if fits after asked + yes/no: too easy for a strong B1.2 learner (tester, 22 November), so practice only.
+- r21-3-020: fix - I hadn't any money is correct (dated British) and must be accepted; the explanation used other sentences (Did you use to…?), now this task's own.
+- r21-3-021: keep - Only am used to fits 'now I ___ it'; all options are on the used_to card or its mistakes.
+- r21-3-022: keep - Only reader note says the options are fine; one answer.
+- r21-3-024: keep - Reader 2's 'is my neighbour' changes the given words; the only join with whose that keeps both sentences is the key.
+- r21-3-025: fix - Without a joining word, and / and he are also correct joins. Name who (the point is the relative clause) and give the explanation with this sentence.
+- r21-3-026: fix - Level is right: the passive_modals card (B1.1) lists 'ought to be' among its signals. Only the explanation used other sentences (must be signed, can be bought).
+- r21-3-027: accept - 'this is software used by millions of people' is correct, natural English from the same cards.
+- r21-3-028: accept - Both readers: by the company after the time phrase is correct.
+- r21-3-029: practice_only - Correct; -s agreement with most people is on the present_simple card ('She [[work]] every day.'), but it is an A2 point: practice only.
+- r21-3-030: practice_only - Position of never is A2 in a B1.1 frame; practice only.
+- r21-3-031: practice_only - A2 question with does; practice only. Reader 2's 'What time does the bank open at?' and 'At what time does the bank open?' are correct and should be accepted too.
+- r21-3-032: practice_only - Present continuous negative is A2; practice only.
+- r21-3-033: fix - I still learn it is not natural English (I'm still learning it), and learnt must be accepted. The explanation now uses this sentence.
+- r21-3-034: practice_only - Present perfect negative is A2; practice only. 'We have never visited that museum.' is a correct negative and should be accepted; 'haven't been to' changes the verb and is not.
+- r21-3-035: keep - US spelling traveled is already accepted.
+- r21-3-036: keep - Timetable present for the future is a B1.1 point on the present_simple card; only leaves fits 'so we need to leave home by 6.30'.
+- r21-3-037: fix - Why have you been drinking … this week is also correct, and the two gaps are checked alone, so accepting have + been drinking would also pass are + drunk. One gap with both words in brackets; these days keeps the temporary change and the extra correct answer is accepted with a note.
+- r21-3-038: practice_only - Joining with because is A2; practice only. 'because I was ill' changes the given words and is not accepted.
+- r21-3-040: keep - Only reader note says it is fine.
+- r21-3-041: accept - 'until you have come back' is less natural but correct (Murphy: present perfect after until for a finished action); 'get' is not the given verb.
+- r21-3-042: keep - Only might fits 'I don't know yet'.
+- r21-3-043: fix - was check is a form nobody writes; is check follows the card's own mistake ('English [[is speak]] here.').
+- r21-3-044: accept - 'will be announced by them' is unnatural but grammatical, so accepted. 'is going to be announced' and 'is to be announced' change the given will and are not answers to this rewrite.
+- r21-3-045: keep - cond_zero is taught at B1.1 (levels A2.2, B1.1); only falls fits an always-true fact.
+- r21-3-046: fix - With no time word, I'm enjoying … Chris wants is equally correct. A past time phrase decides; the explanation uses this sentence.
+- r21-3-047: practice_only - Past simple question with yesterday is A2; practice only.
+- r21-3-048: fix - She has already seen the film is acceptable everyday English here, and the sentence is a near-copy of the narrative card's mistake example ('I didn't go to the cinema. I [[had]] already [[seen]] the film.'). By the time + past rules out has seen and already saw.
+- r21-3-049: keep - Learn task on slightly / much / far, all on the comparison card signals; one answer.
+- r21-3-050: accept - The cards also make two natural correct orders with the jobs swapped; 'my last one … than this job' is not natural (one before its noun) and is not accepted.
+- r21-3-051: keep - Learn matching; 'the old one is faster' fits only not as fast, so one pairing only.
+- r21-3-052: accept - Two natural correct orders with the flats swapped; 'the one we saw yesterday … than this flat' is not natural and is not accepted.
+- r21-3-053: keep - have gone twice = still away (British usage taught here); only have been fits 'the last time I went there'.
+- r21-3-054: fix - Since then is not on the conj_linkers card (it teaches 'then / after that: one action after another', 'before / after', 'while: two actions at the same time'). Replace it with while, which is on the card and wrong here. Already a learn task, so the A2 level is fine.
+- r21-3-055: practice_only - had to for the past is A2; practice only.
+- r21-3-056: fix - 'You should stay up late' is odd advice as a source sentence. A sentence where both forms make sense; still an easy point.
+- r21-3-057: fix - The instruction held the answer (will have to). With must as the source the learner must know that must has no future (card mistake 'I [[will can]] come.' -> will be able to; card: have to is a normal verb).
+- r21-3-058: keep - couldn't is on the card ('In the past: *could* and *had to*') and is wrong here: the cancellation did not stop us studying, it made it unnecessary.
+- r21-3-059: fix - The task is a real B1.1 trap (to + see) and stays; the explanation used another sentence (thank you for helping).
+- r21-3-060: keep - The asterisks are rendered as italics in the app; choosing said / told is the point, and only said fits with no person after it.

@@ -1,0 +1,352 @@
+[
+{
+"id": "r21c-001",
+"answer": "know",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Present simple of a state verb at B1.1 is easy (nearly A2).",
+"sense_problem": ""
+},
+{
+"id": "r21c-002",
+"answer": "have been playing",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-003",
+"answer": "It's going to rain soon. Take my umbrella, I'll lend it to you.",
+"other_correct": [
+"I think it will rain soon. Would you like to borrow my umbrella?",
+"It's going to rain. You can use mine.",
+"It will probably rain. I can lend you my umbrella."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open task, fine; 'the app checks that some forms are used' but the learner is not told which forms (will / going to / offer), so many correct answers may be marked wrong.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-004",
+"answer": "plays",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-005",
+"answer": "unless",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-006",
+"answer": "Could you tell me when the course starts?",
+"other_correct": [
+"When does the Italian course start?",
+"Could you tell me the start date of the evening Italian course?",
+"Can you tell me when the evening course begins?",
+"Would you mind telling me when the course starts?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open; 'polite question' is the only constraint, so direct 'When does the course start?' is also fine. Learner cannot know which forms the app wants (indirect question?).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-007",
+"answer": "Could you tell me when my printer will arrive?",
+"other_correct": [
+"Could you tell me where my order is?",
+"Why hasn't my printer arrived yet?",
+"Can you check when my printer will be delivered?",
+"Would you mind telling me when my printer will arrive?",
+"I ordered a printer ten days ago and I'm still waiting. Could you tell me what is happening?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open; the forms the app checks are not stated (present perfect? indirect question?), so many valid questions may be rejected. 'One polite question' but a statement plus question is also natural.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-008",
+"answer": "If metal gets hot, it expand.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Missing -s after 'it' is a believable mistake. Fine."
+},
+{
+"id": "r21c-009",
+"answer": [
+[
+"If I had gone, I would have met her.",
+"I didn't go."
+],
+[
+"If I hadn't gone, I wouldn't have met her.",
+"I went."
+],
+[
+"If I went, I would meet her.",
+"I probably won't go."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Possibly unclear which pairing; 'meaning' is clear enough.",
+"level_problem": "",
+"sense_problem": "'If I went, I would meet her' = unreal/unlikely, 'I probably won't go' is a loose fit (it could also mean 'I don't go'); acceptable but not exact."
+},
+{
+"id": "r21c-010",
+"answer": "he said he couldn't come because he was ill",
+"other_correct": [
+"because he was ill he said he couldn't come",
+"he couldn't come because he said he was ill",
+"because he said he was ill he couldn't come",
+"he said he was ill because he couldn't come"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No capital or full stop on cards so 'he' x3 cards are identical; gives little away. Many orders possible.",
+"level_problem": "B1.2 is a bit easy (reported speech, 9 cards, obvious order).",
+"sense_problem": "The alternatives are grammatical but illogical; the intended one is the only natural one."
+},
+{
+"id": "r21c-011",
+"answer": "My boss told that the meeting was cancelled.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Missing object after 'told' is a believable B1 error."
+},
+{
+"id": "r21c-012",
+"answer": "when i was a child we used to visit my grandparents every sunday",
+"other_correct": [
+"we used to visit my grandparents every sunday when i was a child",
+"every sunday when i was a child we used to visit my grandparents",
+"when i was a child every sunday we used to visit my grandparents",
+"every sunday we used to visit my grandparents when i was a child"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Very many correct orders; the learner cannot know which one the key holds.",
+"level_problem": "",
+"sense_problem": "'a child' without 'a' capital is fine. Several orders are equally natural."
+},
+{
+"id": "r21c-013",
+"answer": "What made that noise?",
+"other_correct": [
+"What made that loud bang?",
+"What made that bang?",
+"What made the loud bang?",
+"What made that noise in the kitchen?",
+"What made that noise?",
+"What has made that noise?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open: any noun works (bang/noise/sound); 'Ask your flatmate' ok. 'make' is the word to use but the learner may also think 'What makes ...'. Uses markdown asterisks.",
+"level_problem": "",
+"sense_problem": "'make' for a cause (What made...) is not obvious at B1.1."
+},
+{
+"id": "r21c-014",
+"answer": "The accident could have been avoided.",
+"other_correct": [
+"The accident could have been avoided by someone.",
+"The accident could have been prevented."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Start with The accident' makes passive obvious; 'avoid' should be kept (prevented changes the word). Fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-015",
+"answer": "enough",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-016",
+"answer": "would you like something to eat before we leave",
+"other_correct": [
+"would you like to eat something before we leave",
+"before we leave would you like something to eat",
+"before we leave would you like to eat something"
+],
+"wrong_options_that_fit": "would you like to leave before we eat something is grammatical but odd (cards).",
+"instruction_problem": "'to make a question' fine; question word order is given by 'would' only.",
+"level_problem": "",
+"sense_problem": "Cards allow odd but grammatical combos (like to leave / eat something)."
+},
+{
+"id": "r21c-017",
+"answer": "the bridge was built in 1932 and it is still used today",
+"other_correct": [
+"the bridge was built in 1932 and today it is still used",
+"it was built in 1932 and the bridge is still used today",
+"in 1932 the bridge was built and it is still used today",
+"the bridge is still used today and it was built in 1932",
+"today the bridge is still used and it was built in 1932",
+"it was built in 1932 and today the bridge is still used"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Many orders possible; the learner cannot know the key.",
+"level_problem": "",
+"sense_problem": "Sentence is natural though 'it' after 'the bridge' is a bit repetitive."
+},
+{
+"id": "r21c-018",
+"answer": "My laptop was stolen yesterday.",
+"other_correct": [
+"My laptop was stolen yesterday by someone."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-019",
+"answer": "This factory was built by the company in 1990.",
+"other_correct": [
+"This factory was built in 1990 by the company."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-020",
+"answer": "does your brother still work for the same company",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Answer is almost fixed; question order with 'does' is easy to see.",
+"level_problem": "B1.1 is fairly easy.",
+"sense_problem": "'Does your brother still work for the same company' is the only natural order (lower-case 'still' position fixed)."
+},
+{
+"id": "r21c-021",
+"answer": [
+"is looking"
+],
+"other_correct": "",
+"wrong_options_that_fit": "'looking' alone does not fit.",
+"instruction_problem": "",
+"level_problem": "Too easy for B1.1 (present continuous with 'at the moment').",
+"sense_problem": ""
+},
+{
+"id": "r21c-022",
+"answer": "I have been learning English since 2019.",
+"other_correct": [
+"I've been learning English since 2019.",
+"I have learned English since 2019.",
+"I've learned English since 2019.",
+"I have learnt English since 2019.",
+"I've learnt English since 2019."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Rewrite instruction is clear."
+},
+{
+"id": "r21c-023",
+"answer": "We haven't visited that museum.",
+"other_correct": [
+"We have not visited that museum.",
+"We have never visited that museum."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Negative' might not accept 'never'; learners may write it.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-024",
+"answer": "for",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-025",
+"answer": [
+"is made",
+"is sent"
+],
+"other_correct": [
+[
+"is made",
+"sent"
+],
+[
+"gets made",
+"gets sent"
+],
+[
+"is made",
+"gets sent"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "The passive is not stated; learner must work out it from 'make / send' with a singular noun 'cheese'. Whether 'is ... and then sent' (one 'is') is accepted is unclear.",
+"level_problem": "Passive present at B1.1 is acceptable.",
+"sense_problem": "Fine."
+},
+{
+"id": "r21c-026",
+"answer": "The winner will be announced on Friday.",
+"other_correct": [
+"The winner will be announced on Friday by them."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21c-027",
+"answer": [
+"had already finished"
+],
+"other_correct": [
+[
+"had finished"
+],
+[
+"'d already finished"
+],
+[
+"already finished"
+],
+[
+"already had finished"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Unclear whether 'already' belongs in the gap or is a hint word; the gap sits before 'eating' only, so 'had finished' could also be wanted. Past simple 'finished' is also acceptable in American English.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

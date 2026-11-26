@@ -1,0 +1,1833 @@
+{
+ "r21b-2-001": {
+  "hash": "4fe70ea9745131d5",
+  "gate_key": "cond_third | B1.2 | mcq | Which sentence is NOT correct? | If she had knew about the party, she would have come.",
+  "src": "b1-cond-rep-1.csv:147",
+  "point": "c3",
+  "key": {
+   "kind": "mcq",
+   "correct": "If she had knew about the party, she would have come.",
+   "wrong": [
+    "They would have won if their best player hadn't been injured.",
+    "Would you have helped me if I had asked?",
+    "If the shop had been open, I would have bought some bread."
+   ]
+  },
+  "item": {
+   "id": "c-0810",
+   "skill": "cond_third",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *had* we need the 3. form: *If she had known about the party, she would have come.*",
+   "why_lv": "Pēc *had* vajag 3. formu: *If she had known about the party, she would have come.*",
+   "correct": "If she had knew about the party, she would have come.",
+   "wrong": [
+    "They would have won if their best player hadn't been injured.",
+    "Would you have helped me if I had asked?",
+    "If the shop had been open, I would have bought some bread."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "c3",
+   "src": "b1-cond-rep-1.csv:147"
+  }
+ },
+ "r21b-2-002": {
+  "hash": "f9a63fc6a321fd87",
+  "gate_key": "cond_third | B1.2 | mcq | Which sentence is NOT correct? | If he had booked earlier, he wouldn't have pay so much.",
+  "src": "b1-cond-rep-1.csv:148",
+  "point": "c3",
+  "key": {
+   "kind": "mcq",
+   "correct": "If he had booked earlier, he wouldn't have pay so much.",
+   "wrong": [
+    "If I had seen the sign, I would have stopped.",
+    "She would have called you if she had had your number.",
+    "If you hadn't reminded me, I would have forgotten her birthday."
+   ]
+  },
+  "item": {
+   "id": "c-0811",
+   "skill": "cond_third",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *wouldn't have* we need the 3. form: *If he had booked earlier, he wouldn't have paid so much.*",
+   "why_lv": "Pēc *wouldn't have* vajag 3. formu: *If he had booked earlier, he wouldn't have paid so much.*",
+   "correct": "If he had booked earlier, he wouldn't have pay so much.",
+   "wrong": [
+    "If I had seen the sign, I would have stopped.",
+    "She would have called you if she had had your number.",
+    "If you hadn't reminded me, I would have forgotten her birthday."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "c3",
+   "src": "b1-cond-rep-1.csv:148"
+  }
+ },
+ "r21b-2-003": {
+  "hash": "0917cf99de093065",
+  "gate_key": "rep_statements | B1.1 | order | Put the words in order. | they said they had already eaten",
+  "src": "b1-cond-rep-1.csv:151",
+  "point": "rep_backshift2",
+  "key": {
+   "kind": "order",
+   "sentence": "they said they had already eaten",
+   "also": [
+    "they said they had eaten already"
+   ]
+  },
+  "item": {
+   "id": "c-0814",
+   "skill": "rep_statements",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "With a past reporting verb the tense often goes one step back: *am → was*, *will → would*, *have done → had done*. It is not always needed, for example when the fact is still true.",
+   "why_lv": "Pēc darbības vārda pagātnē laiks bieži iet vienu soli atpakaļ: *am → was, will → would, have done → had done*. Tas nav vienmēr vajadzīgs, piemēram, ja fakts joprojām ir patiess.",
+   "sentence": "they said they had already eaten",
+   "answers": [
+    [
+     "they said they had already eaten",
+     "they said they had eaten already"
+    ]
+   ],
+   "role": "check",
+   "point": "rep_backshift2",
+   "src": "b1-cond-rep-1.csv:151"
+  }
+ },
+ "r21b-2-004": {
+  "hash": "ca30d9d99bea0d20",
+  "gate_key": "rep_statements | B1.2 | order | Put the words in order. | he said he couldn't come because he was ill",
+  "src": "b1-cond-rep-1.csv:153",
+  "point": "rep_backshift",
+  "key": {
+   "kind": "order",
+   "sentence": "he said he couldn't come because he was ill",
+   "also": [
+    "because he was ill he said he couldn't come"
+   ]
+  },
+  "item": {
+   "id": "c-0816",
+   "skill": "rep_statements",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "With a past reporting verb the tense often goes one step back: *am → was*, *will → would*, *have done → had done*. It is not always needed, for example when the fact is still true.",
+   "why_lv": "Pēc darbības vārda pagātnē laiks bieži iet vienu soli atpakaļ: *am → was, will → would, have done → had done*. Tas nav vienmēr vajadzīgs, piemēram, ja fakts joprojām ir patiess.",
+   "sentence": "he said he couldn't come because he was ill",
+   "answers": [
+    [
+     "he said he couldn't come because he was ill",
+     "because he was ill he said he couldn't come"
+    ]
+   ],
+   "role": "check",
+   "point": "rep_backshift",
+   "src": "b1-cond-rep-1.csv:153"
+  }
+ },
+ "r21b-2-005": {
+  "hash": "89e8bc83f22f4f96",
+  "gate_key": "rep_statements | B1.1 | mcq | Which sentence is NOT correct? | My boss told that the meeting was cancelled.",
+  "src": "b1-cond-rep-1.csv:180",
+  "point": "rep_say_tell",
+  "key": {
+   "kind": "mcq",
+   "correct": "My boss told that the meeting was cancelled.",
+   "wrong": [
+    "She said that she was tired.",
+    "He told me he would call later.",
+    "They said they had already eaten."
+   ]
+  },
+  "item": {
+   "id": "c-0843",
+   "skill": "rep_statements",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Told* needs a person after it: *My boss told us that the meeting was cancelled*; *said* does not.",
+   "why_lv": "Aiz *told* vajag personu: *My boss told us that the meeting was cancelled*; aiz *said* tā nav.",
+   "correct": "My boss told that the meeting was cancelled.",
+   "wrong": [
+    "She said that she was tired.",
+    "He told me he would call later.",
+    "They said they had already eaten."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rep_say_tell",
+   "src": "b1-cond-rep-1.csv:180"
+  }
+ },
+ "r21b-2-006": {
+  "hash": "dfe40776efb7dd3c",
+  "gate_key": "rep_statements | B1.2 | mcq | Which sentence is NOT correct? | They said they will come the next day.",
+  "src": "b1-cond-rep-1.csv:181",
+  "point": "rep_backshift",
+  "key": {
+   "kind": "mcq",
+   "correct": "They said they will come the next day.",
+   "wrong": [
+    "She said she was working from home that day.",
+    "He said he couldn't find his keys.",
+    "They said they had booked a table."
+   ]
+  },
+  "item": {
+   "id": "c-0844",
+   "skill": "rep_statements",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *said*, *will* goes back to *would*: *They said they would come the next day.* *The next day* shows we look back from later, so *will* does not fit.",
+   "why_lv": "Pēc *said* *will* kļūst par *would*: *They said they would come the next day.* *The next day* rāda, ka stāstām vēlāk, tāpēc *will* neder.",
+   "correct": "They said they will come the next day.",
+   "wrong": [
+    "She said she was working from home that day.",
+    "He said he couldn't find his keys.",
+    "They said they had booked a table."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rep_backshift",
+   "src": "b1-cond-rep-1.csv:181"
+  }
+ },
+ "r21b-2-007": {
+  "hash": "babd79d940e87d1c",
+  "gate_key": "rep_questions | B1.2 | gap | At school, years ago: 'Do you like jazz?' → He asked me ___. | ",
+  "src": "b1-cond-rep-1.csv:207",
+  "point": "rep_q_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "if I liked jazz",
+     "whether I liked jazz",
+     "if I liked jazz or not",
+     "whether I liked jazz or not",
+     "whether or not I liked jazz"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0870",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "At school, years ago: 'Do you like jazz?' → He asked me ___.",
+   "why": "After a past reporting verb (*said, told, asked*) the tense goes one step back (*am → was, will → would, have done → had done*). This is always correct. While something is still true, the present is also heard in everyday English, but here we practise the rule.",
+   "why_lv": "Pēc atstāstījuma darbības vārda pagātnē (*said, told, asked*) laiks iet soli atpakaļ (*am → was, will → would, have done → had done*). Tas vienmēr ir pareizi. Kamēr kaut kas joprojām ir patiess, sarunvalodā dzird arī tagadni, bet šeit mēs trenējam likumu.",
+   "answers": [
+    [
+     "if I liked jazz",
+     "whether I liked jazz",
+     "if I liked jazz or not",
+     "whether I liked jazz or not",
+     "whether or not I liked jazz"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rep_q_yn",
+   "src": "b1-cond-rep-1.csv:207"
+  }
+ },
+ "r21b-2-008": {
+  "hash": "85fc5664d885da24",
+  "gate_key": "rep_questions | B1.2 | match | Match each sentence with its report. | 'Please sit down.' = She asked me to sit down. ; 'Don't touch the screen.' = She told me not to touch the screen. ; 'Are you free on Friday?' = She asked me if I was free on Friday. ; 'What time does the train leave?' = She asked me what time the train left.",
+  "src": "b1-cond-rep-1.csv:212",
+  "point": "rep_orders",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "'Please sit down.'",
+     "She asked me to sit down."
+    ],
+    [
+     "'Don't touch the screen.'",
+     "She told me not to touch the screen."
+    ],
+    [
+     "'Are you free on Friday?'",
+     "She asked me if I was free on Friday."
+    ],
+    [
+     "'What time does the train leave?'",
+     "She asked me what time the train left."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0875",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "match",
+   "q": "Match each sentence with its report.",
+   "why": "Requests and orders: *asked / told* + person + (*not*) *to*: *She told me not to touch the screen.* Questions: *asked* + *if* or a question word + statement order, tense one step back: *She asked me what time the train left.*",
+   "why_lv": "Lūgumi un rīkojumi: *asked / told* + cilvēks + (*not*) *to*: *She told me not to touch the screen.* Jautājumi: *asked* + *if* vai jautājamais vārds + stāstījuma vārdu secība, laiks vienu soli atpakaļ: *She asked me what time the train left.*",
+   "pairs": [
+    [
+     "'Please sit down.'",
+     "She asked me to sit down."
+    ],
+    [
+     "'Don't touch the screen.'",
+     "She told me not to touch the screen."
+    ],
+    [
+     "'Are you free on Friday?'",
+     "She asked me if I was free on Friday."
+    ],
+    [
+     "'What time does the train leave?'",
+     "She asked me what time the train left."
+    ]
+   ],
+   "role": "learn",
+   "point": "rep_orders",
+   "src": "b1-cond-rep-1.csv:212"
+  }
+ },
+ "r21b-2-009": {
+  "hash": "3ce59560616378ff",
+  "gate_key": "rep_questions | B1.2 | mcq | Which sentence is NOT correct? | She asked me where did I live.",
+  "src": "b1-cond-rep-1.csv:218",
+  "point": "rep_q_wh",
+  "key": {
+   "kind": "mcq",
+   "correct": "She asked me where did I live.",
+   "wrong": [
+    "He asked if I had a car.",
+    "They wanted to know when the train left.",
+    "She told me to wait outside."
+   ]
+  },
+  "item": {
+   "id": "c-0881",
+   "skill": "rep_questions",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "In a reported question the verb follows the subject: *where I lived*.",
+   "why_lv": "Netiešajā jautājumā darbības vārds ir aiz teik. priekšmeta: *where I lived*.",
+   "correct": "She asked me where did I live.",
+   "wrong": [
+    "He asked if I had a car.",
+    "They wanted to know when the train left.",
+    "She told me to wait outside."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rep_q_wh",
+   "src": "b1-cond-rep-1.csv:218"
+  }
+ },
+ "r21b-2-010": {
+  "hash": "e102489d5899e561",
+  "gate_key": "ind_polite | B1.2 | gap | I wonder ___ he will come. | ",
+  "src": "b1-cond-rep-1.csv:234",
+  "point": "iq_yn",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "whether"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0897",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I wonder ___ he will come.",
+   "why": "A yes/no question inside a sentence: *whether* or *if*.",
+   "why_lv": "Jautājums ar atbildi jā/nē teikuma iekšpusē: *whether* vai *if*.",
+   "answers": [
+    [
+     "whether"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "whether",
+    "what"
+   ],
+   "practice_only": true,
+   "role": "learn",
+   "point": "iq_yn",
+   "src": "b1-cond-rep-1.csv:234"
+  }
+ },
+ "r21b-2-011": {
+  "hash": "790d504dbcdb57ec",
+  "gate_key": "used_to | B1.1 | order | Put all the words in order. More than one answer is possible. | she didn't use to enjoy cooking but now she loves it",
+  "src": "b1-new-1.csv:5",
+  "point": "used_to",
+  "key": {
+   "kind": "order",
+   "sentence": "she didn't use to enjoy cooking but now she loves it",
+   "also": [
+    "she didn't use to enjoy cooking but she loves it now",
+    "she loves cooking now but she didn't use to enjoy it",
+    "now she loves cooking but she didn't use to enjoy it"
+   ]
+  },
+  "item": {
+   "id": "c-0917",
+   "skill": "used_to",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put all the words in order. More than one answer is possible.",
+   "why": "Use *did not use to* for a past habit. *Now* can come before *she loves it* or at the end of that clause.",
+   "why_lv": "Par pagātnes ieradumu lieto *did not use to*. *Now* var būt pirms *she loves it* vai šīs daļas beigās.",
+   "sentence": "she didn't use to enjoy cooking but now she loves it",
+   "answers": [
+    [
+     "she didn't use to enjoy cooking but now she loves it",
+     "she didn't use to enjoy cooking but she loves it now",
+     "she loves cooking now but she didn't use to enjoy it",
+     "now she loves cooking but she didn't use to enjoy it"
+    ]
+   ],
+   "role": "check",
+   "point": "used_to",
+   "src": "b1-new-1.csv:5"
+  }
+ },
+ "r21b-2-012": {
+  "hash": "fa437173ac0e7fd9",
+  "gate_key": "used_to | B1.2 | order | Put the words in order. | when i was a child we used to visit my grandparents every sunday",
+  "src": "b1-new-1.csv:8",
+  "point": "used_to",
+  "key": {
+   "kind": "order",
+   "sentence": "when i was a child we used to visit my grandparents every sunday",
+   "also": [
+    "we used to visit my grandparents every sunday when i was a child",
+    "every sunday we used to visit my grandparents when i was a child",
+    "when i was a child every sunday we used to visit my grandparents"
+   ]
+  },
+  "item": {
+   "id": "c-0920",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + *used to* + base verb + the rest. Negative: *didn't use to*.",
+   "why_lv": "Teikuma priekšmets + *used to* + pamatforma + pārējais. Noliegums: *didn't use to*.",
+   "sentence": "when i was a child we used to visit my grandparents every sunday",
+   "answers": [
+    [
+     "when i was a child we used to visit my grandparents every sunday",
+     "we used to visit my grandparents every sunday when i was a child",
+     "every sunday we used to visit my grandparents when i was a child",
+     "when i was a child every sunday we used to visit my grandparents"
+    ]
+   ],
+   "role": "check",
+   "point": "used_to",
+   "src": "b1-new-1.csv:8"
+  }
+ },
+ "r21b-2-013": {
+  "hash": "b17a7d197dceed55",
+  "gate_key": "used_to | B1.2 | order | Put all the words in order. More than one answer is possible. | i am not used to getting up so early",
+  "src": "b1-new-1.csv:10",
+  "point": "be_used_to",
+  "key": {
+   "kind": "order",
+   "sentence": "i am not used to getting up so early",
+   "also": [
+    "i am used to not getting up so early",
+    "i am not so used to getting up early"
+   ]
+  },
+  "item": {
+   "id": "c-0922",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put all the words in order. More than one answer is possible.",
+   "why": "*Not used to getting up early* means early rising is unfamiliar. *Used to not getting up early* means late rising is normal. Both are grammatical, with different meanings.",
+   "why_lv": "*Not used to getting up early* nozīmē, ka agra celšanās nav ierasta. *Used to not getting up early* nozīmē, ka necelties agri ir ierasti. Abi varianti ir gramatiski pareizi, bet to nozīmes atšķiras.",
+   "sentence": "i am not used to getting up so early",
+   "answers": [
+    [
+     "i am not used to getting up so early",
+     "i am used to not getting up so early",
+     "i am not so used to getting up early"
+    ]
+   ],
+   "role": "check",
+   "point": "be_used_to",
+   "src": "b1-new-1.csv:10"
+  }
+ },
+ "r21b-2-014": {
+  "hash": "2b987ffc12faba97",
+  "gate_key": "used_to | B1.1 | gap | When I was a teenager, I ___ any money, so I walked everywhere. (not / have) | ",
+  "src": "b1-new-1.csv:20",
+  "point": "used_to",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "didn't use to have",
+     "did not use to have",
+     "didn't have",
+     "did not have",
+     "used not to have",
+     "hadn't",
+     "had not"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0932",
+   "skill": "used_to",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "When I was a teenager, I ___ any money, so I walked everywhere. (not / have)",
+   "why": "Negative of *used to*: *didn't use to* + base verb (no *-d*): *I didn't use to have any money.* *I didn't have any money* is correct too.",
+   "why_lv": "*used to* noliegums: *didn't use to* + pamatforma (bez *-d*): *I didn't use to have any money.* Arī *I didn't have any money* ir pareizi.",
+   "answer_notes": [
+    [
+     "used not to have",
+     "Correct, but formal. In everyday English we usually say did not use to have or did not have.",
+     "Pareizi, bet formāli. Ikdienas angļu valodā parasti saka did not use to have vai did not have."
+    ]
+   ],
+   "answers": [
+    [
+     "didn't use to have",
+     "did not use to have",
+     "didn't have",
+     "did not have",
+     "used not to have",
+     "hadn't",
+     "had not"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "used_to",
+   "src": "b1-new-1.csv:20"
+  }
+ },
+ "r21b-2-015": {
+  "hash": "654b049cd5cd1df5",
+  "gate_key": "used_to | B1.1 | mcq | Which sentence is NOT correct? | Did you used to play chess?",
+  "src": "b1-new-1.csv:26",
+  "point": "used_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "Did you used to play chess?",
+   "wrong": [
+    "My dad used to work at night.",
+    "We didn't use to have a dishwasher.",
+    "Are you used to the new office yet?"
+   ]
+  },
+  "item": {
+   "id": "c-0938",
+   "skill": "used_to",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "Questions and negatives: *did / didn't* + *use to* (no *-d*): *Did you use to play chess?*",
+   "why_lv": "Jautājumos un noliegumos: *did / didn't* + *use to* (bez *-d*): *Did you use to play chess?*",
+   "correct": "Did you used to play chess?",
+   "wrong": [
+    "My dad used to work at night.",
+    "We didn't use to have a dishwasher.",
+    "Are you used to the new office yet?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "used_to",
+   "src": "b1-new-1.csv:26"
+  }
+ },
+ "r21b-2-016": {
+  "hash": "a2f06b6f1210d4cb",
+  "gate_key": "articles_b1 | B1.1 | gap | She plays ___ violin in an orchestra. | ",
+  "src": "b1-new-1.csv:50",
+  "point": "the_unique",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "the"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0962",
+   "skill": "articles_b1",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "She plays ___ violin in an orchestra.",
+   "why": "*the* with musical instruments: *play the violin*.",
+   "why_lv": "*the* ar mūzikas *instrumentiem*: *play the violin*.",
+   "answers": [
+    [
+     "the"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "the",
+    "an",
+    "—"
+   ],
+   "role": "check",
+   "point": "the_unique",
+   "src": "b1-new-1.csv:50"
+  }
+ },
+ "r21b-2-017": {
+  "hash": "8db58237eabdc333",
+  "gate_key": "articles_b1 | B1.2 | mcq | Which sentence is NOT correct? | My parents moved to the Canada last year.",
+  "src": "b1-new-1.csv:73",
+  "point": "art_names",
+  "key": {
+   "kind": "mcq",
+   "correct": "My parents moved to the Canada last year.",
+   "wrong": [
+    "She works in the Netherlands.",
+    "We had breakfast on the balcony.",
+    "We took a boat trip on the Danube."
+   ]
+  },
+  "item": {
+   "id": "c-0985",
+   "skill": "articles_b1",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "No article with most countries: *My parents moved to Canada last year.* But: *the Netherlands, the UK*.",
+   "why_lv": "Ar lielāko daļu valstu nosaukumu artikula nav: *My parents moved to Canada last year.* Bet: *the Netherlands, the UK*.",
+   "correct": "My parents moved to the Canada last year.",
+   "wrong": [
+    "She works in the Netherlands.",
+    "We had breakfast on the balcony.",
+    "We took a boat trip on the Danube."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "art_names",
+   "src": "b1-new-1.csv:73"
+  }
+ },
+ "r21b-2-018": {
+  "hash": "24d50c6e7d248b86",
+  "gate_key": "quantity | B1.1 | gap | The room isn't big ___ for twenty people. | ",
+  "src": "b1-new-1.csv:90",
+  "point": "too_enough",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "enough"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1002",
+   "skill": "quantity",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The room isn't big ___ for twenty people.",
+   "why": "*enough* comes after the adjective: *big enough for twenty people*.",
+   "why_lv": "*enough* ir aiz īpašības vārda: *big enough for twenty people*.",
+   "answers": [
+    [
+     "enough"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "enough",
+    "too",
+    "much"
+   ],
+   "role": "check",
+   "point": "too_enough",
+   "src": "b1-new-1.csv:90"
+  }
+ },
+ "r21b-2-019": {
+  "hash": "e25b96453e86f9bf",
+  "gate_key": "quantity | B1.1 | mcq | Which sentence is NOT correct? | I have many time for hobbies.",
+  "src": "b1-new-1.csv:101",
+  "point": "much_many",
+  "key": {
+   "kind": "mcq",
+   "correct": "I have many time for hobbies.",
+   "wrong": [
+    "There aren't many shops in our village.",
+    "Would you like some more coffee?",
+    "We have a little time before the train leaves."
+   ]
+  },
+  "item": {
+   "id": "c-1013",
+   "skill": "quantity",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*much* + uncountable nouns (*time, traffic, homework*); *many* + plural nouns.",
+   "why_lv": "*much* + neskaitāmi lietvārdi (*time, traffic, homework*); *many* + daudzskaitlis.",
+   "correct": "I have many time for hobbies.",
+   "wrong": [
+    "There aren't many shops in our village.",
+    "Would you like some more coffee?",
+    "We have a little time before the train leaves."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "much_many",
+   "src": "b1-new-1.csv:101"
+  }
+ },
+ "r21b-2-020": {
+  "hash": "a262c56ede8ea1fc",
+  "gate_key": "relative_clauses | B1.1 | mcq | Which sentence is NOT correct? | The jacket which I ordered online it was too small.",
+  "src": "b1-new-2.csv:22",
+  "point": "rel_obj",
+  "key": {
+   "kind": "mcq",
+   "correct": "The jacket which I ordered online it was too small.",
+   "wrong": [
+    "This is the café where we first met.",
+    "The colleague who helped me is on holiday now.",
+    "The film we watched last night was too long."
+   ]
+  },
+  "item": {
+   "id": "c-1042",
+   "skill": "relative_clauses",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Which* already stands for the object of *ordered*. Do not repeat it with *it*: *The jacket which I ordered online was too small.*",
+   "why_lv": "*Which* jau aizstāj darbības vārda *ordered* papildinātāju. To neatkārto ar *it*: *The jacket which I ordered online was too small.*",
+   "correct": "The jacket which I ordered online it was too small.",
+   "wrong": [
+    "This is the café where we first met.",
+    "The colleague who helped me is on holiday now.",
+    "The film we watched last night was too long."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rel_obj",
+   "src": "b1-new-2.csv:22"
+  }
+ },
+ "r21b-2-021": {
+  "hash": "634d0e0ed64b078c",
+  "gate_key": "relative_clauses | B1.2 | mcq | Which sentence is NOT correct? | Our new manager, that started in May, is from Spain.",
+  "src": "b1-new-2.csv:26",
+  "point": "rel_nondef",
+  "key": {
+   "kind": "mcq",
+   "correct": "Our new manager, that started in May, is from Spain.",
+   "wrong": [
+    "The hotel where we stayed was right next to the beach.",
+    "I have a friend whose father is a pilot.",
+    "Riga, which is the capital of Latvia, has a beautiful old town."
+   ]
+  },
+  "item": {
+   "id": "c-1046",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "Extra information about a person we already know goes between commas, with *who*, never *that*: *Our new manager, who started in May, is from Spain.*",
+   "why_lv": "Papildu informācija par jau zināmu cilvēku ir starp komatiem, ar *who*, nekad ar *that*: *Our new manager, who started in May, is from Spain.*",
+   "correct": "Our new manager, that started in May, is from Spain.",
+   "wrong": [
+    "The hotel where we stayed was right next to the beach.",
+    "I have a friend whose father is a pilot.",
+    "Riga, which is the capital of Latvia, has a beautiful old town."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rel_nondef",
+   "src": "b1-new-2.csv:26"
+  }
+ },
+ "r21b-2-022": {
+  "hash": "ce63ba339d9724ee",
+  "gate_key": "relative_clauses | B1.2 | text | Join the two sentences with *who*: My uncle lives in Spain. He is a chef. | ",
+  "src": "b1-new-2.csv:36",
+  "point": "rel_nondef",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My uncle, who lives in Spain, is a chef.",
+     "My uncle, who is a chef, lives in Spain."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1056",
+   "skill": "relative_clauses",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Join the two sentences with *who*: My uncle lives in Spain. He is a chef.",
+   "why": "*who* adds extra information about *my uncle*, between commas: *My uncle, who lives in Spain, is a chef.*",
+   "why_lv": "*who* pievieno papildu informāciju par *my uncle*, starp komatiem: *My uncle, who lives in Spain, is a chef.*",
+   "answers": [
+    [
+     "My uncle, who lives in Spain, is a chef.",
+     "My uncle, who is a chef, lives in Spain."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "rel_nondef",
+   "src": "b1-new-2.csv:36"
+  }
+ },
+ "r21b-2-023": {
+  "hash": "94665dfab39ef899",
+  "gate_key": "time_clauses | B1.1 | mcq | Which sentence is NOT correct? | We'll start the meeting when everyone will be here.",
+  "src": "b1-new-2.csv:64",
+  "point": "fut_time_clause",
+  "key": {
+   "kind": "mcq",
+   "correct": "We'll start the meeting when everyone will be here.",
+   "wrong": [
+    "I'll wait here until you come back.",
+    "Before you leave, please close the windows.",
+    "Call me as soon as the doctor arrives."
+   ]
+  },
+  "item": {
+   "id": "c-1084",
+   "skill": "time_clauses",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *when* we use the present simple for the future, not *will*: *We'll start the meeting when everyone is here.*",
+   "why_lv": "Pēc *when* nākotnei lieto Present Simple, nevis *will*: *We'll start the meeting when everyone is here.*",
+   "correct": "We'll start the meeting when everyone will be here.",
+   "wrong": [
+    "I'll wait here until you come back.",
+    "Before you leave, please close the windows.",
+    "Call me as soon as the doctor arrives."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "fut_time_clause",
+   "src": "b1-new-2.csv:64"
+  }
+ },
+ "r21b-2-024": {
+  "hash": "9a7b0b5b850a555b",
+  "gate_key": "time_clauses | B1.2 | mcq | Which sentence is NOT correct? | Let's wait here until the rain will stop.",
+  "src": "b1-new-2.csv:67",
+  "point": "when_done",
+  "key": {
+   "kind": "mcq",
+   "correct": "Let's wait here until the rain will stop.",
+   "wrong": [
+    "I'll call you after I've spoken to the manager.",
+    "Please lock the door before you leave.",
+    "While I'm away, my sister will water the plants."
+   ]
+  },
+  "item": {
+   "id": "c-1087",
+   "skill": "time_clauses",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "After *until* (and *when, as soon as, before, after*) we use the present simple for the future, not *will*: *Let's wait here until the rain stops.*",
+   "why_lv": "Pēc *until* (un *when, as soon as, before, after*) nākotnei lieto Present Simple, nevis *will*: *Let's wait here until the rain stops.*",
+   "correct": "Let's wait here until the rain will stop.",
+   "wrong": [
+    "I'll call you after I've spoken to the manager.",
+    "Please lock the door before you leave.",
+    "While I'm away, my sister will water the plants."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "when_done",
+   "src": "b1-new-2.csv:67"
+  }
+ },
+ "r21b-2-025": {
+  "hash": "76d0c82fdc5d2404",
+  "gate_key": "question_tags | B1.2 | mcq | Which sentence is NOT correct? | Your brother lives in Oslo, isn't he?",
+  "src": "b1-new-3.csv:40",
+  "point": "tag_special",
+  "key": {
+   "kind": "mcq",
+   "correct": "Your brother lives in Oslo, isn't he?",
+   "wrong": [
+    "You can drive, can't you?",
+    "They weren't at the party, were they?",
+    "Let's take a break, shall we?"
+   ]
+  },
+  "item": {
+   "id": "c-1136",
+   "skill": "question_tags",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "Present simple: the tag uses *doesn't*: *Your brother lives in Oslo, doesn't he?*",
+   "why_lv": "Present Simple: tag ar *doesn't*: *Your brother lives in Oslo, doesn't he?*",
+   "correct": "Your brother lives in Oslo, isn't he?",
+   "wrong": [
+    "You can drive, can't you?",
+    "They weren't at the party, were they?",
+    "Let's take a break, shall we?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "tag_special",
+   "src": "b1-new-3.csv:40"
+  }
+ },
+ "r21b-2-026": {
+  "hash": "3d6fd108a9d88f7b",
+  "gate_key": "subject_object_q | B1.1 | mcq | Which sentence is NOT correct? | Who did called you last night?",
+  "src": "b1-new-3.csv:80",
+  "point": "q_subject",
+  "key": {
+   "kind": "mcq",
+   "correct": "Who did called you last night?",
+   "wrong": [
+    "Who left the door open?",
+    "What did you buy at the market?",
+    "Who wants another coffee?"
+   ]
+  },
+  "item": {
+   "id": "c-1176",
+   "skill": "subject_object_q",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "When *who* is the subject, there is no *did*: *Who called you last night?*",
+   "why_lv": "Ja *who* ir teikuma priekšmets, *did* nelieto: *Who called you last night?*",
+   "correct": "Who did called you last night?",
+   "wrong": [
+    "Who left the door open?",
+    "What did you buy at the market?",
+    "Who wants another coffee?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "q_subject",
+   "src": "b1-new-3.csv:80"
+  }
+ },
+ "r21b-2-027": {
+  "hash": "dd9f6fe0880c9e35",
+  "gate_key": "subject_object_q | B1.2 | mcq | Which sentence is NOT correct? | Which colleague did suggested the new plan?",
+  "src": "b1-new-3.csv:86",
+  "point": "q_subject",
+  "key": {
+   "kind": "mcq",
+   "correct": "Which colleague did suggested the new plan?",
+   "wrong": [
+    "Which team won the match on Saturday?",
+    "What did your manager say about the report?",
+    "How many people signed up for the course?"
+   ]
+  },
+  "item": {
+   "id": "c-1182",
+   "skill": "subject_object_q",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "When the question word is the subject (*Which colleague*), there is no *did*: *Which colleague suggested the new plan?*",
+   "why_lv": "Ja jautājamais vārds ir teikuma priekšmets (*Which colleague*), *did* nelieto: *Which colleague suggested the new plan?*",
+   "correct": "Which colleague did suggested the new plan?",
+   "wrong": [
+    "Which team won the match on Saturday?",
+    "What did your manager say about the report?",
+    "How many people signed up for the course?"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "q_subject",
+   "src": "b1-new-3.csv:86"
+  }
+ },
+ "r21b-2-028": {
+  "hash": "b60119965a7bb474",
+  "gate_key": "subject_object_q | B1.1 | text | There's a loud bang in the kitchen. Ask your flatmate. Use *What* and *make*: | ",
+  "src": "b1-new-3.csv:90",
+  "point": "q_subject",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "What made that noise?",
+     "What made the noise?",
+     "What made that bang?",
+     "What made the bang?",
+     "What made that sound?",
+     "What made the sound?",
+     "What made that?",
+     "What made it?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1186",
+   "skill": "subject_object_q",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "There's a loud bang in the kitchen. Ask your flatmate. Use *What* and *make*:",
+   "why": "*What* is the subject here, so there is no *did*: *What made that noise?*",
+   "why_lv": "Šeit *What* ir teikuma priekšmets, tāpēc *did* nelieto: *What made that noise?*",
+   "answers": [
+    [
+     "What made that noise?",
+     "What made the noise?",
+     "What made that bang?",
+     "What made the bang?",
+     "What made that sound?",
+     "What made the sound?",
+     "What made that?",
+     "What made it?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "q_subject",
+   "src": "b1-new-3.csv:90"
+  }
+ },
+ "r21b-2-029": {
+  "hash": "67523e4969bb2769",
+  "gate_key": "verb_patterns | B1.1 | mcq | Which sentence is NOT correct? | She promised helping me with the move.",
+  "src": "b1-new-3.csv:135",
+  "point": "vp_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "She promised helping me with the move.",
+   "wrong": [
+    "We decided to stay at home on Saturday.",
+    "Have you finished packing your suitcase?",
+    "He's interested in learning Japanese."
+   ]
+  },
+  "item": {
+   "id": "c-1231",
+   "skill": "verb_patterns",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*promise* + *to* + verb: *She promised to help me with the move.*",
+   "why_lv": "*promise* + *to* + darbības vārds: *She promised to help me with the move.*",
+   "correct": "She promised helping me with the move.",
+   "wrong": [
+    "We decided to stay at home on Saturday.",
+    "Have you finished packing your suitcase?",
+    "He's interested in learning Japanese."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "vp_to",
+   "src": "b1-new-3.csv:135"
+  }
+ },
+ "r21b-2-030": {
+  "hash": "e2d7f9a55d6ae4d7",
+  "gate_key": "verb_patterns | B1.2 | mcq | Which sentence is NOT correct? | She enjoys to cook for her friends.",
+  "src": "b1-new-3.csv:142",
+  "point": "vp_ing",
+  "key": {
+   "kind": "mcq",
+   "correct": "She enjoys to cook for her friends.",
+   "wrong": [
+    "He keeps forgetting his password.",
+    "We hope to finish the project by Friday.",
+    "I stopped drinking coffee after lunch."
+   ]
+  },
+  "item": {
+   "id": "c-1238",
+   "skill": "verb_patterns",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*enjoy* + *-ing*: *She enjoys cooking for her friends.*",
+   "why_lv": "*enjoy* + *-ing*: *She enjoys cooking for her friends.*",
+   "correct": "She enjoys to cook for her friends.",
+   "wrong": [
+    "He keeps forgetting his password.",
+    "We hope to finish the project by Friday.",
+    "I stopped drinking coffee after lunch."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "vp_ing",
+   "src": "b1-new-3.csv:142"
+  }
+ },
+ "r21b-2-031": {
+  "hash": "8fe33c6270da2434",
+  "gate_key": "more_modals | B1.1 | mcq | Which sentence is NOT correct? | Ask Tom. He might knows the answer.",
+  "src": "b1-new-4.csv:31",
+  "point": "might",
+  "key": {
+   "kind": "mcq",
+   "correct": "Ask Tom. He might knows the answer.",
+   "wrong": [
+    "We may not have time for lunch today.",
+    "I was able to fix the printer myself.",
+    "You needn't bring anything to the party."
+   ]
+  },
+  "item": {
+   "id": "c-1284",
+   "skill": "more_modals",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*might / may* + base verb, no *-s*: *He might know the answer.*",
+   "why_lv": "*might / may* + pamatforma, bez *-s*: *He might know the answer.*",
+   "correct": "Ask Tom. He might knows the answer.",
+   "wrong": [
+    "We may not have time for lunch today.",
+    "I was able to fix the printer myself.",
+    "You needn't bring anything to the party."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "might",
+   "src": "b1-new-4.csv:31"
+  }
+ },
+ "r21b-2-032": {
+  "hash": "438caa485e9b3f86",
+  "gate_key": "passive_modals | B1.1 | mcq | Which sentence is NOT correct? | This medicine should taken after meals.",
+  "src": "b1-new-4.csv:71",
+  "point": "pas_modal",
+  "key": {
+   "kind": "mcq",
+   "correct": "This medicine should taken after meals.",
+   "wrong": [
+    "The bill can be paid by card.",
+    "Your passport must be shown at the gate.",
+    "This room can't be used during the exam."
+   ]
+  },
+  "item": {
+   "id": "c-1324",
+   "skill": "passive_modals",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "modal + *be* + 3. form: *This medicine should be taken after meals.*",
+   "why_lv": "modālais darbības vārds + *be* + 3. forma: *This medicine should be taken after meals.*",
+   "correct": "This medicine should taken after meals.",
+   "wrong": [
+    "The bill can be paid by card.",
+    "Your passport must be shown at the gate.",
+    "This room can't be used during the exam."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_modal",
+   "src": "b1-new-4.csv:71"
+  }
+ },
+ "r21b-2-033": {
+  "hash": "9db11ba38d2a4c6f",
+  "gate_key": "passive_modals | B1.2 | mcq | Which sentence is NOT correct? | The shoes ought to taken off.",
+  "src": "b1-new-4.csv:77",
+  "point": "pas_modal",
+  "key": {
+   "kind": "mcq",
+   "correct": "The shoes ought to taken off.",
+   "wrong": [
+    "The meeting might be moved to Friday.",
+    "Can this jacket be washed at home?",
+    "The plants have to be watered every day."
+   ]
+  },
+  "item": {
+   "id": "c-1330",
+   "skill": "passive_modals",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "modal + *be* + 3. form, also after *ought to*: *The shoes ought to be taken off.*",
+   "why_lv": "modālais darbības vārds + *be* + 3. forma, arī pēc *ought to*: *The shoes ought to be taken off.*",
+   "correct": "The shoes ought to taken off.",
+   "wrong": [
+    "The meeting might be moved to Friday.",
+    "Can this jacket be washed at home?",
+    "The plants have to be watered every day."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_modal",
+   "src": "b1-new-4.csv:77"
+  }
+ },
+ "r21b-2-034": {
+  "hash": "b556ce1299471d14",
+  "gate_key": "passive_modals | B1.2 | text | Start with *The accident*: Someone could have avoided the accident. | ",
+  "src": "b1-new-4.csv:84",
+  "point": "pas_modal_past",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The accident could have been avoided.",
+     "The accident could have been avoided by someone.",
+     "The accident could've been avoided.",
+     "The accident could've been avoided by someone."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1337",
+   "skill": "passive_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Start with *The accident*: Someone could have avoided the accident.",
+   "why": "modal + *have been* + 3rd form: *The accident could have been avoided.* *by someone* is not needed.",
+   "why_lv": "Modālais darbības vārds + *have been* + 3. forma: *The accident could have been avoided.* *by someone* nav vajadzīgs.",
+   "answers": [
+    [
+     "The accident could have been avoided.",
+     "The accident could have been avoided by someone.",
+     "The accident could've been avoided.",
+     "The accident could've been avoided by someone."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_modal_past",
+   "src": "b1-new-4.csv:84"
+  }
+ },
+ "r21b-2-035": {
+  "hash": "1061b92b137e52b7",
+  "gate_key": "causative | B1.1 | mcq | Which sentence is NOT correct? | We had the house paint last week.",
+  "src": "b1-new-4.csv:114",
+  "point": "caus_have",
+  "key": {
+   "kind": "mcq",
+   "correct": "We had the house paint last week.",
+   "wrong": [
+    "Where do you get your bike fixed?",
+    "I had my passport photo taken at the post office.",
+    "We're getting the windows cleaned tomorrow."
+   ]
+  },
+  "item": {
+   "id": "c-1367",
+   "skill": "causative",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*have* + object + 3. form: someone does it for us: *We had the house painted.* *get* is more informal.",
+   "why_lv": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā: *We had the house painted.* *get* ir sarunvalodā.",
+   "correct": "We had the house paint last week.",
+   "wrong": [
+    "Where do you get your bike fixed?",
+    "I had my passport photo taken at the post office.",
+    "We're getting the windows cleaned tomorrow."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "caus_have",
+   "src": "b1-new-4.csv:114"
+  }
+ },
+ "r21b-2-036": {
+  "hash": "8884e01524cbb741",
+  "gate_key": "causative | B1.2 | mcq | Which sentence is NOT correct? | I haven't had my eyes test yet.",
+  "src": "b1-new-4.csv:119",
+  "point": "caus_have",
+  "key": {
+   "kind": "mcq",
+   "correct": "I haven't had my eyes test yet.",
+   "wrong": [
+    "Did you have the heating checked before winter?",
+    "She had her phone screen replaced last week.",
+    "We're having a new kitchen fitted next month."
+   ]
+  },
+  "item": {
+   "id": "c-1372",
+   "skill": "causative",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*have* + object + 3. form: someone does it for us. *I haven't had my eyes tested yet.* *get* is more informal.",
+   "why_lv": "*have* + papildinātājs + 3. forma: kāds to dara mūsu vietā. *I haven't had my eyes tested yet.* *get* ir sarunvalodā.",
+   "correct": "I haven't had my eyes test yet.",
+   "wrong": [
+    "Did you have the heating checked before winter?",
+    "She had her phone screen replaced last week.",
+    "We're having a new kitchen fitted next month."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "caus_have",
+   "src": "b1-new-4.csv:119"
+  }
+ },
+ "r21b-2-037": {
+  "hash": "61c078ac00cc845b",
+  "gate_key": "two_objects | B1.1 | gap | She introduced her new colleague ___ the whole team. | ",
+  "src": "b1-new-4.csv:145",
+  "point": "two_obj_explain",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "to"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1398",
+   "skill": "two_objects",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "She introduced her new colleague ___ the whole team.",
+   "why": "*explain, suggest, describe, introduce*: first the thing or the person you introduce, then *to* + person: *She introduced her new colleague to the whole team.*",
+   "why_lv": "*explain, suggest, describe, introduce*: vispirms lieta vai cilvēks, ko iepazīstina, tad *to* + persona: *She introduced her new colleague to the whole team.*",
+   "answers": [
+    [
+     "to"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "to",
+    "for",
+    "—"
+   ],
+   "role": "check",
+   "point": "two_obj_explain",
+   "src": "b1-new-4.csv:145"
+  }
+ },
+ "r21b-2-038": {
+  "hash": "3a3cd56ffe31bf8e",
+  "gate_key": "two_objects | B1.1 | mcq | Which sentence is NOT correct? | He explained me the problem.",
+  "src": "b1-new-4.csv:159",
+  "point": "two_obj_explain",
+  "key": {
+   "kind": "mcq",
+   "correct": "He explained me the problem.",
+   "wrong": [
+    "She sent her sister a long email.",
+    "Could you lend me your charger?",
+    "I bought a birthday cake for my colleague."
+   ]
+  },
+  "item": {
+   "id": "c-1412",
+   "skill": "two_objects",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*give someone something* = *give something to someone*. *to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*: *He explained the problem to me*.",
+   "why_lv": "*give someone something = give something to someone*. *to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*: *He explained the problem to me*.",
+   "correct": "He explained me the problem.",
+   "wrong": [
+    "She sent her sister a long email.",
+    "Could you lend me your charger?",
+    "I bought a birthday cake for my colleague."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "two_obj_explain",
+   "src": "b1-new-4.csv:159"
+  }
+ },
+ "r21b-2-039": {
+  "hash": "2de307e523231a7d",
+  "gate_key": "two_objects | B1.1 | mcq | Which sentence is NOT correct? | He described me the house.",
+  "src": "b1-new-4.csv:161",
+  "point": "two_obj_explain",
+  "key": {
+   "kind": "mcq",
+   "correct": "He described me the house.",
+   "wrong": [
+    "The agent showed us three flats.",
+    "Can you pass me the salt?",
+    "My parents gave the car to my brother."
+   ]
+  },
+  "item": {
+   "id": "c-1414",
+   "skill": "two_objects",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*to*: give, send, show, tell, lend. *for*: buy, make, cook. *explain, suggest, describe*: thing first, then *to*: *He described the house to me.*",
+   "why_lv": "*to*: *give, send, show, tell, lend*. *for*: *buy, make, cook*. *explain, suggest, describe*: vispirms lieta, tad *to*: *He described the house to me.*",
+   "correct": "He described me the house.",
+   "wrong": [
+    "The agent showed us three flats.",
+    "Can you pass me the salt?",
+    "My parents gave the car to my brother."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "two_obj_explain",
+   "src": "b1-new-4.csv:161"
+  }
+ },
+ "r21b-2-040": {
+  "hash": "4d352aa25dec776b",
+  "gate_key": "two_objects | B1.1 | mcq | Choose the correct option: He lent his car ___ his neighbour. | to",
+  "src": "b1-new-4.csv:162",
+  "point": "two_obj",
+  "key": {
+   "kind": "mcq",
+   "correct": "to",
+   "wrong": [
+    "for",
+    "—"
+   ]
+  },
+  "item": {
+   "id": "c-1415",
+   "skill": "two_objects",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: He lent his car ___ his neighbour.",
+   "why": "*lend* + thing + *to* + person: *He lent his car to his neighbour* (= *He lent his neighbour his car*). *for* goes with *buy, make, cook*.",
+   "why_lv": "*lend* + lieta + *to* + persona: *He lent his car to his neighbour* (= *He lent his neighbour his car*). *for* lieto ar *buy, make, cook*.",
+   "correct": "to",
+   "wrong": [
+    "for",
+    "—"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "two_obj",
+   "src": "b1-new-4.csv:162"
+  }
+ },
+ "r21b-2-041": {
+  "hash": "d20d8647ee24567b",
+  "gate_key": "adj_ed_ing | B1.1 | mcq | Which sentence is correct? | It was an amazing experience, and we were all amazed.",
+  "src": "b1-new-4.csv:200",
+  "point": "eding",
+  "key": {
+   "kind": "mcq",
+   "correct": "It was an amazing experience, and we were all amazed.",
+   "wrong": [
+    "It was an amazed experience, and we were all amazing.",
+    "It was an amazing experience, and we were all amazing.",
+    "It was an amazed experience, and we were all amazed."
+   ]
+  },
+  "item": {
+   "id": "c-1453",
+   "skill": "adj_ed_ing",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "*-ing* = what causes the feeling: *an amazing experience*. *-ed* = how people feel: *we were all amazed*.",
+   "why_lv": "*-ing* = kas izraisa sajūtu: *an amazing experience*. *-ed* = kā cilvēki jūtas: *we were all amazed*.",
+   "correct": "It was an amazing experience, and we were all amazed.",
+   "wrong": [
+    "It was an amazed experience, and we were all amazing.",
+    "It was an amazing experience, and we were all amazing.",
+    "It was an amazed experience, and we were all amazed."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "eding",
+   "src": "b1-new-4.csv:200"
+  }
+ },
+ "r21b-2-042": {
+  "hash": "7b14c78821303959",
+  "gate_key": "adj_ed_ing | B1.1 | mcq | Which sentence is NOT correct? | I am really tiring after work.",
+  "src": "b1-new-4.csv:202",
+  "point": "eding",
+  "key": {
+   "kind": "mcq",
+   "correct": "I am really tiring after work.",
+   "wrong": [
+    "Were you surprised by the news?",
+    "This new software is really confusing.",
+    "She gets annoyed when people are late."
+   ]
+  },
+  "item": {
+   "id": "c-1455",
+   "skill": "adj_ed_ing",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*-ed* says how a person feels: *I am really tired after work.* *-ing* is for what causes the feeling (*a tiring job*).",
+   "why_lv": "*-ed* saka, kā cilvēks jūtas: *I am really tired after work.* *-ing* lieto tam, kas sajūtu izraisa (*a tiring job*).",
+   "correct": "I am really tiring after work.",
+   "wrong": [
+    "Were you surprised by the news?",
+    "This new software is really confusing.",
+    "She gets annoyed when people are late."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "eding",
+   "src": "b1-new-4.csv:202"
+  }
+ },
+ "r21b-2-043": {
+  "hash": "eacc894281b0fbb9",
+  "gate_key": "adj_order | B1.1 | mcq | Which sentence is NOT correct? | She wore a cotton white dress.",
+  "src": "b1-new-5.csv:25",
+  "point": "adj_order",
+  "key": {
+   "kind": "mcq",
+   "correct": "She wore a cotton white dress.",
+   "wrong": [
+    "We sat at a big round table.",
+    "He drives a small Japanese car.",
+    "I found a beautiful wooden box."
+   ]
+  },
+  "item": {
+   "id": "c-1491",
+   "skill": "adj_order",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "Colour before material: *She wore a white cotton dress.* Order: opinion, size, age, shape, colour, origin, material.",
+   "why_lv": "Krāsa pirms materiāla: *She wore a white cotton dress.* Secība: viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls.",
+   "correct": "She wore a cotton white dress.",
+   "wrong": [
+    "We sat at a big round table.",
+    "He drives a small Japanese car.",
+    "I found a beautiful wooden box."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "adj_order",
+   "src": "b1-new-5.csv:25"
+  }
+ },
+ "r21b-2-044": {
+  "hash": "560966166d315ae5",
+  "gate_key": "adj_order | B1.2 | mcq | Which sentence is NOT correct? | She bought a leather black jacket.",
+  "src": "b1-new-5.csv:30",
+  "point": "adj_order",
+  "key": {
+   "kind": "mcq",
+   "correct": "She bought a leather black jacket.",
+   "wrong": [
+    "They have a big white dog.",
+    "I found a beautiful old mirror at the market.",
+    "He wore a smart grey coat."
+   ]
+  },
+  "item": {
+   "id": "c-1496",
+   "skill": "adj_order",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "Colour comes before material: *a black leather jacket*.",
+   "why_lv": "Krāsa ir pirms materiāla: *a black leather jacket*.",
+   "correct": "She bought a leather black jacket.",
+   "wrong": [
+    "They have a big white dog.",
+    "I found a beautiful old mirror at the market.",
+    "He wore a smart grey coat."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "adj_order",
+   "src": "b1-new-5.csv:30"
+  }
+ },
+ "r21b-2-045": {
+  "hash": "e4cf40f9d8836113",
+  "gate_key": "adj_order | B1.2 | mcq | Which sentence is NOT correct? | We ate in an Italian small restaurant.",
+  "src": "b1-new-5.csv:33",
+  "point": "adj_order",
+  "key": {
+   "kind": "mcq",
+   "correct": "We ate in an Italian small restaurant.",
+   "wrong": [
+    "She has long dark hair.",
+    "They live in a beautiful old farmhouse.",
+    "I'd like a big cup of hot tea."
+   ]
+  },
+  "item": {
+   "id": "c-1499",
+   "skill": "adj_order",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "Opinion, size, age, shape, colour, origin, material, then the noun: *a small Italian restaurant*.",
+   "why_lv": "Viedoklis, izmērs, vecums, forma, krāsa, izcelsme, materiāls, tad lietvārds: *a small Italian restaurant*.",
+   "correct": "We ate in an Italian small restaurant.",
+   "wrong": [
+    "She has long dark hair.",
+    "They live in a beautiful old farmhouse.",
+    "I'd like a big cup of hot tea."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "adj_order",
+   "src": "b1-new-5.csv:33"
+  }
+ },
+ "r21b-2-046": {
+  "hash": "b659fe13309ca13e",
+  "gate_key": "adverbs | B1.2 | mcq | Choose the correct option: The soup wasn't hot ___ to eat. | enough",
+  "src": "b1-new-5.csv:76",
+  "point": "too_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "enough",
+   "wrong": [
+    "too",
+    "very",
+    "quite"
+   ]
+  },
+  "item": {
+   "id": "c-1542",
+   "skill": "adverbs",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: The soup wasn't hot ___ to eat.",
+   "why": "*enough* comes after the adjective: *hot enough to eat*. *too, very, quite* go before it.",
+   "why_lv": "*enough* ir aiz īpašības vārda: *hot enough to eat*. *too, very, quite* ir pirms tā.",
+   "correct": "enough",
+   "wrong": [
+    "too",
+    "very",
+    "quite"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "too_to",
+   "src": "b1-new-5.csv:76"
+  }
+ },
+ "r21b-2-047": {
+  "hash": "75dab0f4b850a7dc",
+  "gate_key": "adverbs | B1.2 | mcq | Which sentence is NOT correct? | He speaks Spanish fluent.",
+  "src": "b1-new-5.csv:79",
+  "point": "adj_adv",
+  "key": {
+   "kind": "mcq",
+   "correct": "He speaks Spanish fluent.",
+   "wrong": [
+    "She drives very carefully at night.",
+    "We hardly ever eat out these days.",
+    "They usually go running before work."
+   ]
+  },
+  "item": {
+   "id": "c-1545",
+   "skill": "adverbs",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Speak* is an action, so it needs an adverb: *He speaks Spanish fluently.*",
+   "why_lv": "*Speak* ir darbība, tāpēc vajag apstākļa vārdu: *He speaks Spanish fluently.*",
+   "correct": "He speaks Spanish fluent.",
+   "wrong": [
+    "She drives very carefully at night.",
+    "We hardly ever eat out these days.",
+    "They usually go running before work."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "adj_adv",
+   "src": "b1-new-5.csv:79"
+  }
+ },
+ "r21b-2-048": {
+  "hash": "56104027f542ea7c",
+  "gate_key": "so_such | B1.1 | gap | We had ___ a lovely evening at your place yesterday. | ",
+  "src": "b1-new-5.csv:100",
+  "point": "so_such_basic",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "such"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1566",
+   "skill": "so_such",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "We had ___ a lovely evening at your place yesterday.",
+   "why": "*such* + *a* + adjective + noun: *We had such a lovely evening.* *so* goes before an adjective with no noun.",
+   "why_lv": "*such* + *a* + īpašības vārds + lietvārds: *We had such a lovely evening.* *so* lieto pirms īpašības vārda bez lietvārda.",
+   "answers": [
+    [
+     "such"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "such",
+    "so",
+    "so much"
+   ],
+   "role": "check",
+   "point": "so_such_basic",
+   "src": "b1-new-5.csv:100"
+  }
+ },
+ "r21b-2-049": {
+  "hash": "0b88f29184e76888",
+  "gate_key": "so_such | B1.1 | gap | Thank you for your help. You've been ___ kind. | ",
+  "src": "b1-new-5.csv:102",
+  "point": "so_that",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "so"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1568",
+   "skill": "so_such",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Thank you for your help. You've been ___ kind.",
+   "why": "*so* + adjective with no noun: *You've been so kind.* *such (a)* needs a noun.",
+   "why_lv": "*so* + īpašības vārds bez lietvārda: *You've been so kind.* *such (a)* vajag lietvārdu.",
+   "answers": [
+    [
+     "so"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "so",
+    "such",
+    "such a"
+   ],
+   "role": "check",
+   "point": "so_that",
+   "src": "b1-new-5.csv:102"
+  }
+ },
+ "r21b-2-050": {
+  "hash": "c57d01ff49da847b",
+  "gate_key": "so_such | B1.2 | gap | There was ___ much traffic that we were late for the wedding. | ",
+  "src": "b1-new-5.csv:103",
+  "point": "so_much_many",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "so"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1569",
+   "skill": "so_such",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "There was ___ much traffic that we were late for the wedding.",
+   "why": "*so much* + uncountable noun: *There was so much traffic that we were late for the wedding.*",
+   "why_lv": "*so much* + neskaitāms lietvārds: *There was so much traffic that we were late for the wedding.*",
+   "answers": [
+    [
+     "so"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "so",
+    "such",
+    "such a"
+   ],
+   "role": "check",
+   "point": "so_much_many",
+   "src": "b1-new-5.csv:103"
+  }
+ }
+}

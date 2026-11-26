@@ -1,0 +1,773 @@
+[
+{
+"id": "r21-4-001",
+"answer": "Yes, it sounds more temporary.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-002",
+"answer": "I have visited Paris in 2018.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-003",
+"answer": "I sent the email yesterday.",
+"other_correct": "",
+"wrong_options_that_fit": "I was sending the email yesterday. (grammatical, only less natural without context)",
+"instruction_problem": "No situation given; 'was sending' also fits.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-004",
+"answer": "I'm seeing the dentist at 3 pm on Friday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-005",
+"answer": "I'll call you when I will arrive.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-006",
+"answer": "I'll carry one of those for you.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-007",
+"answer": "The invoices are sent on Fridays.",
+"other_correct": "",
+"wrong_options_that_fit": "'You send the invoices on Fridays.' and 'I think you send...' are correct English, only not neutral.",
+"instruction_problem": "Learner may not know the passive is what is wanted; task never names it (ok), but 'neutral/not blame' is a style judgement, not grammar.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-008",
+"answer": "The road is being repaired.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-009",
+"answer": "The report is being write.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-010",
+"answer": "If metal gets hot, it expands.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-011",
+"answer": "If you forget it again, you'll be locked out.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Situation sentence is not needed: only one option is correct without it.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-012",
+"answer": [
+[
+"If you help me, I'll buy you lunch.",
+"A promise depending on your help."
+],
+[
+"We won't start unless everyone is here.",
+"Everyone being present is necessary for us to start."
+],
+[
+"I'll take water in case the shop is closed.",
+"A precaution against a possible problem."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-013",
+"answer": [
+"they said they had already eaten"
+],
+"other_correct": [
+[
+"they said they had eaten already"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-014",
+"answer": [
+"i said that i didn't know the answer"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-015",
+"answer": [
+"to be"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-016",
+"answer": [
+"were"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-017",
+"answer": [
+[
+"'Please sit down.'",
+"She asked me to sit down."
+],
+[
+"'Don't touch it!'",
+"She warned me not to touch it."
+],
+[
+"'You should see a doctor.'",
+"She advised me to see a doctor."
+],
+[
+"'I'll help you.'",
+"She offered to help me."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-018",
+"answer": "it took me a long time to get used to the cold weather",
+"other_correct": [
+"to get used to the cold weather took me a long time (grammatical, unnatural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-019",
+"answer": "i am not used to getting up so early",
+"other_correct": [
+[
+"i am not so used to getting up early"
+],
+[
+"i am so not used to getting up early (informal)"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-020",
+"answer": "wait here until the doctor calls your name",
+"other_correct": [
+"wait until the doctor calls your name here (grammatical, different meaning, less natural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-021",
+"answer": [
+"get"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-022",
+"answer": [
+"to sign"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-023",
+"answer": [
+[
+"It makes me feel bored.",
+"boring"
+],
+[
+"I feel bored.",
+"bored"
+],
+[
+"It makes me feel tired.",
+"tiring"
+],
+[
+"I feel tired.",
+"tired"
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Very easy for B1.1 (A2 level vocabulary, one rule, 4 near-identical pairs).",
+"sense_problem": ""
+},
+{
+"id": "r21-4-024",
+"answer": [
+"has"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-025",
+"answer": [
+"is run",
+"are made"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-026",
+"answer": [
+"are cleaned"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-027",
+"answer": "Breakfast are served from seven.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-028",
+"answer": "the bridge was built in 1932 and it is still used today",
+"other_correct": [
+"the bridge was built in 1932 and today it is still used",
+"in 1932 the bridge was built and it is still used today",
+"the bridge is still used today and it was built in 1932",
+"it was built in 1932 and the bridge is still used today (odd, 'it' before noun)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Many valid orders for 12 cards; no 'more than one answer' note.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-029",
+"answer": "my laptop was stolen yesterday",
+"other_correct": [
+"my laptop was stolen by someone yesterday",
+"my laptop got stolen yesterday"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say to rewrite the sentence with the same meaning; 'Start with' alone is unclear (the passive is not named).",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-030",
+"answer": "she rarely eats out because she prefers to cook at home",
+"other_correct": [
+"because she prefers to cook at home she rarely eats out",
+"she eats out rarely because she prefers to cook at home",
+"she prefers to cook at home because she rarely eats out (grammatical, reversed cause)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several valid orders but no 'more than one answer' note.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-031",
+"answer": "our train leaves at half past seven so we must hurry",
+"other_correct": [
+"so we must hurry our train leaves at half past seven (illogical)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-032",
+"answer": "does your brother still work for the same company",
+"other_correct": [
+"does your brother work for the same company still (less natural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-033",
+"answer": "he teaches maths at a school near the station",
+"other_correct": [
+"at a school near the station he teaches maths",
+"he teaches maths at the school near a station (odd)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several valid orders, no 'more than one answer' note.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-034",
+"answer": [
+"works",
+"wants"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-035",
+"answer": [
+"starts",
+"need"
+],
+"other_correct": "",
+"wrong_options_that_fit": "'started' fits grammatically but is illogical with 'need'.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-036",
+"answer": [
+"don't",
+"is"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-037",
+"answer": [
+"doesn't eat"
+],
+"other_correct": [
+[
+"does not eat"
+],
+[
+"isn't eating"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2 level (basic present simple negative); too easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21-4-038",
+"answer": [
+"does",
+"cost"
+],
+"other_correct": [
+[
+"did",
+"cost"
+],
+[
+"will",
+"cost"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No time context: past and future also fit.",
+"level_problem": "A2 level, too easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21-4-039",
+"answer": "my colleagues don't work from home on fridays",
+"other_correct": [
+"my colleagues do not work from home on fridays"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A2 level, too easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21-4-040",
+"answer": [
+"are",
+"speaking"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-041",
+"answer": [
+"is looking"
+],
+"other_correct": [
+[
+"looks"
+]
+],
+"wrong_options_that_fit": "'looks' is grammatical but less natural; 'was looking' does not fit 'is too high'.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-042",
+"answer": [
+"is painting"
+],
+"other_correct": [
+[
+"'s painting"
+],
+[
+"has been painting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-043",
+"answer": "we missed the last train so we took a taxi home",
+"other_correct": [
+"we took a taxi home so we missed the last train (illogical)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'More than one answer is possible' hint: only an illogical alternative exists.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-044",
+"answer": "she opened the letter and read it twice before she answered",
+"other_correct": [
+"before she answered she opened the letter and read it twice",
+"she opened it and read the letter twice before she answered",
+"she opened the letter and read it before she answered twice (different meaning)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Several valid orders, no 'more than one answer' note.",
+"level_problem": "",
+"sense_problem": "'answered' without an object ('answered it') is slightly odd."
+},
+{
+"id": "r21-4-045",
+"answer": "Why did you stayed at home yesterday?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-046",
+"answer": [
+"has worked",
+"plans"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-047",
+"answer": [
+"have waited",
+"hasn't come"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-048",
+"answer": [
+"have",
+"been waiting"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-049",
+"answer": "Had / lived",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-050",
+"answer": [
+"works",
+"helps"
+],
+"other_correct": [
+[
+"is working",
+"helps"
+],
+[
+"works",
+"is helping"
+],
+[
+"worked",
+"helped"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No time context: past tense also fits; continuous variants are possible but less natural.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-051",
+"answer": "the road is being repaired",
+"other_correct": [
+"the road is being repaired by them"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say to rewrite with the same meaning; the passive is not named.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-052",
+"answer": [
+"watched"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-053",
+"answer": [
+"have worked"
+],
+"other_correct": [
+[
+"'ve worked"
+],
+[
+"have been working"
+],
+[
+"'ve been working"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-054",
+"answer": "had already started",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-055",
+"answer": "had changed",
+"other_correct": "",
+"wrong_options_that_fit": "'has changed' is also correct (present result, acceptable in speech).",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-056",
+"answer": "this year was not as busy as last year",
+"other_correct": [
+"last year was not as busy as this year (opposite meaning, also correct)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Two valid answers with opposite meanings; nothing in the task fixes which.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-057",
+"answer": [
+"more reliable"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy for B1.1 (one cue, basic comparative).",
+"sense_problem": ""
+},
+{
+"id": "r21-4-058",
+"answer": [
+[
+"twice as expensive as",
+"costs double"
+],
+[
+"not as big as",
+"smaller"
+],
+[
+"slightly cheaper than",
+"a little less money"
+],
+[
+"by far the best",
+"much better than all the others"
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-059",
+"answer": [
+[
+"I was making tea when Tom came.",
+"Already in progress"
+],
+[
+"When Tom came, I made tea.",
+"Started after his arrival"
+],
+[
+"I had made tea before Tom came.",
+"Ready before he arrived"
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-4-060",
+"answer": "Do you have to",
+"other_correct": "",
+"wrong_options_that_fit": "'Have you to' is old-fashioned British, rare but grammatical.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

@@ -1,0 +1,1120 @@
+{
+ "r21c-001": {
+  "hash": "c9a41349dee41eef",
+  "gate_key": "present_simple | B1.1 | mcq | Choose the correct option: I ___ what you mean, but I don't agree with you. | know",
+  "src": "built-in",
+  "point": "ps_form",
+  "key": {
+   "kind": "mcq",
+   "correct": "know",
+   "wrong": [
+    "am knowing",
+    "knows"
+   ]
+  },
+  "item": {
+   "id": "ps-B11-2a-r5",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 2,
+   "kind": "mcq",
+   "q": "Choose the correct option: I ___ what you mean, but I don't agree with you.",
+   "correct": "know",
+   "wrong": [
+    "am knowing",
+    "knows"
+   ],
+   "why": "*Know* is a state verb: it stays simple even about this moment: *I know what you mean.*",
+   "wrong_why": [],
+   "why_lv": "*Know* apzīmē stāvokli, tāpēc paliek vienkāršajā formā arī par šo brīdi: *I know what you mean.*",
+   "d": 3.2,
+   "scaffold": 0,
+   "err": [
+    "3S",
+    "DO",
+    "BASE"
+   ],
+   "role": "check",
+   "point": "ps_form",
+   "src": "built-in"
+  }
+ },
+ "r21c-002": {
+  "hash": "7cbf9a3e82ab1b60",
+  "gate_key": "present_perfect_continuous | B1.2 | mcq | Choose the correct option: The children are washing their hands now. Look at the floor! They ___ with paint. | have been playing",
+  "src": "built-in",
+  "point": "ppc_result",
+  "key": {
+   "kind": "mcq",
+   "correct": "have been playing",
+   "wrong": [
+    "are playing",
+    "have been play"
+   ]
+  },
+  "item": {
+   "id": "ppc-B12-3a-r2",
+   "skill": "present_perfect_continuous",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: The children are washing their hands now. Look at the floor! They ___ with paint.",
+   "answers": null,
+   "why": "They have stopped (they are washing their hands now), but the floor shows what they were doing: *They have been playing with paint.* *Are playing* would mean they are still playing.",
+   "hints": [],
+   "why_lv": "Viņi ir beiguši (tagad viņi mazgā rokas), bet grīda rāda, ko viņi darīja: *They have been playing with paint.* *Are playing* nozīmētu, ka viņi joprojām spēlējas.",
+   "correct": "have been playing",
+   "wrong": [
+    "are playing",
+    "have been play"
+   ],
+   "d": 4.4,
+   "scaffold": 0,
+   "err": [
+    "DURATION"
+   ],
+   "role": "check",
+   "point": "ppc_result",
+   "src": "built-in"
+  }
+ },
+ "r21c-003": {
+  "hash": "37f6225b995e2e1f",
+  "gate_key": "future | B1.2 | write | The sky is full of dark clouds, and your friend has no umbrella. Write two sentences to your friend: what you expect to happen, and an offer of your umbrella. | ",
+  "src": "built-in",
+  "point": "will_going",
+  "key": {
+   "kind": "write",
+   "model": "It is going to rain. I'll lend you my umbrella.",
+   "must": [
+    "Say what the clouds show with *going to* (or *about to*) + base verb.",
+    "Offer your umbrella with *I'll* (or *Shall I …?*)."
+   ]
+  },
+  "item": {
+   "id": "fu-B12-6a-r3",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "The sky is full of dark clouds, and your friend has no umbrella. Write two sentences to your friend: what you expect to happen, and an offer of your umbrella.",
+   "must": [
+    [
+     "\\b(?:going\\s+to|about\\s+to)\\s+\\w+",
+     "Say what the clouds show with *going to* (or *about to*) + base verb.",
+     "Ko rāda mākoņi, saki ar *going to* (vai *about to*) + pamatforma."
+    ],
+    [
+     "\\b(i'll|i’ll|i will|shall i)\\b",
+     "Offer your umbrella with *I'll* (or *Shall I …?*).",
+     "Lietussargu piedāvā ar *I'll* (vai *Shall I …?*)."
+    ]
+   ],
+   "model": "It is going to rain. I'll lend you my umbrella.",
+   "why": "The clouds support a prediction: *It is going to rain*. *I will lend you my umbrella* offers help now.",
+   "why_lv": "Mākoņi pamato prognozi: *It is going to rain*. *I will lend you my umbrella* ir palīdzības piedāvājums tagad.",
+   "d": 5,
+   "scaffold": 3,
+   "err": [
+    "FUTURE",
+    "TIME-CLAUSE"
+   ],
+   "role": "use",
+   "point": "will_going",
+   "src": "built-in"
+  }
+ },
+ "r21c-004": {
+  "hash": "29cdf33c556a41db",
+  "gate_key": "cond_zero | B1.1 | mcq | Choose the correct option: Every time my neighbour ___ the piano, my dog starts to howl. | plays",
+  "src": "built-in",
+  "point": "c0",
+  "key": {
+   "kind": "mcq",
+   "correct": "plays",
+   "wrong": [
+    "will play",
+    "play"
+   ]
+  },
+  "item": {
+   "id": "cz-B11-1a-r5",
+   "skill": "cond_zero",
+   "level": "B1.1",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Choose the correct option: Every time my neighbour ___ the piano, my dog starts to howl.",
+   "correct": "plays",
+   "wrong": [
+    "will play",
+    "play"
+   ],
+   "why": "A sentence about what always happens: the *every time* part has the present simple, never *will*: *Every time my neighbour plays the piano, my dog starts to howl.*",
+   "wrong_why": [],
+   "why_lv": "Teikums par to, kas notiek vienmēr: *every time* daļā lieto Present Simple, nekad *will*: *Every time my neighbour plays the piano, my dog starts to howl.*",
+   "d": 3,
+   "scaffold": 0,
+   "err": [],
+   "role": "check",
+   "point": "c0",
+   "src": "built-in"
+  }
+ },
+ "r21c-005": {
+  "hash": "37d4c541974c6640",
+  "gate_key": "cond_first | B1.1 | mcq | Choose the correct option: We won't finish on time ___ someone helps us. | unless",
+  "src": "built-in",
+  "point": "c1_unless",
+  "key": {
+   "kind": "mcq",
+   "correct": "unless",
+   "wrong": [
+    "if",
+    "when"
+   ]
+  },
+  "item": {
+   "id": "cf-B11-1a-r3",
+   "skill": "cond_first",
+   "level": "B1.1",
+   "bloom": 1,
+   "kind": "mcq",
+   "q": "Choose the correct option: We won't finish on time ___ someone helps us.",
+   "correct": "unless",
+   "wrong": [
+    "if",
+    "when"
+   ],
+   "why": "*Unless* = *if ... not*: *We won't finish on time unless someone helps us* (= if nobody helps us).",
+   "wrong_why": [],
+   "why_lv": "*Unless* = *if ... not*: *We won't finish on time unless someone helps us* (= ja neviens mums nepalīdzēs).",
+   "d": 3,
+   "scaffold": 0,
+   "err": [
+    "TIME-CLAUSE"
+   ],
+   "role": "check",
+   "point": "c1_unless",
+   "src": "built-in"
+  }
+ },
+ "r21c-006": {
+  "hash": "a6317a026f67a2e2",
+  "gate_key": "ind_polite | B1.1 | write | You want to join an evening Italian course at a language school, but the website shows no start date. Write one polite question to the school. | ",
+  "src": "built-in",
+  "point": "iq_wh",
+  "key": {
+   "kind": "write",
+   "model": "Could you tell me when the next Italian course starts?",
+   "must": [
+    "Start politely: *Could you tell me …?*, *Do you know …?* or *I'd like to know …*",
+    "Then a question word or *if*: *… when the next course starts*.",
+    "After the question word the subject comes first, with no *do / does*: *when the course starts*, not *when does the course start*.",
+    "Put the subject before the verb: *when the course starts*, not *when starts the course*."
+   ]
+  },
+  "item": {
+   "id": "ipw-B11-2",
+   "skill": "ind_polite",
+   "level": "B1.1",
+   "bloom": 6,
+   "kind": "write",
+   "q": "You want to join an evening Italian course at a language school, but the website shows no start date. Write one polite question to the school.",
+   "why": "A polite start, then *when* and the order of a statement, with no *does*: *Could you tell me when the next Italian course starts?*",
+   "must": [
+    [
+     "\\b(could|can|would) you (please )?(tell me|let me know|check|find out|confirm)\\b|\\bwould you mind (telling me|checking)\\b|\\bdo you (happen to )?know\\b|\\bi[\\'’]?d like to know\\b|\\bi would like to know\\b|\\bi (was )?wonder(ing)?\\b",
+     "Start politely: *Could you tell me …?*, *Do you know …?* or *I'd like to know …*",
+     "Sāc pieklājīgi: *Could you tell me …?*, *Do you know …?* vai *I'd like to know …*"
+    ],
+    [
+     "\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering),?\\s+(please,?\\s+)?((on|at|in|from) )?(if|whether|when|what|where|why|how|who|which)\\b",
+     "Then a question word or *if*: *… when the next course starts*.",
+     "Tad jautājamais vārds vai *if*: *… when the next course starts*."
+    ],
+    [
+     "^(?!.*\\b(if|whether|when|where|why|who|how(?:\\s+(?:long|soon|much|many|often|far)(?:\\s+\\w+)?)?|what(?:\\s+\\w+)?|which(?:\\s+\\w+)?)\\s+(?:(?:do|does|did|is|are|was|were|has|have|had|could|would|should)(?:n[\\'’]t)?|will|won[\\'’]t|can|can[\\'’]t|cannot)\\s+(you|he|she|it|they|we|i|the|my|your|our|his|her|their|this|that|these|those|someone|somebody|anyone|anybody|there|mine)\\b)",
+     "After the question word the subject comes first, with no *do / does*: *when the course starts*, not *when does the course start*.",
+     "Pēc jautājamā vārda sākumā ir teikuma priekšmets, bez *do / does*: *when the course starts*, nevis *when does the course start*."
+    ],
+    [
+     "^(?!.*\\b(?:when|where|why|what time|what day|what date|how much|how long|how soon|how often)\\s+(?!(?:is|was|has|does)\\b)\\w+s\\s+(?:the|my|your|our|his|her|their|this|that)\\b)",
+     "Put the subject before the verb: *when the course starts*, not *when starts the course*.",
+     "Teikuma priekšmets ir pirms darbības vārda: *when the course starts*, nevis *when starts the course*."
+    ]
+   ],
+   "model": "Could you tell me when the next Italian course starts?",
+   "why_lv": "Pieklājīgs sākums, tad *when* un vārdu secība kā apgalvojumā, bez *does*: *Could you tell me when the next Italian course starts?*",
+   "d": 4,
+   "scaffold": 3,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "use",
+   "point": "iq_wh",
+   "src": "built-in"
+  }
+ },
+ "r21c-007": {
+  "hash": "9901b7a60356633f",
+  "gate_key": "ind_polite | B1.2 | write | You ordered a printer online ten days ago, and you are still waiting. Write one polite question to the shop's customer service. | ",
+  "src": "built-in",
+  "point": "iq_yn",
+  "key": {
+   "kind": "write",
+   "model": "Could you tell me if you have sent my order yet?",
+   "must": [
+    "Start politely: *Could you tell me …?*, *Do you know …?* or *I'd like to know …*",
+    "Then *if* (or *whether*) or a question word: *… if you have sent my order*, *… when my printer will arrive*.",
+    "After *if* or the question word the subject comes first, with no *did*: *if you sent my order*, *when my printer will arrive*.",
+    "Put the subject before the verb: *when my printer arrives*, not *when arrives my printer*."
+   ]
+  },
+  "item": {
+   "id": "ipw-B12-1",
+   "skill": "ind_polite",
+   "level": "B1.2",
+   "bloom": 6,
+   "kind": "write",
+   "q": "You ordered a printer online ten days ago, and you are still waiting. Write one polite question to the shop's customer service.",
+   "why": "A polite start, then *if* and the order of a statement: *Could you tell me if you have sent my order yet?* With *did* in the direct question, the verb itself is in the past: *if you sent my order*.",
+   "must": [
+    [
+     "\\b(could|can|would) you (please )?(tell me|let me know|check|find out|confirm)\\b|\\bwould you mind (telling me|checking)\\b|\\bdo you (happen to )?know\\b|\\bi[\\'’]?d like to know\\b|\\bi would like to know\\b|\\bi (was )?wonder(ing)?\\b",
+     "Start politely: *Could you tell me …?*, *Do you know …?* or *I'd like to know …*",
+     "Sāc pieklājīgi: *Could you tell me …?*, *Do you know …?* vai *I'd like to know …*"
+    ],
+    [
+     "\\b(tell me|let me know|check|find out|confirm|telling me|checking|know|wonder|wondering),?\\s+(please,?\\s+)?((on|at|in|from) )?(if|whether|when|what|where|why|how|who|which)\\b",
+     "Then *if* (or *whether*) or a question word: *… if you have sent my order*, *… when my printer will arrive*.",
+     "Tad *if* (vai *whether*) vai jautājamais vārds: *… if you have sent my order*, *… when my printer will arrive*."
+    ],
+    [
+     "^(?!.*\\b(if|whether|when|where|why|who|how(?:\\s+(?:long|soon|much|many|often|far)(?:\\s+\\w+)?)?|what(?:\\s+\\w+)?|which(?:\\s+\\w+)?)\\s+(?:(?:do|does|did|is|are|was|were|has|have|had|could|would|should)(?:n[\\'’]t)?|will|won[\\'’]t|can|can[\\'’]t|cannot)\\s+(you|he|she|it|they|we|i|the|my|your|our|his|her|their|this|that|these|those|someone|somebody|anyone|anybody|there|mine)\\b)",
+     "After *if* or the question word the subject comes first, with no *did*: *if you sent my order*, *when my printer will arrive*.",
+     "Pēc *if* vai jautājamā vārda sākumā ir teikuma priekšmets, bez *did*: *if you sent my order*, *when my printer will arrive*."
+    ],
+    [
+     "^(?!.*\\b(?:when|where|why|what time|what day|what date|how much|how long|how soon|how often)\\s+(?!(?:is|was|has|does)\\b)\\w+s\\s+(?:the|my|your|our|his|her|their|this|that)\\b)",
+     "Put the subject before the verb: *when my printer arrives*, not *when arrives my printer*.",
+     "Teikuma priekšmets ir pirms darbības vārda: *when my printer arrives*, nevis *when arrives my printer*."
+    ]
+   ],
+   "model": "Could you tell me if you have sent my order yet?",
+   "why_lv": "Pieklājīgs sākums, tad *if* un vārdu secība kā apgalvojumā: *Could you tell me if you have sent my order yet?* Ja tiešajā jautājumā ir *did*, pagātni rāda darbības vārds: *if you sent my order*.",
+   "d": 5,
+   "scaffold": 3,
+   "err": [
+    "Q-ORDER",
+    "IND-YESNO"
+   ],
+   "role": "use",
+   "point": "iq_yn",
+   "src": "built-in"
+  }
+ },
+ "r21c-008": {
+  "hash": "05c6acc21b523096",
+  "gate_key": "cond_zero | B1.1 | mcq | Which sentence is NOT correct? | If metal gets hot, it expand.",
+  "src": "b1-cond-rep-1.csv:43",
+  "point": "c0",
+  "key": {
+   "kind": "mcq",
+   "correct": "If metal gets hot, it expand.",
+   "wrong": [
+    "When I travel by bus, I always feel sick.",
+    "If you don't save your work, you lose it.",
+    "Whenever my neighbour plays music, my dog barks."
+   ]
+  },
+  "item": {
+   "id": "c-0706",
+   "skill": "cond_zero",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "In a general truth both parts use the present simple, and after *it* the verb takes *-s*: *If metal gets hot, it expands.*",
+   "why_lv": "Vispārīgā patiesībā abās daļās lieto Present Simple, un pēc *it* darbības vārdam ir galotne *-s*: *If metal gets hot, it expands.*",
+   "correct": "If metal gets hot, it expand.",
+   "wrong": [
+    "When I travel by bus, I always feel sick.",
+    "If you don't save your work, you lose it.",
+    "Whenever my neighbour plays music, my dog barks."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "c0",
+   "src": "b1-cond-rep-1.csv:43"
+  }
+ },
+ "r21c-009": {
+  "hash": "1a582cef1045599f",
+  "gate_key": "cond_third | B1.2 | match | Match each sentence with its meaning. | If I had gone, I would have met her. = I didn't go. ; If I hadn't gone, I wouldn't have met her. = I went. ; If I went, I would meet her. = I probably won't go.",
+  "src": "b1-cond-rep-1.csv:140",
+  "point": "c3",
+  "key": {
+   "kind": "match",
+   "pairs": [
+    [
+     "If I had gone, I would have met her.",
+     "I didn't go."
+    ],
+    [
+     "If I hadn't gone, I wouldn't have met her.",
+     "I went."
+    ],
+    [
+     "If I went, I would meet her.",
+     "I probably won't go."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0803",
+   "skill": "cond_third",
+   "level": "B1.2",
+   "bloom": 4,
+   "kind": "match",
+   "q": "Match each sentence with its meaning.",
+   "why": "*If I had gone*: I didn't go. *If I hadn't gone*: I went. *If I went, I would meet her*: an unlikely future, so I probably won't go.",
+   "why_lv": "*If I had gone*: es negāju. *If I hadn't gone*: es gāju. *If I went, I would meet her*: maz ticama nākotne, tātad es visticamāk neiešu.",
+   "pairs": [
+    [
+     "If I had gone, I would have met her.",
+     "I didn't go."
+    ],
+    [
+     "If I hadn't gone, I wouldn't have met her.",
+     "I went."
+    ],
+    [
+     "If I went, I would meet her.",
+     "I probably won't go."
+    ]
+   ],
+   "role": "learn",
+   "point": "c3",
+   "src": "b1-cond-rep-1.csv:140"
+  }
+ },
+ "r21c-010": {
+  "hash": "ddc8e9dcabfa1dc7",
+  "gate_key": "rep_statements | B1.2 | order | Put the words in order. | he said he couldn't come because he was ill",
+  "src": "b1-cond-rep-1.csv:153",
+  "point": "rep_backshift",
+  "key": {
+   "kind": "order",
+   "sentence": "he said he couldn't come because he was ill",
+   "also": [
+    "because he was ill he said he couldn't come",
+    "he said he was ill because he couldn't come"
+   ]
+  },
+  "item": {
+   "id": "c-0816",
+   "skill": "rep_statements",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "With a past reporting verb the tense often goes one step back: *am → was*, *will → would*, *have done → had done*. It is not always needed, for example when the fact is still true.",
+   "why_lv": "Pēc darbības vārda pagātnē laiks bieži iet vienu soli atpakaļ: *am → was, will → would, have done → had done*. Tas nav vienmēr vajadzīgs, piemēram, ja fakts joprojām ir patiess.",
+   "sentence": "he said he couldn't come because he was ill",
+   "answers": [
+    [
+     "he said he couldn't come because he was ill",
+     "because he was ill he said he couldn't come",
+     "he said he was ill because he couldn't come"
+    ]
+   ],
+   "role": "check",
+   "point": "rep_backshift",
+   "src": "b1-cond-rep-1.csv:153"
+  }
+ },
+ "r21c-011": {
+  "hash": "14d21dcdc0bf880e",
+  "gate_key": "rep_statements | B1.1 | mcq | Which sentence is NOT correct? | My boss told that the meeting was cancelled.",
+  "src": "b1-cond-rep-1.csv:180",
+  "point": "rep_say_tell",
+  "key": {
+   "kind": "mcq",
+   "correct": "My boss told that the meeting was cancelled.",
+   "wrong": [
+    "She said that she was tired.",
+    "He told me he would call later.",
+    "They said they had missed the last train."
+   ]
+  },
+  "item": {
+   "id": "c-0843",
+   "skill": "rep_statements",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence is NOT correct?",
+   "why": "*Told* needs a person after it: *My boss told us that the meeting was cancelled*; *said* does not.",
+   "why_lv": "Aiz *told* vajag personu: *My boss told us that the meeting was cancelled*; aiz *said* tā nav.",
+   "correct": "My boss told that the meeting was cancelled.",
+   "wrong": [
+    "She said that she was tired.",
+    "He told me he would call later.",
+    "They said they had missed the last train."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "rep_say_tell",
+   "src": "b1-cond-rep-1.csv:180"
+  }
+ },
+ "r21c-012": {
+  "hash": "faf5558fe193ed05",
+  "gate_key": "used_to | B1.2 | order | Put the words in order. | when i was a child we used to visit my grandparents every sunday",
+  "src": "b1-new-1.csv:8",
+  "point": "used_to",
+  "key": {
+   "kind": "order",
+   "sentence": "when i was a child we used to visit my grandparents every sunday",
+   "also": [
+    "we used to visit my grandparents every sunday when i was a child",
+    "every sunday we used to visit my grandparents when i was a child",
+    "when i was a child every sunday we used to visit my grandparents",
+    "every sunday when i was a child we used to visit my grandparents"
+   ]
+  },
+  "item": {
+   "id": "c-0920",
+   "skill": "used_to",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + *used to* + base verb + the rest. Negative: *didn't use to*.",
+   "why_lv": "Teikuma priekšmets + *used to* + pamatforma + pārējais. Noliegums: *didn't use to*.",
+   "sentence": "when i was a child we used to visit my grandparents every sunday",
+   "answers": [
+    [
+     "when i was a child we used to visit my grandparents every sunday",
+     "we used to visit my grandparents every sunday when i was a child",
+     "every sunday we used to visit my grandparents when i was a child",
+     "when i was a child every sunday we used to visit my grandparents",
+     "every sunday when i was a child we used to visit my grandparents"
+    ]
+   ],
+   "role": "check",
+   "point": "used_to",
+   "src": "b1-new-1.csv:8"
+  }
+ },
+ "r21c-013": {
+  "hash": "0ecbb1310b4dd900",
+  "gate_key": "subject_object_q | B1.1 | text | There's a loud bang in the kitchen. Ask your flatmate. Use *What* and *make*: | ",
+  "src": "b1-new-3.csv:90",
+  "point": "q_subject",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "What made that noise?",
+     "What made the noise?",
+     "What made that bang?",
+     "What made the bang?",
+     "What made that sound?",
+     "What made the sound?",
+     "What made that?",
+     "What made it?",
+     "What made that loud bang?",
+     "What made the loud bang?",
+     "What made that loud noise?",
+     "What made the loud noise?",
+     "What made that noise in the kitchen?",
+     "What made the noise in the kitchen?",
+     "What made that bang in the kitchen?",
+     "What made the bang in the kitchen?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1186",
+   "skill": "subject_object_q",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "There's a loud bang in the kitchen. Ask your flatmate. Use *What* and *make*:",
+   "why": "*What* is the subject here, so there is no *did*: *What made that noise?*",
+   "why_lv": "Šeit *What* ir teikuma priekšmets, tāpēc *did* nelieto: *What made that noise?*",
+   "answers": [
+    [
+     "What made that noise?",
+     "What made the noise?",
+     "What made that bang?",
+     "What made the bang?",
+     "What made that sound?",
+     "What made the sound?",
+     "What made that?",
+     "What made it?",
+     "What made that loud bang?",
+     "What made the loud bang?",
+     "What made that loud noise?",
+     "What made the loud noise?",
+     "What made that noise in the kitchen?",
+     "What made the noise in the kitchen?",
+     "What made that bang in the kitchen?",
+     "What made the bang in the kitchen?"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "q_subject",
+   "src": "b1-new-3.csv:90"
+  }
+ },
+ "r21c-014": {
+  "hash": "a97e31d7169b59e2",
+  "gate_key": "passive_modals | B1.2 | text | Start with *The accident*: Someone could have avoided the accident. | ",
+  "src": "b1-new-4.csv:84",
+  "point": "pas_modal_past",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The accident could have been avoided.",
+     "The accident could have been avoided by someone.",
+     "The accident could've been avoided.",
+     "The accident could've been avoided by someone.",
+     "The accident could have been avoided by somebody.",
+     "The accident could've been avoided by somebody."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1337",
+   "skill": "passive_modals",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Start with *The accident*: Someone could have avoided the accident.",
+   "why": "modal + *have been* + 3rd form: *The accident could have been avoided.* *by someone* is not needed.",
+   "why_lv": "Modālais darbības vārds + *have been* + 3. forma: *The accident could have been avoided.* *by someone* nav vajadzīgs.",
+   "answers": [
+    [
+     "The accident could have been avoided.",
+     "The accident could have been avoided by someone.",
+     "The accident could've been avoided.",
+     "The accident could've been avoided by someone.",
+     "The accident could have been avoided by somebody.",
+     "The accident could've been avoided by somebody."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_modal_past",
+   "src": "b1-new-4.csv:84"
+  }
+ },
+ "r21c-015": {
+  "hash": "2094a804078841c3",
+  "gate_key": "adverbs | B1.2 | mcq | Choose the correct option: The soup wasn't hot ___ to eat, so I heated it up again. | enough",
+  "src": "b1-new-5.csv:76",
+  "point": "too_to",
+  "key": {
+   "kind": "mcq",
+   "correct": "enough",
+   "wrong": [
+    "too",
+    "very",
+    "quite"
+   ]
+  },
+  "item": {
+   "id": "c-1542",
+   "skill": "adverbs",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: The soup wasn't hot ___ to eat, so I heated it up again.",
+   "why": "*enough* comes after the adjective: *The soup wasn't hot enough to eat, so I heated it up again.* *too, very, quite* go before the adjective, and *wasn't too hot to eat* would mean it was fine to eat, so you would not heat it again.",
+   "why_lv": "*enough* ir aiz īpašības vārda: *The soup wasn't hot enough to eat, so I heated it up again.* *too, very, quite* ir pirms īpašības vārda, un *wasn't too hot to eat* nozīmētu, ka zupu varēja ēst, tāpēc to nesildītu vēlreiz.",
+   "correct": "enough",
+   "wrong": [
+    "too",
+    "very",
+    "quite"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "too_to",
+   "src": "b1-new-5.csv:76"
+  }
+ },
+ "r21c-016": {
+  "hash": "8b53d97b8c82c05b",
+  "gate_key": "indefinite_pronouns | B1.1 | order | Put the words in order to make a question. | would you like something to eat before we leave",
+  "src": "b1-new-5.csv:136",
+  "point": "some_offers",
+  "key": {
+   "kind": "order",
+   "sentence": "would you like something to eat before we leave",
+   "also": [
+    "before we leave would you like something to eat",
+    "would you like to eat something before we leave",
+    "before we leave would you like to eat something"
+   ]
+  },
+  "item": {
+   "id": "c-1602",
+   "skill": "indefinite_pronouns",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order to make a question.",
+   "why": "In an offer we use *some-*, not *any-*: *Would you like something to eat before we leave?*",
+   "why_lv": "Piedāvājumā lieto *some*-, nevis *any*-: *Would you like something to eat before we leave?*",
+   "sentence": "would you like something to eat before we leave",
+   "answers": [
+    [
+     "would you like something to eat before we leave",
+     "before we leave would you like something to eat",
+     "would you like to eat something before we leave",
+     "before we leave would you like to eat something"
+    ]
+   ],
+   "role": "check",
+   "point": "some_offers",
+   "src": "b1-new-5.csv:136"
+  }
+ },
+ "r21c-017": {
+  "hash": "6247c9cf097399c9",
+  "gate_key": "past_simple_passive | B1.1 | order | Put the words in order. | the bridge was built in 1932 and it is still used today",
+  "src": "b1-passives-1.csv:39",
+  "point": "pas_past",
+  "key": {
+   "kind": "order",
+   "sentence": "the bridge was built in 1932 and it is still used today",
+   "also": [
+    "the bridge was built in 1932 and today it is still used",
+    "in 1932 the bridge was built and it is still used today",
+    "the bridge is still used today and it was built in 1932",
+    "today the bridge is still used and it was built in 1932"
+   ]
+  },
+  "item": {
+   "id": "c-1678",
+   "skill": "past_simple_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Past Simple passive: subject + *was / were* + 3. form (+ *by* ...).",
+   "why_lv": "Ciešamā kārta, Past Simple: teikuma priekšmets + *was / were* + 3. forma (+ *by* ...).",
+   "sentence": "the bridge was built in 1932 and it is still used today",
+   "answers": [
+    [
+     "the bridge was built in 1932 and it is still used today",
+     "the bridge was built in 1932 and today it is still used",
+     "in 1932 the bridge was built and it is still used today",
+     "the bridge is still used today and it was built in 1932",
+     "today the bridge is still used and it was built in 1932"
+    ]
+   ],
+   "role": "check",
+   "point": "pas_past",
+   "src": "b1-passives-1.csv:39"
+  }
+ },
+ "r21c-018": {
+  "hash": "99e74c00e67ed409",
+  "gate_key": "past_simple_passive | B1.1 | text | Rewrite the sentence. Start with *My laptop*: Someone stole my laptop yesterday. | ",
+  "src": "b1-passives-1.csv:62",
+  "point": "pas_act",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My laptop was stolen yesterday.",
+     "My laptop was stolen by someone yesterday.",
+     "Yesterday my laptop was stolen.",
+     "Yesterday my laptop was stolen by someone.",
+     "My laptop got stolen yesterday.",
+     "Yesterday my laptop got stolen.",
+     "My laptop was stolen yesterday by someone."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1701",
+   "skill": "past_simple_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite the sentence. Start with *My laptop*: Someone stole my laptop yesterday.",
+   "why": "*My laptop* did not do the stealing, so we use *was* + 3rd form: *My laptop was stolen yesterday.* *Got stolen* is also correct, more informal.",
+   "why_lv": "Klēpjdators pats neko nezaga, tāpēc lieto *was* + 3. forma: *My laptop was stolen yesterday.* Arī *got stolen* ir pareizi, tikai sarunvalodā.",
+   "answers": [
+    [
+     "My laptop was stolen yesterday.",
+     "My laptop was stolen by someone yesterday.",
+     "Yesterday my laptop was stolen.",
+     "Yesterday my laptop was stolen by someone.",
+     "My laptop got stolen yesterday.",
+     "Yesterday my laptop got stolen.",
+     "My laptop was stolen yesterday by someone."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "b1-passives-1.csv:62"
+  }
+ },
+ "r21c-019": {
+  "hash": "51720c5c4835a28f",
+  "gate_key": "past_simple_passive | B1.1 | text | Rewrite the sentence. Start with *This factory*: The company built this factory in 1990. | ",
+  "src": "b1-passives-1.csv:63",
+  "point": "pas_act",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "This factory was built by the company in 1990.",
+     "This factory was built in 1990.",
+     "In 1990 this factory was built by the company.",
+     "In 1990 this factory was built.",
+     "This factory was built in 1990 by the company."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1702",
+   "skill": "past_simple_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite the sentence. Start with *This factory*: The company built this factory in 1990.",
+   "why": "*This factory* did not do the building, so we use *was* + 3rd form: *This factory was built (by the company) in 1990.*",
+   "why_lv": "Rūpnīca pati neko necēla, tāpēc lieto *was* + 3. forma: *This factory was built (by the company) in 1990.*",
+   "answers": [
+    [
+     "This factory was built by the company in 1990.",
+     "This factory was built in 1990.",
+     "In 1990 this factory was built by the company.",
+     "In 1990 this factory was built.",
+     "This factory was built in 1990 by the company."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "b1-passives-1.csv:63"
+  }
+ },
+ "r21c-020": {
+  "hash": "b7a7c5a2b2cc422d",
+  "gate_key": "present_simple | B1.1 | order | Put the words in order. | does your brother still work for the same company",
+  "src": "b1-tenses-1.csv:5",
+  "point": "ps_negq",
+  "key": {
+   "kind": "order",
+   "sentence": "does your brother still work for the same company",
+   "also": [
+    "does your brother work for the same company still",
+    "your brother does still work for the same company"
+   ]
+  },
+  "item": {
+   "id": "c-1819",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Subject + verb (with *-s* after *he / she / it*) + the rest; questions and negatives use *do / does*.",
+   "why_lv": "Teikuma priekšmets + darbības vārds (ar *-s* aiz *he / she / it*) + pārējais; jautājumos un noliegumos lieto *do / does*.",
+   "sentence": "does your brother still work for the same company",
+   "answers": [
+    [
+     "does your brother still work for the same company",
+     "does your brother work for the same company still",
+     "your brother does still work for the same company"
+    ]
+   ],
+   "role": "check",
+   "point": "ps_negq",
+   "src": "b1-tenses-1.csv:5"
+  }
+ },
+ "r21c-021": {
+  "hash": "38fac55d587c628d",
+  "gate_key": "present_continuous | B1.1 | gap | Anna ___ for a new flat at the moment because her rent is too high. | ",
+  "src": "b1-tenses-1.csv:58",
+  "point": "pc_temp",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is looking"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1872",
+   "skill": "present_continuous",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Anna ___ for a new flat at the moment because her rent is too high.",
+   "why": "*At the moment*, a temporary situation: *am / is / are* + *-ing*: *Anna is looking for a new flat at the moment.*",
+   "why_lv": "*At the moment*, pagaidu situācija: *am / is / are* + *-ing*: *Anna is looking for a new flat at the moment.*",
+   "answers": [
+    [
+     "is looking"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "is looking",
+    "looks",
+    "looking"
+   ],
+   "role": "check",
+   "point": "pc_temp",
+   "src": "b1-tenses-1.csv:58"
+  }
+ },
+ "r21c-022": {
+  "hash": "c2eb8c4c179254d9",
+  "gate_key": "present_perfect | B1.1 | text | Rewrite with *since*: I started learning English in 2019, and I'm still learning it. | ",
+  "src": "b1-tenses-2.csv:22",
+  "point": "ppc_form",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I have been learning English since 2019.",
+     "I have learned English since 2019.",
+     "I have learnt English since 2019.",
+     "Since 2019 I've been learning English.",
+     "Since 2019 I have been learning English.",
+     "I've been learning it since 2019."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1977",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite with *since*: I started learning English in 2019, and I'm still learning it.",
+   "why": "It started in 2019 and is still going on: *I have been learning English since 2019.*",
+   "why_lv": "Tas sākās 2019. gadā un turpinās joprojām: *I have been learning English since 2019.*",
+   "answers": [
+    [
+     "I have been learning English since 2019.",
+     "I have learned English since 2019.",
+     "I have learnt English since 2019.",
+     "Since 2019 I've been learning English.",
+     "Since 2019 I have been learning English.",
+     "I've been learning it since 2019."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "ppc_form",
+   "src": "b1-tenses-2.csv:22"
+  }
+ },
+ "r21c-023": {
+  "hash": "cbbbddd04623a08a",
+  "gate_key": "present_perfect | B1.1 | text | Make it negative: We have visited that museum. | ",
+  "src": "b1-tenses-2.csv:24",
+  "point": "pp_form",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "We haven't visited that museum.",
+     "We have not visited that museum.",
+     "We have never visited that museum.",
+     "We haven't visited that museum yet."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-1979",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Make it negative: We have visited that museum.",
+   "why": "Question: *Have / Has* + subject + 3. form. Negative: *haven't / hasn't* + 3. form. *How long* asks about time up to now.",
+   "why_lv": "Jautājums: *Have / Has* + teik. priekšmets + 3. forma. Noliegums: *haven't / hasn't* + 3. forma. *How long* jautā par laiku līdz tagadnei.",
+   "answers": [
+    [
+     "We haven't visited that museum.",
+     "We have not visited that museum.",
+     "We have never visited that museum.",
+     "We haven't visited that museum yet."
+    ]
+   ],
+   "hints": [],
+   "practice_only": true,
+   "role": "learn",
+   "point": "pp_form",
+   "src": "b1-tenses-2.csv:24"
+  }
+ },
+ "r21c-024": {
+  "hash": "855176d0cf134901",
+  "gate_key": "present_perfect | B1.1 | mcq | Choose the correct option: My parents have had the same family doctor ___ twenty years. | for",
+  "src": "b1-tenses-2.csv:29",
+  "point": "pp_for_since",
+  "key": {
+   "kind": "mcq",
+   "correct": "for",
+   "wrong": [
+    "since",
+    "already"
+   ]
+  },
+  "item": {
+   "id": "c-1984",
+   "skill": "present_perfect",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: My parents have had the same family doctor ___ twenty years.",
+   "why": "*for* + a period of time: *My parents have had the same family doctor for twenty years.* *since* needs a starting point (*since 2005*), and *already* does not go before a period of time.",
+   "why_lv": "*for* + laika posms: *My parents have had the same family doctor for twenty years.* *since* vajag sākuma brīdi (*since 2005*), bet *already* nelieto pirms laika posma.",
+   "correct": "for",
+   "wrong": [
+    "since",
+    "already"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pp_for_since",
+   "src": "b1-tenses-2.csv:29"
+  }
+ },
+ "r21c-025": {
+  "hash": "9b1581754d6ee75c",
+  "gate_key": "present_simple_passive | B1.1 | gap | Every week, the cheese ___ in small villages and then ___ to shops around the country. (make / send) | ",
+  "src": "b1-upgrades-1.csv:34",
+  "point": "pas_pres",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is made",
+     "gets made"
+    ],
+    [
+     "is sent",
+     "sent",
+     "gets sent"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2124",
+   "skill": "present_simple_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Every week, the cheese ___ in small villages and then ___ to shops around the country. (make / send)",
+   "why": "A regular process; who does it is not important: *is made* and *(is) sent*. After *and then* the second *is* can be left out.",
+   "why_lv": "Regulārs process, kurā darītājs nav svarīgs: *is made* un *(is) sent*. Pēc *and then* otro *is* var izlaist.",
+   "answers": [
+    [
+     "is made",
+     "gets made"
+    ],
+    [
+     "is sent",
+     "sent",
+     "gets sent"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_pres",
+   "src": "b1-upgrades-1.csv:34"
+  }
+ },
+ "r21c-026": {
+  "hash": "a26f5ce317da1314",
+  "gate_key": "future_passive | B1.2 | text | Rewrite the sentence. Start with *The winner*: They will announce the winner on Friday. | ",
+  "src": "b1-upgrades-1.csv:42",
+  "point": "pas_will",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The winner will be announced on Friday.",
+     "On Friday the winner will be announced.",
+     "The winner will be announced by them on Friday."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2132",
+   "skill": "future_passive",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Rewrite the sentence. Start with *The winner*: They will announce the winner on Friday.",
+   "why": "Who announces it is not important, so *will be* + 3rd form: *The winner will be announced on Friday.*",
+   "why_lv": "Nav svarīgi, kas to paziņos, tāpēc *will be* + 3. forma: *The winner will be announced on Friday.*",
+   "answers": [
+    [
+     "The winner will be announced on Friday.",
+     "On Friday the winner will be announced.",
+     "The winner will be announced by them on Friday."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_will",
+   "src": "b1-upgrades-1.csv:42"
+  }
+ },
+ "r21c-027": {
+  "hash": "eb301286d3840432",
+  "gate_key": "narrative | B1.1 | gap | Ana: 'Did you have lunch with your colleagues yesterday?'\nTom: 'No, when I got to the café, they ___ eating.' (already / finish) | ",
+  "src": "compare-past-1.csv:40",
+  "point": "pastp_by",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "had already finished",
+     "'d already finished"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2184",
+   "skill": "narrative",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Ana: 'Did you have lunch with your colleagues yesterday?'\nTom: 'No, when I got to the café, they ___ eating.' (already / finish)",
+   "why": "Tom got to the café (past simple), and the eating was over before that: *had* + 3rd form: *they had already finished eating*.",
+   "why_lv": "Toms ieradās kafejnīcā (Past Simple), un ēšana bija beigusies pirms tam: *had* + 3. forma: *they had already finished eating*.",
+   "answers": [
+    [
+     "had already finished",
+     "'d already finished"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pastp_by",
+   "src": "compare-past-1.csv:40"
+  }
+ }
+}

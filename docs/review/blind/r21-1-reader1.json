@@ -1,0 +1,549 @@
+[
+{
+"id": "r21-1-001",
+"answer": "When I arrived, she already has left.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "Past perfect at B1.2 ok.",
+"sense_problem": ""
+},
+{
+"id": "r21-1-002",
+"answer": "whenever",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'unless' and 'although' clearly impossible; 'whenever' vs 'when' meaning very close - ok. Leaves 'if' ambiguity: 'because' wrong.",
+"level_problem": "",
+"sense_problem": "Street floods... fine; 'whenever' is the only fit."
+},
+{
+"id": "r21-1-003",
+"answer": "If people don't sleep enough, they would be grumpy.",
+"other_correct": "",
+"wrong_options_that_fit": "'they would be grumpy' is also possible (general tendency, hedged) - ambiguous; zero conditional intended.",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-1-004",
+"answer": "If I will win the lottery, I would buy an island.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'If I will win' with 'would' - plausible error; fine."
+},
+{
+"id": "r21-1-005",
+"answer": "if or whether",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'word(s)' awkward; 'report a yes/no question' uses terms; 'that or what' distractors weak.",
+"level_problem": "Metalanguage question, not usage; 'yes/no question' term.",
+"sense_problem": ""
+},
+{
+"id": "r21-1-006",
+"answer": "He asked me where did I live.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 012 (and 'He asked if I wanted a coffee' and 'whether' fine)."
+},
+{
+"id": "r21-1-007",
+"answer": "If metal will get hot, it expands.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 003/008 theme; 'Metal expands when it gets hot' wording a bit repetitive."
+},
+{
+"id": "r21-1-008",
+"answer": "If I will see her, I will tell her.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 007/004 pattern (if + will)."
+},
+{
+"id": "r21-1-009",
+"answer": "If I would know, I would tell you.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Plausible 'if I would know'."
+},
+{
+"id": "r21-1-010",
+"answer": "She told that she was tired.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'told that' plausible error; 'She told us she was tired' fine."
+},
+{
+"id": "r21-1-011",
+"answer": "They said they will come the next day.",
+"other_correct": "",
+"wrong_options_that_fit": "'They said they will come the next day' is acceptable if the coming is still in the future; ambiguous. 'would...tomorrow' is also fine in informal use.",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Ambiguous: learners/native speakers accept 'will' in reported speech."
+},
+{
+"id": "r21-1-012",
+"answer": "She asked me where did I live.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Options 'where I lived' and 'where I had lived' both correct; tests near duplicate with 006."
+},
+{
+"id": "r21-1-013",
+"answer": "Did you used to play chess?",
+"other_correct": "Did you use to play chess? is the standard one; no other.",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'Did you used to' is nonstandard in British but common and accepted by many; 'didn't use to' vs 'didn't used to' is contested. Risky."
+},
+{
+"id": "r21-1-014",
+"answer": [
+"enough"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No context beyond gap; fine but 'too' option is a very obvious wrong; 'very' also.",
+"level_problem": "Easy for B1.1 (enough/too is A2).",
+"sense_problem": ""
+},
+{
+"id": "r21-1-015",
+"answer": "The book which I bought it was boring.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-1-016",
+"answer": "I'll text you when I will arrive.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 048 and 053 (when + will). Repetitive."
+},
+{
+"id": "r21-1-017",
+"answer": "Who did called you last night?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-1-018",
+"answer": "What did happened at the meeting?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-1-019",
+"answer": "What made that noise?",
+"other_correct": [
+"What made the noise?",
+"What was it that made that noise?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction unclear: 'Ask about *Something* with *What*' - asterisks and wording confusing; does not say to ask about the subject (no 'did'). Learners will likely write 'What did make that noise?' or 'What was that noise?'.",
+"level_problem": "",
+"sense_problem": "'What did make that noise' is the likely learner error; 'What was that noise?' is not accepted by the task but is natural."
+},
+{
+"id": "r21-1-020",
+"answer": "She promised helping me with the move.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Plausible error."
+},
+{
+"id": "r21-1-021",
+"answer": "She enjoys to cook for her friends.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "'enjoys to cook' fine; 'loves to cook' correct.",
+"sense_problem": ""
+},
+{
+"id": "r21-1-022",
+"answer": "She might to be late.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'might to be' plausible."
+},
+{
+"id": "r21-1-023",
+"answer": "We had the house paint last week.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'had the house paint' plausible; instruction offers two correct options with 'our'."
+},
+{
+"id": "r21-1-024",
+"answer": "I haven't had my eyes test yet.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Three near-identical correct options; 'eyes test' easy to spot."
+},
+{
+"id": "r21-1-025",
+"answer": "He explained me the problem.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'explain me' plausible; fine. Similar to 026 (describe me)."
+},
+{
+"id": "r21-1-026",
+"answer": "He described me the house.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 025."
+},
+{
+"id": "r21-1-027",
+"answer": "I am really tiring after work.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'I am really tiring' plausible -ing/-ed confusion; fine."
+},
+{
+"id": "r21-1-028",
+"answer": "She has a wooden round table.",
+"other_correct": "",
+"wrong_options_that_fit": "'She has a wooden round table.' is arguably acceptable.",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'a wooden round table' is not wrong for many speakers (shape/material order is flexible); a native would hardly call it an error. Weak."
+},
+{
+"id": "r21-1-029",
+"answer": "We ate in an Italian small restaurant.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "Adjective order (origin before size, size first) is B2-ish for B1.2 learners; fine.",
+"sense_problem": ""
+},
+{
+"id": "r21-1-030",
+"answer": "enough",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'so' option wrong; 'too' also tempting; fine.",
+"level_problem": "",
+"sense_problem": "Overlaps with 014 (enough)."
+},
+{
+"id": "r21-1-031",
+"answer": "He speaks Spanish fluent.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'speaks Spanish fluent' plausible."
+},
+{
+"id": "r21-1-032",
+"answer": "She is such tired.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'such tired' plausible."
+},
+{
+"id": "r21-1-033",
+"answer": "The machines is checked every day.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'The machines is checked' is a slip, not a typical learner mistake; also 'Is every machine checked?' fine."
+},
+{
+"id": "r21-1-034",
+"answer": "The museum is visit by many tourists.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'is visit by' less plausible but ok."
+},
+{
+"id": "r21-1-035",
+"answer": "The bank was robbing last night.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'was robbing' plausible."
+},
+{
+"id": "r21-1-036",
+"answer": "The report is being write now.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'is being write' plausible error."
+},
+{
+"id": "r21-1-037",
+"answer": "The rooms is being cleaned.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'The rooms is being' is a plain agreement slip, trivial; near-duplicate of 036."
+},
+{
+"id": "r21-1-038",
+"answer": "The contract has been sign.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'has been sign' unlikely mistake? plausible dropped -ed."
+},
+{
+"id": "r21-1-039",
+"answer": "Our manager don't like long meetings.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'Our manager don't' agreement slip; trivial for B1.1."
+},
+{
+"id": "r21-1-040",
+"answer": "He doesn't goes to the gym on Sundays.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'doesn't goes' common error; fine."
+},
+{
+"id": "r21-1-041",
+"answer": "We're knowing the answer, but we can't say it.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 050 (know in continuous)."
+},
+{
+"id": "r21-1-042",
+"answer": "The manager is have a meeting with a client.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'is have' unlikely error for B1.1; nobody writes this."
+},
+{
+"id": "r21-1-043",
+"answer": "I didn't used to like olives.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'I didn't used to' is widely used and accepted by many dictionaries; two arguable options (43 and 51 duplicate)."
+},
+{
+"id": "r21-1-044",
+"answer": "since",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Easy, A2-level.",
+"sense_problem": ""
+},
+{
+"id": "r21-1-045",
+"answer": "I have visited that museum last weekend.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Plausible and common error."
+},
+{
+"id": "r21-1-046",
+"answer": "She has lived in Paris since five years.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'since five years' plausible."
+},
+{
+"id": "r21-1-047",
+"answer": "I hadn't never seen it before.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'hadn't never' double negative, plausible."
+},
+{
+"id": "r21-1-048",
+"answer": "When I will arrive, I'll text you.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 016 and 053."
+},
+{
+"id": "r21-1-049",
+"answer": "She is always check her messages before she gets out of bed.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'She is always check' unlikely error for B1.1."
+},
+{
+"id": "r21-1-050",
+"answer": "I am knowing the answer, but I don't want to say it yet.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 041."
+},
+{
+"id": "r21-1-051",
+"answer": "We didn't used to have a car when I was young.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'We didn't used to' is common usage; contested. Near-duplicate of 43 and 13."
+},
+{
+"id": "r21-1-052",
+"answer": "I have finished school in 2019.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Overlaps with 045."
+},
+{
+"id": "r21-1-053",
+"answer": "When I will see him, I'll tell him about the problem.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "Near-duplicate of 016 and 048."
+},
+{
+"id": "r21-1-054",
+"answer": "as soon as",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'while' and 'in case' impossible, but 'when' not offered; fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-1-055",
+"answer": "The weather today is much more warmer than yesterday.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "",
+"sense_problem": "'much more warmer' plausible."
+},
+{
+"id": "r21-1-056",
+"answer": "He is by far the more experienced player in the team.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "'by far the more/most', 'twice as old as' too advanced mixing for B1.2; superlative vs comparative of two is B2.",
+"sense_problem": "'by far the more experienced player in the team' - nobody writes; a team has more than two players, learner would not make this."
+},
+{
+"id": "r21-1-057",
+"answer": "Despite it was late, they kept working.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Negative question 'NOT correct' at B1; easy to misread.",
+"level_problem": "'Despite it was late' common error, fine. 'in spite of' 'so that' mixed: fine.",
+"sense_problem": ""
+},
+{
+"id": "r21-1-058",
+"answer": [
+"Although"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'Because of' and 'Despite' clearly impossible (clause follows); only 'Although' left; easy.",
+"level_problem": "Easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21-1-059",
+"answer": "too much",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Only three options; 'enough of' unnatural distractor. 'too many' fails because noise uncountable.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-1-060",
+"answer": "enough",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'too much' and 'enough of' are weak distractors; 'enough' obvious.",
+"level_problem": "Easy, A2-level; overlaps with 014, 030, 059.",
+"sense_problem": ""
+}
+]

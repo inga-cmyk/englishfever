@@ -1,0 +1,788 @@
+[
+{
+"id": "r21-6-001",
+"answer": "Prices are rising in my city, and I am changing jobs.",
+"other_correct": [
+"My city is changing fast.",
+"Prices are going up in my city."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open task; fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-002",
+"answer": [
+"didn't see"
+],
+"other_correct": [
+[
+"did not see"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-003",
+"answer": "The cooking.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Fine.",
+"sense_problem": ""
+},
+{
+"id": "r21-6-004",
+"answer": "They was going to meet us, but they were late.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'They was' is a rare slip for B1 learners; mild."
+},
+{
+"id": "r21-6-005",
+"answer": [
+"I have lived in Riga for ten years.",
+"I have worked here since 2020."
+],
+"other_correct": [
+[
+"I've lived here for five years. I've worked here since March."
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-006",
+"answer": "I have been knowing him for years.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-007",
+"answer": "She has been running.",
+"other_correct": "",
+"wrong_options_that_fit": "She has run. (also correct: result of running)",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'She has run' also fits; option too close."
+},
+{
+"id": "r21-6-008",
+"answer": "have been reading",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-009",
+"answer": [
+"have been playing"
+],
+"other_correct": [
+[
+"have played"
+],
+[
+"are playing"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No tense hint; 'are playing' and 'have played' also fit.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-010",
+"answer": "The plane is about to take off.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-011",
+"answer": "He is going to be arrive soon.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'going to be arrive' is an odd, rarely written error."
+},
+{
+"id": "r21-6-012",
+"answer": [
+"It's about to rain. I'll lend you my umbrella."
+],
+"other_correct": [
+"It is going to rain. Do you want to borrow my umbrella?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'about to' in the task partly gives the form away; 'offer' could be done with Shall I / Would you like.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-013",
+"answer": "He is often called Mo.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-014",
+"answer": "She was gave a prize at school.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'was gave' is rare for B1 learners."
+},
+{
+"id": "r21-6-015",
+"answer": [
+"are being cleaned"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No hint that passive is needed except the subject; fine.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-016",
+"answer": "will be delivered",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-017",
+"answer": "The guest asked whether breakfast was included.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-018",
+"answer": "Could you let me know whether the contract has been signed?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-019",
+"answer": [
+[
+"You decide now to help a colleague with a heavy bag.",
+"I'll carry that for you."
+],
+[
+"You describe a confirmed appointment for tomorrow.",
+"I'm seeing the dentist at ten."
+],
+[
+"You predict rain because you can see dark clouds.",
+"It's going to rain."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-020",
+"answer": [
+[
+"If I had gone, I would have met her.",
+"I didn't go."
+],
+[
+"If I go, I will meet her.",
+"I may go."
+],
+[
+"If I went, I would meet her.",
+"I'm imagining it now."
+],
+[
+"If I go, I meet her.",
+"this always happens"
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "'I may go' is a weak paraphrase of a first conditional; 'I'm imagining it now' is awkward. Capitalisation differs between right-side items."
+},
+{
+"id": "r21-6-021",
+"answer": [
+"would"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-022",
+"answer": [
+"had finished"
+],
+"other_correct": [
+[
+"have finished"
+],
+[
+"finished"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'have finished' is correct if reported soon; 'finished' is informal/less natural.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-023",
+"answer": [
+"if I liked jazz"
+],
+"other_correct": [
+[
+"whether I liked jazz"
+],
+[
+"if I like jazz"
+],
+[
+"whether I like jazz"
+],
+[
+"if I did like jazz"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Whole clause in one gap; many correct versions, unclear whether if/whether needed.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-024",
+"answer": [
+"what I had done the night before"
+],
+"other_correct": [
+[
+"what I did the night before"
+],
+[
+"what I had done the previous night"
+],
+[
+"what I did the previous night"
+],
+[
+"what I had done that night"
+],
+[
+"what I did that night"
+],
+[
+"what I had done last night"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Open clause with many valid forms; 'last night' after a week is tense/time shift ambiguity.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-025",
+"answer": [
+"whether"
+],
+"other_correct": "",
+"wrong_options_that_fit": "what? no. 'that' no.",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-026",
+"answer": "she didn't use to enjoy cooking but now she loves it",
+"other_correct": [
+"she loves cooking now but she didn't use to enjoy it",
+"now she loves it but she didn't use to enjoy cooking",
+"now she loves cooking but she didn't use to enjoy it",
+"she didn't use to enjoy it but now she loves cooking",
+"she didn't use to enjoy cooking but she loves it now"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'didn't use to' is hard for B1.1; 11 words.",
+"sense_problem": ""
+},
+{
+"id": "r21-6-027",
+"answer": [
+"getting up"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-028",
+"answer": "I'm used to living alone.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-029",
+"answer": "I'm not understanding the instructions.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Some speakers accept 'I'm not understanding' informally; fine as a B1 rule."
+},
+{
+"id": "r21-6-030",
+"answer": "why didn't you tell me that you had lost your job",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "No instruction hint; fine.",
+"level_problem": "Past perfect plus 11 words is more B1.2.",
+"sense_problem": ""
+},
+{
+"id": "r21-6-031",
+"answer": "the film was so boring that half of the audience left early",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "so...that and 12 words is B1.2 rather than B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21-6-032",
+"answer": [
+"lived",
+"moved"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-033",
+"answer": [
+"did",
+"wait"
+],
+"other_correct": [
+[
+"were",
+"waiting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Both past simple and past continuous fit; no hint.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-034",
+"answer": "i have lived in this city since i was a child",
+"other_correct": [
+"since i was a child i have lived in this city"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-035",
+"answer": [
+"have",
+"visited"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-036",
+"answer": [
+"has",
+"ridden"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-037",
+"answer": [
+"have",
+"worked"
+],
+"other_correct": [
+[
+"have",
+"been working"
+],
+[
+"did",
+"work"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Tense not fixed; 'did ... work' fits a past job.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-038",
+"answer": [
+"has",
+"playing"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-039",
+"answer": "How long has she been learning Chinese?",
+"other_correct": [
+"How long has she learned Chinese?",
+"How long has she been learning Chinese for?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Almost only reordering/copying; easy.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-040",
+"answer": "I've been learning French for two years.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-041",
+"answer": [
+[
+"When I arrived, she had left.",
+"she left first"
+],
+[
+"When I arrived, she left.",
+"I arrived first"
+],
+[
+"When I got up, it had stopped raining.",
+"the rain stopped first"
+],
+[
+"When I got up, it stopped raining.",
+"I got up first"
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-042",
+"answer": "we won't be able to come if it snows heavily",
+"other_correct": [
+"if it snows heavily we won't be able to come"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-043",
+"answer": [
+"hears"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-044",
+"answer": [
+"is made",
+"sent"
+],
+"other_correct": [
+[
+"is made",
+"is sent"
+],
+[
+"was made",
+"was sent"
+],
+[
+"was made",
+"sent"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No time context: present and past both fit.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-045",
+"answer": "has been opened",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'Choose the correct option:' is redundant.",
+"level_problem": "",
+"sense_problem": "'has been opened' with 'from tomorrow' is logically odd (opening already happened, borrowing starts tomorrow); 'will be opened' / 'opens tomorrow' expected."
+},
+{
+"id": "r21-6-046",
+"answer": [
+"study"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-047",
+"answer": "the phone rang while i was having a shower",
+"other_correct": [
+"i was having a shower while the phone rang",
+"while i was having a shower the phone rang",
+"while the phone rang i was having a shower (less natural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-048",
+"answer": [
+"hasn't rained"
+],
+"other_correct": [
+[
+"has not rained"
+],
+[
+"hasn't been raining"
+],
+[
+"has not been raining"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-049",
+"answer": [
+"had broken"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-050",
+"answer": [
+"looked",
+"was shining"
+],
+"other_correct": [
+[
+"looked",
+"shone"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'shone' is possible, less natural for a background description.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-051",
+"answer": [
+"had already left"
+],
+"other_correct": [
+[
+"had left already"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-052",
+"answer": "slower",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Comparatives are A2, too easy for B1.1.",
+"sense_problem": ""
+},
+{
+"id": "r21-6-053",
+"answer": [
+"higher"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Basic comparative, A2.",
+"sense_problem": ""
+},
+{
+"id": "r21-6-054",
+"answer": "the more you practise the better you get",
+"other_correct": [
+"the better you get the more you practise"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-055",
+"answer": [
+[
+"I have lived here for ten years.",
+"I still live here."
+],
+[
+"I lived here for ten years.",
+"I don't live here now."
+],
+[
+"I have never lived in a big city.",
+"Not at any time in my life."
+]
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-056",
+"answer": "did you see Anna yesterday",
+"other_correct": [
+"yesterday did you see Anna (less natural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "A1/A2 question word order; too easy for B1.1. Only five cards.",
+"sense_problem": ""
+},
+{
+"id": "r21-6-057",
+"answer": "We couldn't use our phones in the exam.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-058",
+"answer": [
+"told"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Raw asterisks around said/told show in the text; two-choice gap is easy.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "r21-6-059",
+"answer": [
+"had",
+"started"
+],
+"other_correct": [
+[
+"was",
+"starting"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

@@ -1,0 +1,797 @@
+[
+ {
+  "id": "r21-4-001",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Is this statement true? 'I'm living with my parents at the moment' sounds more temporary than 'I live with my parents.'",
+  "options": [
+   "No, the two mean the same.",
+   "No, 'live' sounds more temporary.",
+   "No, both sound permanent.",
+   "Yes, it sounds more temporary."
+  ]
+ },
+ {
+  "id": "r21-4-002",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Have you ever been to Italy?",
+   "I have visited Paris in 2018.",
+   "I've known him since 2015.",
+   "She has just left."
+  ]
+ },
+ {
+  "id": "r21-4-003",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option.",
+  "options": [
+   "I sent the email yesterday.",
+   "I have sent the email yesterday.",
+   "I will send the email yesterday.",
+   "I was sending the email yesterday."
+  ]
+ },
+ {
+  "id": "r21-4-004",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is an arrangement (fixed time and place in your diary)?",
+  "options": [
+   "I'll probably see the dentist on Friday.",
+   "I'm seeing the dentist at 3 pm on Friday.",
+   "I saw the dentist at 3 pm on Friday.",
+   "I see the dentist every year in May."
+  ]
+ },
+ {
+  "id": "r21-4-005",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "As soon as he arrives, we will start.",
+   "We're flying to Rome on Monday.",
+   "I'll call you when I will arrive.",
+   "I think it'll be a great trip."
+  ]
+ },
+ {
+  "id": "r21-4-006",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "You see a colleague with heavy boxes. Choose the correct option.",
+  "options": [
+   "I'm carrying one of those for you.",
+   "I'll carry one of those for you.",
+   "I carried one of those for you.",
+   "I carry one of those for you."
+  ]
+ },
+ {
+  "id": "r21-4-007",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "You want to write a neutral email and not blame anyone. Choose the correct option.",
+  "options": [
+   "I think you send the invoices on Fridays.",
+   "The invoices are sent on Fridays.",
+   "You send the invoices on Fridays.",
+   "The invoices are send on Fridays."
+  ]
+ },
+ {
+  "id": "r21-4-008",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence means: the work is in progress now?",
+  "options": [
+   "The road is being repaired.",
+   "The road is repaired every year.",
+   "The road was repaired.",
+   "The road will be repaired."
+  ]
+ },
+ {
+  "id": "r21-4-009",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "The cars are being washed now.",
+   "The hotel is being renovated.",
+   "The report is being write.",
+   "My email is being checked."
+  ]
+ },
+ {
+  "id": "r21-4-010",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is about something that is always true?",
+  "options": [
+   "If I had more time, I would learn Italian.",
+   "If the shop is closed, we will try the other one.",
+   "If metal gets hot, it expands.",
+   "If it gets hot tomorrow, I will go to the beach."
+  ]
+ },
+ {
+  "id": "r21-4-011",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Your friend keeps forgetting his password. Choose the correct option.",
+  "options": [
+   "If you will forget it again, you'll be locked out.",
+   "If you forgot it again, you'll be locked out.",
+   "If you forget it again, you locked out.",
+   "If you forget it again, you'll be locked out."
+  ]
+ },
+ {
+  "id": "r21-4-012",
+  "level": "B1.1",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with the relationship it expresses.",
+  "left": [
+   "If you help me, I'll buy you lunch.",
+   "We won't start unless everyone is here.",
+   "I'll take water in case the shop is closed."
+  ],
+  "right": [
+   "Everyone being present is necessary for us to start.",
+   "A promise depending on your help.",
+   "A precaution against a possible problem."
+  ]
+ },
+ {
+  "id": "r21-4-013",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "had",
+   "said",
+   "they",
+   "eaten",
+   "they",
+   "already"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-4-014",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "said",
+   "i",
+   "i",
+   "didn't",
+   "that",
+   "know",
+   "the",
+   "answer"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-4-015",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "I asked her ___ quiet.",
+  "word_cards": [
+   "be",
+   "to be",
+   "being"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-016",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "The teacher asked why we ___ late.",
+  "word_cards": [
+   "were",
+   "did we",
+   "were we"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-017",
+  "level": "B1.2",
+  "kind": "match",
+  "instruction_and_task": "Match each request with its report.",
+  "left": [
+   "'Please sit down.'",
+   "'Don't touch it!'",
+   "'You should see a doctor.'",
+   "'I'll help you.'"
+  ],
+  "right": [
+   "She warned me not to touch it.",
+   "She asked me to sit down.",
+   "She offered to help me.",
+   "She advised me to see a doctor."
+  ]
+ },
+ {
+  "id": "r21-4-018",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "the",
+   "cold",
+   "me",
+   "get",
+   "long",
+   "took",
+   "time",
+   "it",
+   "a",
+   "weather",
+   "to",
+   "to",
+   "used"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-4-019",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put all the words in order. More than one answer is possible.",
+  "word_cards": [
+   "used",
+   "i",
+   "am",
+   "getting",
+   "so",
+   "up",
+   "to",
+   "early",
+   "not"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-4-020",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "calls",
+   "doctor",
+   "your",
+   "here",
+   "wait",
+   "until",
+   "the",
+   "name"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-4-021",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I'll cook dinner when I ___ home.",
+  "word_cards": [
+   "will get",
+   "got",
+   "get"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-022",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "She refused ___ the contract.",
+  "word_cards": [
+   "signing",
+   "to sign",
+   "sign"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-023",
+  "level": "B1.1",
+  "kind": "match",
+  "instruction_and_task": "Match each description with the right word.",
+  "left": [
+   "It makes me feel bored.",
+   "I feel bored.",
+   "It makes me feel tired.",
+   "I feel tired."
+  ],
+  "right": [
+   "tiring",
+   "tired",
+   "bored",
+   "boring"
+  ]
+ },
+ {
+  "id": "r21-4-024",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Nothing ___ changed since last year.",
+  "word_cards": [
+   "hasn't",
+   "has",
+   "have",
+   "isn't"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-025",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "The shop ___ by two sisters, and the products ___ locally.",
+  "word_cards": [
+   "runs",
+   "are made",
+   "is run",
+   "make"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-026",
+  "level": "B1.2",
+  "kind": "gap",
+  "instruction_and_task": "The windows ___ once a month by a professional.",
+  "word_cards": [
+   "are cleaned",
+   "clean",
+   "are cleaning"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-027",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Dinner is served on the terrace.",
+   "Towels are changed every day.",
+   "The rooms are cleaned every day.",
+   "Breakfast are served from seven."
+  ]
+ },
+ {
+  "id": "r21-4-028",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "still",
+   "bridge",
+   "built",
+   "and",
+   "today",
+   "is",
+   "was",
+   "the",
+   "used",
+   "in",
+   "1932",
+   "it"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-4-029",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Start with *My laptop*: Someone stole my laptop yesterday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-4-030",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "out",
+   "home",
+   "cook",
+   "she",
+   "rarely",
+   "to",
+   "at",
+   "she",
+   "because",
+   "prefers",
+   "eats"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-4-031",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "must",
+   "past",
+   "hurry",
+   "seven",
+   "half",
+   "at",
+   "train",
+   "our",
+   "leaves",
+   "so",
+   "we"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-4-032",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "work",
+   "your",
+   "for",
+   "same",
+   "brother",
+   "does",
+   "company",
+   "still",
+   "the"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-4-033",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "station",
+   "he",
+   "near",
+   "the",
+   "teaches",
+   "school",
+   "maths",
+   "at",
+   "a"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-4-034",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "My sister ___ in a hospital, but she ___ to move to the countryside.",
+  "word_cards": [
+   "is wanting",
+   "wants",
+   "works"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-035",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "The lesson ___ at 9.30, so we ___ to be there early.",
+  "word_cards": [
+   "started",
+   "starts",
+   "are needing",
+   "need"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-036",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I ___ understand why she ___ always late.",
+  "word_cards": [
+   "does",
+   "is",
+   "am",
+   "don't"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-037",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "She ___ meat because she is a vegetarian. (not / eat)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-4-038",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "How much ___ a ticket to the capital ___ ? (cost)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-4-039",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Make it negative: My colleagues work from home on Fridays.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-4-040",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Why ___ you ___ so quietly today? Is something wrong?",
+  "word_cards": [
+   "spoke",
+   "speaking",
+   "are",
+   "did"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-041",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Anna ___ for a new flat because her rent is too high.",
+  "word_cards": [
+   "looks",
+   "is looking",
+   "was looking"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-042",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "My neighbour ___ his house this month, so there is a lot of noise. (paint)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-4-043",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put all the words in order. More than one answer is possible.",
+  "word_cards": [
+   "we",
+   "last",
+   "taxi",
+   "train",
+   "missed",
+   "the",
+   "we",
+   "a",
+   "so",
+   "home",
+   "took"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-4-044",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "twice",
+   "it",
+   "she",
+   "letter",
+   "opened",
+   "before",
+   "she",
+   "and",
+   "read",
+   "the",
+   "answered"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-4-045",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is NOT correct?",
+  "options": [
+   "Why did you stayed at home yesterday?",
+   "Where did you go last weekend?",
+   "When did you get home yesterday?",
+   "Why did she leave early yesterday?"
+  ]
+ },
+ {
+  "id": "r21-4-046",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "She ___ here since 2018, but she ___ to move next year.",
+  "word_cards": [
+   "has worked",
+   "is working",
+   "works",
+   "plans"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-047",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "We ___ for an hour, and the bus still ___ .",
+  "word_cards": [
+   "are waiting",
+   "wasn't coming",
+   "have waited",
+   "hasn't come"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-048",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "How long ___ they ___ for the results?",
+  "word_cards": [
+   "been waiting",
+   "are",
+   "did",
+   "have"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-049",
+  "level": "B1.2",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: ___ he ever ___ abroad before he moved to Spain?",
+  "options": [
+   "Did / lived",
+   "Had / lived",
+   "Has / lived",
+   "Had / live"
+  ]
+ },
+ {
+  "id": "r21-4-050",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "My cousin ___ in a bank, but at the weekend he ___ as a volunteer at the zoo. (work / help)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-4-051",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Start with *The road*: They are repairing the road.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "r21-4-052",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Kate ___ TV a lot when she was ill last year. (watch)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-4-053",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I ___ here since 2010. I still work here. (work)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "r21-4-054",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: When I arrived, the film ___. I missed the beginning.",
+  "options": [
+   "had already start",
+   "has already started",
+   "had already started"
+  ]
+ },
+ {
+  "id": "r21-4-055",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I didn't recognise her. She ___ a lot.",
+  "options": [
+   "had changed",
+   "has changed",
+   "had change"
+  ]
+ },
+ {
+  "id": "r21-4-056",
+  "level": "B1.2",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "busy",
+   "was",
+   "last",
+   "as",
+   "as",
+   "year",
+   "not",
+   "this",
+   "year"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "r21-4-057",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "The new model is much ___ than the old one. (reliable)",
+  "word_cards": [
+   "most reliable",
+   "more reliable",
+   "reliable"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "r21-4-058",
+  "level": "B1.2",
+  "kind": "match",
+  "instruction_and_task": "Match each comparison with its meaning.",
+  "left": [
+   "twice as expensive as",
+   "not as big as",
+   "slightly cheaper than",
+   "by far the best"
+  ],
+  "right": [
+   "smaller",
+   "costs double",
+   "much better than all the others",
+   "a little less money"
+  ]
+ },
+ {
+  "id": "r21-4-059",
+  "level": "B1.1",
+  "kind": "match",
+  "instruction_and_task": "Match each sentence with its meaning.",
+  "left": [
+   "I was making tea when Tom came.",
+   "When Tom came, I made tea.",
+   "I had made tea before Tom came."
+  ],
+  "right": [
+   "Ready before he arrived",
+   "Already in progress",
+   "Started after his arrival"
+  ]
+ },
+ {
+  "id": "r21-4-060",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct question: ___ speak English at work?",
+  "options": [
+   "Have you to",
+   "Are you have to",
+   "Do you have to",
+   "Must you to"
+  ]
+ }
+]

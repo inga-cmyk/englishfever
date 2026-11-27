@@ -74,6 +74,11 @@
 "round": "r21-6",
 "task": "r21-6-021"
 },
+"01f44c02b9aa4a79": {
+"gate_key": "past_simple | A2.1 | text | Correct the mistake: I buyed a new jacket last weekend. | ",
+"round": "cm-1",
+"task": "cm-1-011"
+},
 "01f7672daa7b7790": {
 "gate_key": "more_modals | A2.2 | text | Rewrite with *might*: Perhaps the concert tickets are sold out. | ",
 "round": "r1c",
@@ -249,6 +254,11 @@
 "round": "r20c",
 "task": "r20c-028"
 },
+"047cf8bccf56b5d2": {
+"gate_key": "past_simple | B1.1 | text | Correct the mistake: The meeting finished late, so I catched the last bus home. | ",
+"round": "cm-1",
+"task": "cm-1-018"
+},
 "048ad6985e7c9183": {
 "gate_key": "relative_clauses | A2.2 | mcq | Choose the correct option: The people who ___ next door are very friendly. | live",
 "round": "r1",
@@ -368,6 +378,11 @@
 "gate_key": "adv_past | C1 | gap | Write one word in each gap: The smoke alarm ___ off as soon as he ___ the candle underneath it. (go, light) | ",
 "round": "c1-3",
 "task": "c1-3-001"
+},
+"07283149c4a5d237": {
+"gate_key": "past_simple | A2.2 | text | Correct the mistake: We moved to this city before three years. | ",
+"round": "cm-1",
+"task": "cm-1-015"
 },
 "0751bbed4574f65b": {
 "gate_key": "future | A2.2 | gap | Complete with *will* or *going to*: 'Why are you saving so much money?' 'I ___ a flat next year.' (buy) | ",
@@ -959,6 +974,11 @@
 "round": "r13",
 "task": "r13-115"
 },
+"1500c4760c874b29": {
+"gate_key": "present_simple | A2.1 | text | Correct the mistake: My neighbour walk her dog every morning before work. | ",
+"round": "cm-2",
+"task": "cm-2-001"
+},
 "1514a556aee5ace8": {
 "gate_key": "adv_prep | C1 | mcq | Choose the correct option: Nobody ___ the owner has a key to the safe. | other than",
 "round": "c1-6",
@@ -1414,6 +1434,11 @@
 "round": "r11",
 "task": "r11-032"
 },
+"1fe64e6ffcd8a7dc": {
+"gate_key": "future | A2.2 | text | Correct the mistake. Keep *going to*: What you are going to do after the course? | ",
+"round": "cm-2",
+"task": "cm-2-012"
+},
 "1ff3a5617d1ac0fb": {
 "gate_key": "present_perfect | B1.1 | mcq | Choose the correct option: I've worked here ___ 2015. | since",
 "round": "r21-1",
@@ -1723,6 +1748,11 @@
 "gate_key": "present_simple_passive | A2.2 | mcq | Why do we say 'Tickets are sold here'? | The action matters, not who sells them.",
 "round": "r17",
 "task": "r17-001"
+},
+"2676059437d39a88": {
+"gate_key": "future | B1.1 | text | Correct the mistake: I can't go out until the plumber will come, so could you buy some bread? | ",
+"round": "cm-3",
+"task": "answers added"
 },
 "26782a78dceb76c8": {
 "gate_key": "adverbs | A2.2 | order | Put the words in order. | i like my new flat very much",
@@ -2374,6 +2404,11 @@
 "round": "r21-4",
 "task": "r21-4-003"
 },
+"362e7d43e6da97f4": {
+"gate_key": "present_simple | A2.1 | text | Correct the mistake: I am agree with you about the price. | ",
+"round": "cm-1",
+"task": "cm-1-002"
+},
 "3658871074273880": {
 "gate_key": "present_perfect | A2.2 | text | Start with *Rita has* and use *go*: Rita went to Tokyo, and she is still there. | ",
 "round": "r13",
@@ -2589,6 +2624,11 @@
 "round": "r11",
 "task": "r11-058"
 },
+"39e327f250a243d5": {
+"gate_key": "future | A2.2 | text | Correct the mistake: It's late. I walk you to the bus stop. | ",
+"round": "cm-3",
+"task": "answers added"
+},
 "3a1e84a2fa5f3f20": {
 "gate_key": "rep_statements | B1.2 | order | Put the words in order. | she told us that she was leaving the next week",
 "round": "r21-5",
@@ -2673,6 +2713,11 @@
 "gate_key": "cond_advanced | B2.2 | text | Rewrite with unless: You will not get a refund if you don't have a receipt. | ",
 "round": "r20-1",
 "task": "r20-1-037"
+},
+"3be76b0bf479b62f": {
+"gate_key": "past_simple | B1.1 | text | Correct the mistake. Keep *yesterday*: I have seen this film yesterday, so let's watch something else tonight. | ",
+"round": "cm-3",
+"task": "answers added"
 },
 "3bed0e65c00b8e26": {
 "gate_key": "past_continuous | B1.1 | mcq | Which sentence is NOT correct? | When I came in, the children was watching TV.",
@@ -2894,6 +2939,11 @@
 "round": "c1-19",
 "task": "c1-19-022"
 },
+"3f4d017337d581ff": {
+"gate_key": "past_simple | B1.1 | text | Correct the mistake: Where did you stayed when you visited Rome last spring? | ",
+"round": "cm-1",
+"task": "cm-1-017"
+},
 "3f6d81aff3bbae21": {
 "gate_key": "adv_subj | C1 | mcq | Choose the correct option: I insist that he ___ told the whole truth. | be",
 "round": "c1-9",
@@ -2968,6 +3018,11 @@
 "gate_key": "verb_patterns | A2.2 | gap | Write the missing word: We went ___ a long walk on the beach. | ",
 "round": "r9",
 "task": "r9-161"
+},
+"4159f7709d19ab77": {
+"gate_key": "present_simple | A2.2 | text | Correct the mistake: My boss doesn't drinks coffee after lunch. | ",
+"round": "cm-1",
+"task": "cm-1-004"
 },
 "416817d5ea65c257": {
 "gate_key": "more_modals | B1.2 | text | Start with *You shouldn't*: It was wrong of you to lend him your car for the whole weekend. | ",
@@ -3264,6 +3319,11 @@
 "round": "r13",
 "task": "r13-120"
 },
+"484b71ae5922972b": {
+"gate_key": "future | B1.1 | text | Correct the mistake: I promise I tell you as soon as I hear any news about the job. | ",
+"round": "cm-1",
+"task": "cm-1-025"
+},
 "484e595ac5ac4281": {
 "gate_key": "conj_b2 | B2.1 | mcq | Choose the correct option: My partner loves late nights, ___ I'm at my best early in the morning. | whereas",
 "round": "r19c",
@@ -3343,6 +3403,11 @@
 "gate_key": "future | B1.2 | write | The sky is full of dark clouds, and your friend has no umbrella. Write two sentences to your friend: what you expect to happen, and an offer of your umbrella. | ",
 "round": "r21b-1",
 "task": "r21b-1-019"
+},
+"4ab02363631b7d6a": {
+"gate_key": "present_simple | B1.1 | text | Correct the mistake: It's depend on the traffic, so I can't say what time I'll be home. | ",
+"round": "cm-2",
+"task": "cm-2-005"
 },
 "4acbbfb523c96019": {
 "gate_key": "relative_clauses | A2.2 | text | Join with *which*: We visited a museum. It has a collection of old cars. | ",
@@ -3539,6 +3604,11 @@
 "round": "r21-3",
 "task": "r21-3-052"
 },
+"502c100f7951d8e2": {
+"gate_key": "past_simple | A2.2 | text | Correct the mistake: Robert join our team two months ago. | ",
+"round": "cm-1",
+"task": "cm-1-013"
+},
 "503935dd734b0b43": {
 "gate_key": "modal_verbs | B1.1 | gap | ___ you ___ show your passport when you crossed the border last weekend? (have to) | ",
 "round": "r10",
@@ -3558,6 +3628,11 @@
 "gate_key": "prep_time_place | A2.1 | mcq | Which sentence has a mistake? | I started a new job on last Monday.",
 "round": "r13",
 "task": "r13-051"
+},
+"50a0a4b027ff87ee": {
+"gate_key": "present_simple | B1.1 | text | Correct the mistake: Light is travelling faster than sound, so you see the lightning before you hear the thunder. | ",
+"round": "cm-2",
+"task": "cm-2-004"
 },
 "50a9bb6d9d59a678": {
 "gate_key": "used_to | B1.2 | mcq | Which sentence is correct? | I used to have a bike when I was ten.",
@@ -3859,6 +3934,11 @@
 "round": "r10",
 "task": "r10-056"
 },
+"581ea8f14627f521": {
+"gate_key": "past_simple | A2.1 | text | Correct the mistake: Did you went to the concert on Friday? | ",
+"round": "cm-1",
+"task": "cm-1-012"
+},
 "5833f7b580eda420": {
 "gate_key": "adv_prep | C1 | mcq | Choose the correct option: Nobody ___ the owner has a key to the safe. | other than",
 "round": "c1-10",
@@ -3978,6 +4058,11 @@
 "gate_key": "rep_statements | B2.1 | gap | She told me she ___ in Riga for two years. (live) | ",
 "round": "r20-5",
 "task": "r20-5-057"
+},
+"5b7e825a5761d70e": {
+"gate_key": "past_simple | A2.1 | text | Correct the mistake: We was very tired after the long flight. | ",
+"round": "cm-1",
+"task": "cm-1-010"
 },
 "5bbcac7f0a995c07": {
 "gate_key": "present_simple | B1.1 | mcq | Water ___ at 100 degrees Celsius. | boils",
@@ -4868,6 +4953,11 @@
 "gate_key": "more_modals | A2.2 | gap | Write the missing word: I'm not sure, but I ___ visit my aunt this weekend. | ",
 "round": "r1",
 "task": "r1-048"
+},
+"6da20994167e7daa": {
+"gate_key": "future | A2.2 | text | Correct the mistake: I meet a client at nine tomorrow, so I can't take the kids to school. | ",
+"round": "cm-2",
+"task": "cm-2-011"
 },
 "6dd0d20376571c30": {
 "gate_key": "future | A2.1 | order | Put the words in order to make a question. | how shall we get to the airport",
@@ -5778,6 +5868,11 @@
 "gate_key": "present_continuous | B1.1 | mcq | Which sentence is NOT correct? | I'm not understanding the instructions.",
 "round": "r21b-3",
 "task": "r21b-3-031"
+},
+"8476993322972a13": {
+"gate_key": "future | A2.1 | text | Correct the mistake. Keep *going to*: She going to look for a new flat in May. | ",
+"round": "cm-2",
+"task": "cm-2-008"
 },
 "84a1916652d24dee": {
 "gate_key": "future | B1.2 | mcq | Which sentence is correct? | The key card wouldn't open my hotel room last night.",
@@ -7074,6 +7169,11 @@
 "round": "r5",
 "task": "r5-004"
 },
+"9fb4344635c7d77d": {
+"gate_key": "present_simple | B1.1 | text | Correct the mistake: I'm thinking this plan is too expensive for us, so let's look for another one. | ",
+"round": "cm-2",
+"task": "cm-2-003"
+},
 "9fc74a5bd1e455e5": {
 "gate_key": "present_perfect | B1.2 | mcq | Choose the correct option: I ___ the film last night. | saw",
 "round": "r21-3",
@@ -7473,6 +7573,11 @@
 "gate_key": "agreement | B1.2 | order | Put the words in order. | i missed the match because i spent the whole evening answering emails",
 "round": "r11",
 "task": "answers added"
+},
+"a7ff741f634ae02f": {
+"gate_key": "past_simple | A2.2 | text | Correct the mistake: I didn't saw your message until this morning. | ",
+"round": "cm-1",
+"task": "cm-1-014"
 },
 "a816654f075342ac": {
 "gate_key": "more_modals | B1.2 | order | Put the words in order to make a question. | what should i have said to my boss",
@@ -8604,6 +8709,11 @@
 "round": "r20-6",
 "task": "r20-6-017"
 },
+"bfc9f3dcc1d70ff7": {
+"gate_key": "present_simple | A2.1 | text | Correct the mistake: Do your brother play any sport? | ",
+"round": "cm-1",
+"task": "cm-1-003"
+},
 "bfd3468f72186bf4": {
 "gate_key": "verb_patterns | A2.2 | order | Put the words in order. | she goes to the gym before work",
 "round": "r9",
@@ -8873,6 +8983,11 @@
 "gate_key": "indefinite_pronouns | B1.1 | order | Put the words in order. | would you like something to drink",
 "round": "r21b-3",
 "task": "r21b-3-006"
+},
+"c6642b46c5862f80": {
+"gate_key": "present_simple | A2.2 | text | Correct the mistake: Sorry, I am not understanding the question. Can you say it again? | ",
+"round": "cm-2",
+"task": "cm-2-002"
 },
 "c692fb7d7f1a0ecf": {
 "gate_key": "cond_first | B1.1 | order | Put the words in order to make a question. | what will you do when you finish your degree",
@@ -9389,6 +9504,11 @@
 "round": "r10",
 "task": "r10-037"
 },
+"d0f7350cd05c2ed8": {
+"gate_key": "future | B1.2 | text | Correct the mistake. Keep *about*: Sorry, I can't talk now. I'm about going into a meeting. | ",
+"round": "cm-2",
+"task": "cm-2-015"
+},
 "d0fd2677c1699cad": {
 "gate_key": "adv_prep | C1 | gap | Nobody explained the basis ___ which the fee was calculated. | ",
 "round": "c1-6",
@@ -9904,6 +10024,11 @@
 "round": "r21-2",
 "task": "r21-2-048"
 },
+"db281be55292f583": {
+"gate_key": "future | B1.2 | text | Correct the mistake: My phone won't charge last night, so I couldn't call you. | ",
+"round": "cm-2",
+"task": "cm-2-014"
+},
 "db6e4dee8b2ca95e": {
 "gate_key": "more_modals | B1.1 | mcq | Choose the correct option: The fire was big, but everyone ___ get out of the building. | was able to",
 "round": "r1",
@@ -10023,6 +10148,11 @@
 "gate_key": "prep_time_place | A2.2 | mcq | Choose the correct option: Is it cheaper to travel to Tallinn ___ bus? | by",
 "round": "r13",
 "task": "r13-123"
+},
+"ddf558aaf35291c0": {
+"gate_key": "future | A2.1 | text | Correct the mistake: Will I turn on the heating? It's very cold in here. | ",
+"round": "cm-3",
+"task": "cm-3-002"
 },
 "de0030ada5176ade": {
 "gate_key": "adv_agree | C1 | gap | A number of applicants ___ already withdrawn. (have) | ",
@@ -11004,6 +11134,11 @@
 "round": "r14",
 "task": "r14-006"
 },
+"f1d2cb737120ceb1": {
+"gate_key": "future | A2.1 | text | Correct the mistake. Keep *going*: We're going get a dog next year. | ",
+"round": "cm-2",
+"task": "cm-2-007"
+},
 "f22c8db935b72c47": {
 "gate_key": "agreement | B1.2 | order | Put the words in order to make a question. | does every guest need a ticket for tomorrow's boat trip",
 "round": "r11",
@@ -11208,6 +11343,11 @@
 "gate_key": "cond_mixed | B2.2 | gap | If I had studied medicine, I ___ a doctor now. (be) | ",
 "round": "r20-6",
 "task": "r20-6-012"
+},
+"f7451a4995ff5971": {
+"gate_key": "present_simple | A2.2 | text | Correct the mistake: Where you usually buy your vegetables? | ",
+"round": "cm-1",
+"task": "cm-1-005"
 },
 "f75dda7870512fb1": {
 "gate_key": "adv_prep | C1 | text | Make it more formal. Start with *The colleague with*: The colleague I share an office with is on holiday. | ",

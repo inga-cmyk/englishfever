@@ -1,0 +1,65 @@
+[
+{
+"id": "cm-3-001",
+"answer": "I saw this film yesterday, so let's watch something else tonight.",
+"other_correct": [
+"I watched this film yesterday, so let's watch something else tonight.",
+"I saw this film yesterday, so let us watch something else tonight.",
+"I watched this film yesterday, so let us watch something else tonight."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-3-002",
+"answer": "Shall I turn on the heating? It's very cold in here.",
+"other_correct": [
+"Should I turn on the heating? It's very cold in here.",
+"Shall I turn the heating on? It's very cold in here.",
+"Should I turn the heating on? It's very cold in here.",
+"Shall I turn on the heating? It is very cold in here.",
+"Should I turn on the heating? It is very cold in here.",
+"Do you want me to turn on the heating? It's very cold in here.",
+"Do you want me to turn the heating on? It's very cold in here."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-3-003",
+"answer": "It's late. I'll walk you to the bus stop.",
+"other_correct": [
+"It's late. I will walk you to the bus stop.",
+"It is late. I'll walk you to the bus stop.",
+"It is late. I will walk you to the bus stop.",
+"It's late. Shall I walk you to the bus stop?",
+"It's late. Let me walk you to the bus stop.",
+"It's late. I'm going to walk you to the bus stop.",
+"It's late. I can walk you to the bus stop.",
+"It's late. Should I walk you to the bus stop?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No clear single target: the mistake could be fixed as a spontaneous offer (I'll), a question (Shall I...?) or a plan (I'm going to); many valid answers.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-3-004",
+"answer": "I can't go out until the plumber comes, so could you buy some bread?",
+"other_correct": [
+"I can't go out until the plumber has come, so could you buy some bread?",
+"I can't go out until the plumber arrives, so could you buy some bread?",
+"I can't go out until the plumber has arrived, so could you buy some bread?",
+"I cannot go out until the plumber comes, so could you buy some bread?",
+"I can't go out until the plumber gets here, so could you buy some bread?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

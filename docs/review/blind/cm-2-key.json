@@ -1,0 +1,595 @@
+{
+ "cm-2-001": {
+  "hash": "1500c4760c874b29",
+  "gate_key": "present_simple | A2.1 | text | Correct the mistake: My neighbour walk her dog every morning before work. | ",
+  "src": "correct-mistake-1.csv:2",
+  "point": "ps_form",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My neighbour walks her dog every morning before work.",
+     "Before work, my neighbour walks her dog every morning."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2578",
+   "skill": "present_simple",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: My neighbour walk her dog every morning before work.",
+   "why": "*he / she / it* + verb-*s*: *My neighbour walks*. *every morning* is a habit.",
+   "why_lv": "*he / she / it* + darbības vārds ar *-s*: *My neighbour walks.* *every morning* rāda ieradumu.",
+   "answers": [
+    [
+     "My neighbour walks her dog every morning before work.",
+     "Before work, my neighbour walks her dog every morning."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "3S"
+   ],
+   "role": "use",
+   "point": "ps_form",
+   "src": "correct-mistake-1.csv:2"
+  }
+ },
+ "cm-2-002": {
+  "hash": "c6642b46c5862f80",
+  "gate_key": "present_simple | A2.2 | text | Correct the mistake: Sorry, I am not understanding the question. Can you say it again? | ",
+  "src": "correct-mistake-1.csv:7",
+  "point": "stative",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Sorry, I don't understand the question. Can you say it again?",
+     "Sorry, I can't understand the question. Can you say it again?",
+     "Sorry, I didn't understand the question. Can you say it again?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2583",
+   "skill": "present_simple",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Sorry, I am not understanding the question. Can you say it again?",
+   "why": "*understand* is a state verb: it stays simple, *I don't understand*.",
+   "why_lv": "*understand* ir stāvokļa darbības vārds: tas paliek vienkāršajā formā, *I don't understand.*",
+   "answer_notes": [
+    [
+     "Sorry, I can't understand the question. Can you say it again?",
+     "Also correct: *can't understand* says you are not able to understand it. *understand* is a state verb, so never *am not understanding*.",
+     "Arī pareizi: *can't understand* saka, ka tu nespēj to saprast. *understand* ir stāvokļa darbības vārds, tāpēc nekad *am not understanding*."
+    ],
+    [
+     "Sorry, I didn't understand the question. Can you say it again?",
+     "Also correct: *didn't understand* is about the moment you heard it. *understand* is a state verb, so never *am not understanding*.",
+     "Arī pareizi: *didn't understand* ir par brīdi, kad tu to dzirdēji. *understand* ir stāvokļa darbības vārds, tāpēc nekad *am not understanding*."
+    ]
+   ],
+   "answers": [
+    [
+     "Sorry, I don't understand the question. Can you say it again?",
+     "Sorry, I can't understand the question. Can you say it again?",
+     "Sorry, I didn't understand the question. Can you say it again?"
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "STATE-ING"
+   ],
+   "role": "use",
+   "point": "stative",
+   "src": "correct-mistake-1.csv:7"
+  }
+ },
+ "cm-2-003": {
+  "hash": "9fb4344635c7d77d",
+  "gate_key": "present_simple | B1.1 | text | Correct the mistake: I'm thinking this plan is too expensive for us, so let's look for another one. | ",
+  "src": "correct-mistake-1.csv:8",
+  "point": "stative2",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I think this plan is too expensive for us, so let's look for another one.",
+     "I think that this plan is too expensive for us, so let's look for another one."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2584",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I'm thinking this plan is too expensive for us, so let's look for another one.",
+   "why": "*think* = have an opinion: present simple, *I think this plan is too expensive*. *I'm thinking about it* = I am considering it now.",
+   "why_lv": "*think* = būt viedoklim: Present Simple, *I think this plan is too expensive.* *I'm thinking about it* = es par to tagad domāju, apsveru.",
+   "answers": [
+    [
+     "I think this plan is too expensive for us, so let's look for another one.",
+     "I think that this plan is too expensive for us, so let's look for another one."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "STATE-ING"
+   ],
+   "role": "use",
+   "point": "stative2",
+   "src": "correct-mistake-1.csv:8"
+  }
+ },
+ "cm-2-004": {
+  "hash": "50a0a4b027ff87ee",
+  "gate_key": "present_simple | B1.1 | text | Correct the mistake: Light is travelling faster than sound, so you see the lightning before you hear the thunder. | ",
+  "src": "correct-mistake-1.csv:9",
+  "point": "ps_pc",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Light travels faster than sound, so you see the lightning before you hear the thunder."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2585",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Light is travelling faster than sound, so you see the lightning before you hear the thunder.",
+   "why": "A fact that is always true: present simple, *Light travels faster than sound*. *is travelling* = it is happening now.",
+   "why_lv": "Fakts, kas vienmēr ir patiess: Present Simple, *Light travels faster than sound.* *is travelling* = tas notiek tagad.",
+   "answers": [
+    [
+     "Light travels faster than sound, so you see the lightning before you hear the thunder."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "NOW-HABIT"
+   ],
+   "role": "use",
+   "point": "ps_pc",
+   "src": "correct-mistake-1.csv:9"
+  }
+ },
+ "cm-2-005": {
+  "hash": "4ab02363631b7d6a",
+  "gate_key": "present_simple | B1.1 | text | Correct the mistake: It's depend on the traffic, so I can't say what time I'll be home. | ",
+  "src": "correct-mistake-1.csv:10",
+  "point": "ps_form",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "It depends on the traffic, so I can't say what time I'll be home."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2586",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: It's depend on the traffic, so I can't say what time I'll be home.",
+   "why": "*depend* is a verb: *It depends on*, not *It's depend*.",
+   "why_lv": "*depend* ir darbības vārds: *It depends on*, nevis *It's depend.* Tulkojot burtiski tas ir atkarīgs, rodas *It's depend.*",
+   "answers": [
+    [
+     "It depends on the traffic, so I can't say what time I'll be home."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "BE-VERB"
+   ],
+   "role": "use",
+   "point": "ps_form",
+   "src": "correct-mistake-1.csv:10"
+  }
+ },
+ "cm-2-006": {
+  "hash": "e34cddc353863b75",
+  "gate_key": "past_simple | B1.1 | text | Correct the mistake: I have seen this film yesterday, so let's watch something else tonight. | ",
+  "src": "correct-mistake-1.csv:17",
+  "point": "pp_ps",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I saw this film yesterday, so let's watch something else tonight."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2593",
+   "skill": "past_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I have seen this film yesterday, so let's watch something else tonight.",
+   "why": "*yesterday* is a finished time: past simple, *I saw*, not *I have seen*.",
+   "why_lv": "*yesterday* ir pabeigts laiks: Past Simple, *I saw*, nevis *I have seen.*",
+   "answers": [
+    [
+     "I saw this film yesterday, so let's watch something else tonight."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "FINISHED-TIME"
+   ],
+   "role": "use",
+   "point": "pp_ps",
+   "src": "correct-mistake-1.csv:17"
+  }
+ },
+ "cm-2-007": {
+  "hash": "f1d2cb737120ceb1",
+  "gate_key": "future | A2.1 | text | Correct the mistake. Keep *going*: We're going get a dog next year. | ",
+  "src": "correct-mistake-1.csv:20",
+  "point": "going_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "We're going to get a dog next year.",
+     "Next year We're going to get a dog."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2596",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake. Keep *going*: We're going get a dog next year.",
+   "why": "*going to* + base verb: *We're going to get*.",
+   "why_lv": "*going to* + pamatforma: *We're going to get.*",
+   "answers": [
+    [
+     "We're going to get a dog next year.",
+     "Next year We're going to get a dog."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "going_to",
+   "src": "correct-mistake-1.csv:20"
+  }
+ },
+ "cm-2-008": {
+  "hash": "8476993322972a13",
+  "gate_key": "future | A2.1 | text | Correct the mistake. Keep *going to*: She going to look for a new flat in May. | ",
+  "src": "correct-mistake-1.csv:21",
+  "point": "going_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "She is going to look for a new flat in May.",
+     "She's going to look for a new flat in May."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2597",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake. Keep *going to*: She going to look for a new flat in May.",
+   "why": "*going to* needs *am / is / are* before it: *She is going to look*.",
+   "why_lv": "Pirms *going to* vajag *am / is / are*: *She is going to look.*",
+   "answers": [
+    [
+     "She is going to look for a new flat in May.",
+     "She's going to look for a new flat in May."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "BE"
+   ],
+   "role": "use",
+   "point": "going_to",
+   "src": "correct-mistake-1.csv:21"
+  }
+ },
+ "cm-2-009": {
+  "hash": "dbe2d3752c1fb31d",
+  "gate_key": "future | A2.1 | text | Correct the mistake: Will I turn on the heating? It's very cold in here. | ",
+  "src": "correct-mistake-1.csv:22",
+  "point": "shall",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Shall I turn on the heating? It's very cold in here.",
+     "Should I turn on the heating? It's very cold in here.",
+     "Can I turn on the heating? It's very cold in here.",
+     "Could I turn on the heating? It's very cold in here.",
+     "May I turn on the heating? It's very cold in here."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2598",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Will I turn on the heating? It's very cold in here.",
+   "why": "An offer: *Shall I …?* (or *Can I …?*). *Will I turn on …?* asks about the future, not what you can do for someone.",
+   "why_lv": "Piedāvājums: *Shall I* …? (vai *Can I* …?). *Will I turn on* …? jautā par nākotni, nevis piedāvā palīdzību.",
+   "answers": [
+    [
+     "Shall I turn on the heating? It's very cold in here.",
+     "Should I turn on the heating? It's very cold in here.",
+     "Can I turn on the heating? It's very cold in here.",
+     "Could I turn on the heating? It's very cold in here.",
+     "May I turn on the heating? It's very cold in here."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "shall",
+   "src": "correct-mistake-1.csv:22"
+  }
+ },
+ "cm-2-010": {
+  "hash": "f752fa136a64caab",
+  "gate_key": "future | A2.2 | text | Correct the mistake: It's late. I walk you to the bus stop. | ",
+  "src": "correct-mistake-1.csv:23",
+  "point": "will_now",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "It's late. I'll walk you to the bus stop.",
+     "It's late. I will walk you to the bus stop.",
+     "It's late. I can walk you to the bus stop."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2599",
+   "skill": "future",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: It's late. I walk you to the bus stop.",
+   "why": "An offer you decide on now: *will*, *I'll walk you*. *I can walk you …* is an offer too.",
+   "why_lv": "Piedāvājums, ko izlem tagad: *will, I'll walk you*. *I can walk you* … arī ir piedāvājums.",
+   "answers": [
+    [
+     "It's late. I'll walk you to the bus stop.",
+     "It's late. I will walk you to the bus stop.",
+     "It's late. I can walk you to the bus stop."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "FUTURE"
+   ],
+   "role": "use",
+   "point": "will_now",
+   "src": "correct-mistake-1.csv:23"
+  }
+ },
+ "cm-2-011": {
+  "hash": "6da20994167e7daa",
+  "gate_key": "future | A2.2 | text | Correct the mistake: I meet a client at nine tomorrow, so I can't take the kids to school. | ",
+  "src": "correct-mistake-1.csv:24",
+  "point": "fut_arr",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I'm meeting a client at nine tomorrow, so I can't take the kids to school.",
+     "I'm going to meet a client at nine tomorrow, so I can't take the kids to school."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2600",
+   "skill": "future",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I meet a client at nine tomorrow, so I can't take the kids to school.",
+   "why": "An arrangement with a time and another person: present continuous, *I'm meeting a client*.",
+   "why_lv": "Norunāta tikšanās ar laiku un citu cilvēku: Present Continuous, *I'm meeting a client.*",
+   "answer_notes": [
+    [
+     "I'm going to meet a client at nine tomorrow, so I can't take the kids to school.",
+     "Also correct: *going to* is your plan. *I'm meeting a client* says it is already arranged.",
+     "Arī pareizi: *going to* ir tavs plāns. *I'm meeting a client* saka, ka tikšanās jau ir norunāta."
+    ]
+   ],
+   "answers": [
+    [
+     "I'm meeting a client at nine tomorrow, so I can't take the kids to school.",
+     "I'm going to meet a client at nine tomorrow, so I can't take the kids to school."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "FUTURE"
+   ],
+   "role": "use",
+   "point": "fut_arr",
+   "src": "correct-mistake-1.csv:24"
+  }
+ },
+ "cm-2-012": {
+  "hash": "1fe64e6ffcd8a7dc",
+  "gate_key": "future | A2.2 | text | Correct the mistake. Keep *going to*: What you are going to do after the course? | ",
+  "src": "correct-mistake-1.csv:25",
+  "point": "going_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "What are you going to do after the course?",
+     "After the course, what are you going to do?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2601",
+   "skill": "future",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake. Keep *going to*: What you are going to do after the course?",
+   "why": "In a question *are* comes before *you*: *What are you going to do?*",
+   "why_lv": "Jautājumā *are* stāv pirms *you*: *What are you going to do?*",
+   "answers": [
+    [
+     "What are you going to do after the course?",
+     "After the course, what are you going to do?"
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "Q-ORDER"
+   ],
+   "role": "use",
+   "point": "going_to",
+   "src": "correct-mistake-1.csv:25"
+  }
+ },
+ "cm-2-013": {
+  "hash": "5abcc6a7599a8f48",
+  "gate_key": "future | B1.1 | text | Correct the mistake. Keep *going to*: Are you going to sell your old car or you are going to keep it? | ",
+  "src": "correct-mistake-1.csv:27",
+  "point": "going_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Are you going to sell your old car or are you going to keep it?",
+     "Are you going to sell your old car or keep it?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2603",
+   "skill": "future",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake. Keep *going to*: Are you going to sell your old car or you are going to keep it?",
+   "why": "Both parts are questions: *or are you going to keep it?*",
+   "why_lv": "Abas daļas ir jautājumi: *or are you going to keep it*?",
+   "answers": [
+    [
+     "Are you going to sell your old car or are you going to keep it?",
+     "Are you going to sell your old car or keep it?"
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "Q-ORDER"
+   ],
+   "role": "use",
+   "point": "going_to",
+   "src": "correct-mistake-1.csv:27"
+  }
+ },
+ "cm-2-014": {
+  "hash": "db281be55292f583",
+  "gate_key": "future | B1.2 | text | Correct the mistake: My phone won't charge last night, so I couldn't call you. | ",
+  "src": "correct-mistake-1.csv:28",
+  "point": "wont_refuse",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My phone wouldn't charge last night, so I couldn't call you.",
+     "My phone didn't charge last night, so I couldn't call you.",
+     "My phone wasn't charging last night, so I couldn't call you."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2604",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: My phone won't charge last night, so I couldn't call you.",
+   "why": "*won't charge* = it refuses to charge now. *last night* is past: *wouldn't charge*.",
+   "why_lv": "*won't charge* = tas atsakās lādēties tagad. *last night* ir pagātne: *wouldn't charge*.",
+   "answer_notes": [
+    [
+     "My phone didn't charge last night, so I couldn't call you.",
+     "Also correct: *didn't charge* only says what happened. *wouldn't charge* says the phone refused, although you tried.",
+     "Arī pareizi: *didn't charge* tikai saka, kas notika. *wouldn't charge* saka, ka telefons atteicās lādēties, lai gan tu mēģināji."
+    ],
+    [
+     "My phone wasn't charging last night, so I couldn't call you.",
+     "Also correct: *wasn't charging* describes the night. *wouldn't charge* says the phone refused, although you tried.",
+     "Arī pareizi: *wasn't charging* apraksta, kas notika naktī. *wouldn't charge* saka, ka telefons atteicās lādēties, lai gan tu mēģināji."
+    ]
+   ],
+   "answers": [
+    [
+     "My phone wouldn't charge last night, so I couldn't call you.",
+     "My phone didn't charge last night, so I couldn't call you.",
+     "My phone wasn't charging last night, so I couldn't call you."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "wont_refuse",
+   "src": "correct-mistake-1.csv:28"
+  }
+ },
+ "cm-2-015": {
+  "hash": "d0f7350cd05c2ed8",
+  "gate_key": "future | B1.2 | text | Correct the mistake. Keep *about*: Sorry, I can't talk now. I'm about going into a meeting. | ",
+  "src": "correct-mistake-1.csv:29",
+  "point": "about_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Sorry, I can't talk now. I'm about to go into a meeting."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2605",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake. Keep *about*: Sorry, I can't talk now. I'm about going into a meeting.",
+   "why": "*be about to* + base verb = very soon: *I'm about to go into a meeting*.",
+   "why_lv": "*be about to* + pamatforma = tūlīt: *I'm about to go into a meeting.*",
+   "answers": [
+    [
+     "Sorry, I can't talk now. I'm about to go into a meeting."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "about_to",
+   "src": "correct-mistake-1.csv:29"
+  }
+ }
+}

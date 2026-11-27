@@ -15,6 +15,10 @@ In the Tutor LMS lesson editor, put the shortcode on its own line (Gutenberg: a 
 itself). The card is the app's page `card.html` in a frame, so a corrected card shows in every lesson at once; nothing has to be
 pasted again.
 
+## Where a teacher finds the code
+
+In the app (teacher account): *Rules* → open a topic's card. Above the card are the two lines (LV and EN) with a copy button (`lessonCodes()` in app.js).
+
 ## The button
 
 *Practise this topic* goes through the website (`/?ef_practice=open&ef_topic=ID`): a student who is logged in on englishfever.com

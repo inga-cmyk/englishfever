@@ -2218,11 +2218,27 @@
     var s = skillById(id);
     track('rule_card', note ? 'recap-' + id : inTask ? 'task-' + id : id);   // recap: shown by the app after mistakes (24 November)
     var go = inTask ? null : h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow'));   // straight from the rule to the tasks (teacher, 28 October); not from inside a task
-    var m = UI.modal(h('div', null, h('div', { class: 'card-head' }, h('h2', null, s.label), cardFlags(function () { m.close(); rulesModal(id, inTask, note); })), note ? h('p', { class: 'recap-note' }, note) : null, ruleCard(s, state.user.lang === 'lv'),
+    var m = UI.modal(h('div', null, h('div', { class: 'card-head' }, h('h2', null, s.label), cardFlags(function () { m.close(); rulesModal(id, inTask, note); })), note ? h('p', { class: 'recap-note' }, note) : null, inTask ? null : lessonCodes(s.id), ruleCard(s, state.user.lang === 'lv'),
       h('div', { class: 'row', style: 'margin-top:14px;gap:10px' }, go, h('button', { class: 'btn ghost', id: 'c' }, inTask ? 'Back to the task' : 'Close'))));
     m.el.classList.add('modal-wide');   // room for the form table
     m.el.querySelector('#c').onclick = m.close;
     if (go) go.onclick = function () { var dash = state.dash; startTopic(go, Object.assign({}, s, (dash && dash.skills || []).find(function (k) { return k.id === s.id; }) || {}), dash, 'rule_card'); m.close(); };
+  }
+
+  /** Teachers: the shortcode lines that put this card into a Tutor LMS lesson, each with a copy button (teacher, 27 November). */
+  function lessonCodes(id) {
+    if (!state.user || state.user.role !== 'teacher') return null;
+    var lines = [['lv', 'LV'], ['en', 'EN']].map(function (x) { return [x[1], '[ef_rule_card topic="' + id + '" lang="' + x[0] + '"]']; });
+    if (state.user.lang !== 'lv') lines.reverse();   // the card's own language first
+    return h('div', { class: 'lesson-codes' }, h('div', { class: 'small muted' }, 'For a Tutor LMS lesson:'),
+      lines.map(function (l) {
+        var code = h('code', null, l[1]);
+        return h('div', { class: 'lesson-code' }, h('span', { class: 'pill' }, l[0]), code,
+          h('button', { type: 'button', class: 'linkbtn small copy-code', 'aria-label': 'Copy ' + l[0] + ' code', title: 'Copy', onclick: function () {
+            (navigator.clipboard ? navigator.clipboard.writeText(l[1]) : Promise.reject()).then(function () { UI.toast('Copied: ' + l[1]); })
+              .catch(function () { var r = document.createRange(); r.selectNodeContents(code); var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r); UI.toast('Press Ctrl+C to copy.'); });
+          } }, icon('copy')));
+      }));
   }
 
   /** #/topic/<id>: a link from a lesson page (the rule card shortcode in Tutor LMS, teacher, 27 November) starts ten tasks of that topic. */

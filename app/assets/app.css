@@ -1044,3 +1044,8 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 body.embed { min-height: 0; padding: 0; background: transparent; }
 body.embed #app { padding: 0; max-width: none; margin: 0; }
 body.embed .embed-card { margin: 0; }
+/* teachers: shortcode lines above a rule card (27 November) */
+.lesson-codes { display: grid; gap: 6px; margin: 4px 0 14px; padding: 10px 12px; border: 1px dashed var(--line); border-radius: 12px; }
+.lesson-code { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.lesson-code code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; font-size: .85rem; color: var(--text); background: var(--bg); padding: 4px 8px; border-radius: 8px; }
+.lesson-code .copy-code svg { width: 18px; height: 18px; }

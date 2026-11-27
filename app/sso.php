@@ -5,7 +5,8 @@ require __DIR__ . '/src/bootstrap.php';
 header('Cache-Control: no-store');
 try {
     Auth::ssoLogin((string) ($_GET['token'] ?? ''));
-    header('Location: ./#/home');
+    $topic = (string) ($_GET['topic'] ?? '');   // from a rule card in a lesson (shortcode [ef_rule_card]): straight to that topic's practice
+    header('Location: ./#/' . (preg_match('/^[a-z0-9_]{1,40}$/', $topic) ? 'topic/' . $topic : 'home'));
     exit;
 } catch (ApiError $e) {
     http_response_code($e->status);

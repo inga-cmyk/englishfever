@@ -132,6 +132,7 @@
 
   // ───────── boot ─────────
   function boot() {
+    if (document.body.getAttribute('data-embed') === 'card') return embedCard();
     if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () {});
     Promise.all([api('config'), api('meta'), api('me')]).then(function (r) {
       state.config = r[0]; state.meta = r[1]; state.user = r[2].user; state.welcome = r[2].welcome || null;
@@ -254,7 +255,13 @@
     var hash = location.hash || '#/';
     var parts = hash.replace(/^#\/?/, '').split('/');
     var name = parts[0] || '';
+    if (name === 'topic' && /^[a-z0-9_]+$/.test(parts[1] || '')) { try { sessionStorage.setItem('ef_after_login', '#/topic/' + parts[1]); } catch (e) {} }   // a link from a lesson (rule card in Tutor LMS, teacher, 27 November): kept until the learner is in
     if (!state.user) { renderChrome(); return viewWelcome(); }
+    var after = null; try { after = sessionStorage.getItem('ef_after_login'); } catch (e) {}
+    if (after && (name === 'topic' || ((name === '' || name === 'welcome' || name === 'home') && !(state.user.provider === 'wp' && !state.user.nick_set)))) {
+      try { sessionStorage.removeItem('ef_after_login'); } catch (e) {}
+      if (name !== 'topic') { location.hash = after; return; }
+    }
     startHeartbeat();
     var u = state.user;
     if (!u.nick_set && u.provider === 'wp' && name !== 'nickname') { location.hash = '#/nickname'; return; }
@@ -265,7 +272,7 @@
     var v = {
       home: viewHome, practice: viewPractice, placement: viewPlacementIntro, session: viewSession, summary: viewSummary,
       leaderboard: viewLeaderboard, profile: viewProfile, teacher: function () { return parts[1] === 'student' ? viewTeacherStudent(parts[2]) : viewTeacher(); },
-      nickname: viewNickname, rules: viewRules, reports: viewReports, tasks: viewTasks, evidence: viewEvidence, usage: viewUsage,
+      nickname: viewNickname, rules: viewRules, topic: viewTopicLink, reports: viewReports, tasks: viewTasks, evidence: viewEvidence, usage: viewUsage,
     }[name];
     if ((name.indexOf('teacher') === 0 || name === 'reports' || name === 'tasks' || name === 'evidence') && u.role !== 'teacher') { location.hash = '#/home'; return; }
     (v || viewHome)(parts);
@@ -2216,6 +2223,39 @@
     m.el.classList.add('modal-wide');   // room for the form table
     m.el.querySelector('#c').onclick = m.close;
     if (go) go.onclick = function () { var dash = state.dash; startTopic(go, Object.assign({}, s, (dash && dash.skills || []).find(function (k) { return k.id === s.id; }) || {}), dash, 'rule_card'); m.close(); };
+  }
+
+  /** #/topic/<id>: a link from a lesson page (the rule card shortcode in Tutor LMS, teacher, 27 November) starts ten tasks of that topic. */
+  function viewTopicLink(parts) {
+    var s = skillById(parts[1]);
+    if (!s) { location.hash = '#/practice'; return; }
+    refreshDash().then(function (d) {
+      var btn = h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow'));
+      show(h('div', { class: 'card', style: 'max-width:520px;margin:24px auto;text-align:center' }, h('h2', null, s.label), h('p', { class: 'muted' }, 'Ten tasks of this topic.'), btn));
+      btn.onclick = function () { startTopic(btn, Object.assign({}, s, (d && d.skills || []).find(function (k) { return k.id === s.id; }) || {}), d, 'lesson_link'); };
+      btn.click();   // start straight away; the button stays for a slow connection or an error
+    }).catch(fail);
+  }
+
+  /** card.html#/card/<id>?lang=lv: one rule card alone, for an iframe in a lesson page (shortcode [ef_rule_card] of the WordPress plugin;
+   *  teacher, 27 November). The card is the app's own, so a corrected card shows in the lesson at once. Its button opens the topic's practice. */
+  function embedCard() {
+    var id = (location.hash.replace(/^#\/?/, '').split('/')[1] || '').replace(/[^a-z0-9_]/g, '');
+    var lvMode = /(^|[?&])lang=lv(&|$)/.test(location.search);
+    Promise.all([api('config'), api('meta')]).then(function (r) {
+      state.config = r[0]; state.meta = r[1];
+      var s = skillById(id);
+      if (!s) { root.replaceChildren(h('p', { class: 'muted', style: 'padding:16px' }, 'Unknown topic: ' + id)); return post(); }
+      var site = (state.config.site_url || '').replace(/\/+$/, '');
+      var href = site ? site + '/?ef_practice=open&ef_topic=' + encodeURIComponent(s.id) : './#/topic/' + encodeURIComponent(s.id);   // through the website: a logged-in student is signed in on the way
+      root.replaceChildren(h('div', { class: 'card embed-card' },
+        h('div', { class: 'card-head' }, h('h2', null, s.label)),
+        ruleCard(s, lvMode),
+        h('div', { class: 'row', style: 'margin-top:14px' }, h('a', { class: 'btn', href: href, target: '_top' }, lvMode ? 'Trenēties šajā tēmā' : 'Practise this topic', icon('arrow')))));
+      post();
+      if (window.ResizeObserver) new ResizeObserver(post).observe(document.body);
+    }).catch(function (e) { root.replaceChildren(h('p', { style: 'padding:16px' }, e.message)); post(); });
+    function post() { try { window.parent.postMessage({ ef_card: id, height: Math.ceil(root.getBoundingClientRect().bottom + window.scrollY) }, '*'); } catch (e) {} }
   }
 
   /** Leaderboard avatar: with a mood, a small emoji sits on it and a tap shows the saying in a bubble. */

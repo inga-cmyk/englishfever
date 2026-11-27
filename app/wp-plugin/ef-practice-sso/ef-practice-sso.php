@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
- * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_banner], [ef_practice_results].
- * Version:     1.8.5
+ * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_banner], [ef_practice_results], [ef_rule_card].
+ * Version:     1.9.0
  * Author:      English Fever
  * License:     GPLv2 or later
  *
@@ -15,6 +15,11 @@
  *                                           Visitors go to the app's welcome page, where they can start as guests.
  *                                           USE THIS ONE in menus and on the homepage.
  *     https://YOUR-SITE/?ef_practice=go     Always asks for the website login first (used by the app's "Continue with my account").
+ *     https://YOUR-SITE/?ef_practice=open&ef_topic=present_simple   The same as open, and the app starts ten tasks of that topic.
+ *
+ * Rule cards in lessons (since 1.9.0): [ef_rule_card topic="present_simple" lang="lv"] shows the app's rule card of that topic
+ * (lang="en" or "lv"; the topic ids are listed in docs/RULE-CARDS-IN-LESSONS.md) with a button
+ * "Practise this topic". The card comes live from the app, so a corrected card shows in every lesson at once.
  *
  * After registering: when someone clicks "Create a free account" in the app, the app leaves a marker (cookie
  * ef_return, 3 days) and sends them to your registration form. If they are registered and logged in within 30
@@ -113,9 +118,10 @@ add_action( 'template_redirect', function () {
 		$hosts[] = wp_parse_url( EF_PRACTICE_URL, PHP_URL_HOST );
 		return $hosts;
 	} );
+	$topic = isset( $_GET['ef_topic'] ) ? sanitize_key( wp_unslash( $_GET['ef_topic'] ) ) : '';   // from [ef_rule_card]: open that topic's practice
 	if ( ! is_user_logged_in() ) {
 		if ( 'open' === $mode ) {
-			wp_safe_redirect( rtrim( EF_PRACTICE_URL, '/' ) . '/' );
+			wp_safe_redirect( rtrim( EF_PRACTICE_URL, '/' ) . '/' . ( $topic ? '#/topic/' . $topic : '' ) );
 			exit;
 		}
 		ef_practice_set_return(); // whatever page the login form ends on (Tutor often shows its dashboard), the next page leads back into the app
@@ -132,8 +138,36 @@ add_action( 'template_redirect', function () {
 		}
 		exit;
 	}
-	wp_safe_redirect( rtrim( EF_PRACTICE_URL, '/' ) . '/sso.php?token=' . rawurlencode( ef_practice_token( wp_get_current_user() ) ) );
+	wp_safe_redirect( rtrim( EF_PRACTICE_URL, '/' ) . '/sso.php?token=' . rawurlencode( ef_practice_token( wp_get_current_user() ) ) . ( $topic ? '&topic=' . rawurlencode( $topic ) : '' ) );
 	exit;
+} );
+
+/* [ef_rule_card topic="present_simple" lang="en|lv" height="700"]: the app's rule card of a topic in a lesson page, with a button
+   to that topic's practice. The card is the app's page card.html in an iframe that grows to the card's height. */
+add_shortcode( 'ef_rule_card', function ( $atts ) {
+	$atts  = shortcode_atts( array( 'topic' => '', 'lang' => 'en', 'height' => '700' ), $atts );
+	$topic = sanitize_key( $atts['topic'] );
+	if ( '' === $topic || ! defined( 'EF_PRACTICE_URL' ) ) {
+		return '';
+	}
+	$lang = 'lv' === $atts['lang'] ? 'lv' : 'en';
+	$src  = rtrim( EF_PRACTICE_URL, '/' ) . '/card.html?lang=' . $lang . '#/card/' . $topic;
+	$id   = 'ef-card-' . $topic . '-' . wp_rand( 1000, 9999 );
+	$out  = sprintf(
+		'<iframe id="%s" class="ef-rule-card" src="%s" title="%s" loading="lazy" style="width:100%%;border:0;display:block;margin:24px 0;height:%dpx;"></iframe>',
+		esc_attr( $id ),
+		esc_url( $src ),
+		esc_attr( 'lv' === $lang ? 'Noteikuma kartīte' : 'Rule card' ),
+		absint( $atts['height'] )
+	);
+	static $listener = false;   // one listener per page: each card tells its height, the iframe follows it
+	if ( ! $listener ) {
+		$listener = true;
+		$origin   = wp_parse_url( EF_PRACTICE_URL, PHP_URL_SCHEME ) . '://' . wp_parse_url( EF_PRACTICE_URL, PHP_URL_HOST );
+		$out     .= '<script>window.addEventListener("message",function(e){if(e.origin!==' . wp_json_encode( $origin ) . '||!e.data||!e.data.height)return;'
+			. 'document.querySelectorAll("iframe.ef-rule-card").forEach(function(f){if(f.contentWindow===e.source)f.style.height=(e.data.height+4)+"px";});});</script>';
+	}
+	return $out;
 } );
 
 /* ───────── the WordPress login page, in the app's look (only when someone comes from the app) ───────── */

@@ -1039,3 +1039,8 @@ textarea.type-in { width:100%; min-height:78px; resize:vertical; white-space:pre
 .hl-noun { font-weight: 650; border-bottom: 2px solid var(--gold-deep); padding-bottom: 1px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hl-noun { border-bottom-color: var(--gold); } }
 :root[data-theme="dark"] .hl-noun { border-bottom-color: var(--gold); }
+
+/* card.html: one rule card in an iframe of a lesson page (shortcode [ef_rule_card], 27 November) */
+body.embed { min-height: 0; padding: 0; background: transparent; }
+body.embed #app { padding: 0; max-width: none; margin: 0; }
+body.embed .embed-card { margin: 0; }

@@ -1233,7 +1233,10 @@
             redrawLater();
           } });
           var rule = h('button', { type: 'button', class: 'ttile-rule', 'aria-label': 'Rule: ' + s.label, title: 'Rule', onclick: function (e) { e.preventDefault(); e.stopPropagation(); rulesModal(s.id); } }, '?');   // a quick look at the rule before practising
-          return h('label', null, inp, topicTile(s), h('span', { class: 'ttile-check', 'aria-hidden': 'true' }, icon('check')), rule);
+          // the badge says the level that will be practised: a B1 card topic with A2.2 tasks shows A2 when A2 is chosen (teacher's report, 27 November)
+          var at = chosenLevels().filter(function (l) { return (SKC[s.id] || {})[l]; });
+          var badge = at.length && at.indexOf(cardLevel(s)) < 0 ? at[0] : null;
+          return h('label', null, inp, topicTile(s, null, badge), h('span', { class: 'ttile-check', 'aria-hidden': 'true' }, icon('check')), rule);
     }
     function newPointsGroup() {   // the New group: one tile per new grammar point; a tile opens its card, whose button starts that point
       var all = state.meta.new_points || [];
@@ -2134,10 +2137,10 @@
   function posterText(t) {   // **form** -> gold bold; the rest plain text (no markup from data becomes elements)
     return String(t || '').split('**').map(function (part, i) { return i % 2 ? h('b', null, part) : document.createTextNode(part); });
   }
-  function topicTile(s, extra) {
+  function topicTile(s, extra, badge) {
     var ai = state.meta.skills.findIndex(function (k) { return k.id === s.id; });   // each tile its own colour, like a poster wall
     return h('span', { class: 'ttile' + (extra ? ' ' + extra : '') },
-      h('span', { class: 'ttile-art pat' + (Math.max(0, ai) % 8) }, h('span', { class: 'ttile-lv' }, cardLevel(s)), h('span', { class: 'ttile-line' }, posterText(TILE_LINES[s.id] || s.label))),
+      h('span', { class: 'ttile-art pat' + (Math.max(0, ai) % 8) }, h('span', { class: 'ttile-lv' }, badge || cardLevel(s)), h('span', { class: 'ttile-line' }, posterText(TILE_LINES[s.id] || s.label))),
       h('span', { class: 'ttile-nm' }, s.label.replace(/\s*[(:].*$/, '')),   // no "New" label on the tile: the New group says it (teacher, 3 November)
       tileProgress(s));
   }

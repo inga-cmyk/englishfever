@@ -1,0 +1,107 @@
+[
+ {
+  "id": "cm-2-001",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: My neighbour walk her dog every morning before work.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-002",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Sorry, I am not understanding the question. Can you say it again?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-003",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I'm thinking this plan is too expensive for us, so let's look for another one.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-004",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Light is travelling faster than sound, so you see the lightning before you hear the thunder.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-005",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: It's depend on the traffic, so I can't say what time I'll be home.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-006",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I have seen this film yesterday, so let's watch something else tonight.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-007",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake. Keep *going*: We're going get a dog next year.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-008",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake. Keep *going to*: She going to look for a new flat in May.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-009",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Will I turn on the heating? It's very cold in here.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-010",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: It's late. I walk you to the bus stop.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-011",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I meet a client at nine tomorrow, so I can't take the kids to school.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-012",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake. Keep *going to*: What you are going to do after the course?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-013",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake. Keep *going to*: Are you going to sell your old car or you are going to keep it?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-014",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: My phone won't charge last night, so I couldn't call you.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-2-015",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake. Keep *about*: Sorry, I can't talk now. I'm about going into a meeting.",
+  "note": "the learner types a whole sentence"
+ }
+]

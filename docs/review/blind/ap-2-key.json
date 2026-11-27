@@ -1,0 +1,324 @@
+{
+ "ap-2-001": {
+  "hash": "abfa5b951a0ca2be",
+  "gate_key": "active_passive | B1.1 | mcq | Choose the correct option: I ___ by a bee while I was working in the garden. | was stung",
+  "src": "zz-blind-active-passive-1.csv:6",
+  "point": null,
+  "key": {
+   "kind": "mcq",
+   "correct": "was stung",
+   "wrong": [
+    "stung",
+    "am stung",
+    "was stinging"
+   ]
+  },
+  "item": {
+   "id": "c-0615",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: I ___ by a bee while I was working in the garden.",
+   "why": "The bee did it to me, so passive: *I was stung by a bee*. *while I was working* is past: *was stung*.",
+   "why_lv": "Bite to izdarīja ar mani, tāpēc ciešamā kārta: *I was stung by a bee.* *while I was working* ir pagātne: *was stung*.",
+   "correct": "was stung",
+   "wrong": [
+    "stung",
+    "am stung",
+    "was stinging"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-active-passive-1.csv:6"
+  }
+ },
+ "ap-2-002": {
+  "hash": "a33050c8141768bc",
+  "gate_key": "active_passive | B1.1 | order | Put the words in order. | the rubbish is collected every tuesday",
+  "src": "zz-blind-active-passive-1.csv:12",
+  "point": null,
+  "key": {
+   "kind": "order",
+   "sentence": "the rubbish is collected every tuesday",
+   "also": [
+    "every tuesday the rubbish is collected"
+   ]
+  },
+  "item": {
+   "id": "c-0621",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Passive: *is* + 3rd form. The rubbish does not collect anything; someone collects it.",
+   "why_lv": "Ciešamā kārta: *is* + 3. forma. Atkritumi neko nesavāc; tos kāds savāc.",
+   "sentence": "the rubbish is collected every tuesday",
+   "answers": [
+    [
+     "the rubbish is collected every tuesday",
+     "every tuesday the rubbish is collected"
+    ]
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-active-passive-1.csv:12"
+  }
+ },
+ "ap-2-003": {
+  "hash": "6393f5fb230ad0e8",
+  "gate_key": "active_passive | B1.1 | gap | When ___ your house ___? It looks very old. (build) | ",
+  "src": "zz-blind-active-passive-1.csv:13",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was"
+    ],
+    [
+     "built"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0622",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "When ___ your house ___? It looks very old. (build)",
+   "why": "A house does not build anything: someone built it, and long ago. A passive question: *When was your house built?*",
+   "why_lv": "Māja neko nebūvē: to kāds uzbūvēja, un sen. Jautājums ciešamajā kārtā: *When was your house built?*",
+   "answers": [
+    [
+     "was"
+    ],
+    [
+     "built"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-active-passive-1.csv:13"
+  }
+ },
+ "ap-2-004": {
+  "hash": "8f178b27631e7275",
+  "gate_key": "active_passive | B1.1 | gap | These days, in many Spanish families, dinner ___ ___ quite late, often after nine. | ",
+  "src": "zz-blind-active-passive-1.csv:16",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is"
+    ],
+    [
+     "eaten"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0625",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "These days, in many Spanish families, dinner ___ ___ quite late, often after nine.",
+   "why": "Dinner does not eat: people eat it, so passive. A habit now: *is eaten*.",
+   "why_lv": "Vakariņas neēd: tās ēd cilvēki, tāpēc ciešamā kārta. Ieradums tagad: *is eaten*.",
+   "answers": [
+    [
+     "is"
+    ],
+    [
+     "eaten"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "is",
+    "eaten",
+    "ate",
+    "was"
+   ],
+   "role": "check",
+   "point": null,
+   "src": "zz-blind-active-passive-1.csv:16"
+  }
+ },
+ "ap-2-005": {
+  "hash": "f9b5982a510f60ec",
+  "gate_key": "active_passive | B1.1 | gap | What ___ at the meeting yesterday? (happen) | ",
+  "src": "zz-blind-active-passive-1.csv:21",
+  "point": null,
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "happened"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0630",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "What ___ at the meeting yesterday? (happen)",
+   "why": "*happen* has no object, so it has no passive: *happened*. *yesterday* is past.",
+   "why_lv": "*happen* nav papildinātāja, tāpēc tam nav ciešamās kārtas: *happened*. *yesterday* ir pagātne.",
+   "answers": [
+    [
+     "happened"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": null,
+   "src": "zz-blind-active-passive-1.csv:21"
+  }
+ },
+ "ap-2-006": {
+  "hash": "217a1b149e42ee78",
+  "gate_key": "active_passive | B1.1 | text | Correct the mistake: My phone repaired in only twenty minutes yesterday. | ",
+  "src": "zz-blind-active-passive-1.csv:24",
+  "point": "pas_act",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My phone was repaired in only twenty minutes yesterday.",
+     "My phone got repaired in only twenty minutes yesterday.",
+     "Yesterday my phone was repaired in only twenty minutes.",
+     "Yesterday my phone got repaired in only twenty minutes."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0633",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: My phone repaired in only twenty minutes yesterday.",
+   "why": "A phone does not repair anything: someone repaired it. Passive past: *was repaired*.",
+   "why_lv": "Telefons neko neremontē: to kāds salaboja. Ciešamā kārta pagātnē: *was repaired*. Latviski \"telefonu salaboja\" ir bez *was*, tāpēc, tulkojot burtiski, to izlaiž.",
+   "answer_notes": [
+    [
+     "My phone got repaired in only twenty minutes yesterday.",
+     "Also correct: *got* + 3rd form is the passive of everyday speech.",
+     "Arī pareizi: *got* + 3. forma ir sarunvalodas ciešamā kārta."
+    ]
+   ],
+   "answers": [
+    [
+     "My phone was repaired in only twenty minutes yesterday.",
+     "My phone got repaired in only twenty minutes yesterday.",
+     "Yesterday my phone was repaired in only twenty minutes.",
+     "Yesterday my phone got repaired in only twenty minutes."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:24"
+  }
+ },
+ "ap-2-007": {
+  "hash": "502a51f461e64600",
+  "gate_key": "active_passive | B1.1 | text | Start with *My keys*: Someone found my keys in the car. | ",
+  "src": "zz-blind-active-passive-1.csv:27",
+  "point": "pas_act",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My keys were found in the car.",
+     "My keys were found in the car by someone.",
+     "My keys have been found in the car."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0636",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Start with *My keys*: Someone found my keys in the car.",
+   "why": "*Someone* says nothing new, so the passive leaves it out: *My keys were found*. *found* is past: *were* + 3rd form.",
+   "why_lv": "*Someone* neko jaunu nepasaka, tāpēc ciešamajā kārtā to izlaiž: *My keys were found.* *found* ir pagātne: *were* + 3. forma.",
+   "answer_notes": [
+    [
+     "My keys were found in the car by someone.",
+     "Also correct, but *by someone* adds nothing: leave it out.",
+     "Arī pareizi, bet *by someone* neko nepievieno: to izlaiž."
+    ],
+    [
+     "My keys have been found in the car.",
+     "Also correct: news now. *found* in the task is past: *were found*.",
+     "Arī pareizi: jaunums tagad. *found* uzdevumā ir pagātne: *were found*."
+    ]
+   ],
+   "answers": [
+    [
+     "My keys were found in the car.",
+     "My keys were found in the car by someone.",
+     "My keys have been found in the car."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:27"
+  }
+ },
+ "ap-2-008": {
+  "hash": "7433250268e1fba1",
+  "gate_key": "active_passive | B1.1 | text | Start with *A lot of rice*: They grow a lot of rice in this region. | ",
+  "src": "zz-blind-active-passive-1.csv:28",
+  "point": "pas_act",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "A lot of rice is grown in this region.",
+     "A lot of rice grows in this region."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0637",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Start with *A lot of rice*: They grow a lot of rice in this region.",
+   "why": "*They* here means people in general, so the passive leaves it out. *grow* is present: *is grown*.",
+   "why_lv": "*They* šeit nozīmē cilvēkus vispār, tāpēc ciešamajā kārtā to izlaiž. *grow* ir tagadne: *is grown*.",
+   "answer_notes": [
+    [
+     "A lot of rice grows in this region.",
+     "Also correct: here the rice does the growing. *is grown* says that people grow it.",
+     "Arī pareizi: te rīsi paši aug. *is grown* saka, ka to audzē cilvēki."
+    ]
+   ],
+   "answers": [
+    [
+     "A lot of rice is grown in this region.",
+     "A lot of rice grows in this region."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:28"
+  }
+ }
+}

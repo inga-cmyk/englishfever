@@ -1,0 +1,185 @@
+{
+ "cm-3-001": {
+  "hash": "30465f9a0594f217",
+  "gate_key": "past_simple | B1.1 | text | Correct the mistake. Keep *yesterday*: I have seen this film yesterday, so let's watch something else tonight. | ",
+  "src": "correct-mistake-1.csv:17",
+  "point": "pp_ps",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I saw this film yesterday, so let's watch something else tonight.",
+     "I watched this film yesterday, so let's watch something else tonight."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2593",
+   "skill": "past_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake. Keep *yesterday*: I have seen this film yesterday, so let's watch something else tonight.",
+   "why": "*yesterday* is a finished time: past simple (*I saw*, *I watched*), not *I have seen*.",
+   "why_lv": "*yesterday* ir pabeigts laiks: Past Simple (*I saw, I watched*), nevis *I have seen.*",
+   "answers": [
+    [
+     "I saw this film yesterday, so let's watch something else tonight.",
+     "I watched this film yesterday, so let's watch something else tonight."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "FINISHED-TIME"
+   ],
+   "role": "use",
+   "point": "pp_ps",
+   "src": "correct-mistake-1.csv:17"
+  }
+ },
+ "cm-3-002": {
+  "hash": "ddf558aaf35291c0",
+  "gate_key": "future | A2.1 | text | Correct the mistake: Will I turn on the heating? It's very cold in here. | ",
+  "src": "correct-mistake-1.csv:22",
+  "point": "shall",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Shall I turn on the heating? It's very cold in here.",
+     "Should I turn on the heating? It's very cold in here.",
+     "Can I turn on the heating? It's very cold in here.",
+     "Could I turn on the heating? It's very cold in here.",
+     "May I turn on the heating? It's very cold in here.",
+     "Shall I turn the heating on? It's very cold in here.",
+     "Should I turn the heating on? It's very cold in here.",
+     "Can I turn the heating on? It's very cold in here.",
+     "Could I turn the heating on? It's very cold in here.",
+     "May I turn the heating on? It's very cold in here."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2598",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Will I turn on the heating? It's very cold in here.",
+   "why": "An offer: *Shall I …?* (or *Can I …?*). *Will I turn on …?* asks about the future, not what you can do for someone.",
+   "why_lv": "Piedāvājums: *Shall I* …? (vai *Can I* …?). *Will I turn on* …? jautā par nākotni, nevis piedāvā palīdzību.",
+   "answers": [
+    [
+     "Shall I turn on the heating? It's very cold in here.",
+     "Should I turn on the heating? It's very cold in here.",
+     "Can I turn on the heating? It's very cold in here.",
+     "Could I turn on the heating? It's very cold in here.",
+     "May I turn on the heating? It's very cold in here.",
+     "Shall I turn the heating on? It's very cold in here.",
+     "Should I turn the heating on? It's very cold in here.",
+     "Can I turn the heating on? It's very cold in here.",
+     "Could I turn the heating on? It's very cold in here.",
+     "May I turn the heating on? It's very cold in here."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "shall",
+   "src": "correct-mistake-1.csv:22"
+  }
+ },
+ "cm-3-003": {
+  "hash": "89d17ca2d0fb3b6b",
+  "gate_key": "future | A2.2 | text | Correct the mistake: It's late. I walk you to the bus stop. | ",
+  "src": "correct-mistake-1.csv:23",
+  "point": "will_now",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "It's late. I'll walk you to the bus stop.",
+     "It's late. I will walk you to the bus stop.",
+     "It's late. I can walk you to the bus stop.",
+     "It's late. Let me walk you to the bus stop."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2599",
+   "skill": "future",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: It's late. I walk you to the bus stop.",
+   "why": "An offer you decide on now: *will*, *I'll walk you*. *I can walk you …* is an offer too.",
+   "why_lv": "Piedāvājums, ko izlem tagad: *will, I'll walk you*. *I can walk you* … arī ir piedāvājums.",
+   "answer_notes": [
+    [
+     "It's late. Let me walk you to the bus stop.",
+     "Also correct: *Let me walk you* is an offer too. With *I*, the offer needs *will*: *I'll walk you*.",
+     "Arī pareizi: *Let me walk you* arī ir piedāvājums. Ar *I* piedāvājumam vajag *will*: *I'll walk you*."
+    ]
+   ],
+   "answers": [
+    [
+     "It's late. I'll walk you to the bus stop.",
+     "It's late. I will walk you to the bus stop.",
+     "It's late. I can walk you to the bus stop.",
+     "It's late. Let me walk you to the bus stop."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "FUTURE"
+   ],
+   "role": "use",
+   "point": "will_now",
+   "src": "correct-mistake-1.csv:23"
+  }
+ },
+ "cm-3-004": {
+  "hash": "53b92bd117e9e287",
+  "gate_key": "future | B1.1 | text | Correct the mistake: I can't go out until the plumber will come, so could you buy some bread? | ",
+  "src": "correct-mistake-1.csv:27",
+  "point": "fut_time_clause",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I can't go out until the plumber comes, so could you buy some bread?",
+     "I can't go out until the plumber has come, so could you buy some bread?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2603",
+   "skill": "future",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I can't go out until the plumber will come, so could you buy some bread?",
+   "why": "After *until* we use the present, also about the future: *until the plumber comes*, not *will come*.",
+   "why_lv": "Aiz *until* lieto tagadni, arī runājot par nākotni: *until the plumber comes*, nevis *will come*. Latviski kamēr atnāks ir nākotnē, tāpēc gribas *will*.",
+   "answer_notes": [
+    [
+     "I can't go out until the plumber has come, so could you buy some bread?",
+     "Also correct: *has come* says the plumber's visit will be over.",
+     "Arī pareizi: *has come* saka, ka santehniķis jau būs atnācis."
+    ]
+   ],
+   "answers": [
+    [
+     "I can't go out until the plumber comes, so could you buy some bread?",
+     "I can't go out until the plumber has come, so could you buy some bread?"
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "TIME-CLAUSE"
+   ],
+   "role": "use",
+   "point": "fut_time_clause",
+   "src": "correct-mistake-1.csv:27"
+  }
+ }
+}

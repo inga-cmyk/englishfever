@@ -132,6 +132,7 @@
 
   // ───────── boot ─────────
   function boot() {
+    if (document.body.getAttribute('data-embed') === 'card') return embedCard();
     if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () {});
     Promise.all([api('config'), api('meta'), api('me')]).then(function (r) {
       state.config = r[0]; state.meta = r[1]; state.user = r[2].user; state.welcome = r[2].welcome || null;
@@ -254,7 +255,13 @@
     var hash = location.hash || '#/';
     var parts = hash.replace(/^#\/?/, '').split('/');
     var name = parts[0] || '';
+    if (name === 'topic' && /^[a-z0-9_]+$/.test(parts[1] || '')) { try { sessionStorage.setItem('ef_after_login', '#/topic/' + parts[1]); } catch (e) {} }   // a link from a lesson (rule card in Tutor LMS, teacher, 27 November): kept until the learner is in
     if (!state.user) { renderChrome(); return viewWelcome(); }
+    var after = null; try { after = sessionStorage.getItem('ef_after_login'); } catch (e) {}
+    if (after && (name === 'topic' || ((name === '' || name === 'welcome' || name === 'home') && !(state.user.provider === 'wp' && !state.user.nick_set)))) {
+      try { sessionStorage.removeItem('ef_after_login'); } catch (e) {}
+      if (name !== 'topic') { location.hash = after; return; }
+    }
     startHeartbeat();
     var u = state.user;
     if (!u.nick_set && u.provider === 'wp' && name !== 'nickname') { location.hash = '#/nickname'; return; }
@@ -265,7 +272,7 @@
     var v = {
       home: viewHome, practice: viewPractice, placement: viewPlacementIntro, session: viewSession, summary: viewSummary,
       leaderboard: viewLeaderboard, profile: viewProfile, teacher: function () { return parts[1] === 'student' ? viewTeacherStudent(parts[2]) : viewTeacher(); },
-      nickname: viewNickname, rules: viewRules, reports: viewReports, tasks: viewTasks, evidence: viewEvidence, usage: viewUsage,
+      nickname: viewNickname, rules: viewRules, topic: viewTopicLink, reports: viewReports, tasks: viewTasks, evidence: viewEvidence, usage: viewUsage,
     }[name];
     if ((name.indexOf('teacher') === 0 || name === 'reports' || name === 'tasks' || name === 'evidence') && u.role !== 'teacher') { location.hash = '#/home'; return; }
     (v || viewHome)(parts);
@@ -648,7 +655,7 @@
   /** Topics added lately (teacher, 3 November): a "New" group on the Topics page and a small label on their tiles for 45 days. */
   // 15 November (teacher, option A): the New group shows the new grammar points (state.meta.new_points, each with its own card and
   // practice of that point only) instead of these topics; the server sends a point only while it is new and has tasks
-  var NEW_TOPICS = { adv_present: '2026-11-22', adv_past: '2026-11-23', adv_perfect: '2026-11-23', adv_will: '2026-11-23', adv_can: '2026-11-23', adv_subj: '2026-11-23', adv_agree: '2026-11-23', adv_prep: '2026-11-23', adv_part: '2026-11-23', adv_order: '2026-11-23' };   // the first C1 topic is also under New (teacher, 22 November)
+  var NEW_TOPICS = { adv_present: '2026-11-22', adv_past: '2026-11-23', adv_perfect: '2026-11-23', adv_will: '2026-11-23', adv_can: '2026-11-23', adv_subj: '2026-11-23', adv_agree: '2026-11-23', adv_prep: '2026-11-23', adv_part: '2026-11-23', adv_order: '2026-11-23', active_passive: '2026-11-27' };   // the first C1 topic is also under New (teacher, 22 November)
   function isNewTopic(id) { var d = NEW_TOPICS[id]; return !!d && (Date.now() - Date.parse(d)) < 45 * 86400000; }
 
   /** A closed-by-default card for the things Home does not need to show all the time; opening it is remembered on this device. */
@@ -1226,7 +1233,10 @@
             redrawLater();
           } });
           var rule = h('button', { type: 'button', class: 'ttile-rule', 'aria-label': 'Rule: ' + s.label, title: 'Rule', onclick: function (e) { e.preventDefault(); e.stopPropagation(); rulesModal(s.id); } }, '?');   // a quick look at the rule before practising
-          return h('label', null, inp, topicTile(s), h('span', { class: 'ttile-check', 'aria-hidden': 'true' }, icon('check')), rule);
+          // the badge says the level that will be practised: a B1 card topic with A2.2 tasks shows A2 when A2 is chosen (teacher's report, 27 November)
+          var at = chosenLevels().filter(function (l) { return (SKC[s.id] || {})[l]; });
+          var badge = at.length && at.indexOf(cardLevel(s)) < 0 ? at[0] : null;
+          return h('label', null, inp, topicTile(s, null, badge), h('span', { class: 'ttile-check', 'aria-hidden': 'true' }, icon('check')), rule);
     }
     function newPointsGroup() {   // the New group: one tile per new grammar point; a tile opens its card, whose button starts that point
       var all = state.meta.new_points || [];
@@ -2106,7 +2116,7 @@
     ind_polite: 'Could you tell me where the cake **is**?', ind_advanced: "I don't know **what to say**.",
     used_to: 'I **used to** read books. Now I read comments.', articles: '**An** elephant walked into **a** café.',
     quantity: "There's **not enough** coffee in this world.", relative_clauses: 'I have a friend **who** talks to plants.',
-    time_clauses: "I'll call you **when** I **wake up**.", adv_present: "I **love** my job. I**'m** just not **loving** this Monday.", adv_past: "I **had planned** a healthy dinner. Then I **walked** past the bakery.", adv_perfect: "It's only Tuesday, and I**'ve** already **spent** my weekly budget.", adv_will: "My laptop **won't** switch on. It **will** always do this before a deadline.", adv_can: "The diet starts on Monday. Today I **might as well** finish the cake.", adv_subj: "My cat **insists** that breakfast **be** served at five.", adv_agree: "The number of unread emails **has** reached 2,000. Each of them **says** 'urgent'.", adv_prep: "This is the meeting **in which** nothing was decided.", adv_part: "**Having eaten** the whole pizza, I started my diet.", adv_order: "**Never have I** regretted a nap.", question_tags: "You love grammar, **don't you**?",
+    time_clauses: "I'll call you **when** I **wake up**.", adv_present: "I **love** my job. I**'m** just not **loving** this Monday.", adv_past: "I **had planned** a healthy dinner. Then I **walked** past the bakery.", adv_perfect: "It's only Tuesday, and I**'ve** already **spent** my weekly budget.", adv_will: "My laptop **won't** switch on. It **will** always do this before a deadline.", adv_can: "The diet starts on Monday. Today I **might as well** finish the cake.", adv_subj: "My cat **insists** that breakfast **be** served at five.", adv_agree: "The number of unread emails **has** reached 2,000. Each of them **says** 'urgent'.", adv_prep: "This is the meeting **in which** nothing was decided.", adv_part: "**Having eaten** the whole pizza, I started my diet.", adv_order: "**Never have I** regretted a nap.", active_passive: "The cookies **were eaten**. Nobody **ate** them, of course.", question_tags: "You love grammar, **don't you**?",
     subject_object_q: '**Who** ate my sandwich?', verb_patterns: 'I enjoy **doing** nothing.',
     more_modals: 'I **might** go to the gym tomorrow.', passive_modals: 'Some meetings **should be replaced** by emails.',
     causative: 'I **had** my CV **written** by AI. Oops.', two_objects: 'Give **me** the chocolate.',
@@ -2127,10 +2137,10 @@
   function posterText(t) {   // **form** -> gold bold; the rest plain text (no markup from data becomes elements)
     return String(t || '').split('**').map(function (part, i) { return i % 2 ? h('b', null, part) : document.createTextNode(part); });
   }
-  function topicTile(s, extra) {
+  function topicTile(s, extra, badge) {
     var ai = state.meta.skills.findIndex(function (k) { return k.id === s.id; });   // each tile its own colour, like a poster wall
     return h('span', { class: 'ttile' + (extra ? ' ' + extra : '') },
-      h('span', { class: 'ttile-art pat' + (Math.max(0, ai) % 8) }, h('span', { class: 'ttile-lv' }, cardLevel(s)), h('span', { class: 'ttile-line' }, posterText(TILE_LINES[s.id] || s.label))),
+      h('span', { class: 'ttile-art pat' + (Math.max(0, ai) % 8) }, h('span', { class: 'ttile-lv' }, badge || cardLevel(s)), h('span', { class: 'ttile-line' }, posterText(TILE_LINES[s.id] || s.label))),
       h('span', { class: 'ttile-nm' }, s.label.replace(/\s*[(:].*$/, '')),   // no "New" label on the tile: the New group says it (teacher, 3 November)
       tileProgress(s));
   }
@@ -2211,11 +2221,66 @@
     var s = skillById(id);
     track('rule_card', note ? 'recap-' + id : inTask ? 'task-' + id : id);   // recap: shown by the app after mistakes (24 November)
     var go = inTask ? null : h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow'));   // straight from the rule to the tasks (teacher, 28 October); not from inside a task
-    var m = UI.modal(h('div', null, h('div', { class: 'card-head' }, h('h2', null, s.label), cardFlags(function () { m.close(); rulesModal(id, inTask, note); })), note ? h('p', { class: 'recap-note' }, note) : null, ruleCard(s, state.user.lang === 'lv'),
+    var m = UI.modal(h('div', null, h('div', { class: 'card-head' }, h('h2', null, s.label), cardFlags(function () { m.close(); rulesModal(id, inTask, note); })), note ? h('p', { class: 'recap-note' }, note) : null, inTask ? null : lessonCodes(s.id), ruleCard(s, state.user.lang === 'lv'),
       h('div', { class: 'row', style: 'margin-top:14px;gap:10px' }, go, h('button', { class: 'btn ghost', id: 'c' }, inTask ? 'Back to the task' : 'Close'))));
     m.el.classList.add('modal-wide');   // room for the form table
     m.el.querySelector('#c').onclick = m.close;
     if (go) go.onclick = function () { var dash = state.dash; startTopic(go, Object.assign({}, s, (dash && dash.skills || []).find(function (k) { return k.id === s.id; }) || {}), dash, 'rule_card'); m.close(); };
+  }
+
+  /** Teachers: the shortcode lines that put this card into a Tutor LMS lesson, each with a copy button (teacher, 27 November). */
+  function lessonCodes(id) {
+    if (!state.user || state.user.role !== 'teacher') return null;
+    var lines = [['lv', 'LV'], ['en', 'EN']].map(function (x) { return [x[1], '[ef_rule_card topic="' + id + '" lang="' + x[0] + '"]']; });
+    if (state.user.lang !== 'lv') lines.reverse();   // the card's own language first
+    return h('div', { class: 'lesson-codes' }, h('div', { class: 'small muted' }, 'For a Tutor LMS lesson:'),
+      lines.map(function (l) {
+        var code = h('code', null, l[1]);
+        var tip = h('span', { class: 'copied-tip', role: 'status', hidden: true }, 'Copied!'), timer;   // a small bubble over the icon (teacher, 27 November)
+        return h('div', { class: 'lesson-code' }, h('span', { class: 'pill' }, l[0]), code,
+          h('span', { class: 'copy-wrap' }, tip, h('button', { type: 'button', class: 'linkbtn small copy-code', 'aria-label': 'Copy ' + l[0] + ' code', title: 'Copy', onclick: function () {
+            (navigator.clipboard ? navigator.clipboard.writeText(l[1]) : Promise.reject()).then(function () { tip.hidden = false; clearTimeout(timer); timer = setTimeout(function () { tip.hidden = true; }, 1500); })
+              .catch(function () { var r = document.createRange(); r.selectNodeContents(code); var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r); UI.toast('Press Ctrl+C to copy.'); });
+          } }, icon('copy'))));
+      }));
+  }
+
+  /** #/topic/<id>: a link from a lesson page (the rule card shortcode in Tutor LMS, teacher, 27 November) starts ten tasks of that topic. */
+  function viewTopicLink(parts) {
+    var s = skillById(parts[1]);
+    if (!s) { location.hash = '#/practice'; return; }
+    refreshDash().then(function (d) {
+      var btn = h('button', { class: 'btn', type: 'button' }, 'Practise', icon('arrow'));
+      show(h('div', { class: 'card', style: 'max-width:520px;margin:24px auto;text-align:center' }, h('h2', null, s.label), h('p', { class: 'muted' }, 'Ten tasks of this topic.'), btn));
+      btn.onclick = function () { startTopic(btn, Object.assign({}, s, (d && d.skills || []).find(function (k) { return k.id === s.id; }) || {}), d, 'lesson_link'); };
+      btn.click();   // start straight away; the button stays for a slow connection or an error
+    }).catch(fail);
+  }
+
+  /** card.html#/card/<id>?lang=lv: one rule card alone, for an iframe in a lesson page (shortcode [ef_rule_card] of the WordPress plugin;
+   *  teacher, 27 November). The card is the app's own, so a corrected card shows in the lesson at once. Its button opens the topic's practice. */
+  function embedCard() {
+    var id = (location.hash.replace(/^#\/?/, '').split('/')[1] || '').replace(/[^a-z0-9_]/g, '');
+    var lvMode = /(^|[?&])lang=lv(&|$)/.test(location.search);
+    // light or dark like the lesson page, not like the device (teacher, 27 November): light until the page says otherwise
+    // (the plugin looks at the page's background and sends {ef_theme}); ?theme=dark also works
+    function setTheme(t) { if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); }
+    var qt = /(^|[?&])theme=(dark|light)(&|$)/.exec(location.search); setTheme(qt ? qt[2] : 'light');
+    window.addEventListener('message', function (e) { if (e.source === window.parent && e.data && e.data.ef_theme) setTheme(e.data.ef_theme); });
+    Promise.all([api('config'), api('meta')]).then(function (r) {
+      state.config = r[0]; state.meta = r[1];
+      var s = skillById(id);
+      if (!s) { root.replaceChildren(h('p', { class: 'muted', style: 'padding:16px' }, 'Unknown topic: ' + id)); return post(); }
+      var site = (state.config.site_url || '').replace(/\/+$/, '');
+      var href = site ? site + '/?ef_practice=open&ef_topic=' + encodeURIComponent(s.id) : './#/topic/' + encodeURIComponent(s.id);   // through the website: a logged-in student is signed in on the way
+      root.replaceChildren(h('div', { class: 'card embed-card' },
+        h('div', { class: 'card-head' }, h('h2', null, s.label)),
+        ruleCard(s, lvMode),
+        h('div', { class: 'row', style: 'margin-top:14px' }, h('a', { class: 'btn', href: href, target: '_blank', rel: 'noopener' }, lvMode ? 'Trenēties šajā tēmā' : 'Practise this topic', icon('arrow')))));
+      post();
+      if (window.ResizeObserver) new ResizeObserver(post).observe(document.body);
+    }).catch(function (e) { root.replaceChildren(h('p', { style: 'padding:16px' }, e.message)); post(); });
+    function post() { try { window.parent.postMessage({ ef_card: id, height: Math.ceil(root.getBoundingClientRect().bottom + window.scrollY) }, '*'); } catch (e) {} }
   }
 
   /** Leaderboard avatar: with a mood, a small emoji sits on it and a tap shows the saying in a bubble. */

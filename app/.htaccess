@@ -13,6 +13,11 @@ AddType application/manifest+json .webmanifest
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
   Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
+  # card.html (one rule card) may be shown inside englishfever.com lesson pages: shortcode [ef_rule_card] of the plugin
+  <FilesMatch "^card\.html$">
+    Header always unset X-Frame-Options
+    Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; frame-ancestors 'self' https://englishfever.com https://*.englishfever.com; object-src 'none'; base-uri 'self'; form-action 'self'"
+  </FilesMatch>
 </IfModule>
 
 <FilesMatch "\.(sqlite|db|log|md|json|py|zip|sample\.php)$">

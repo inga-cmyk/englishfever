@@ -1,0 +1,1040 @@
+{
+ "cm-1-001": {
+  "hash": "a9a6cd86d38b7d2c",
+  "gate_key": "present_simple | A2.1 | text | Correct the mistake: My sister work in a hotel and she loves it. | ",
+  "src": "zz-blind-correct-mistake-1.csv:2",
+  "point": "ps_form",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My sister works in a hotel and she loves it."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2578",
+   "skill": "present_simple",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: My sister work in a hotel and she loves it.",
+   "why": "*he / she / it* + verb-*s*: *My sister works*. *loves* shows it is true now.",
+   "why_lv": "*he / she / it* + darbības vārds ar *-s*: *My sister works.* *loves* rāda, ka tas ir patiesi tagad.",
+   "answers": [
+    [
+     "My sister works in a hotel and she loves it."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "3S"
+   ],
+   "role": "use",
+   "point": "ps_form",
+   "src": "zz-blind-correct-mistake-1.csv:2"
+  }
+ },
+ "cm-1-002": {
+  "hash": "362e7d43e6da97f4",
+  "gate_key": "present_simple | A2.1 | text | Correct the mistake: I am agree with you about the price. | ",
+  "src": "zz-blind-correct-mistake-1.csv:3",
+  "point": "ps_form",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I agree with you about the price."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2579",
+   "skill": "present_simple",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I am agree with you about the price.",
+   "why": "*agree* is a verb, so no *am*: *I agree*.",
+   "why_lv": "*agree* ir darbības vārds, tāpēc bez *am*: *I agree.* Tulkojot burtiski esmu vienisprātis, rodas *I am agree.*",
+   "answers": [
+    [
+     "I agree with you about the price."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "BE-VERB"
+   ],
+   "role": "use",
+   "point": "ps_form",
+   "src": "zz-blind-correct-mistake-1.csv:3"
+  }
+ },
+ "cm-1-003": {
+  "hash": "bfc9f3dcc1d70ff7",
+  "gate_key": "present_simple | A2.1 | text | Correct the mistake: Do your brother play any sport? | ",
+  "src": "zz-blind-correct-mistake-1.csv:4",
+  "point": "ps_negq",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Does your brother play any sport?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2580",
+   "skill": "present_simple",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Do your brother play any sport?",
+   "why": "*your brother* = *he*, so the question starts with *Does*: *Does your brother play …?*",
+   "why_lv": "*your brother = he*, tāpēc jautājums sākas ar *Does*: *Does your brother play* …?",
+   "answers": [
+    [
+     "Does your brother play any sport?"
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "3S"
+   ],
+   "role": "use",
+   "point": "ps_negq",
+   "src": "zz-blind-correct-mistake-1.csv:4"
+  }
+ },
+ "cm-1-004": {
+  "hash": "4159f7709d19ab77",
+  "gate_key": "present_simple | A2.2 | text | Correct the mistake: My boss doesn't drinks coffee after lunch. | ",
+  "src": "zz-blind-correct-mistake-1.csv:5",
+  "point": "ps_negq",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My boss doesn't drink coffee after lunch.",
+     "After lunch, my boss doesn't drink coffee."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2581",
+   "skill": "present_simple",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: My boss doesn't drinks coffee after lunch.",
+   "why": "After *doesn't* the verb has no *-s*: *doesn't drink*.",
+   "why_lv": "Aiz *doesn't* darbības vārdam nav *-s*: *doesn't drink*.",
+   "answers": [
+    [
+     "My boss doesn't drink coffee after lunch.",
+     "After lunch, my boss doesn't drink coffee."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "BASE"
+   ],
+   "role": "use",
+   "point": "ps_negq",
+   "src": "zz-blind-correct-mistake-1.csv:5"
+  }
+ },
+ "cm-1-005": {
+  "hash": "f7451a4995ff5971",
+  "gate_key": "present_simple | A2.2 | text | Correct the mistake: Where you usually buy your vegetables? | ",
+  "src": "zz-blind-correct-mistake-1.csv:6",
+  "point": "ps_negq",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Where do you usually buy your vegetables?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2582",
+   "skill": "present_simple",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Where you usually buy your vegetables?",
+   "why": "A question with *Where* needs *do*: *Where do you usually buy …?*",
+   "why_lv": "Jautājumā ar *Where* vajag *do*: *Where do you usually buy* …? Tulkojot burtiski Kur tu parasti pērc …?, rodas *Where you usually buy* …?",
+   "answers": [
+    [
+     "Where do you usually buy your vegetables?"
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "DO"
+   ],
+   "role": "use",
+   "point": "ps_negq",
+   "src": "zz-blind-correct-mistake-1.csv:6"
+  }
+ },
+ "cm-1-006": {
+  "hash": "cc1b57ba1c39d380",
+  "gate_key": "present_simple | A2.2 | text | Correct the mistake: Sorry, I am not understanding the question. Can you say it again? | ",
+  "src": "zz-blind-correct-mistake-1.csv:7",
+  "point": "stative",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Sorry, I don't understand the question. Can you say it again?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2583",
+   "skill": "present_simple",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Sorry, I am not understanding the question. Can you say it again?",
+   "why": "*understand* is a state verb: it stays simple, *I don't understand*.",
+   "why_lv": "*understand* ir stāvokļa darbības vārds: tas paliek vienkāršajā formā, *I don't understand.*",
+   "answers": [
+    [
+     "Sorry, I don't understand the question. Can you say it again?"
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "STATE-ING"
+   ],
+   "role": "use",
+   "point": "stative",
+   "src": "zz-blind-correct-mistake-1.csv:7"
+  }
+ },
+ "cm-1-007": {
+  "hash": "f7576c22c0badfe3",
+  "gate_key": "present_simple | B1.1 | text | Correct the mistake: I'm thinking this plan is too expensive for us, so let's look for another one. | ",
+  "src": "zz-blind-correct-mistake-1.csv:8",
+  "point": "stative2",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I think this plan is too expensive for us, so let's look for another one."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2584",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I'm thinking this plan is too expensive for us, so let's look for another one.",
+   "why": "*think* = have an opinion: present simple, *I think this plan is too expensive*. *I'm thinking about it* = I am considering it now.",
+   "why_lv": "*think* = būt viedoklim: Present Simple, *I think this plan is too expensive.* *I'm thinking about it* = es par to tagad domāju, apsveru.",
+   "answers": [
+    [
+     "I think this plan is too expensive for us, so let's look for another one."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "STATE-ING"
+   ],
+   "role": "use",
+   "point": "stative2",
+   "src": "zz-blind-correct-mistake-1.csv:8"
+  }
+ },
+ "cm-1-008": {
+  "hash": "66cbe30a83ec4a96",
+  "gate_key": "present_simple | B1.1 | text | Correct the mistake: Water is boiling at 100 degrees Celsius, so the thermometer will show 100 when it starts to bubble. | ",
+  "src": "zz-blind-correct-mistake-1.csv:9",
+  "point": "ps_pc",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Water boils at 100 degrees Celsius, so the thermometer will show 100 when it starts to bubble."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2585",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Water is boiling at 100 degrees Celsius, so the thermometer will show 100 when it starts to bubble.",
+   "why": "A fact that is always true: present simple, *Water boils at 100 degrees*. *is boiling* = it is happening now.",
+   "why_lv": "Fakts, kas vienmēr ir patiess: Present Simple, *Water boils at 100 degrees.* *is boiling* = tas notiek tagad.",
+   "answers": [
+    [
+     "Water boils at 100 degrees Celsius, so the thermometer will show 100 when it starts to bubble."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "NOW-HABIT"
+   ],
+   "role": "use",
+   "point": "ps_pc",
+   "src": "zz-blind-correct-mistake-1.csv:9"
+  }
+ },
+ "cm-1-009": {
+  "hash": "03e70adddbc59980",
+  "gate_key": "present_simple | B1.1 | text | Correct the mistake: It's depend on the weather, so we'll decide about the picnic tomorrow morning. | ",
+  "src": "zz-blind-correct-mistake-1.csv:10",
+  "point": "ps_form",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "It depends on the weather, so we'll decide about the picnic tomorrow morning."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2586",
+   "skill": "present_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: It's depend on the weather, so we'll decide about the picnic tomorrow morning.",
+   "why": "*depend* is a verb: *It depends on*, not *It's depend*.",
+   "why_lv": "*depend* ir darbības vārds: *It depends on*, nevis *It's depend.* Tulkojot burtiski tas ir atkarīgs, rodas *It's depend.*",
+   "answers": [
+    [
+     "It depends on the weather, so we'll decide about the picnic tomorrow morning."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "BE-VERB"
+   ],
+   "role": "use",
+   "point": "ps_form",
+   "src": "zz-blind-correct-mistake-1.csv:10"
+  }
+ },
+ "cm-1-010": {
+  "hash": "5b7e825a5761d70e",
+  "gate_key": "past_simple | A2.1 | text | Correct the mistake: We was very tired after the long flight. | ",
+  "src": "zz-blind-correct-mistake-1.csv:11",
+  "point": "was_were",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "We were very tired after the long flight.",
+     "After the long flight, we were very tired."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2587",
+   "skill": "past_simple",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: We was very tired after the long flight.",
+   "why": "*we, you, they* + *were*: *We were very tired*.",
+   "why_lv": "*we, you, they + were*: *We were very tired.*",
+   "answers": [
+    [
+     "We were very tired after the long flight.",
+     "After the long flight, we were very tired."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "was_were",
+   "src": "zz-blind-correct-mistake-1.csv:11"
+  }
+ },
+ "cm-1-011": {
+  "hash": "01f44c02b9aa4a79",
+  "gate_key": "past_simple | A2.1 | text | Correct the mistake: I buyed a new jacket last weekend. | ",
+  "src": "zz-blind-correct-mistake-1.csv:12",
+  "point": "pst_irr",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I bought a new jacket last weekend.",
+     "Last weekend I bought a new jacket."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2588",
+   "skill": "past_simple",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I buyed a new jacket last weekend.",
+   "why": "*buy* is irregular: *buy → bought*.",
+   "why_lv": "*buy* ir neregulārs darbības vārds: *buy → bought*.",
+   "answers": [
+    [
+     "I bought a new jacket last weekend.",
+     "Last weekend I bought a new jacket."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "PAST-FORM"
+   ],
+   "role": "use",
+   "point": "pst_irr",
+   "src": "zz-blind-correct-mistake-1.csv:12"
+  }
+ },
+ "cm-1-012": {
+  "hash": "581ea8f14627f521",
+  "gate_key": "past_simple | A2.1 | text | Correct the mistake: Did you went to the concert on Friday? | ",
+  "src": "zz-blind-correct-mistake-1.csv:13",
+  "point": "pst_negq",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Did you go to the concert on Friday?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2589",
+   "skill": "past_simple",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Did you went to the concert on Friday?",
+   "why": "After *Did* the verb is in the base form: *Did you go …?*",
+   "why_lv": "Aiz *Did* darbības vārds ir pamatformā: *Did you go* …?",
+   "answers": [
+    [
+     "Did you go to the concert on Friday?"
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "BASE"
+   ],
+   "role": "use",
+   "point": "pst_negq",
+   "src": "zz-blind-correct-mistake-1.csv:13"
+  }
+ },
+ "cm-1-013": {
+  "hash": "502c100f7951d8e2",
+  "gate_key": "past_simple | A2.2 | text | Correct the mistake: Robert join our team two months ago. | ",
+  "src": "zz-blind-correct-mistake-1.csv:14",
+  "point": "pst_reg",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Robert joined our team two months ago."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2590",
+   "skill": "past_simple",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Robert join our team two months ago.",
+   "why": "*two months ago* is a finished time: past simple, *joined*.",
+   "why_lv": "*two months ago* ir pabeigts laiks: Past Simple, *joined*.",
+   "answers": [
+    [
+     "Robert joined our team two months ago."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "PAST-FORM"
+   ],
+   "role": "use",
+   "point": "pst_reg",
+   "src": "zz-blind-correct-mistake-1.csv:14"
+  }
+ },
+ "cm-1-014": {
+  "hash": "a7ff741f634ae02f",
+  "gate_key": "past_simple | A2.2 | text | Correct the mistake: I didn't saw your message until this morning. | ",
+  "src": "zz-blind-correct-mistake-1.csv:15",
+  "point": "pst_negq",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I didn't see your message until this morning.",
+     "Until this morning, I didn't see your message."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2591",
+   "skill": "past_simple",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I didn't saw your message until this morning.",
+   "why": "After *didn't* the verb is in the base form: *didn't see*.",
+   "why_lv": "Aiz *didn't* darbības vārds ir pamatformā: *didn't see*.",
+   "answers": [
+    [
+     "I didn't see your message until this morning.",
+     "Until this morning, I didn't see your message."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "BASE"
+   ],
+   "role": "use",
+   "point": "pst_negq",
+   "src": "zz-blind-correct-mistake-1.csv:15"
+  }
+ },
+ "cm-1-015": {
+  "hash": "07283149c4a5d237",
+  "gate_key": "past_simple | A2.2 | text | Correct the mistake: We moved to this city before three years. | ",
+  "src": "zz-blind-correct-mistake-1.csv:16",
+  "point": "pst_reg",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "We moved to this city three years ago."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2592",
+   "skill": "past_simple",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: We moved to this city before three years.",
+   "why": "*ago* goes after the time: *three years ago*.",
+   "why_lv": "*ago* stāv aiz laika: *three years ago*. Tulkojot burtiski pirms trim gadiem, rodas *before three years*.",
+   "answers": [
+    [
+     "We moved to this city three years ago."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pst_reg",
+   "src": "zz-blind-correct-mistake-1.csv:16"
+  }
+ },
+ "cm-1-016": {
+  "hash": "338b8ed661e5f09a",
+  "gate_key": "past_simple | B1.1 | text | Correct the mistake: I have lost my keys yesterday, so I had to call a locksmith. | ",
+  "src": "zz-blind-correct-mistake-1.csv:17",
+  "point": "pp_ps",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I lost my keys yesterday, so I had to call a locksmith."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2593",
+   "skill": "past_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I have lost my keys yesterday, so I had to call a locksmith.",
+   "why": "*yesterday* is a finished time: past simple, *I lost*, not *I have lost*.",
+   "why_lv": "*yesterday* ir pabeigts laiks: Past Simple, *I lost*, nevis *I have lost.*",
+   "answers": [
+    [
+     "I lost my keys yesterday, so I had to call a locksmith."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "FINISHED-TIME"
+   ],
+   "role": "use",
+   "point": "pp_ps",
+   "src": "zz-blind-correct-mistake-1.csv:17"
+  }
+ },
+ "cm-1-017": {
+  "hash": "3f4d017337d581ff",
+  "gate_key": "past_simple | B1.1 | text | Correct the mistake: Where did you stayed when you visited Rome last spring? | ",
+  "src": "zz-blind-correct-mistake-1.csv:18",
+  "point": "pst_negq",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Where did you stay when you visited Rome last spring?",
+     "When you visited Rome last spring, where did you stay?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2594",
+   "skill": "past_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Where did you stayed when you visited Rome last spring?",
+   "why": "After *did* the verb is in the base form: *Where did you stay …?*",
+   "why_lv": "Aiz *did* darbības vārds ir pamatformā: *Where did you stay* …?",
+   "answers": [
+    [
+     "Where did you stay when you visited Rome last spring?",
+     "When you visited Rome last spring, where did you stay?"
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "BASE"
+   ],
+   "role": "use",
+   "point": "pst_negq",
+   "src": "zz-blind-correct-mistake-1.csv:18"
+  }
+ },
+ "cm-1-018": {
+  "hash": "047cf8bccf56b5d2",
+  "gate_key": "past_simple | B1.1 | text | Correct the mistake: The meeting finished late, so I catched the last bus home. | ",
+  "src": "zz-blind-correct-mistake-1.csv:19",
+  "point": "pst_irr",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The meeting finished late, so I caught the last bus home."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2595",
+   "skill": "past_simple",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: The meeting finished late, so I catched the last bus home.",
+   "why": "*catch* is irregular: *catch → caught*.",
+   "why_lv": "*catch* ir neregulārs darbības vārds: *catch → caught*.",
+   "answers": [
+    [
+     "The meeting finished late, so I caught the last bus home."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "PAST-FORM"
+   ],
+   "role": "use",
+   "point": "pst_irr",
+   "src": "zz-blind-correct-mistake-1.csv:19"
+  }
+ },
+ "cm-1-019": {
+  "hash": "5d73842b5110ea05",
+  "gate_key": "future | A2.1 | text | Correct the mistake: I'm going visit my parents this weekend. | ",
+  "src": "zz-blind-correct-mistake-1.csv:20",
+  "point": "going_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I'm going to visit my parents this weekend."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2596",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I'm going visit my parents this weekend.",
+   "why": "*going to* + base verb: *I'm going to visit*.",
+   "why_lv": "*going* to + pamatforma: *I'm going* to *visit*.",
+   "answers": [
+    [
+     "I'm going to visit my parents this weekend."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "going_to",
+   "src": "zz-blind-correct-mistake-1.csv:20"
+  }
+ },
+ "cm-1-020": {
+  "hash": "e7366dce8a8cc563",
+  "gate_key": "future | A2.1 | text | Correct the mistake: She going to look for a new flat in May. | ",
+  "src": "zz-blind-correct-mistake-1.csv:21",
+  "point": "going_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "She is going to look for a new flat in May.",
+     "She's going to look for a new flat in May."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2597",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: She going to look for a new flat in May.",
+   "why": "*going to* needs *am / is / are* before it: *She is going to look*.",
+   "why_lv": "Pirms *going* to vajag *am / is / are*: *She is going* to *look*.",
+   "answers": [
+    [
+     "She is going to look for a new flat in May.",
+     "She's going to look for a new flat in May."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "BE"
+   ],
+   "role": "use",
+   "point": "going_to",
+   "src": "zz-blind-correct-mistake-1.csv:21"
+  }
+ },
+ "cm-1-021": {
+  "hash": "a44248c22ed806a8",
+  "gate_key": "future | A2.1 | text | Correct the mistake: Will I open the window? It's very hot in here. | ",
+  "src": "zz-blind-correct-mistake-1.csv:22",
+  "point": "shall",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Shall I open the window? It's very hot in here.",
+     "Should I open the window? It's very hot in here."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2598",
+   "skill": "future",
+   "level": "A2.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Will I open the window? It's very hot in here.",
+   "why": "An offer: *Shall I …?* *Will I open …?* asks about the future, not what you can do for someone.",
+   "why_lv": "Piedāvājums: *Shall I* …? *Will I open* …? jautā par nākotni, nevis piedāvā palīdzību.",
+   "answers": [
+    [
+     "Shall I open the window? It's very hot in here.",
+     "Should I open the window? It's very hot in here."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "shall",
+   "src": "zz-blind-correct-mistake-1.csv:22"
+  }
+ },
+ "cm-1-022": {
+  "hash": "475a254e45b837a0",
+  "gate_key": "future | A2.2 | text | Correct the mistake: Your bag looks heavy. I carry it for you. | ",
+  "src": "zz-blind-correct-mistake-1.csv:23",
+  "point": "will_now",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Your bag looks heavy. I'll carry it for you.",
+     "Your bag looks heavy. I will carry it for you."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2599",
+   "skill": "future",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Your bag looks heavy. I carry it for you.",
+   "why": "An offer you decide on now: *will*, *I'll carry it*.",
+   "why_lv": "Piedāvājums, ko izlem tagad: *will, I'll carry it*. Tulkojot burtiski es to aiznesu, rodas *I carry it.*",
+   "answers": [
+    [
+     "Your bag looks heavy. I'll carry it for you.",
+     "Your bag looks heavy. I will carry it for you."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "FUTURE"
+   ],
+   "role": "use",
+   "point": "will_now",
+   "src": "zz-blind-correct-mistake-1.csv:23"
+  }
+ },
+ "cm-1-023": {
+  "hash": "4366e1756ef58973",
+  "gate_key": "future | A2.2 | text | Correct the mistake: I meet Anna for lunch tomorrow, so I can't help you then. | ",
+  "src": "zz-blind-correct-mistake-1.csv:24",
+  "point": "fut_arr",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I'm meeting Anna for lunch tomorrow, so I can't help you then.",
+     "I'm going to meet Anna for lunch tomorrow, so I can't help you then."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2600",
+   "skill": "future",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I meet Anna for lunch tomorrow, so I can't help you then.",
+   "why": "An arrangement with a time and another person: present continuous, *I'm meeting Anna*.",
+   "why_lv": "Norunāta tikšanās ar laiku un citu cilvēku: Present Continuous, *I'm meeting Anna.*",
+   "answer_notes": [
+    [
+     "I'm going to meet Anna for lunch tomorrow, so I can't help you then.",
+     "Also correct: *going to* is your plan. *I'm meeting Anna* says it is arranged with her.",
+     "Arī pareizi: *going to* ir tavs plāns. *I'm meeting Anna* saka, ka tikšanās ir norunāta."
+    ]
+   ],
+   "answers": [
+    [
+     "I'm meeting Anna for lunch tomorrow, so I can't help you then.",
+     "I'm going to meet Anna for lunch tomorrow, so I can't help you then."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "FUTURE"
+   ],
+   "role": "use",
+   "point": "fut_arr",
+   "src": "zz-blind-correct-mistake-1.csv:24"
+  }
+ },
+ "cm-1-024": {
+  "hash": "37fc1651fb47d2a7",
+  "gate_key": "future | A2.2 | text | Correct the mistake: What you are going to do after the course? | ",
+  "src": "zz-blind-correct-mistake-1.csv:25",
+  "point": "going_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "What are you going to do after the course?",
+     "After the course, what are you going to do?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2601",
+   "skill": "future",
+   "level": "A2.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: What you are going to do after the course?",
+   "why": "In a question *are* comes before *you*: *What are you going to do?*",
+   "why_lv": "Jautājumā *are* stāv pirms *you*: *What are you going* to *do*?",
+   "answers": [
+    [
+     "What are you going to do after the course?",
+     "After the course, what are you going to do?"
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "Q-ORDER"
+   ],
+   "role": "use",
+   "point": "going_to",
+   "src": "zz-blind-correct-mistake-1.csv:25"
+  }
+ },
+ "cm-1-025": {
+  "hash": "484b71ae5922972b",
+  "gate_key": "future | B1.1 | text | Correct the mistake: I promise I tell you as soon as I hear any news about the job. | ",
+  "src": "zz-blind-correct-mistake-1.csv:26",
+  "point": "will_now",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "I promise I'll tell you as soon as I hear any news about the job.",
+     "I promise I will tell you as soon as I hear any news about the job.",
+     "I promise to tell you as soon as I hear any news about the job.",
+     "As soon as I hear any news about the job, I promise I'll tell you.",
+     "As soon as I hear any news about the job, I promise I will tell you.",
+     "As soon as I hear any news about the job, I promise to tell you."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2602",
+   "skill": "future",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: I promise I tell you as soon as I hear any news about the job.",
+   "why": "A promise: *will*, *I promise I'll tell you*. After *as soon as* the present stays: *as soon as I hear*.",
+   "why_lv": "Solījums: *will, I promise I'll tell you*. Aiz *as soon as* paliek tagadne: *as soon as I hear*.",
+   "answers": [
+    [
+     "I promise I'll tell you as soon as I hear any news about the job.",
+     "I promise I will tell you as soon as I hear any news about the job.",
+     "I promise to tell you as soon as I hear any news about the job.",
+     "As soon as I hear any news about the job, I promise I'll tell you.",
+     "As soon as I hear any news about the job, I promise I will tell you.",
+     "As soon as I hear any news about the job, I promise to tell you."
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "FUTURE"
+   ],
+   "role": "use",
+   "point": "will_now",
+   "src": "zz-blind-correct-mistake-1.csv:26"
+  }
+ },
+ "cm-1-026": {
+  "hash": "1ff58af999e4260e",
+  "gate_key": "future | B1.1 | text | Correct the mistake: Are you going to sell your old car or you are going to keep it? | ",
+  "src": "zz-blind-correct-mistake-1.csv:27",
+  "point": "going_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Are you going to sell your old car or are you going to keep it?",
+     "Are you going to sell your old car or keep it?"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2603",
+   "skill": "future",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Are you going to sell your old car or you are going to keep it?",
+   "why": "Both parts are questions: *or are you going to keep it?*",
+   "why_lv": "Abas daļas ir jautājumi: *or are you going* to *keep it*?",
+   "answers": [
+    [
+     "Are you going to sell your old car or are you going to keep it?",
+     "Are you going to sell your old car or keep it?"
+    ]
+   ],
+   "hints": [],
+   "err": [
+    "Q-ORDER"
+   ],
+   "role": "use",
+   "point": "going_to",
+   "src": "zz-blind-correct-mistake-1.csv:27"
+  }
+ },
+ "cm-1-027": {
+  "hash": "088538d22345185d",
+  "gate_key": "future | B1.2 | text | Correct the mistake: The car won't start this morning, so I took the bus to work. | ",
+  "src": "zz-blind-correct-mistake-1.csv:28",
+  "point": "wont_refuse",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "The car wouldn't start this morning, so I took the bus to work.",
+     "The car didn't start this morning, so I took the bus to work."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2604",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: The car won't start this morning, so I took the bus to work.",
+   "why": "*won't start* = it refuses to start now. In the past: *wouldn't start*.",
+   "why_lv": "*won't start* = tā atsakās iedarboties tagad. Pagātnē: *wouldn't start*.",
+   "answer_notes": [
+    [
+     "The car didn't start this morning, so I took the bus to work.",
+     "Also correct. *wouldn't start* says the car refused: you tried again and again.",
+     "Arī pareizi. *wouldn't start* saka, ka mašīna atteicās iedarboties: tu mēģināji vairākas reizes."
+    ]
+   ],
+   "answers": [
+    [
+     "The car wouldn't start this morning, so I took the bus to work.",
+     "The car didn't start this morning, so I took the bus to work."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "wont_refuse",
+   "src": "zz-blind-correct-mistake-1.csv:28"
+  }
+ },
+ "cm-1-028": {
+  "hash": "621e849351c4860e",
+  "gate_key": "future | B1.2 | text | Correct the mistake: Hurry up! The film is about starting. | ",
+  "src": "zz-blind-correct-mistake-1.csv:29",
+  "point": "about_to",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Hurry up! The film is about to start."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-2605",
+   "skill": "future",
+   "level": "B1.2",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Hurry up! The film is about starting.",
+   "why": "*be about to* + base verb = very soon: *The film is about to start*.",
+   "why_lv": "*be about* to + pamatforma = tūlīt: *The film is about* to *start*.",
+   "answers": [
+    [
+     "Hurry up! The film is about to start."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "about_to",
+   "src": "zz-blind-correct-mistake-1.csv:29"
+  }
+ }
+}

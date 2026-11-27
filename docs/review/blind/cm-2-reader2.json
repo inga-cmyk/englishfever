@@ -1,0 +1,176 @@
+[
+{
+"id": "cm-2-001",
+"answer": "My neighbour walks her dog every morning before work.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-2-002",
+"answer": "Sorry, I don't understand the question. Can you say it again?",
+"other_correct": [
+"Sorry, I do not understand the question. Can you say it again?",
+"Sorry, I can't understand the question. Can you say it again?",
+"Sorry, I didn't understand the question. Can you say it again?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-2-003",
+"answer": "I think this plan is too expensive for us, so let's look for another one.",
+"other_correct": [
+"I do think this plan is too expensive for us, so let's look for another one."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-2-004",
+"answer": "Light travels faster than sound, so you see the lightning before you hear the thunder.",
+"other_correct": [
+"Light is faster than sound, so you see the lightning before you hear the thunder."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-2-005",
+"answer": "It depends on the traffic, so I can't say what time I'll be home.",
+"other_correct": [
+"It all depends on the traffic, so I can't say what time I'll be home.",
+"It does depend on the traffic, so I can't say what time I'll be home."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-2-006",
+"answer": "I saw this film yesterday, so let's watch something else tonight.",
+"other_correct": [
+"I watched this film yesterday, so let's watch something else tonight.",
+"I have seen this film, so let's watch something else tonight. (deletes 'yesterday'; correct but changes the sentence)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-2-007",
+"answer": "We're going to get a dog next year.",
+"other_correct": [
+"We are going to get a dog next year."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-2-008",
+"answer": "She's going to look for a new flat in May.",
+"other_correct": [
+"She is going to look for a new flat in May."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-2-009",
+"answer": "Shall I turn on the heating? It's very cold in here.",
+"other_correct": [
+"Should I turn on the heating? It's very cold in here.",
+"Do you want me to turn on the heating? It's very cold in here.",
+"Would you like me to turn on the heating? It's very cold in here."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "'Shall I' offer is fine for A2 but is a new form for A2.1; ok",
+"sense_problem": ""
+},
+{
+"id": "cm-2-010",
+"answer": "It's late. I'll walk you to the bus stop.",
+"other_correct": [
+"It's late. I will walk you to the bus stop.",
+"It's late. I'm going to walk you to the bus stop. (less natural for a spontaneous offer)",
+"It's late. Let me walk you to the bus stop."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-2-011",
+"answer": "I'm meeting a client at nine tomorrow, so I can't take the kids to school.",
+"other_correct": [
+"I am meeting a client at nine tomorrow, so I can't take the kids to school.",
+"I'm going to meet a client at nine tomorrow, so I can't take the kids to school.",
+"I am going to meet a client at nine tomorrow, so I can't take the kids to school."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-2-012",
+"answer": "What are you going to do after the course?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-2-013",
+"answer": "Are you going to sell your old car or are you going to keep it?",
+"other_correct": [
+"Are you going to sell your old car or keep it?",
+"Are you going to sell your old car, or are you going to keep it?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "Grammar (going to + word order after 'or') is A2.2 level; easy for B1.1",
+"sense_problem": ""
+},
+{
+"id": "cm-2-014",
+"answer": "My phone wouldn't charge last night, so I couldn't call you.",
+"other_correct": [
+"My phone didn't charge last night, so I couldn't call you.",
+"My phone wasn't charging last night, so I couldn't call you.",
+"My phone would not charge last night, so I couldn't call you."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-2-015",
+"answer": "Sorry, I can't talk now. I'm about to go into a meeting.",
+"other_correct": [
+"Sorry, I can't talk now. I am about to go into a meeting."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

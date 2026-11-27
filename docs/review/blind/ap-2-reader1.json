@@ -1,0 +1,96 @@
+[
+{
+"id": "ap-2-001",
+"answer": "was stung",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-2-002",
+"answer": "the rubbish is collected every tuesday",
+"other_correct": [
+"every tuesday the rubbish is collected"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Card 'tuesday' is lower case; a day name needs a capital, and a learner may hesitate."
+},
+{
+"id": "ap-2-003",
+"answer": [
+"was",
+"built"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-2-004",
+"answer": [
+"is",
+"eaten"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-2-005",
+"answer": [
+"happened"
+],
+"other_correct": [
+[
+"was happening"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Task has an active verb in a passive-voice exercise, so it is a trap/unclear why it is here; two answers (happened / was happening, the latter less natural).",
+"level_problem": "",
+"sense_problem": "Not a passive item; sits oddly among passive tasks."
+},
+{
+"id": "ap-2-006",
+"answer": "My phone was repaired in only twenty minutes yesterday.",
+"other_correct": [
+"My phone got repaired in only twenty minutes yesterday."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-2-007",
+"answer": "My keys were found in the car.",
+"other_correct": [
+"My keys were found in the car by someone.",
+"My keys were found by someone in the car."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Instruction shows markdown asterisks around 'My keys'. 'by someone' is optional, so learners may disagree on whether to include it.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-2-008",
+"answer": "A lot of rice is grown in this region.",
+"other_correct": [
+"A lot of rice is grown in this region by them.",
+"A lot of rice is grown by them in this region."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Asterisks shown in instruction. 'by them' is unnecessary but a learner may add it.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

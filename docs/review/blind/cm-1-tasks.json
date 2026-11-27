@@ -1,0 +1,198 @@
+[
+ {
+  "id": "cm-1-001",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: My sister work in a hotel and she loves it.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-002",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I am agree with you about the price.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-003",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Do your brother play any sport?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-004",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: My boss doesn't drinks coffee after lunch.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-005",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Where you usually buy your vegetables?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-006",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Sorry, I am not understanding the question. Can you say it again?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-007",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I'm thinking this plan is too expensive for us, so let's look for another one.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-008",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Water is boiling at 100 degrees Celsius, so the thermometer will show 100 when it starts to bubble.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-009",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: It's depend on the weather, so we'll decide about the picnic tomorrow morning.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-010",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: We was very tired after the long flight.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-011",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I buyed a new jacket last weekend.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-012",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Did you went to the concert on Friday?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-013",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Robert join our team two months ago.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-014",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I didn't saw your message until this morning.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-015",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: We moved to this city before three years.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-016",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I have lost my keys yesterday, so I had to call a locksmith.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-017",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Where did you stayed when you visited Rome last spring?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-018",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: The meeting finished late, so I catched the last bus home.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-019",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I'm going visit my parents this weekend.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-020",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: She going to look for a new flat in May.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-021",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Will I open the window? It's very hot in here.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-022",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Your bag looks heavy. I carry it for you.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-023",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I meet Anna for lunch tomorrow, so I can't help you then.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-024",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: What you are going to do after the course?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-025",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I promise I tell you as soon as I hear any news about the job.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-026",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Are you going to sell your old car or you are going to keep it?",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-027",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: The car won't start this morning, so I took the bus to work.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-1-028",
+  "level": "B1.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Hurry up! The film is about starting.",
+  "note": "the learner types a whole sentence"
+ }
+]

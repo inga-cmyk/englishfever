@@ -1995,7 +1995,7 @@ return json_decode(<<<'EF_JSON_END'
      ]
     }
    },
-   "card": "B1"
+   "card": "A2"
   },
   {
    "id": "past_simple_passive",
@@ -2188,7 +2188,7 @@ return json_decode(<<<'EF_JSON_END'
      "*be born* vienmēr ir ciešamajā kārtā, arī jautājumā: *Where [[were]] you [[born]]?*"
     ]
    },
-   "card": "B1"
+   "card": "A2"
   },
   {
    "id": "present_continuous_passive",
@@ -13045,6 +13045,223 @@ return json_decode(<<<'EF_JSON_END'
     ]
    },
    "card": "C1"
+  },
+  {
+   "id": "active_passive",
+   "label": "Active or passive? Present and past",
+   "area": "passive",
+   "levels": [
+    "B1.1"
+   ],
+   "rule": {
+    "form": [
+     "Active: the subject does the action: *Our neighbour cuts the grass every Saturday.*",
+     "Passive: *am / is / are* or *was / were* + 3rd form: *The grass is cut every Saturday. Our old sofa was taken away last week.*",
+     "Verbs with no object (*happen, arrive, land, die, stay*) have no passive: *Nothing exciting happened at the party.*"
+    ],
+    "use": [
+     "Passive when we do not know who does it, or it is not important or obvious.",
+     "Active when we say who does it and it matters; or passive + *by* + the doer.",
+     "Time words choose present or past: *every day, usually* / *yesterday, ago, in 2010*."
+    ],
+    "signals": "*someone, people, they, by, every day, usually, yesterday, ago*",
+    "example": "*The cookies were eaten. Nobody ate them, of course.*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "Active: the subject does it",
+        "subject + verb (present simple or past simple)",
+        "*Our neighbour [[cuts]] the grass every Saturday.*"
+       ],
+       [
+        "Passive, present",
+        "*am / is / are* + 3rd form",
+        "*The grass [[is cut]] every Saturday.*"
+       ],
+       [
+        "Passive, past",
+        "*was / were* + 3rd form",
+        "*Our old sofa [[was taken]] away last week.*"
+       ],
+       [
+        "No object, no passive",
+        "*happen, arrive, land, die, stay*: active only",
+        "*Nothing exciting [[happened]] at the party.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "Our plane [[was landed]] at midnight.",
+       "Our plane [[landed]] at midnight."
+      ],
+      [
+       "My wallet [[stole]] on the bus.",
+       "My wallet [[was stolen]] on the bus."
+      ],
+      [
+       "The museum [[is opened]] in 1901.",
+       "The museum [[was opened]] in 1901."
+      ]
+     ],
+     "uses": [
+      {
+       "ex": [
+        "Someone cleans the stairs every week. → The stairs [[are cleaned]] every week."
+       ],
+       "s": [
+        "someone",
+        "people",
+        "they"
+       ],
+       "t": "Who does it is unknown, not important or obvious: passive"
+      },
+      {
+       "ex": [
+        "My sister [[painted]] this picture.",
+        "This picture [[was painted]] [[by]] my sister."
+       ],
+       "s": [
+        "by"
+       ],
+       "t": "Who does it matters: active, or passive + *by*"
+      },
+      {
+       "ex": [
+        "The post [[is delivered]] at ten every day.",
+        "Yesterday it [[was delivered]] at two."
+       ],
+       "s": [
+        "every day",
+        "usually",
+        "yesterday",
+        "ago",
+        "in 2010"
+       ],
+       "t": "Time words choose present or past"
+      }
+     ],
+     "watch": [
+      "Ask who does the action. The subject does it: active (*Tom [[fixed]] the tap*). Something is done to the subject: passive (*The tap [[was fixed]]*).",
+      "*by someone* and *by people* say nothing new: leave them out: *My bike [[was stolen]].*"
+     ]
+    },
+    "watch": [
+     "Ask who does the action. The subject does it: active (*Tom [[fixed]] the tap*). Something is done to the subject: passive (*The tap [[was fixed]]*).",
+     "*by someone* and *by people* say nothing new: leave them out: *My bike [[was stolen]].*"
+    ]
+   },
+   "rule_lv": {
+    "form": [
+     "Darāmā kārta: teikuma priekšmets dara darbību: **Our neighbour cuts the grass every Saturday*.*",
+     "Ciešamā kārta: **am / is / are** vai **was / were** + 3. forma: **The grass is cut every Saturday.* *Our old sofa was taken away last week*.*",
+     "Darbības vārdiem bez papildinātāja (**happen, arrive, land, die, stay**) ciešamās kārtas nav: **Nothing exciting happened at the party*.*"
+    ],
+    "use": [
+     "Ciešamā kārta, ja nezinām, kas to dara, vai tas nav svarīgi vai ir *skaidrs*.",
+     "Darāmā kārta, ja sakām, kas to dara, un tas ir svarīgi; vai ciešamā kārta + **by** + darītājs.",
+     "Laika vārdi izšķir tagadni vai pagātni: **every day, usually** / **yesterday, ago, in 2010**."
+    ],
+    "signals": "*someone, people, they, by, every day, usually, yesterday, ago*",
+    "v2": {
+     "choice": {
+      "stack": "rows",
+      "cols": [
+       "Forma",
+       "Piemērs"
+      ],
+      "rows": [
+       [
+        "Darāmā kārta: teikuma priekšmets dara darbību",
+        "teikuma priekšmets + darbības vārds (Present Simple vai Past Simple)",
+        "*Our neighbour [[cuts]] the grass every Saturday.*"
+       ],
+       [
+        "Ciešamā kārta, tagadne",
+        "*am / is / are* + 3. forma",
+        "*The grass [[is cut]] every Saturday.*"
+       ],
+       [
+        "Ciešamā kārta, pagātne",
+        "*was / were* + 3. forma",
+        "*Our old sofa [[was taken]] away last week.*"
+       ],
+       [
+        "Nav papildinātāja, nav ciešamās kārtas",
+        "*happen, arrive, land, die, stay*: tikai darāmā kārta",
+        "*Nothing exciting [[happened]] at the party.*"
+       ]
+      ]
+     },
+     "mistakes": [
+      [
+       "Our plane [[was landed]] at midnight.",
+       "Our plane [[landed]] at midnight."
+      ],
+      [
+       "My wallet [[stole]] on the bus.",
+       "My wallet [[was stolen]] on the bus.",
+       "Latviski saka \"maku nozaga\" bez darītāja, tāpēc, tulkojot burtiski, *was* izlaiž."
+      ],
+      [
+       "The museum [[is opened]] in 1901.",
+       "The museum [[was opened]] in 1901."
+      ]
+     ],
+     "uses": [
+      {
+       "ex": [
+        "Someone cleans the stairs every week. → The stairs [[are cleaned]] every week."
+       ],
+       "s": [
+        "someone",
+        "people",
+        "they"
+       ],
+       "t": "Darītājs nav zināms, nav svarīgs vai ir skaidrs: ciešamā kārta"
+      },
+      {
+       "ex": [
+        "My sister [[painted]] this picture.",
+        "This picture [[was painted]] [[by]] my sister."
+       ],
+       "s": [
+        "by"
+       ],
+       "t": "Svarīgi, kas to dara: darāmā kārta vai ciešamā kārta + *by*"
+      },
+      {
+       "ex": [
+        "The post [[is delivered]] at ten every day.",
+        "Yesterday it [[was delivered]] at two."
+       ],
+       "s": [
+        "every day",
+        "usually",
+        "yesterday",
+        "ago",
+        "in 2010"
+       ],
+       "t": "Laika vārdi izšķir tagadni vai pagātni"
+      }
+     ],
+     "watch": [
+      "Pajautā, kurš darbību dara. Ja to dara teikuma priekšmets: darāmā kārta (*Tom [[fixed]] the tap*). Ja to dara ar teikuma priekšmetu: ciešamā kārta (*The tap [[was fixed]]*).",
+      "*by someone* un *by people* neko jaunu nepasaka: tos izlaiž: *My bike [[was stolen]].*"
+     ]
+    },
+    "watch": [
+     "Pajautā, kurš darbību dara. Ja to dara teikuma priekšmets: darāmā kārta (*Tom [[fixed]] the tap*). Ja to dara ar teikuma priekšmetu: ciešamā kārta (*The tap [[was fixed]]*).",
+     "*by someone* un *by people* neko jaunu nepasaka: tos izlaiž: *My bike [[was stolen]].*"
+    ]
+   },
+   "card": "B1"
   }
  ],
  "bloom": {

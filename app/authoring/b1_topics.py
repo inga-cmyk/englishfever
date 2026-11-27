@@ -873,3 +873,30 @@ LV_CARDS.update({
         "signals": "never, rarely, hardly, no sooner, not until, only when, so … that, had, should, what … is, though",
     },
 })
+
+# ───────── B1 (teacher, 27 November): the present and past simple passive are A2; this B1 topic mixes both tenses, active or passive ─────────
+SKILLS_NEW.append(("active_passive", "Active or passive? Present and past", "passive", ["B1.1"]))
+ABBR_NEW.update({"active_passive": "apv"})
+CARDS.update({
+    "active_passive": {
+        "form": ["Active: the subject does the action: *Our neighbour cuts the grass every Saturday.*",
+                 "Passive: *am / is / are* or *was / were* + 3rd form: *The grass is cut every Saturday. Our old sofa was taken away last week.*",
+                 "Verbs with no object (*happen, arrive, land, die, stay*) have no passive: *Nothing exciting happened at the party.*"],
+        "use": ["Passive when we do not know who does it, or it is not important or obvious.",
+                "Active when we say who does it and it matters; or passive + *by* + the doer.",
+                "Time words choose present or past: *every day, usually* / *yesterday, ago, in 2010*."],
+        "signals": "*someone, people, they, by, every day, usually, yesterday, ago*",
+        "example": "*The cookies were eaten. Nobody ate them, of course.*",
+    },
+})
+LV_CARDS.update({
+    "active_passive": {
+        "form": ["Darāmā kārta: teikuma priekšmets dara darbību: *Our neighbour cuts the grass every Saturday.*",
+                 "Ciešamā kārta: *am / is / are* vai *was / were* + 3. forma: *The grass is cut every Saturday. Our old sofa was taken away last week.*",
+                 "Darbības vārdiem bez papildinātāja (*happen, arrive, land, die, stay*) ciešamās kārtas nav: *Nothing exciting happened at the party.*"],
+        "use": ["Ciešamā kārta, ja nezinām, kas to dara, vai tas nav svarīgi vai ir skaidrs.",
+                "Darāmā kārta, ja sakām, kas to dara, un tas ir svarīgi; vai ciešamā kārta + *by* + darītājs.",
+                "Laika vārdi izšķir tagadni vai pagātni: *every day, usually* / *yesterday, ago, in 2010*."],
+        "signals": "someone, people, they, by, every day, usually, yesterday, ago",
+    },
+})

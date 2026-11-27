@@ -4363,3 +4363,59 @@ x_front_as,C1,adv_order,C1,check,gap,read,,c1-drag-1.csv:66,"adv_order | C1 | ga
 x_inv_place,C1,adv_order,C1,check,gap,read,,c1-drag-1.csv:67,"adv_order | C1 | gap | Opposite our office ___ two new cafés, so lunch is never a problem. | "
 x_inv_neg,C1,adv_order,C1,check,gap,read,,c1-drag-1.csv:68,adv_order | C1 | gap | Not once ___ ___ thank us for looking after his dog. | 
 x_cleft_adv,C1,adv_order,C1,check,gap,read,,c1-drag-1.csv:69,adv_order | C1 | gap | What she did ___ ___ out of the meeting without a word. | 
+ps_form,A2.1,present_simple,A2.1,use,text,read,,correct-mistake-1.csv:2,present_simple | A2.1 | text | Correct the mistake: My neighbour walk her dog every morning before work. | 
+ps_form,A2.1,present_simple,A2.1,use,text,read,,correct-mistake-1.csv:3,present_simple | A2.1 | text | Correct the mistake: I am agree with you about the price. | 
+ps_negq,A2.1,present_simple,A2.1,use,text,read,,correct-mistake-1.csv:4,present_simple | A2.1 | text | Correct the mistake: Do your brother play any sport? | 
+ps_negq,A2.1,present_simple,A2.2,use,text,read,,correct-mistake-1.csv:5,present_simple | A2.2 | text | Correct the mistake: My boss doesn't drinks coffee after lunch. | 
+ps_negq,A2.1,present_simple,A2.2,use,text,read,,correct-mistake-1.csv:6,present_simple | A2.2 | text | Correct the mistake: Where you usually buy your vegetables? | 
+stative,A2.2,present_simple,A2.2,use,text,read,,correct-mistake-1.csv:7,"present_simple | A2.2 | text | Correct the mistake: Sorry, I am not understanding the question. Can you say it again? | "
+stative2,B1.1,present_simple,B1.1,use,text,read,,correct-mistake-1.csv:8,"present_simple | B1.1 | text | Correct the mistake: I'm thinking this plan is too expensive for us, so let's look for another one. | "
+ps_pc,A2.1,present_simple,B1.1,use,text,read,,correct-mistake-1.csv:9,"present_simple | B1.1 | text | Correct the mistake: Light is travelling faster than sound, so you see the lightning before you hear the thunder. | "
+ps_form,A2.1,present_simple,B1.1,use,text,read,,correct-mistake-1.csv:10,"present_simple | B1.1 | text | Correct the mistake: It's depend on the traffic, so I can't say what time I'll be home. | "
+was_were,A2.1,past_simple,A2.1,use,text,read,,correct-mistake-1.csv:11,past_simple | A2.1 | text | Correct the mistake: We was very tired after the long flight. | 
+pst_irr,A2.1,past_simple,A2.1,use,text,read,,correct-mistake-1.csv:12,past_simple | A2.1 | text | Correct the mistake: I buyed a new jacket last weekend. | 
+pst_negq,A2.1,past_simple,A2.1,use,text,read,,correct-mistake-1.csv:13,past_simple | A2.1 | text | Correct the mistake: Did you went to the concert on Friday? | 
+pst_reg,A2.1,past_simple,A2.2,use,text,read,,correct-mistake-1.csv:14,past_simple | A2.2 | text | Correct the mistake: Robert join our team two months ago. | 
+pst_negq,A2.1,past_simple,A2.2,use,text,read,,correct-mistake-1.csv:15,past_simple | A2.2 | text | Correct the mistake: I didn't saw your message until this morning. | 
+pst_reg,A2.1,past_simple,A2.2,use,text,read,,correct-mistake-1.csv:16,past_simple | A2.2 | text | Correct the mistake: We moved to this city before three years. | 
+pp_ps,A2.2,past_simple,B1.1,use,text,read,,correct-mistake-1.csv:17,"past_simple | B1.1 | text | Correct the mistake. Keep *yesterday*: I have seen this film yesterday, so let's watch something else tonight. | "
+pst_negq,A2.1,past_simple,B1.1,use,text,read,,correct-mistake-1.csv:18,past_simple | B1.1 | text | Correct the mistake: Where did you stayed when you visited Rome last spring? | 
+pst_irr,A2.1,past_simple,B1.1,use,text,read,,correct-mistake-1.csv:19,"past_simple | B1.1 | text | Correct the mistake: The meeting finished late, so I catched the last bus home. | "
+going_to,A2.1,future,A2.1,use,text,read,,correct-mistake-1.csv:20,future | A2.1 | text | Correct the mistake. Keep *going*: We're going get a dog next year. | 
+going_to,A2.1,future,A2.1,use,text,read,,correct-mistake-1.csv:21,future | A2.1 | text | Correct the mistake. Keep *going to*: She going to look for a new flat in May. | 
+shall,A2.1,future,A2.1,use,text,read,,correct-mistake-1.csv:22,future | A2.1 | text | Correct the mistake: Will I turn on the heating? It's very cold in here. | 
+will_now,A2.2,future,A2.2,use,text,read,,correct-mistake-1.csv:23,future | A2.2 | text | Correct the mistake: It's late. I walk you to the bus stop. | 
+fut_arr,A2.2,future,A2.2,use,text,read,,correct-mistake-1.csv:24,"future | A2.2 | text | Correct the mistake: I meet a client at nine tomorrow, so I can't take the kids to school. | "
+going_to,A2.1,future,A2.2,use,text,read,,correct-mistake-1.csv:25,future | A2.2 | text | Correct the mistake. Keep *going to*: What you are going to do after the course? | 
+will_now,A2.2,future,B1.1,use,text,read,,correct-mistake-1.csv:26,future | B1.1 | text | Correct the mistake: I promise I tell you as soon as I hear any news about the job. | 
+fut_time_clause,A2.2,future,B1.1,use,text,read,,correct-mistake-1.csv:27,"future | B1.1 | text | Correct the mistake: I can't go out until the plumber will come, so could you buy some bread? | "
+wont_refuse,B1.2,future,B1.2,use,text,read,,correct-mistake-1.csv:28,"future | B1.2 | text | Correct the mistake: My phone won't charge last night, so I couldn't call you. | "
+about_to,B2.1,future,B1.2,use,text,read,,correct-mistake-1.csv:29,"future | B1.2 | text | Correct the mistake. Keep *about*: Sorry, I can't talk now. I'm about going into a meeting. | "
+pas_act,B1.1,active_passive,B1.1,check,mcq,read,,active-passive-1.csv:2,"active_passive | B1.1 | mcq | Choose the correct option: In our office, the computers ___ by an IT company every Friday. | are checked"
+pas_act,B1.1,active_passive,B1.1,check,mcq,read,,active-passive-1.csv:3,active_passive | B1.1 | mcq | Choose the correct option: My grandfather ___ this cottage with his own hands in 1965. | built
+pas_act,B1.1,active_passive,B1.1,check,mcq,read,,active-passive-1.csv:4,"active_passive | B1.1 | mcq | Choose the correct option: The parcel ___ to the wrong address, so it came back to me a week later. | was sent"
+pas_act,B1.1,active_passive,B1.1,check,mcq,read,,active-passive-1.csv:5,"active_passive | B1.1 | mcq | Choose the correct option: Every summer, thousands of tourists ___ the old town. | visit"
+pas_act,B1.1,active_passive,B1.1,check,mcq,read,,active-passive-1.csv:6,active_passive | B1.1 | mcq | Choose the correct option: I ___ by a bee while I was working in the garden. | was stung
+pas_act,B1.1,active_passive,B1.1,check,mcq,read,,active-passive-1.csv:7,active_passive | B1.1 | mcq | Choose the correct option: This pasta sauce is my mum's recipe. She ___ it every Sunday. | makes
+pas_act,B1.1,active_passive,B1.1,check,mcq,read,,active-passive-1.csv:8,"active_passive | B1.1 | mcq | Choose the correct option: The writer ___ in 1999, but his books are still popular. | died"
+pas_act,B1.1,active_passive,B1.1,check,mcq,read,,active-passive-1.csv:9,active_passive | B1.1 | mcq | Which sentence has a mistake? | The fire was happened just after midnight.
+pas_act,B1.1,active_passive,B1.1,check,mcq,read,,active-passive-1.csv:10,active_passive | B1.1 | mcq | Which sentence has a mistake? | Our guests were arrived late because of the snow.
+pas_act,B1.1,active_passive,B1.1,check,mcq,read,,active-passive-1.csv:11,active_passive | B1.1 | mcq | Which sentence is correct? | This song was written by my best friend.
+pas_act,B1.1,active_passive,B1.1,check,order,read,,active-passive-1.csv:12,active_passive | B1.1 | order | Put the words in order. | the rubbish is collected every tuesday
+pas_act,B1.1,active_passive,B1.1,check,gap,read,,active-passive-1.csv:13,active_passive | B1.1 | gap | When ___ your house ___? It looks very old. (build) | 
+pas_act,B1.1,active_passive,B1.1,check,gap,read,,active-passive-1.csv:14,active_passive | B1.1 | gap | This hotel ___ ___ by a famous architect in the 1930s. | 
+pas_act,B1.1,active_passive,B1.1,check,gap,read,,active-passive-1.csv:15,"active_passive | B1.1 | gap | Our flight ___ ___ because of the storm, so we stayed another night at the hotel. | "
+pas_act,B1.1,active_passive,B1.1,check,gap,read,,active-passive-1.csv:16,"active_passive | B1.1 | gap | These days, in many Spanish families, dinner ___ ___ quite late, often after nine. | "
+pas_act,B1.1,active_passive,B1.1,check,gap,read,,active-passive-1.csv:17,active_passive | B1.1 | gap | The police ___ the thief two hours after the robbery. | 
+pas_act,B1.1,active_passive,B1.1,check,gap,read,,active-passive-1.csv:18,active_passive | B1.1 | gap | The first email ___ in 1971. (send) | 
+pas_act,B1.1,active_passive,B1.1,check,gap,read,,active-passive-1.csv:19,active_passive | B1.1 | gap | I ___ my husband at a friend's wedding twelve years ago. (meet) | 
+pas_act,B1.1,active_passive,B1.1,check,gap,read,,active-passive-1.csv:20,"active_passive | B1.1 | gap | In this café, breakfast ___ until eleven every day. (serve) | "
+pas_act,B1.1,active_passive,B1.1,check,gap,read,,active-passive-1.csv:21,active_passive | B1.1 | gap | What ___ at the meeting yesterday? (happen) | 
+pas_act,B1.1,active_passive,B1.1,check,gap,read,,active-passive-1.csv:22,active_passive | B1.1 | gap | All our bread ___ by hand in a small kitchen behind the shop. (make) | 
+pas_act,B1.1,active_passive,B1.1,check,gap,read,,active-passive-1.csv:23,"active_passive | B1.1 | gap | Our teacher ___ us homework every Friday, and today is Friday! (give) | "
+pas_act,B1.1,active_passive,B1.1,use,text,read,,active-passive-1.csv:24,active_passive | B1.1 | text | Correct the mistake: My phone repaired in only twenty minutes yesterday. | 
+pas_act,B1.1,active_passive,B1.1,use,text,read,,active-passive-1.csv:25,"active_passive | B1.1 | text | Correct the mistake: Our train was arrived forty minutes late, so we missed the start of the concert. | "
+pas_act,B1.1,active_passive,B1.1,use,text,read,,active-passive-1.csv:26,active_passive | B1.1 | text | Correct the mistake: Cars aren't allowing in the city centre on Sundays. | 
+pas_act,B1.1,active_passive,B1.1,use,text,read,,active-passive-1.csv:27,active_passive | B1.1 | text | Start with *My keys*: Someone found my keys in the car. | 
+pas_act,B1.1,active_passive,B1.1,use,text,read,,active-passive-1.csv:28,active_passive | B1.1 | text | Start with *A lot of rice*: They grow a lot of rice in this region. | 
+pas_act,B1.1,active_passive,B1.1,use,text,read,,active-passive-1.csv:29,active_passive | B1.1 | text | Start with *A boy from our street*: The window was broken by a boy from our street. | 

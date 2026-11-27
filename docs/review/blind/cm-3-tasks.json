@@ -1,0 +1,30 @@
+[
+ {
+  "id": "cm-3-001",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake. Keep *yesterday*: I have seen this film yesterday, so let's watch something else tonight.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-3-002",
+  "level": "A2.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Will I turn on the heating? It's very cold in here.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-3-003",
+  "level": "A2.2",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: It's late. I walk you to the bus stop.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "cm-3-004",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: I can't go out until the plumber will come, so could you buy some bread?",
+  "note": "the learner types a whole sentence"
+ }
+]

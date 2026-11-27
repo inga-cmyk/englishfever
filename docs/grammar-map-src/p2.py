@@ -72,7 +72,7 @@ P('pas_negq', 'Passive negatives and questions', 'B1.1', "Makes passive negative
   topic='present_simple_passive past_simple_passive', rx=r"\?|n't\b|\bnot\b|make a (yes/no )?question|negative", s='The app has these tasks from A2.2')
 P('pas_act', 'Active or passive?', 'B1.1', 'Decides by asking who does the action, turns an active sentence into a passive one and back, and knows that verbs without an object have no passive.',
   n='pas_past pas_by', v='ps_form pst_reg', e="*The accident was happened; My bike stole yesterday; The film was appeared in 2019*", m='42, 44', t='B1: Active and passive', g='B1 present simple, past simple passive (increasing range)',
-  topic='present_simple_passive past_simple_passive', rx=r"active|rewrite|start with|somebody|someone|they (make|made|built|clean|speak|sell|sold|grow|use|check|stole|invite|send|sent)|happen|who does")
+  topic='present_simple_passive past_simple_passive active_passive', rx=r"active|rewrite|start with|somebody|someone|they (make|made|built|clean|speak|sell|sold|grow|use|check|stole|invite|send|sent)|happen|who does")
 P('pas_cont', 'Present continuous passive: is being done', 'B1.2', 'Says that something is being done now or around now: The road is being repaired.',
   n='pas_pres pc_form', v='pas_pres pas_perf', e='*The road is repairing; Your order is been prepared; The rooms is being cleaned*', m='43', t='B1: Passive verb forms', g='B1 present continuous, affirmative',
   topic='present_continuous_passive', d=1)

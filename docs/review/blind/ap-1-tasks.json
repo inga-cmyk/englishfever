@@ -1,0 +1,291 @@
+[
+ {
+  "id": "ap-1-001",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: In our office, the computers ___ by an IT company every Friday.",
+  "options": [
+   "check",
+   "were checked",
+   "are checking",
+   "are checked"
+  ]
+ },
+ {
+  "id": "ap-1-002",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: My grandfather ___ this cottage with his own hands in 1965.",
+  "options": [
+   "builds",
+   "built",
+   "is built",
+   "was built"
+  ]
+ },
+ {
+  "id": "ap-1-003",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The parcel ___ to the wrong address, so it came back to me a week later.",
+  "options": [
+   "was sent",
+   "sent",
+   "is sent",
+   "has sent"
+  ]
+ },
+ {
+  "id": "ap-1-004",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Every summer, thousands of tourists ___ the old town.",
+  "options": [
+   "are visited",
+   "visit",
+   "is visited",
+   "were visited"
+  ]
+ },
+ {
+  "id": "ap-1-005",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: Sorry, I can't hold the pen properly. I ___ by a bee while I was working in the garden.",
+  "options": [
+   "was stinging",
+   "stung",
+   "was stung",
+   "am stung"
+  ]
+ },
+ {
+  "id": "ap-1-006",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: This pasta sauce is my mum's recipe. She ___ it every Sunday.",
+  "options": [
+   "was made",
+   "makes",
+   "is making",
+   "is made"
+  ]
+ },
+ {
+  "id": "ap-1-007",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: The writer ___ in 1999, but his books are still popular.",
+  "options": [
+   "dies",
+   "died",
+   "was died",
+   "is died"
+  ]
+ },
+ {
+  "id": "ap-1-008",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "The fire was happened just after midnight.",
+   "The fire was put out by two in the morning.",
+   "The firefighters arrived within ten minutes.",
+   "Nobody was hurt in the fire."
+  ]
+ },
+ {
+  "id": "ap-1-009",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence has a mistake?",
+  "options": [
+   "Some flights were cancelled because of the snow.",
+   "The roads were cleared in the morning.",
+   "Our guests were arrived late because of the snow.",
+   "We stayed at home all weekend."
+  ]
+ },
+ {
+  "id": "ap-1-010",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Which sentence is correct?",
+  "options": [
+   "My best friend was written this song.",
+   "This song was wrote by my best friend.",
+   "This song was written by my best friend.",
+   "This song wrote by my best friend."
+  ]
+ },
+ {
+  "id": "ap-1-011",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "once",
+   "are",
+   "our",
+   "the",
+   "a",
+   "cleaned",
+   "building",
+   "in",
+   "month",
+   "windows"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "ap-1-012",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "built",
+   "when",
+   "was",
+   "this",
+   "church"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "ap-1-013",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "This hotel ___ ___ by a famous architect in the 1930s.",
+  "word_cards": [
+   "design",
+   "is",
+   "designed",
+   "was"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "ap-1-014",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Our flight ___ ___ because of the storm, so we stayed another night at the hotel.",
+  "word_cards": [
+   "cancelled",
+   "was",
+   "cancel",
+   "is"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "ap-1-015",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "In many Spanish families, dinner ___ ___ quite late, often after nine.",
+  "word_cards": [
+   "eaten",
+   "is",
+   "ate",
+   "was"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "ap-1-016",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "The police ___ the thief two hours after the robbery.",
+  "word_cards": [
+   "was caught",
+   "catch",
+   "were caught",
+   "caught"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "ap-1-017",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "The first email ___ in 1971. (send)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "ap-1-018",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "I ___ my husband at a friend's wedding twelve years ago. (meet)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "ap-1-019",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "In this café, breakfast ___ until eleven every day. (serve)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "ap-1-020",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "What ___ at the meeting yesterday? Nobody tells me anything! (happen)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "ap-1-021",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "All our bread ___ by hand in a small kitchen behind the shop. (make)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "ap-1-022",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "Our teacher ___ us homework every Friday, and today is Friday! (give)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "ap-1-023",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: My phone repaired in only twenty minutes yesterday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "ap-1-024",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Our train was arrived forty minutes late, so we missed the start of the concert.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "ap-1-025",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: Cars aren't allowing in the city centre on Sundays.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "ap-1-026",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Start with *My keys*: Someone found my keys in the car.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "ap-1-027",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Start with *A lot of rice*: They grow a lot of rice in this region.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "ap-1-028",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Start with *A boy from our street*: The window was broken by a boy from our street.",
+  "note": "the learner types a whole sentence"
+ }
+]

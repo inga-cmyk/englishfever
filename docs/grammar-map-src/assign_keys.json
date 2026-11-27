@@ -18826,5 +18826,229 @@
 "adv_can | C1 | gap | My name was missing from the passenger list, but after an hour of phone calls, I ___ ___ onto the plane. | ": [
 "x_allowed_once",
 "read"
+],
+"present_simple | A2.1 | text | Correct the mistake: My neighbour walk her dog every morning before work. | ": [
+"ps_form",
+"read"
+],
+"present_simple | A2.1 | text | Correct the mistake: I am agree with you about the price. | ": [
+"ps_form",
+"read"
+],
+"present_simple | A2.1 | text | Correct the mistake: Do your brother play any sport? | ": [
+"ps_negq",
+"read"
+],
+"present_simple | A2.2 | text | Correct the mistake: My boss doesn't drinks coffee after lunch. | ": [
+"ps_negq",
+"read"
+],
+"present_simple | A2.2 | text | Correct the mistake: Where you usually buy your vegetables? | ": [
+"ps_negq",
+"read"
+],
+"present_simple | A2.2 | text | Correct the mistake: Sorry, I am not understanding the question. Can you say it again? | ": [
+"stative",
+"read"
+],
+"present_simple | B1.1 | text | Correct the mistake: I'm thinking this plan is too expensive for us, so let's look for another one. | ": [
+"stative2",
+"read"
+],
+"present_simple | B1.1 | text | Correct the mistake: Light is travelling faster than sound, so you see the lightning before you hear the thunder. | ": [
+"ps_pc",
+"read"
+],
+"present_simple | B1.1 | text | Correct the mistake: It's depend on the traffic, so I can't say what time I'll be home. | ": [
+"ps_form",
+"read"
+],
+"past_simple | A2.1 | text | Correct the mistake: We was very tired after the long flight. | ": [
+"was_were",
+"read"
+],
+"past_simple | A2.1 | text | Correct the mistake: I buyed a new jacket last weekend. | ": [
+"pst_irr",
+"read"
+],
+"past_simple | A2.1 | text | Correct the mistake: Did you went to the concert on Friday? | ": [
+"pst_negq",
+"read"
+],
+"past_simple | A2.2 | text | Correct the mistake: Robert join our team two months ago. | ": [
+"pst_reg",
+"read"
+],
+"past_simple | A2.2 | text | Correct the mistake: I didn't saw your message until this morning. | ": [
+"pst_negq",
+"read"
+],
+"past_simple | A2.2 | text | Correct the mistake: We moved to this city before three years. | ": [
+"pst_reg",
+"read"
+],
+"past_simple | B1.1 | text | Correct the mistake. Keep *yesterday*: I have seen this film yesterday, so let's watch something else tonight. | ": [
+"pp_ps",
+"read"
+],
+"past_simple | B1.1 | text | Correct the mistake: Where did you stayed when you visited Rome last spring? | ": [
+"pst_negq",
+"read"
+],
+"past_simple | B1.1 | text | Correct the mistake: The meeting finished late, so I catched the last bus home. | ": [
+"pst_irr",
+"read"
+],
+"future | A2.1 | text | Correct the mistake. Keep *going*: We're going get a dog next year. | ": [
+"going_to",
+"read"
+],
+"future | A2.1 | text | Correct the mistake. Keep *going to*: She going to look for a new flat in May. | ": [
+"going_to",
+"read"
+],
+"future | A2.1 | text | Correct the mistake: Will I turn on the heating? It's very cold in here. | ": [
+"shall",
+"read"
+],
+"future | A2.2 | text | Correct the mistake: It's late. I walk you to the bus stop. | ": [
+"will_now",
+"read"
+],
+"future | A2.2 | text | Correct the mistake: I meet a client at nine tomorrow, so I can't take the kids to school. | ": [
+"fut_arr",
+"read"
+],
+"future | A2.2 | text | Correct the mistake. Keep *going to*: What you are going to do after the course? | ": [
+"going_to",
+"read"
+],
+"future | B1.1 | text | Correct the mistake: I promise I tell you as soon as I hear any news about the job. | ": [
+"will_now",
+"read"
+],
+"future | B1.1 | text | Correct the mistake: I can't go out until the plumber will come, so could you buy some bread? | ": [
+"fut_time_clause",
+"read"
+],
+"future | B1.2 | text | Correct the mistake: My phone won't charge last night, so I couldn't call you. | ": [
+"wont_refuse",
+"read"
+],
+"future | B1.2 | text | Correct the mistake. Keep *about*: Sorry, I can't talk now. I'm about going into a meeting. | ": [
+"about_to",
+"read"
+],
+"active_passive | B1.1 | mcq | Choose the correct option: In our office, the computers ___ by an IT company every Friday. | are checked": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | mcq | Choose the correct option: My grandfather ___ this cottage with his own hands in 1965. | built": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | mcq | Choose the correct option: The parcel ___ to the wrong address, so it came back to me a week later. | was sent": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | mcq | Choose the correct option: Every summer, thousands of tourists ___ the old town. | visit": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | mcq | Choose the correct option: This pasta sauce is my mum's recipe. She ___ it every Sunday. | makes": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | mcq | Choose the correct option: The writer ___ in 1999, but his books are still popular. | died": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | mcq | Which sentence has a mistake? | The fire was happened just after midnight.": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | mcq | Which sentence has a mistake? | Our guests were arrived late because of the snow.": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | mcq | Which sentence is correct? | This song was written by my best friend.": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | gap | This hotel ___ ___ by a famous architect in the 1930s. | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | gap | Our flight ___ ___ because of the storm, so we stayed another night at the hotel. | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | gap | The police ___ the thief two hours after the robbery. | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | gap | The first email ___ in 1971. (send) | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | gap | I ___ my husband at a friend's wedding twelve years ago. (meet) | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | gap | In this café, breakfast ___ until eleven every day. (serve) | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | gap | All our bread ___ by hand in a small kitchen behind the shop. (make) | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | gap | Our teacher ___ us homework every Friday, and today is Friday! (give) | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | text | Correct the mistake: My phone repaired in only twenty minutes yesterday. | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | text | Correct the mistake: Our train was arrived forty minutes late, so we missed the start of the concert. | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | text | Correct the mistake: Cars aren't allowing in the city centre on Sundays. | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | text | Start with *My keys*: Someone found my keys in the car. | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | text | Start with *A lot of rice*: They grow a lot of rice in this region. | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | text | Start with *A boy from our street*: The window was broken by a boy from our street. | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | mcq | Choose the correct option: I ___ by a bee while I was working in the garden. | was stung": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | order | Put the words in order. | the rubbish is collected every tuesday": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | gap | When ___ your house ___? It looks very old. (build) | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | gap | These days, in many Spanish families, dinner ___ ___ quite late, often after nine. | ": [
+"pas_act",
+"read"
+],
+"active_passive | B1.1 | gap | What ___ at the meeting yesterday? (happen) | ": [
+"pas_act",
+"read"
 ]
 }

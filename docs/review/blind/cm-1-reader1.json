@@ -1,0 +1,304 @@
+[
+{
+"id": "cm-1-001",
+"answer": "My sister works in a hotel and she loves it.",
+"other_correct": [
+"My sister is working in a hotel and she loves it."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-002",
+"answer": "I agree with you about the price.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-003",
+"answer": "Does your brother play any sport?",
+"other_correct": [
+"Do your brothers play any sport?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-004",
+"answer": "My boss doesn't drink coffee after lunch.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-005",
+"answer": "Where do you usually buy your vegetables?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-006",
+"answer": "Sorry, I don't understand the question. Can you say it again?",
+"other_correct": [
+"Sorry, I do not understand the question. Can you say it again?",
+"Sorry, I don't understand the question. Could you say it again?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-007",
+"answer": "I think this plan is too expensive for us, so let's look for another one.",
+"other_correct": [
+"I think that this plan is too expensive for us, so let's look for another one."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-008",
+"answer": "Water boils at 100 degrees Celsius, so the thermometer will show 100 when it starts to bubble.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-009",
+"answer": "It depends on the weather, so we'll decide about the picnic tomorrow morning.",
+"other_correct": [
+"It depends on the weather, so we will decide about the picnic tomorrow morning."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-010",
+"answer": "We were very tired after the long flight.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-011",
+"answer": "I bought a new jacket last weekend.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-012",
+"answer": "Did you go to the concert on Friday?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-013",
+"answer": "Robert joined our team two months ago.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-014",
+"answer": "I didn't see your message until this morning.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-015",
+"answer": "We moved to this city three years ago.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-016",
+"answer": "I lost my keys yesterday, so I had to call a locksmith.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-017",
+"answer": "Where did you stay when you visited Rome last spring?",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-018",
+"answer": "The meeting finished late, so I caught the last bus home.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-019",
+"answer": "I'm going to visit my parents this weekend.",
+"other_correct": [
+"I am going to visit my parents this weekend.",
+"I'm visiting my parents this weekend.",
+"I am visiting my parents this weekend.",
+"I'll visit my parents this weekend. (less natural for a plan)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-020",
+"answer": "She is going to look for a new flat in May.",
+"other_correct": [
+"She's going to look for a new flat in May.",
+"She is looking for a new flat in May.",
+"She's looking for a new flat in May.",
+"She will look for a new flat in May. (less natural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-021",
+"answer": "Shall I open the window? It's very hot in here.",
+"other_correct": [
+"Should I open the window? It's very hot in here.",
+"Can I open the window? It's very hot in here.",
+"May I open the window? It's very hot in here."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Two corrections fit equally (Shall/Should/Can I); the mistake is only 'Will I' and the fix is not unique in meaning (Can I asks permission)."
+},
+{
+"id": "cm-1-022",
+"answer": "I'll carry it for you.",
+"other_correct": [
+"I will carry it for you.",
+"I can carry it for you."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-023",
+"answer": "I'm meeting Anna for lunch tomorrow, so I can't help you then.",
+"other_correct": [
+"I am meeting Anna for lunch tomorrow, so I can't help you then.",
+"I'm going to meet Anna for lunch tomorrow, so I can't help you then.",
+"I am going to meet Anna for lunch tomorrow, so I can't help you then.",
+"I will meet Anna for lunch tomorrow, so I can't help you then. (less natural for an arrangement)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-024",
+"answer": "What are you going to do after the course?",
+"other_correct": [
+"What are you doing after the course?",
+"What will you do after the course?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-025",
+"answer": "I promise I'll tell you as soon as I hear any news about the job.",
+"other_correct": [
+"I promise I will tell you as soon as I hear any news about the job.",
+"I promise I'm going to tell you as soon as I hear any news about the job. (less natural)"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-026",
+"answer": "Are you going to sell your old car or are you going to keep it?",
+"other_correct": [
+"Are you going to sell your old car or keep it?",
+"Are you going to sell your old car or will you keep it?",
+"Are you going to sell your old car or are you keeping it?"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "cm-1-027",
+"answer": "The car wouldn't start this morning, so I took the bus to work.",
+"other_correct": [
+"The car didn't start this morning, so I took the bus to work.",
+"The car won't start this morning, so I'll take the bus to work."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Fix is not unique: change won't to wouldn't/didn't, or change took to 'I'll take' (present reading of 'this morning'). Also the point (wouldn't = refused to) is rather subtle for a plain 'correct the mistake' task."
+},
+{
+"id": "cm-1-028",
+"answer": "Hurry up! The film is about to start.",
+"other_correct": [
+"Hurry up! The film is going to start.",
+"Hurry up! The film is starting.",
+"Hurry up! The film is just about to start."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

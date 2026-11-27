@@ -922,7 +922,8 @@
 "name": "Active or passive?",
 "topics": [
 "present_simple_passive",
-"past_simple_passive"
+"past_simple_passive",
+"active_passive"
 ]
 },
 "pas_cont": {
@@ -8361,6 +8362,34 @@
 "future | text | Correct the mistake: I promise I tell you as soon as I hear any news about the job. | ": "will_now",
 "future | text | Correct the mistake: I can't go out until the plumber will come, so could you buy some bread? | ": "fut_time_clause",
 "future | text | Correct the mistake: My phone won't charge last night, so I couldn't call you. | ": "wont_refuse",
-"future | text | Correct the mistake. Keep *about*: Sorry, I can't talk now. I'm about going into a meeting. | ": "about_to"
+"future | text | Correct the mistake. Keep *about*: Sorry, I can't talk now. I'm about going into a meeting. | ": "about_to",
+"active_passive | mcq | Choose the correct option: In our office, the computers ___ by an IT company every Friday. | are checked": "pas_act",
+"active_passive | mcq | Choose the correct option: My grandfather ___ this cottage with his own hands in 1965. | built": "pas_act",
+"active_passive | mcq | Choose the correct option: The parcel ___ to the wrong address, so it came back to me a week later. | was sent": "pas_act",
+"active_passive | mcq | Choose the correct option: Every summer, thousands of tourists ___ the old town. | visit": "pas_act",
+"active_passive | mcq | Choose the correct option: I ___ by a bee while I was working in the garden. | was stung": "pas_act",
+"active_passive | mcq | Choose the correct option: This pasta sauce is my mum's recipe. She ___ it every Sunday. | makes": "pas_act",
+"active_passive | mcq | Choose the correct option: The writer ___ in 1999, but his books are still popular. | died": "pas_act",
+"active_passive | mcq | Which sentence has a mistake? | The fire was happened just after midnight.": "pas_act",
+"active_passive | mcq | Which sentence has a mistake? | Our guests were arrived late because of the snow.": "pas_act",
+"active_passive | mcq | Which sentence is correct? | This song was written by my best friend.": "pas_act",
+"active_passive | order | Put the words in order. | the rubbish is collected every tuesday": "pas_act",
+"active_passive | gap | When ___ your house ___? It looks very old. (build) | ": "pas_act",
+"active_passive | gap | This hotel ___ ___ by a famous architect in the 1930s. | ": "pas_act",
+"active_passive | gap | Our flight ___ ___ because of the storm, so we stayed another night at the hotel. | ": "pas_act",
+"active_passive | gap | These days, in many Spanish families, dinner ___ ___ quite late, often after nine. | ": "pas_act",
+"active_passive | gap | The police ___ the thief two hours after the robbery. | ": "pas_act",
+"active_passive | gap | The first email ___ in 1971. (send) | ": "pas_act",
+"active_passive | gap | I ___ my husband at a friend's wedding twelve years ago. (meet) | ": "pas_act",
+"active_passive | gap | In this café, breakfast ___ until eleven every day. (serve) | ": "pas_act",
+"active_passive | gap | What ___ at the meeting yesterday? (happen) | ": "pas_act",
+"active_passive | gap | All our bread ___ by hand in a small kitchen behind the shop. (make) | ": "pas_act",
+"active_passive | gap | Our teacher ___ us homework every Friday, and today is Friday! (give) | ": "pas_act",
+"active_passive | text | Correct the mistake: My phone repaired in only twenty minutes yesterday. | ": "pas_act",
+"active_passive | text | Correct the mistake: Our train was arrived forty minutes late, so we missed the start of the concert. | ": "pas_act",
+"active_passive | text | Correct the mistake: Cars aren't allowing in the city centre on Sundays. | ": "pas_act",
+"active_passive | text | Start with *My keys*: Someone found my keys in the car. | ": "pas_act",
+"active_passive | text | Start with *A lot of rice*: They grow a lot of rice in this region. | ": "pas_act",
+"active_passive | text | Start with *A boy from our street*: The window was broken by a boy from our street. | ": "pas_act"
 }
 }

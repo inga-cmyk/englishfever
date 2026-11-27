@@ -1,0 +1,311 @@
+[
+{
+"id": "ap-1-001",
+"answer": "are checked",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-002",
+"answer": "built",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-003",
+"answer": "was sent",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-004",
+"answer": "visit",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-005",
+"answer": "was stung",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-006",
+"answer": "makes",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-007",
+"answer": "died",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-008",
+"answer": "The fire was happened just after midnight.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-009",
+"answer": "Our guests were arrived late because of the snow.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-010",
+"answer": "This song was written by my best friend.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-011",
+"answer": "the windows in our building are cleaned once a month",
+"other_correct": [
+[
+"once a month the windows in our building are cleaned"
+],
+[
+"in our building the windows are cleaned once a month"
+],
+[
+"once a month in our building the windows are cleaned"
+],
+[
+"the windows are cleaned in our building once a month"
+],
+[
+"in our building once a month the windows are cleaned"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Many natural orders possible (adverbial can go at start, middle or end); the task has no single answer unless the checker accepts all.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-012",
+"answer": "when was this church built",
+"other_correct": [
+[
+"when this church was built"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Only five cards and the question word starts the sentence: very easy, almost no reordering. Without punctuation 'when this church was built' (a clause) also uses all cards.",
+"level_problem": "Easy for B1.1 (A2-level word order).",
+"sense_problem": ""
+},
+{
+"id": "ap-1-013",
+"answer": [
+"was",
+"designed"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-014",
+"answer": [
+"was",
+"cancelled"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-015",
+"answer": [
+"is",
+"eaten"
+],
+"other_correct": [
+[
+"was",
+"eaten"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "No tense cue: 'was eaten' is grammatical (past habit/history) though less natural; learner cannot tell which is wanted.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-016",
+"answer": [
+"caught"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-017",
+"answer": [
+"was sent"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-018",
+"answer": [
+"met"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-019",
+"answer": [
+"is served"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-020",
+"answer": [
+"happened"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "'Nobody tells me anything!' is not needed: 'What ___ at the meeting yesterday? (happen)' already gives only 'happened'.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-021",
+"answer": [
+"is made"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-022",
+"answer": [
+"gives"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-023",
+"answer": "My phone was repaired in only twenty minutes yesterday.",
+"other_correct": [
+"My phone got repaired in only twenty minutes yesterday."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-024",
+"answer": "Our train arrived forty minutes late, so we missed the start of the concert.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-025",
+"answer": "Cars aren't allowed in the city centre on Sundays.",
+"other_correct": [
+"Cars are not allowed in the city centre on Sundays.",
+"Cars aren't allowed in the city center on Sundays.",
+"Cars are not allowed in the city center on Sundays."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-026",
+"answer": "My keys were found in the car.",
+"other_correct": [
+"My keys were found in the car by someone.",
+"My keys have been found in the car."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'by someone' is optional; answer with or without it is correct.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-027",
+"answer": "A lot of rice is grown in this region.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-1-028",
+"answer": "A boy from our street broke the window.",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+}
+]

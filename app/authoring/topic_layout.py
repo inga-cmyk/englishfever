@@ -24,7 +24,7 @@ CARD_LEVEL = {
     "cmp_ps_pc": "A2", "conj_basic": "A2", "conj_linkers": "A2",
     # B1
     "present_perfect_continuous": "B1", "past_perfect": "B1", "used_to": "B1", "cmp_pp_ps": "B1", "narrative": "B1",
-    "present_simple_passive": "B1", "past_simple_passive": "B1", "present_continuous_passive": "B1", "present_perfect_passive": "B1",
+    "present_simple_passive": "A2", "past_simple_passive": "A2", "active_passive": "B1", "present_continuous_passive": "B1", "present_perfect_passive": "B1",
     "future_passive": "B1", "passive_modals": "B1", "more_modals": "B1", "cond_second": "B1", "cond_third": "B1",
     "time_clauses": "B1", "rep_statements": "B1", "rep_questions": "B1", "ind_polite": "B1", "relative_clauses": "B1",
     "question_tags": "B1", "articles_b1": "B1", "causative": "B1", "adj_ed_ing": "B1", "adj_order": "B1", "so_such": "B1",

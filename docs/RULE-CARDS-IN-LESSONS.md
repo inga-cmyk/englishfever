@@ -47,6 +47,7 @@ A direct link without the website also works: `https://practice.englishfever.com
 | Active tenses | Future: will, going to, present continuous | `future` | `[ef_rule_card topic="future" lang="lv"]` |
 | Passive tenses | Present simple passive | `present_simple_passive` | `[ef_rule_card topic="present_simple_passive" lang="lv"]` |
 | Passive tenses | Past simple passive | `past_simple_passive` | `[ef_rule_card topic="past_simple_passive" lang="lv"]` |
+| Passive tenses | Active or passive? Present and past | `active_passive` | `[ef_rule_card topic="active_passive" lang="lv"]` |
 | Passive tenses | Present continuous passive | `present_continuous_passive` | `[ef_rule_card topic="present_continuous_passive" lang="lv"]` |
 | Passive tenses | Present perfect passive | `present_perfect_passive` | `[ef_rule_card topic="present_perfect_passive" lang="lv"]` |
 | Passive tenses | Future passive (will be done) | `future_passive` | `[ef_rule_card topic="future_passive" lang="lv"]` |

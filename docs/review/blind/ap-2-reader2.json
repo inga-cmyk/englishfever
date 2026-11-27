@@ -1,0 +1,100 @@
+[
+{
+"id": "ap-2-001",
+"answer": "was stung",
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-2-002",
+"answer": "the rubbish is collected every tuesday",
+"other_correct": [
+"every tuesday the rubbish is collected"
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-2-003",
+"answer": [
+"was",
+"built"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-2-004",
+"answer": [
+"is",
+"eaten"
+],
+"other_correct": "",
+"wrong_options_that_fit": "",
+"instruction_problem": "Cards make it a choice of is/was; 'These days' is a clear cue, so very easy.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-2-005",
+"answer": [
+"happened"
+],
+"other_correct": [
+[
+"was happening"
+]
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": "Active verb in a passive set; 'was happening' is also correct English (less natural for a single event)."
+},
+{
+"id": "ap-2-006",
+"answer": "My phone was repaired in only twenty minutes yesterday.",
+"other_correct": [
+"My phone got repaired in only twenty minutes yesterday.",
+"My phone was fixed in only twenty minutes yesterday.",
+"My phone has been repaired in only twenty minutes."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-2-007",
+"answer": "My keys were found in the car.",
+"other_correct": [
+"My keys were found in the car by someone.",
+"My keys have been found in the car.",
+"My keys were found by someone in the car."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "Does not say to use the passive; the learner must guess. Other tenses/by-agent versions are acceptable.",
+"level_problem": "",
+"sense_problem": ""
+},
+{
+"id": "ap-2-008",
+"answer": "A lot of rice is grown in this region.",
+"other_correct": [
+"A lot of rice grows in this region.",
+"A lot of rice has been grown in this region.",
+"A lot of rice is grown in this region by them."
+],
+"wrong_options_that_fit": "",
+"instruction_problem": "'Start with' does not require the passive; 'A lot of rice grows in this region' is correct English and avoids the target grammar.",
+"level_problem": "",
+"sense_problem": ""
+}
+]

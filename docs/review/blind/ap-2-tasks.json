@@ -1,0 +1,77 @@
+[
+ {
+  "id": "ap-2-001",
+  "level": "B1.1",
+  "kind": "mcq",
+  "instruction_and_task": "Choose the correct option: I ___ by a bee while I was working in the garden.",
+  "options": [
+   "was stinging",
+   "stung",
+   "was stung",
+   "am stung"
+  ]
+ },
+ {
+  "id": "ap-2-002",
+  "level": "B1.1",
+  "kind": "order",
+  "instruction_and_task": "Put the words in order.",
+  "word_cards": [
+   "collected",
+   "every",
+   "is",
+   "rubbish",
+   "tuesday",
+   "the"
+  ],
+  "note": "the learner puts all the cards in order"
+ },
+ {
+  "id": "ap-2-003",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "When ___ your house ___? It looks very old. (build)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "ap-2-004",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "These days, in many Spanish families, dinner ___ ___ quite late, often after nine.",
+  "word_cards": [
+   "eaten",
+   "is",
+   "was",
+   "ate"
+  ],
+  "note": "the learner drags one card into each gap"
+ },
+ {
+  "id": "ap-2-005",
+  "level": "B1.1",
+  "kind": "gap",
+  "instruction_and_task": "What ___ at the meeting yesterday? (happen)",
+  "note": "the learner types the missing word(s); several gaps: one answer per gap"
+ },
+ {
+  "id": "ap-2-006",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Correct the mistake: My phone repaired in only twenty minutes yesterday.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "ap-2-007",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Start with *My keys*: Someone found my keys in the car.",
+  "note": "the learner types a whole sentence"
+ },
+ {
+  "id": "ap-2-008",
+  "level": "B1.1",
+  "kind": "text",
+  "instruction_and_task": "Start with *A lot of rice*: They grow a lot of rice in this region.",
+  "note": "the learner types a whole sentence"
+ }
+]

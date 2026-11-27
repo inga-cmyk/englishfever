@@ -1,0 +1,993 @@
+{
+ "ap-1-001": {
+  "hash": "60a0bebe46d5e08c",
+  "gate_key": "active_passive | B1.1 | mcq | Choose the correct option: In our office, the computers ___ by an IT company every Friday. | are checked",
+  "src": "zz-blind-active-passive-1.csv:2",
+  "point": "pas_act",
+  "key": {
+   "kind": "mcq",
+   "correct": "are checked",
+   "wrong": [
+    "check",
+    "were checked",
+    "are checking"
+   ]
+  },
+  "item": {
+   "id": "c-0611",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: In our office, the computers ___ by an IT company every Friday.",
+   "why": "The computers do not check anything: someone checks them, so passive. *every Friday* is a habit now: *are checked*.",
+   "why_lv": "*Datori neko* nepārbauda: tos kāds pārbauda, tāpēc ciešamā kārta. *every Friday* ir ieradums tagad: *are checked*.",
+   "correct": "are checked",
+   "wrong": [
+    "check",
+    "were checked",
+    "are checking"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:2"
+  }
+ },
+ "ap-1-002": {
+  "hash": "cf9289a7f6c14ff1",
+  "gate_key": "active_passive | B1.1 | mcq | Choose the correct option: My grandfather ___ this cottage with his own hands in 1965. | built",
+  "src": "zz-blind-active-passive-1.csv:3",
+  "point": "pas_act",
+  "key": {
+   "kind": "mcq",
+   "correct": "built",
+   "wrong": [
+    "was built",
+    "is built",
+    "builds"
+   ]
+  },
+  "item": {
+   "id": "c-0612",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: My grandfather ___ this cottage with his own hands in 1965.",
+   "why": "My grandfather did the building himself, so active. *in 1965* is past: *built*.",
+   "why_lv": "Vectēvs pats būvēja, tāpēc darāmā kārta. *in 1965* ir pagātne: *built*.",
+   "correct": "built",
+   "wrong": [
+    "was built",
+    "is built",
+    "builds"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:3"
+  }
+ },
+ "ap-1-003": {
+  "hash": "11ea20b6ccbbbe21",
+  "gate_key": "active_passive | B1.1 | mcq | Choose the correct option: The parcel ___ to the wrong address, so it came back to me a week later. | was sent",
+  "src": "zz-blind-active-passive-1.csv:4",
+  "point": "pas_act",
+  "key": {
+   "kind": "mcq",
+   "correct": "was sent",
+   "wrong": [
+    "sent",
+    "is sent",
+    "has sent"
+   ]
+  },
+  "item": {
+   "id": "c-0613",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: The parcel ___ to the wrong address, so it came back to me a week later.",
+   "why": "A parcel does not send anything: someone sent it, so passive. *came back* is past: *was sent*.",
+   "why_lv": "*Paka neko* nesūta: to kāds nosūtīja, tāpēc ciešamā kārta. *came back* ir pagātne: *was sent*.",
+   "correct": "was sent",
+   "wrong": [
+    "sent",
+    "is sent",
+    "has sent"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:4"
+  }
+ },
+ "ap-1-004": {
+  "hash": "d78d132d6c98ebff",
+  "gate_key": "active_passive | B1.1 | mcq | Choose the correct option: Every summer, thousands of tourists ___ the old town. | visit",
+  "src": "zz-blind-active-passive-1.csv:5",
+  "point": "pas_act",
+  "key": {
+   "kind": "mcq",
+   "correct": "visit",
+   "wrong": [
+    "are visited",
+    "were visited",
+    "is visited"
+   ]
+  },
+  "item": {
+   "id": "c-0614",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: Every summer, thousands of tourists ___ the old town.",
+   "why": "The tourists do the visiting, so active. *Every summer* is a habit now: *visit*.",
+   "why_lv": "Tūristi paši apmeklē, tāpēc darāmā kārta. *Every summer* ir ieradums tagad: *visit*.",
+   "correct": "visit",
+   "wrong": [
+    "are visited",
+    "were visited",
+    "is visited"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:5"
+  }
+ },
+ "ap-1-005": {
+  "hash": "3a3b5dfadc89555c",
+  "gate_key": "active_passive | B1.1 | mcq | Choose the correct option: Sorry, I can't hold the pen properly. I ___ by a bee while I was working in the garden. | was stung",
+  "src": "zz-blind-active-passive-1.csv:6",
+  "point": "pas_act",
+  "key": {
+   "kind": "mcq",
+   "correct": "was stung",
+   "wrong": [
+    "stung",
+    "am stung",
+    "was stinging"
+   ]
+  },
+  "item": {
+   "id": "c-0615",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: Sorry, I can't hold the pen properly. I ___ by a bee while I was working in the garden.",
+   "why": "The bee did it to me, so passive: *I was stung by a bee*. *while I was working* is past: *was stung*.",
+   "why_lv": "*Bite to* izdarīja ar *mani*, tāpēc ciešamā kārta: *I was stung by a bee.* *while I was working* ir pagātne: *was stung*.",
+   "correct": "was stung",
+   "wrong": [
+    "stung",
+    "am stung",
+    "was stinging"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:6"
+  }
+ },
+ "ap-1-006": {
+  "hash": "888d12b55a231cdb",
+  "gate_key": "active_passive | B1.1 | mcq | Choose the correct option: This pasta sauce is my mum's recipe. She ___ it every Sunday. | makes",
+  "src": "zz-blind-active-passive-1.csv:7",
+  "point": "pas_act",
+  "key": {
+   "kind": "mcq",
+   "correct": "makes",
+   "wrong": [
+    "is made",
+    "was made",
+    "is making"
+   ]
+  },
+  "item": {
+   "id": "c-0616",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: This pasta sauce is my mum's recipe. She ___ it every Sunday.",
+   "why": "My mum does the cooking, so active. *every Sunday* is a habit: present simple, *makes*.",
+   "why_lv": "*Mamma* pati *gatavo*, tāpēc darāmā kārta. *every Sunday* ir ieradums: Present Simple, *makes*.",
+   "correct": "makes",
+   "wrong": [
+    "is made",
+    "was made",
+    "is making"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:7"
+  }
+ },
+ "ap-1-007": {
+  "hash": "e3990cfcbbd6d880",
+  "gate_key": "active_passive | B1.1 | mcq | Choose the correct option: The writer ___ in 1999, but his books are still popular. | died",
+  "src": "zz-blind-active-passive-1.csv:8",
+  "point": "pas_act",
+  "key": {
+   "kind": "mcq",
+   "correct": "died",
+   "wrong": [
+    "was died",
+    "is died",
+    "dies"
+   ]
+  },
+  "item": {
+   "id": "c-0617",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Choose the correct option: The writer ___ in 1999, but his books are still popular.",
+   "why": "*die* has no object, so it has no passive: *died*. *in 1999* is past.",
+   "why_lv": "*die* nav papildinātāja, tāpēc tam nav ciešamās kārtas: *died*. *in 1999* ir pagātne.",
+   "correct": "died",
+   "wrong": [
+    "was died",
+    "is died",
+    "dies"
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:8"
+  }
+ },
+ "ap-1-008": {
+  "hash": "b98d4f7f0a7432fb",
+  "gate_key": "active_passive | B1.1 | mcq | Which sentence has a mistake? | The fire was happened just after midnight.",
+  "src": "zz-blind-active-passive-1.csv:9",
+  "point": "pas_act",
+  "key": {
+   "kind": "mcq",
+   "correct": "The fire was happened just after midnight.",
+   "wrong": [
+    "The firefighters arrived within ten minutes.",
+    "The fire was put out by two in the morning.",
+    "Nobody was hurt in the fire."
+   ]
+  },
+  "item": {
+   "id": "c-0618",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*happen* has no object, so it has no passive: *The fire happened*. *was put out* and *was hurt* are correct passives: someone did it to the fire, something hurt people.",
+   "why_lv": "*happen* nav papildinātāja, tāpēc tam nav ciešamās kārtas: *The fire happened.* *was put out* un *was hurt* ir *pareiza* ciešamā kārta.",
+   "correct": "The fire was happened just after midnight.",
+   "wrong": [
+    "The firefighters arrived within ten minutes.",
+    "The fire was put out by two in the morning.",
+    "Nobody was hurt in the fire."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:9"
+  }
+ },
+ "ap-1-009": {
+  "hash": "8276dd3406152a9e",
+  "gate_key": "active_passive | B1.1 | mcq | Which sentence has a mistake? | Our guests were arrived late because of the snow.",
+  "src": "zz-blind-active-passive-1.csv:10",
+  "point": "pas_act",
+  "key": {
+   "kind": "mcq",
+   "correct": "Our guests were arrived late because of the snow.",
+   "wrong": [
+    "The roads were cleared in the morning.",
+    "Some flights were cancelled because of the snow.",
+    "We stayed at home all weekend."
+   ]
+  },
+  "item": {
+   "id": "c-0619",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 4,
+   "kind": "mcq",
+   "q": "Which sentence has a mistake?",
+   "why": "*arrive* has no object, so it has no passive: *Our guests arrived late*.",
+   "why_lv": "*arrive* nav papildinātāja, tāpēc tam nav ciešamās kārtas: *Our guests arrived late.*",
+   "correct": "Our guests were arrived late because of the snow.",
+   "wrong": [
+    "The roads were cleared in the morning.",
+    "Some flights were cancelled because of the snow.",
+    "We stayed at home all weekend."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:10"
+  }
+ },
+ "ap-1-010": {
+  "hash": "3230fc0007f310d2",
+  "gate_key": "active_passive | B1.1 | mcq | Which sentence is correct? | This song was written by my best friend.",
+  "src": "zz-blind-active-passive-1.csv:11",
+  "point": "pas_act",
+  "key": {
+   "kind": "mcq",
+   "correct": "This song was written by my best friend.",
+   "wrong": [
+    "This song wrote by my best friend.",
+    "This song was wrote by my best friend.",
+    "My best friend was written this song."
+   ]
+  },
+  "item": {
+   "id": "c-0620",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "mcq",
+   "q": "Which sentence is correct?",
+   "why": "The song does not write: my best friend wrote it. Passive: *was* + 3rd form, *was written*, and *by* + who did it.",
+   "why_lv": "*Dziesma neraksta*: *to* uzrakstīja draugs. Ciešamā kārta: *was* + 3. forma, *was written*, un *by* + darītājs.",
+   "correct": "This song was written by my best friend.",
+   "wrong": [
+    "This song wrote by my best friend.",
+    "This song was wrote by my best friend.",
+    "My best friend was written this song."
+   ],
+   "wrong_why": [],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:11"
+  }
+ },
+ "ap-1-011": {
+  "hash": "3abb1b53a5fe7f48",
+  "gate_key": "active_passive | B1.1 | order | Put the words in order. | the windows in our building are cleaned once a month",
+  "src": "zz-blind-active-passive-1.csv:12",
+  "point": "pas_act",
+  "key": {
+   "kind": "order",
+   "sentence": "the windows in our building are cleaned once a month",
+   "also": [
+    "once a month the windows in our building are cleaned"
+   ]
+  },
+  "item": {
+   "id": "c-0621",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "Passive: *are* + 3rd form. The windows do not clean anything; someone cleans them.",
+   "why_lv": "Ciešamā kārta: *are* + 3. forma. *Logi neko* netīra; tos kāds tīra.",
+   "sentence": "the windows in our building are cleaned once a month",
+   "answers": [
+    [
+     "the windows in our building are cleaned once a month",
+     "once a month the windows in our building are cleaned"
+    ]
+   ],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:12"
+  }
+ },
+ "ap-1-012": {
+  "hash": "3420bf5e5349c883",
+  "gate_key": "active_passive | B1.1 | order | Put the words in order. | when was this church built",
+  "src": "zz-blind-active-passive-1.csv:13",
+  "point": "pas_act",
+  "key": {
+   "kind": "order",
+   "sentence": "when was this church built",
+   "also": []
+  },
+  "item": {
+   "id": "c-0622",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "order",
+   "q": "Put the words in order.",
+   "why": "A passive question: *When* + *was* + subject + 3rd form?",
+   "why_lv": "Jautājums ciešamajā kārtā: *When + was* + teikuma priekšmets + 3. forma?",
+   "sentence": "when was this church built",
+   "answers": [
+    [
+     "when was this church built"
+    ]
+   ],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:13"
+  }
+ },
+ "ap-1-013": {
+  "hash": "3dc894451661e579",
+  "gate_key": "active_passive | B1.1 | gap | This hotel ___ ___ by a famous architect in the 1930s. | ",
+  "src": "zz-blind-active-passive-1.csv:14",
+  "point": "pas_act",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was"
+    ],
+    [
+     "designed"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0623",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "This hotel ___ ___ by a famous architect in the 1930s.",
+   "why": "The hotel did not design anything: an architect designed it. *in the 1930s* is past: *was designed*.",
+   "why_lv": "Viesnīca *neko* neprojektēja: to projektēja *arhitekts*. *in the 1930s* ir pagātne: *was designed*.",
+   "answers": [
+    [
+     "was"
+    ],
+    [
+     "designed"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "was",
+    "designed",
+    "is",
+    "design"
+   ],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:14"
+  }
+ },
+ "ap-1-014": {
+  "hash": "a33f3e7ef86941e7",
+  "gate_key": "active_passive | B1.1 | gap | Our flight ___ ___ because of the storm, so we stayed another night at the hotel. | ",
+  "src": "zz-blind-active-passive-1.csv:15",
+  "point": "pas_act",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was"
+    ],
+    [
+     "cancelled"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0624",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Our flight ___ ___ because of the storm, so we stayed another night at the hotel.",
+   "why": "A flight does not cancel anything: the airline cancelled it. *stayed* is past: *was cancelled*.",
+   "why_lv": "*Reiss neko* neatceļ: to atcēla aviokompānija. *stayed* ir pagātne: *was cancelled*.",
+   "answers": [
+    [
+     "was"
+    ],
+    [
+     "cancelled"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "was",
+    "cancelled",
+    "is",
+    "cancel"
+   ],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:15"
+  }
+ },
+ "ap-1-015": {
+  "hash": "99e3ec0130177521",
+  "gate_key": "active_passive | B1.1 | gap | In many Spanish families, dinner ___ ___ quite late, often after nine. | ",
+  "src": "zz-blind-active-passive-1.csv:16",
+  "point": "pas_act",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is"
+    ],
+    [
+     "eaten"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0625",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "In many Spanish families, dinner ___ ___ quite late, often after nine.",
+   "why": "Dinner does not eat: people eat it, so passive. A habit now: *is eaten*.",
+   "why_lv": "Vakariņas neēd: tās ēd cilvēki, tāpēc ciešamā kārta. Ieradums tagad: *is eaten*.",
+   "answers": [
+    [
+     "is"
+    ],
+    [
+     "eaten"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "is",
+    "eaten",
+    "ate",
+    "was"
+   ],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:16"
+  }
+ },
+ "ap-1-016": {
+  "hash": "f8b9bca6e2a8e055",
+  "gate_key": "active_passive | B1.1 | gap | The police ___ the thief two hours after the robbery. | ",
+  "src": "zz-blind-active-passive-1.csv:17",
+  "point": "pas_act",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "caught"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0626",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The police ___ the thief two hours after the robbery.",
+   "why": "The police did the catching, so active. The robbery is past: *caught*.",
+   "why_lv": "*Policija* pati noķēra, tāpēc darāmā kārta. Laupīšana ir pagātnē: *caught*.",
+   "answers": [
+    [
+     "caught"
+    ]
+   ],
+   "hints": [],
+   "bank": [
+    "caught",
+    "was caught",
+    "were caught",
+    "catch"
+   ],
+   "role": "check",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:17"
+  }
+ },
+ "ap-1-017": {
+  "hash": "66a152d1f249f057",
+  "gate_key": "active_passive | B1.1 | gap | The first email ___ in 1971. (send) | ",
+  "src": "zz-blind-active-passive-1.csv:18",
+  "point": "pas_act",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "was sent"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0627",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "The first email ___ in 1971. (send)",
+   "why": "An email does not send anything: someone sent it. *in 1971* is past: *was sent*.",
+   "why_lv": "*E-pasts neko* nesūta: to kāds nosūtīja. *in 1971* ir pagātne: *was sent*.",
+   "answers": [
+    [
+     "was sent"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:18"
+  }
+ },
+ "ap-1-018": {
+  "hash": "6dfcd3b0be874aef",
+  "gate_key": "active_passive | B1.1 | gap | I ___ my husband at a friend's wedding twelve years ago. (meet) | ",
+  "src": "zz-blind-active-passive-1.csv:19",
+  "point": "pas_act",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "met"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0628",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "I ___ my husband at a friend's wedding twelve years ago. (meet)",
+   "why": "I did the meeting, so active. *twelve years ago* is past: *met*.",
+   "why_lv": "Es pati *satiku*, tāpēc darāmā kārta. *twelve years ago* ir pagātne: *met*.",
+   "answers": [
+    [
+     "met"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:19"
+  }
+ },
+ "ap-1-019": {
+  "hash": "a4f0f52398ab60c6",
+  "gate_key": "active_passive | B1.1 | gap | In this café, breakfast ___ until eleven every day. (serve) | ",
+  "src": "zz-blind-active-passive-1.csv:20",
+  "point": "pas_act",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is served"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0629",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "In this café, breakfast ___ until eleven every day. (serve)",
+   "why": "Breakfast does not serve: the staff serve it, so passive. *every day* is a habit now: *is served*.",
+   "why_lv": "*Brokastis neko nepasniedz*: tās *pasniedz darbinieki*, tāpēc ciešamā kārta. *every day* ir ieradums tagad: *is served*.",
+   "answers": [
+    [
+     "is served"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:20"
+  }
+ },
+ "ap-1-020": {
+  "hash": "45a1c3e8a39e1817",
+  "gate_key": "active_passive | B1.1 | gap | What ___ at the meeting yesterday? Nobody tells me anything! (happen) | ",
+  "src": "zz-blind-active-passive-1.csv:21",
+  "point": "pas_act",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "happened"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0630",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "What ___ at the meeting yesterday? Nobody tells me anything! (happen)",
+   "why": "*happen* has no object, so it has no passive: *happened*. *yesterday* is past.",
+   "why_lv": "*happen* nav papildinātāja, tāpēc tam nav ciešamās kārtas: *happened*. *yesterday* ir pagātne.",
+   "answers": [
+    [
+     "happened"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:21"
+  }
+ },
+ "ap-1-021": {
+  "hash": "c90d7e06fb268ffb",
+  "gate_key": "active_passive | B1.1 | gap | All our bread ___ by hand in a small kitchen behind the shop. (make) | ",
+  "src": "zz-blind-active-passive-1.csv:22",
+  "point": "pas_act",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "is made"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0631",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "All our bread ___ by hand in a small kitchen behind the shop. (make)",
+   "why": "Bread does not make anything: the bakers make it, so passive. It is how the shop works now: *is made*.",
+   "why_lv": "*Maize neko netaisa*: *to taisa maiznieki*, tāpēc ciešamā kārta. Tā *veikals* strādā tagad: *is made*.",
+   "answers": [
+    [
+     "is made"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:22"
+  }
+ },
+ "ap-1-022": {
+  "hash": "709191f3a2df9900",
+  "gate_key": "active_passive | B1.1 | gap | Our teacher ___ us homework every Friday, and today is Friday! (give) | ",
+  "src": "zz-blind-active-passive-1.csv:23",
+  "point": "pas_act",
+  "key": {
+   "kind": "gap",
+   "accepted": [
+    [
+     "gives"
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0632",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "gap",
+   "q": "Our teacher ___ us homework every Friday, and today is Friday! (give)",
+   "why": "The teacher does the giving, so active. *every Friday* is a habit now: *gives*.",
+   "why_lv": "Skolotājs pats *uzdod*, tāpēc darāmā kārta. *every Friday* ir ieradums tagad: *gives*.",
+   "answers": [
+    [
+     "gives"
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:23"
+  }
+ },
+ "ap-1-023": {
+  "hash": "3c749552e411cf4e",
+  "gate_key": "active_passive | B1.1 | text | Correct the mistake: My phone repaired in only twenty minutes yesterday. | ",
+  "src": "zz-blind-active-passive-1.csv:24",
+  "point": "pas_act",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My phone was repaired in only twenty minutes yesterday.",
+     "Yesterday my phone was repaired in only twenty minutes."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0633",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: My phone repaired in only twenty minutes yesterday.",
+   "why": "A phone does not repair anything: someone repaired it. Passive past: *was repaired*.",
+   "why_lv": "*Telefons neko* neremontē: to kāds *salaboja*. Ciešamā kārta pagātnē: *was repaired*. Latviski \"*telefonu salaboja*\" ir bez *was*, tāpēc, tulkojot burtiski, to izlaiž.",
+   "answers": [
+    [
+     "My phone was repaired in only twenty minutes yesterday.",
+     "Yesterday my phone was repaired in only twenty minutes."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:24"
+  }
+ },
+ "ap-1-024": {
+  "hash": "ca721faf0290d960",
+  "gate_key": "active_passive | B1.1 | text | Correct the mistake: Our train was arrived forty minutes late, so we missed the start of the concert. | ",
+  "src": "zz-blind-active-passive-1.csv:25",
+  "point": "pas_act",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Our train arrived forty minutes late, so we missed the start of the concert."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0634",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Our train was arrived forty minutes late, so we missed the start of the concert.",
+   "why": "*arrive* has no object, so it has no passive: *Our train arrived*.",
+   "why_lv": "*arrive* nav papildinātāja, tāpēc tam nav ciešamās kārtas: *Our train arrived.*",
+   "answers": [
+    [
+     "Our train arrived forty minutes late, so we missed the start of the concert."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:25"
+  }
+ },
+ "ap-1-025": {
+  "hash": "e76fda01867d161b",
+  "gate_key": "active_passive | B1.1 | text | Correct the mistake: Cars aren't allowing in the city centre on Sundays. | ",
+  "src": "zz-blind-active-passive-1.csv:26",
+  "point": "pas_act",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "Cars aren't allowed in the city centre on Sundays.",
+     "Cars are not allowed in the city centre on Sundays.",
+     "On sundays cars aren't allowed in the city centre.",
+     "On sundays cars are not allowed in the city centre."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0635",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Correct the mistake: Cars aren't allowing in the city centre on Sundays.",
+   "why": "Cars do not allow anything: the city does not allow them. Passive: *aren't allowed*.",
+   "why_lv": "Mašīnas *neko* neatļauj: pilsēta tās neatļauj. Ciešamā kārta: *aren't allowed*.",
+   "answers": [
+    [
+     "Cars aren't allowed in the city centre on Sundays.",
+     "Cars are not allowed in the city centre on Sundays.",
+     "On sundays cars aren't allowed in the city centre.",
+     "On sundays cars are not allowed in the city centre."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:26"
+  }
+ },
+ "ap-1-026": {
+  "hash": "884f0f7928dd0264",
+  "gate_key": "active_passive | B1.1 | text | Start with *My keys*: Someone found my keys in the car. | ",
+  "src": "zz-blind-active-passive-1.csv:27",
+  "point": "pas_act",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "My keys were found in the car."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0636",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Start with *My keys*: Someone found my keys in the car.",
+   "why": "*Someone* says nothing new, so the passive leaves it out: *My keys were found*. *found* is past: *were* + 3rd form.",
+   "why_lv": "*Someone neko jaunu nepasaka*, tāpēc ciešamajā kārtā to izlaiž: *My keys were found.* *found* ir pagātne: *were* + 3. forma.",
+   "answers": [
+    [
+     "My keys were found in the car."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:27"
+  }
+ },
+ "ap-1-027": {
+  "hash": "a3e2a32e54a0f775",
+  "gate_key": "active_passive | B1.1 | text | Start with *A lot of rice*: They grow a lot of rice in this region. | ",
+  "src": "zz-blind-active-passive-1.csv:28",
+  "point": "pas_act",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "A lot of rice is grown in this region."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0637",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Start with *A lot of rice*: They grow a lot of rice in this region.",
+   "why": "*They* here means people in general, so the passive leaves it out. *grow* is present: *is grown*.",
+   "why_lv": "*They* šeit nozīmē cilvēkus vispār, tāpēc ciešamajā kārtā to izlaiž. *grow* ir tagadne: *is grown*.",
+   "answers": [
+    [
+     "A lot of rice is grown in this region."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:28"
+  }
+ },
+ "ap-1-028": {
+  "hash": "50ec8061007e898c",
+  "gate_key": "active_passive | B1.1 | text | Start with *A boy from our street*: The window was broken by a boy from our street. | ",
+  "src": "zz-blind-active-passive-1.csv:29",
+  "point": "pas_act",
+  "key": {
+   "kind": "text",
+   "accepted": [
+    [
+     "A boy from our street broke the window."
+    ]
+   ]
+  },
+  "item": {
+   "id": "c-0638",
+   "skill": "active_passive",
+   "level": "B1.1",
+   "bloom": 3,
+   "kind": "text",
+   "q": "Start with *A boy from our street*: The window was broken by a boy from our street.",
+   "why": "The boy did it, so the sentence that starts with him is active: *broke*. *was broken* is past, so *broke* is past too.",
+   "why_lv": "Zēns to izdarīja, tāpēc teikums, kas sākas ar viņu, ir darāmajā kārtā: *broke*. *was broken* ir pagātne, tāpēc arī *broke*.",
+   "answers": [
+    [
+     "A boy from our street broke the window."
+    ]
+   ],
+   "hints": [],
+   "role": "use",
+   "point": "pas_act",
+   "src": "zz-blind-active-passive-1.csv:29"
+  }
+ }
+}

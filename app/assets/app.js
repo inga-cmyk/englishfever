@@ -2276,7 +2276,7 @@
       root.replaceChildren(h('div', { class: 'card embed-card' },
         h('div', { class: 'card-head' }, h('h2', null, s.label)),
         ruleCard(s, lvMode),
-        h('div', { class: 'row', style: 'margin-top:14px' }, h('a', { class: 'btn', href: href, target: '_top' }, lvMode ? 'Trenēties šajā tēmā' : 'Practise this topic', icon('arrow')))));
+        h('div', { class: 'row', style: 'margin-top:14px' }, h('a', { class: 'btn', href: href, target: '_blank', rel: 'noopener' }, lvMode ? 'Trenēties šajā tēmā' : 'Practise this topic', icon('arrow')))));
       post();
       if (window.ResizeObserver) new ResizeObserver(post).observe(document.body);
     }).catch(function (e) { root.replaceChildren(h('p', { style: 'padding:16px' }, e.message)); post(); });

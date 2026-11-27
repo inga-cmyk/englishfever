@@ -2236,11 +2236,12 @@
     return h('div', { class: 'lesson-codes' }, h('div', { class: 'small muted' }, 'For a Tutor LMS lesson:'),
       lines.map(function (l) {
         var code = h('code', null, l[1]);
+        var tip = h('span', { class: 'copied-tip', role: 'status', hidden: true }, 'Copied!'), timer;   // a small bubble over the icon (teacher, 27 November)
         return h('div', { class: 'lesson-code' }, h('span', { class: 'pill' }, l[0]), code,
-          h('button', { type: 'button', class: 'linkbtn small copy-code', 'aria-label': 'Copy ' + l[0] + ' code', title: 'Copy', onclick: function () {
-            (navigator.clipboard ? navigator.clipboard.writeText(l[1]) : Promise.reject()).then(function () { UI.toast('Copied: ' + l[1]); })
+          h('span', { class: 'copy-wrap' }, tip, h('button', { type: 'button', class: 'linkbtn small copy-code', 'aria-label': 'Copy ' + l[0] + ' code', title: 'Copy', onclick: function () {
+            (navigator.clipboard ? navigator.clipboard.writeText(l[1]) : Promise.reject()).then(function () { tip.hidden = false; clearTimeout(timer); timer = setTimeout(function () { tip.hidden = true; }, 1500); })
               .catch(function () { var r = document.createRange(); r.selectNodeContents(code); var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r); UI.toast('Press Ctrl+C to copy.'); });
-          } }, icon('copy')));
+          } }, icon('copy'))));
       }));
   }
 
@@ -2261,6 +2262,11 @@
   function embedCard() {
     var id = (location.hash.replace(/^#\/?/, '').split('/')[1] || '').replace(/[^a-z0-9_]/g, '');
     var lvMode = /(^|[?&])lang=lv(&|$)/.test(location.search);
+    // light or dark like the lesson page, not like the device (teacher, 27 November): light until the page says otherwise
+    // (the plugin looks at the page's background and sends {ef_theme}); ?theme=dark also works
+    function setTheme(t) { if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); }
+    var qt = /(^|[?&])theme=(dark|light)(&|$)/.exec(location.search); setTheme(qt ? qt[2] : 'light');
+    window.addEventListener('message', function (e) { if (e.source === window.parent && e.data && e.data.ef_theme) setTheme(e.data.ef_theme); });
     Promise.all([api('config'), api('meta')]).then(function (r) {
       state.config = r[0]; state.meta = r[1];
       var s = skillById(id);

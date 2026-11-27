@@ -106,3 +106,8 @@ A direct link without the website also works: `https://practice.englishfever.com
 | Prepositions | Prepositions: position and advanced patterns | `adv_prep` | `[ef_rule_card topic="adv_prep" lang="lv"]` |
 | Linking ideas | Advanced participle clauses | `adv_part` | `[ef_rule_card topic="adv_part" lang="lv"]` |
 | Linking ideas | Advanced word order: inversion and fronting | `adv_order` | `[ef_rule_card topic="adv_order" lang="lv"]` |
+
+
+## Light or dark (plugin 1.9.1, 27 November)
+
+The card is light or dark like the lesson page, not like the device: the plugin finds the first non-transparent background behind the card and sends `{ef_theme: "light" | "dark"}` to it (again when the page's `class`, `style` or `data-theme` changes). Without the plugin script the card is light; `card.html?theme=dark` forces dark.

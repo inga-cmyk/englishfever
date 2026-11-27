@@ -2,7 +2,7 @@
 /**
  * Plugin Name: EF Practice – sign in with englishfever.com
  * Description: Lets logged-in englishfever.com users (Tutor LMS students and instructors) open the tenses practice app without registering again, adds their practice time to the "My activity" tracker (respecting their tracking choice) and shows their practice results. Shortcodes: [ef_practice_button], [ef_practice_banner], [ef_practice_results], [ef_rule_card].
- * Version:     1.9.0
+ * Version:     1.9.1
  * Author:      English Fever
  * License:     GPLv2 or later
  *
@@ -164,8 +164,19 @@ add_shortcode( 'ef_rule_card', function ( $atts ) {
 	if ( ! $listener ) {
 		$listener = true;
 		$origin   = wp_parse_url( EF_PRACTICE_URL, PHP_URL_SCHEME ) . '://' . wp_parse_url( EF_PRACTICE_URL, PHP_URL_HOST );
-		$out     .= '<script>window.addEventListener("message",function(e){if(e.origin!==' . wp_json_encode( $origin ) . '||!e.data||!e.data.height)return;'
-			. 'document.querySelectorAll("iframe.ef-rule-card").forEach(function(f){if(f.contentWindow===e.source)f.style.height=(e.data.height+4)+"px";});});</script>';
+		$port     = wp_parse_url( EF_PRACTICE_URL, PHP_URL_PORT );
+		$origin  .= $port ? ':' . $port : '';
+		// 1.9.1: the card is light or dark like the lesson page (the first background behind the card that is not transparent), not like the device
+		$out     .= '<script>(function(){var O=' . wp_json_encode( $origin ) . ';'
+			. 'function look(f){for(var n=f.parentElement;n;n=n.parentElement){var m=getComputedStyle(n).backgroundColor.match(/[\\d.]+/g);'
+			. 'if(m&&(m.length<4||+m[3]>0.5)){return (0.2126*m[0]+0.7152*m[1]+0.0722*m[2])<128?"dark":"light";}}return "light";}'
+			. 'function send(f){try{f.contentWindow.postMessage({ef_theme:look(f)},O);}catch(x){}}'
+			. 'function all(){document.querySelectorAll("iframe.ef-rule-card").forEach(send);}'
+			. 'window.addEventListener("message",function(e){if(e.origin!==O||!e.data||!e.data.height)return;'
+			. 'document.querySelectorAll("iframe.ef-rule-card").forEach(function(f){if(f.contentWindow===e.source){f.style.height=(e.data.height+4)+"px";send(f);}});});'
+			. 'if(window.MutationObserver){var mo=new MutationObserver(all);[document.documentElement,document.body].forEach(function(n){if(n)mo.observe(n,{attributes:true,attributeFilter:["class","style","data-theme","data-mode"]});});}'
+			. 'if(window.matchMedia){var mq=matchMedia("(prefers-color-scheme: dark)");if(mq.addEventListener)mq.addEventListener("change",function(){setTimeout(all,50);});}'
+			. '})();</script>';
 	}
 	return $out;
 } );
